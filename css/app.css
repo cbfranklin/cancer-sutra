@@ -1,0 +1,22 @@
+body{background:black;}
+
+/*.wow img{width:100%;height:auto;}*/
+
+/* BOOTSTRAP NO GUTTERS */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters [class^="col-"],
+.row.no-gutters [class*=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.wow { 
+    transition:all .2s linear; 
+    -o-transition:all .2s linear; 
+    -moz-transition:all .2s linear; 
+    -webkit-transition:all .2s linear;
+}
