@@ -77,7 +77,28 @@ function bindings(){
 			autoSize: false,
 			width: '100%',
 			content: $fancyContent,
-			scrolling: 'no'
+			scrolling: 'no',
+			helpers: {
+				overlay: {
+					locked: true 
+				}
+			},
+			afterShow: function(){
+	            //document.ontouchstart = function(e){
+	            //	e.preventDefault();
+	            //}
+	            $(document).on('scroll','body',function(e){
+	            	e.preventDefault();
+	            });
+	        },
+	        afterClose: function(){
+	            //document.ontouchstart = function(e){
+	                //default scroll behaviour
+	            //}
+	            $(document).on('scroll','body',function(e){
+	            	//default scroll behaviour
+	            });
+	        },
 		})
 	})
 }

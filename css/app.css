@@ -103,13 +103,13 @@ footer span{
 .cancer-sutra .detail{
 	display:none;
 }
-.cancer-sutra > div:hover img {
-    -webkit-transform:scale(1.1); /* Safari and Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* IE 9 */
-    -o-transform:scale(1.1); /* Opera */
+/*.cancer-sutra > div:hover img {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
      transform:scale(1.1);
-}
+}*/
 .cancer-sutra > div:hover{
 	z-index:100;
 }
