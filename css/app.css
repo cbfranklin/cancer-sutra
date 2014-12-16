@@ -1,10 +1,18 @@
+html{
+	position:relative;
+}
 body{
 	font-family:Georgia;
 }
+.filter{
+	padding:20px;
+}
 .filter h3{
 	text-align:center;
-	font-size:0.8em;
+	font-size:0.9em;
 	color:#ccc;
+	margin:0;
+	padding:0;
 }
 .filter ul{
 	list-style:none;
@@ -19,22 +27,55 @@ body{
 }
 .filter ul li a{
 	display:inline-block;
-	padding:10px;
+	padding:10px 5px;
 	color:#000;
 }
-h1,h2,h3,li,footer{
+h1,h2,h3,h4,h5,.uppercase{
 	text-transform: uppercase;
 }
 header{
 	text-align:center;
+	-webkit-transition: all 1.2s ease; /* Safari and Chrome */
+  	-moz-transition: all 1.2s ease; /* Firefox */
+  	-o-transition: all 1.2s ease; /* IE 9 */
+  	-ms-transition: all 1.2s ease; /* Opera */
+  	transition: all 1.2s ease;
+  	border-top:1px solid #000;
+  	border-bottom:1px solid #000;
+  	padding-bottom:1%;
 }
 nav{
-	border-bottom:1px solid #000;
+	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.5s ease; /* Firefox */
+  	-o-transition: all 0.5s ease; /* IE 9 */
+  	-ms-transition: all 0.5s ease; /* Opera */
+  	transition: all 0.5s ease;
 	background:#fdfdfd;
 }
 footer{
+	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.5s ease; /* Firefox */
+  	-o-transition: all 0.5s ease; /* IE 9 */
+  	-ms-transition: all 0.5s ease; /* Opera */
+  	transition: all 0.5s ease;
 	border-top:1px solid #000;
 	background:#fff;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+footer img{
+	width:100px;
+	height:100px;
+	background:#ccc;
+}
+footer span{
+	display:block;
+	line-height:2em;
+
+}
+.cancer-sutra{
+	visibility:hidden;
+	padding-top:2%;
 }
 .cancer-sutra > div{
 	max-width:300px;
@@ -42,10 +83,10 @@ footer{
 .cancer-sutra > div > img{
 	width:100%;
 	height:auto;
-	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
+	-webkit-transition: all 0.2s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.2s ease; /* Firefox */
+  	-o-transition: all 0.2s ease; /* IE 9 */
+  	-ms-transition: all 0.2s ease; /* Opera */
   	transition: all 0.5s ease;
   	cursor:pointer;
 }
@@ -56,6 +97,9 @@ footer{
     -ms-transform:scale(1.1); /* IE 9 */
     -o-transform:scale(1.1); /* Opera */
      transform:scale(1.1);
+}
+.cancer-sutra > div:hover{
+	z-index:100;
 }
 
 /*.position1{background-image:url(../positions/gif/1.gif);}
@@ -70,3 +114,26 @@ footer{
 .position10{background-image:url(../positions/gif/10.gif);}
 .position11{background-image:url(../positions/gif/11.gif);}
 .position12{background-image:url(../positions/gif/12.gif);}*/
+
+.intro header{
+	margin-top:100px;
+}
+.intro nav{
+	opacity:0;
+}
+.intro footer{
+	opacity:0;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+@media (max-width:480px){
+	.filter ul li,.filter ul li a{
+		display:block;
+	}
+	.filter,footer{
+		text-align:center;
+	}
+}

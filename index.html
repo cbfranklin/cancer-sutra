@@ -5,12 +5,12 @@
 <link rel="stylesheet" href="css/app.css"></script>
 </head>
 
-<body>
+<body class="intro">
 	<div class="container">
 		<nav class="row">
 			<div class="col-md-6 filter cancer-type">
 				<h3>Filter by Cancer Type</h3>
-				<ul>
+				<ul class="uppercase">
 					<li><a href>Breast</a></li>
 					<li><a href>Testicular</a></li>
 					<li><a href>Skin</a></li>
@@ -19,14 +19,14 @@
 			</div>
 			<div class="col-md-6 filter partnership">
 				<h3>Filter by Partnership</h3>
-				<ul>
+				<ul class="uppercase">
 					<li><a href>Male/Male</a></li>
 					<li><a href>Female/Female</a></li>
 					<li><a href>Male/Female</a></li>
 				</ul>
 			</div>
 		</nav>
-		<header>
+		<header class="animated fadeIn">
 			<h1>The Cancer Sutra</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 		</header>
@@ -68,20 +68,27 @@
 				<img src="positions/gif/12.gif">
 			</div>
 		</div>
-		<footer class="row">
-			<div class="col-md-6">
+		<footer class="row uppercase">
+			<div class="col-md-1"></div>
+			<div class="col-md-1 nopadding">
 				<img>
-				&copy; 2014 | The Bull White House<br>Contact
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-4">
+				<span>&copy; 2014 | The Bull White House</span>
+				<span>Contact</span>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-1 nopadding">
 				<img>
-				In Partnership with The American Cancer Society
+			</div>
+			<div class="col-md-4">
+				<span>In Partnership with<br>The American Cancer Society</span>
 			</div>
 		</footer>
 	</div>
 <script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
-<script src="js/packery-mode.pkgd.min.js"></script>
 <script src="js/assets.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
