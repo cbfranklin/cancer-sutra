@@ -1,28 +1,31 @@
 <html>
 <head>
-<link rel="stylesheet" href="css/animate.css"></script>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></script>
-<link rel="stylesheet" href="css/app.css"></script>
+	<title>The Cancer Sutra</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/animate.css"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></script>
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css"></script>
+	<link rel="stylesheet" href="css/app.css"></script>
 </head>
 
 <body class="intro">
 	<div class="container">
 		<nav class="row">
-			<div class="col-md-6 filter cancer-type">
+			<div data-filter-type="cancer-type" class="col-md-6 filter cancer-type">
 				<h3>Filter by Cancer Type</h3>
 				<ul class="uppercase">
-					<li><a href>Breast</a></li>
-					<li><a href>Testicular</a></li>
-					<li><a href>Skin</a></li>
-					<li><a href>Prostate</a></li>
+					<li><a href data-filter="breast" data-toggle="off">Breast</a></li>
+					<li><a href data-filter="testicular" data-toggle="off">Testicular</a></li>
+					<li><a href data-filter="skin" data-toggle="off">Skin</a></li>
+					<li><a href data-filter="prostate" data-toggle="off">Prostate</a></li>
 				</ul>
 			</div>
-			<div class="col-md-6 filter partnership">
+			<div data-filter-type="partnership" class="col-md-6 filter partnership">
 				<h3>Filter by Partnership</h3>
 				<ul class="uppercase">
-					<li><a href>Male/Male</a></li>
-					<li><a href>Female/Female</a></li>
-					<li><a href>Male/Female</a></li>
+					<li><a href data-filter="mm" data-toggle="off" class="test">Male/Male</a></li>
+					<li><a href data-filter="ff" data-toggle="off">Female/Female</a></li>
+					<li><a href data-filter="mf" data-toggle="off">Male/Female</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -30,42 +33,65 @@
 			<h1>The Cancer Sutra</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 		</header>
-		<div class="cancer-sutra">
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position1">
+		<div class="cancer-sutra opacity0">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position1 ff">
 				<img src="positions/gif/1.gif">
+				<div class="detail">test</div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position2">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position2 ff">
 				<img src="positions/gif/2.gif">
+				<div class="detail container" data-position="2">
+					<div class="row">
+					<img class="col-md-6 detail-image" src="positions/gif/2.gif">
+					<div class="col-md-6 detail-text">
+					<h2>Split-Screening</h2>
+						<p>Position yourself in a seated, half-upright position on a bed or deep chair, and bend your knee so that it can be kept effortlessly raised.<p>
+						<p>Now, let your partner straddle this raised knee, facing away, so that yours and her world collide (part, collide, part, and collide again) just around the vagina and thigh. While she’s free to gyrate and thrust to her heart’s and clitoris’ content, *take this rare opportunity to admire the view of an oft-hidden sight: her back.</p>
+						<p>Your gaze should take you from shoulder blades to the small of her back in search of any bumps or discolorations, but that doesn’t mean your eyes get to have all the fun. Allow your fingers to gently caress whatever is in reach, as melanoma can be colorless.</p>
+						<p class="just-the-tip">Just the Tip:<br>*While your partner’s back is to you, you may find your view obstructed by her hair. For those of so inclined and reclined, take matters into your own hands — literally. A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze, but can also let you steer the course in the sack.</p>
+					</div>
+					</div>
+				</div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position3">
+			<div data-cancer-type="" data-partnership="mf" class="wow fadeIn position3 mf">
 				<img src="positions/gif/3.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position4">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position4 ff">
 				<img src="positions/gif/4.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position5">
+			<div data-cancer-type="" data-partnership="mm" class="wow fadeIn position5 mm">
 				<img src="positions/gif/5.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position6">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position6 ff">
 				<img src="positions/gif/6.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position7">
+			<div data-cancer-type="" data-partnership="mm" class="wow fadeIn position7 mm">
 				<img src="positions/gif/7.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position8">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position8 ff">
 				<img src="positions/gif/8.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position9">
+			<div data-cancer-type="" data-partnership="mf" class="wow fadeIn position9 mf">
 				<img src="positions/gif/9.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position10">
+			<div data-cancer-type="" data-partnership="ff" class="wow fadeIn position10 ff">
 				<img src="positions/gif/10.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position11">
+			<div data-cancer-type="" data-partnership="mf" class="wow fadeIn position11 mf">
 				<img src="positions/gif/11.gif">
+				<div class="detail"></div>
 			</div>
-			<div data-cancer-type="" data-partnership="" class="wow fadeInUp position12">
+			<div data-cancer-type="" data-partnership="mm" class="wow fadeIn position12 mm">
 				<img src="positions/gif/12.gif">
+				<div class="detail"></div>
 			</div>
 		</div>
 		<footer class="row uppercase">
@@ -90,6 +116,7 @@
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/assets.js"></script>
+<script src="fancybox/jquery.fancybox.pack.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
 </body>
