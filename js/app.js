@@ -1,5 +1,8 @@
 $(function(){
-	var $isotope = $('.container');
-new WOW().init();
-$isotope.isotope({ layoutMode: 'packery' })
+	$('.cancer-sutra').isotope({
+		//layoutMode: 'packery'
+		//layoutMode: 'spineAlign'
+		//layoutMode: 'centered'
+	});
+	new WOW().init();
 });
