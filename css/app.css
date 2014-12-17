@@ -49,13 +49,57 @@ header{
   	padding-bottom:1%;
 }
 nav{
-	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
-  	transition: all 0.5s ease;
+	-webkit-transition: max-height 0.5s ease; /* Safari and Chrome */
+  	-moz-transition: max-height 0.5s ease; /* Firefox */
+  	-o-transition: max-height 0.5s ease; /* IE 9 */
+  	-ms-transition: max-height 0.5s ease; /* Opera */
+  	transition: max-height 0.5s ease;
 	background:#fdfdfd;
+	overflow:hidden;
 }
+
+.nav-toggle { position: absolute; left: 1%; top: 20px; }
+
+.nav-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 26px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.device-menu{
+	position:relative;
+	display:none;
+}
+
+.nav-toggle span:before {
+  top: -7px; 
+}
+.nav-toggle span:after {
+  bottom: -7px;
+}
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+.nav-toggle.active span {
+  background-color: transparent;
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+  top: 0;
+}
+.nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
 footer{
 	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
   	-moz-transition: all 0.5s ease; /* Firefox */
@@ -87,7 +131,7 @@ footer span{
   	transition: all 0.5s ease;
 }
 .cancer-sutra > div{
-	max-width:320px;
+	width:25%;
 	height:auto;
 }
 .cancer-sutra > div > img{
@@ -97,7 +141,7 @@ footer span{
   	-moz-transition: all 0.2s ease; /* Firefox */
   	-o-transition: all 0.2s ease; /* IE 9 */
   	-ms-transition: all 0.2s ease; /* Opera */
-  	transition: all 0.5s ease;
+  	transition: all 0.2s ease;
   	cursor:pointer;
 }
 .cancer-sutra .detail{
@@ -115,7 +159,7 @@ footer span{
 }
 
 .intro header{
-	margin-top:100px;
+	/*margin-top:100px;*/
 }
 .intro nav{
 	opacity:0;
@@ -153,6 +197,50 @@ footer span{
 	[data-position="10"] .detail-text::after{background-image:url(../positions/gif/10.gif);}
 	[data-position="11"] .detail-text::after{background-image:url(../positions/gif/11.gif);}
 	[data-position="12"] .detail-text::after{background-image:url(../positions/gif/12.gif);}
+
+	.cancer-sutra > div{
+		width:50%;
+	}
+}
+@media (min-width:768px) and (max-width:1200px){
+	.cancer-sutra > div{
+		width:33%;
+	}
+}
+@media (min-width:768px) and (max-width:990px){
+	.cancer-sutra > div{
+		width:50%;
+	}
+}
+@media (max-width:990px){
+	.device-menu{
+		display:block;
+		height:45px;
+	}
+	nav{
+		max-height:0;
+	}
+	nav.open{
+		max-height:400px;
+	}
+	.filter{
+		padding:0;
+	}
+	.filter h3{
+		padding:0 0 5px 0;
+	}
+	.filter ul{
+		margin-top:10px;
+	}
+	.filter li{
+		border-top:1px solid #000;
+	}
+	.filter li:last-child{
+		border-bottom:1px solid #000;
+	}
+	.filter:last-child{
+		padding-top:15px;
+	}
 }
 
 .fancybox-skin{
@@ -170,9 +258,13 @@ footer span{
 }
 .fancybox-close::after{
 	content:'×';
+	background:#fff;
+	display:block;
 	font-size:40px;
 	color:#ccc;
 	font-family:Arial,sans-serif;
+	height:45px;
+	border-radius:3px;
 }
 .just-the-tip{
 	color:#999;
@@ -192,7 +284,6 @@ footer span{
 }
 .detail-text{
 	text-align: center;
-	height:100%;
 	position:relative;
 	display:block;
 	z-index:1;
@@ -209,4 +300,13 @@ footer span{
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.slideUp {
+   width: 100%;
+   height:0;
+   -webkit-transition: height 2s;
+   -moz-transition: height 2s;
+   -o-transition: height 2s;
+   transition: height 2s;
 }

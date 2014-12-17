@@ -9,6 +9,7 @@ $(function(){
 	$filters = $('.filter a');
 	$container = $('.container');
 	$sutra.isotope();
+	bindings();
 	imagesLoaded('body',begin)
 });
 
@@ -36,14 +37,23 @@ function begin(){
 			$sutra.removeClass('opacity0');
 			//new WOW().init();
 		}
-		bindings();
 	}
 }
 
 function bindings(){
+	//menu
+	$('.nav-toggle').on('click',function(){
+		if(!$(this).hasClass('active')){
+			$('nav').addClass('open')
+		}
+		else{
+			$('nav').removeClass('open')
+		}
+		$(this).toggleClass('active');
+	});
 	//filters
 	$filters.on('click',function(e){
-		$sutra.find('div').show();
+		$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
 			$(this).data('toggle','on').attr('data-toggle','on')
 		}
@@ -76,6 +86,8 @@ function bindings(){
 		$.fancybox.open({
 			autoSize: false,
 			width: '100%',
+			height: '100%',
+			//margin: [0,0,0,0],
 			content: $fancyContent,
 			scrolling: 'no',
 			helpers: {
@@ -83,6 +95,12 @@ function bindings(){
 					locked: true 
 				}
 			},
+			/*afterLoad: function() { 
+		        this.wrap.find('.fancybox-inner').css({
+		            'overflow-y': 'auto',
+		            'overflow-x': 'hidden'
+		        });
+		    },*/
 			afterShow: function(){
 	            //document.ontouchstart = function(e){
 	            //	e.preventDefault();
@@ -90,6 +108,10 @@ function bindings(){
 	            $(document).on('scroll','body',function(e){
 	            	e.preventDefault();
 	            });
+	            this.wrap.find('.fancybox-inner').css({
+		            'overflow-y': 'auto',
+		            'overflow-x': 'hidden'
+		        });
 	        },
 	        afterClose: function(){
 	            //document.ontouchstart = function(e){
