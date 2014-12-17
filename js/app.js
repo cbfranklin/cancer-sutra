@@ -52,7 +52,7 @@ function bindings(){
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
-		},500)
+		},750)
 	});
 	//filters
 	$filters.on('click',function(e){
