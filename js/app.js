@@ -54,7 +54,7 @@ function bindings(){
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
-		},500)
+		},250)
 	});
 	//filters
 	$filters.on('click',function(e){
