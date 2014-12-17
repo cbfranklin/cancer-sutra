@@ -43,13 +43,16 @@ function begin(){
 function bindings(){
 	//menu
 	$('.nav-toggle').on('click',function(){
-		if(!$(this).hasClass('active')){
+		var $that = $(this)
+		if(!$that.hasClass('active')){
 			$('nav').addClass('open')
 		}
 		else{
 			$('nav').removeClass('open')
 		}
-		$(this).toggleClass('active');
+		setTimeout(function(){
+			$that.toggleClass('active');
+		},500)
 	});
 	//filters
 	$filters.on('click',function(e){
