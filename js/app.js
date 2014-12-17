@@ -42,19 +42,31 @@ function begin(){
 
 function bindings(){
 	//menu
-	$('.menu-toggle').on('click',function(){
+	$('.menu-toggle').on('click',function(e){
 		var $that = $(this)
 		if(!$that.hasClass('active')){
-			//$('nav').addClass('open')
-			$('nav').show();
+			//$('.filters').addClass('open')
+			$('.filters').show();
 		}
 		else{
-			//$('nav').removeClass('open')
-			$('nav').hide();
+			//$('.filters').removeClass('open')
+			$('.filters').hide();
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
 		},250)
+		e.preventDefault();
+	});
+	//sticky menu
+	$('nav').sticky();
+	//show title on scroll
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() > 10){
+			$('.device-menu').addClass('scrolling');
+		}
+		else{
+			$('.device-menu').removeClass('scrolling');
+		}
 	});
 	//filters
 	$filters.on('click',function(e){
