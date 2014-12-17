@@ -133,9 +133,7 @@ function bindings(){
 	            //}
 	            $(document).on('scroll','body',function(e){
 	            	//default scroll behaviour
-	            }).off('touchmove')
-	            	//reset
-	            });;
+	            }).off('touchmove');
 	        },
 		})
 	})
