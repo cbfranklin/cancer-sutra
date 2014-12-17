@@ -185,18 +185,18 @@ footer span{
 	.detail-image{
 		display:none;
 	}
-	[data-position="1"] .detail-text::after{background-image:url(../positions/gif/1.gif);}
-	[data-position="2"] .detail-text::after{background-image:url(../positions/gif/2.gif);}
-	[data-position="3"] .detail-text::after{background-image:url(../positions/gif/3.gif);}
-	[data-position="4"] .detail-text::after{background-image:url(../positions/gif/4.gif);}
-	[data-position="5"] .detail-text::after{background-image:url(../positions/gif/5.gif);}
-	[data-position="6"] .detail-text::after{background-image:url(../positions/gif/6.gif);}
-	[data-position="7"] .detail-text::after{background-image:url(../positions/gif/7.gif);}
-	[data-position="8"] .detail-text::after{background-image:url(../positions/gif/8.gif);}
-	[data-position="9"] .detail-text::after{background-image:url(../positions/gif/9.gif);}
-	[data-position="10"] .detail-text::after{background-image:url(../positions/gif/10.gif);}
-	[data-position="11"] .detail-text::after{background-image:url(../positions/gif/11.gif);}
-	[data-position="12"] .detail-text::after{background-image:url(../positions/gif/12.gif);}
+	[data-position="1"] .detail-text::after{background-image:url(../positions/svg/1.svg);}
+	[data-position="2"] .detail-text::after{background-image:url(../positions/svg/2.svg);}
+	[data-position="3"] .detail-text::after{background-image:url(../positions/svg/3.svg);}
+	[data-position="4"] .detail-text::after{background-image:url(../positions/svg/4.svg);}
+	[data-position="5"] .detail-text::after{background-image:url(../positions/svg/5.svg);}
+	[data-position="6"] .detail-text::after{background-image:url(../positions/svg/6.svg);}
+	[data-position="7"] .detail-text::after{background-image:url(../positions/svg/7.svg);}
+	[data-position="8"] .detail-text::after{background-image:url(../positions/svg/8.svg);}
+	[data-position="9"] .detail-text::after{background-image:url(../positions/svg/9.svg);}
+	[data-position="10"] .detail-text::after{background-image:url(../positions/svg/10.svg);}
+	[data-position="11"] .detail-text::after{background-image:url(../positions/svg/11.svg);}
+	[data-position="12"] .detail-text::after{background-image:url(../positions/svg/12.svg);}
 
 	.cancer-sutra > div{
 		width:50%;
