@@ -5,6 +5,25 @@ body{
 	font-family:Georgia;
 	color:#000;
 }
+body.loading{
+	overflow:hidden;
+}
+.loader{
+	margin:20px 0 0 40%;
+	height: 100px;
+	width: 20%;
+	text-align: center;
+	padding: 1em;
+	vertical-align: top;
+	display:none;
+}
+.loader svg path,
+.loader svg rect{
+  fill: #999;
+}
+.loading .loader{
+	display:inline-block;
+}
 .filter{
 	padding:20px;
 }

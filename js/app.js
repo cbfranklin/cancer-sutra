@@ -1,15 +1,20 @@
-var $sutra;
-var $filters;
-var $sutraPos;
-var $container;
+var $sutra,
+$filters,
+$sutraPos,
+$container,
+$loader,
+$body;
 
 $(function(){
+	$body = $('body');
 	$sutra = $('.cancer-sutra');
 	$sutraPos = $('.cancer-sutra > div');
 	$filters = $('.filter a');
 	$container = $('.container');
 	$sutra.isotope();
+	$loader = $('.loader');
 	bindings();
+	//if images are loaded, begin
 	imagesLoaded('body',begin)
 });
 
@@ -34,14 +39,17 @@ function begin(){
 		else{
 			showSutra();
 		}
+		$body.removeClass('loading')
 		function showSutra(){
 			$sutra.removeClass('opacity0');
-			new WOW().init();
+			//new WOW().init();
+
 		}
 	}
 }
 
 function bindings(){
+
 	//menu
 	$('.menu-toggle').on('click',function(e){
 		var $that = $(this)
@@ -58,11 +66,13 @@ function bindings(){
 		},250)
 		e.preventDefault();
 	});
+
 	//sticky menu
 	$('nav').sticky();
 	$(window).on('resize',function(){
 		delay(setStickies,300);
 	});
+
 	//combine filters: needs work
 	$filters.on('click',function(e){
 		$sutra.find('> div').show();
@@ -90,6 +100,7 @@ function bindings(){
 		$sutra.isotope({ filter: theFilter });
 		e.preventDefault();
 	});
+
 	//bring up detail in fancybox
 	$sutraPos.on('click',function(){
 		var fancyWidth = $container.width();
@@ -107,12 +118,6 @@ function bindings(){
 					locked: true 
 				}
 			},
-			/*afterLoad: function() { 
-		        this.wrap.find('.fancybox-inner').css({
-		            'overflow-y': 'auto',
-		            'overflow-x': 'hidden'
-		        });
-		    },*/
 			afterShow: function(){
 	            //document.ontouchstart = function(e){
 	            //	e.preventDefault();
