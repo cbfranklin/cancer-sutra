@@ -4,8 +4,6 @@ html{
 body{
 	font-family:Georgia;
 	color:#000;
-	/*disable inertia scrolling*/
-	-webkit-overflow-scrolling: none;
 }
 .filter{
 	padding:20px;
