@@ -44,7 +44,7 @@ header{
   	-o-transition: all 1.2s ease; /* IE 9 */
   	-ms-transition: all 1.2s ease; /* Opera */
   	transition: all 1.2s ease;
-  	border-bottom:1px solid #000;
+  	border-bottom:1px solid #444;
   	padding-bottom:1%;
 }
 nav{
@@ -52,6 +52,7 @@ nav{
 	background:rgba(253,253,253,0.85);
 	z-index:100;
 	overflow: hidden;
+
 }
 .filters{
 	/*-webkit-transition: max-height 1s ease;
@@ -61,11 +62,12 @@ nav{
   	transition: max-height 1s ease;
 	background:#fdfdfd;*/
 	overflow:hidden;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #444;
 }
 .device-menu{
 	position:relative;
 	display:none;
+	z-index:300;
 }
 
 .device-menu::after{
@@ -241,7 +243,46 @@ footer span{
 	.cancer-sutra > div{
 		width:50%;
 	}
-	.filter{
+}
+@media (min-width:768px) and (max-width:1200px){
+	.cancer-sutra > div{
+		width:33%;
+	}
+}
+@media (min-width:768px) and (max-width:990px){
+	.cancer-sutra > div{
+		width:50%;
+	}
+	.filters{
+		position:absolute;
+		width:50%;
+		left:1%;
+		background:#fff;
+		background:rgba(253,253,253,0.9);
+		height:100%;
+		z-index:200;
+		box-shadow:2px 2px 600px 10px #000;
+		box-shadow:0px 2px 600px 10px rgba(0,0,0,0.25);
+	}
+}
+@media (max-width:990px){
+	header{
+		border-top:none;
+	}
+	.device-menu{
+		display:block;
+		height:45px;
+		border-bottom:1px solid #444;
+	}
+	.filters{
+		/*max-height:0;*/
+		display:none;
+		padding-top:10px;
+	}
+	.filters.open{
+		/*max-height:400px;*/
+	}
+		.filter{
 		padding:0;
 		border-bottom:0;
 	}
@@ -255,7 +296,7 @@ footer span{
 		border-top:1px solid #000;
 	}
 	.filter li:last-child{
-		border-bottom:1px solid #000;
+		border-bottom:1px solid #444;
 	}
 	.filter:last-child{
 		padding-top:15px;
@@ -263,33 +304,11 @@ footer span{
 	.filters{
 		border-bottom:0;
 	}
-}
-@media (min-width:768px) and (max-width:1200px){
-	.cancer-sutra > div{
-		width:33%;
-	}
-}
-@media (min-width:768px) and (max-width:990px){
-	.cancer-sutra > div{
-		width:50%;
-	}
-}
-@media (max-width:990px){
-	header{
-		border-top:none;
-	}
-	.device-menu{
+	.filter ul li,.filter ul li a{
 		display:block;
-		height:45px;
-		border-bottom:1px solid #000;
 	}
-	.filters{
-		/*max-height:0;*/
-		display:none;
-		padding-top:10px;
-	}
-	.filters.open{
-		/*max-height:400px;*/
+	.filter{
+		text-align:center;
 	}
 }
 @media (min-width:990px){
