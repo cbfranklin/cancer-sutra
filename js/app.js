@@ -45,12 +45,12 @@ function bindings(){
 	$('.menu-toggle').on('click',function(){
 		var $that = $(this)
 		if(!$that.hasClass('active')){
-			//$('nav').addClass('open')
-			$('nav').show();
+			$('nav').addClass('open')
+			//$('nav').show();
 		}
 		else{
-			//$('nav').removeClass('open')
-			$('nav').hide();
+			$('nav').removeClass('open')
+			//$('nav').hide();
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');

@@ -94,9 +94,17 @@ nav{
   top: 0;
 }
 .menu-toggle.active span:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .menu-toggle.active span:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -218,11 +226,11 @@ footer span{
 		height:45px;
 	}
 	nav{
-		/*max-height:0;*/
-		display:none;
+		max-height:0;
+		/*display:none;*/
 	}
 	nav.open{
-		/*max-height:400px;*/
+		max-height:400px;
 	}
 	.filter{
 		padding:0;
