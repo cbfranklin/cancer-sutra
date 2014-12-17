@@ -119,6 +119,8 @@ function bindings(){
 	            //}
 	            $(document).on('scroll','body',function(e){
 	            	e.preventDefault();
+	            }).on('touchmove','body',function(e){
+	            	e.preventDefault();
 	            });
 	            this.wrap.find('.fancybox-inner').css({
 		            'overflow-y': 'auto',
@@ -131,7 +133,9 @@ function bindings(){
 	            //}
 	            $(document).on('scroll','body',function(e){
 	            	//default scroll behaviour
-	            });
+	            }).on('touchmove','body',function(e){
+	            	//reset
+	            });;
 	        },
 		})
 	})
