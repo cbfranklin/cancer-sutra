@@ -133,7 +133,7 @@ function bindings(){
 	            //}
 	            $(document).on('scroll','body',function(e){
 	            	//default scroll behaviour
-	            }).on('touchmove','body',function(e){
+	            }).off('touchmove','body',function(e){
 	            	//reset
 	            });;
 	        },
