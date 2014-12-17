@@ -49,11 +49,11 @@ header{
   	padding-bottom:1%;
 }
 nav{
-	-webkit-transition: max-height 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: max-height 0.5s ease; /* Firefox */
-  	-o-transition: max-height 0.5s ease; /* IE 9 */
-  	-ms-transition: max-height 0.5s ease; /* Opera */
-  	transition: max-height 0.5s ease;
+	-webkit-transition: max-height 1s ease; /* Safari and Chrome */
+  	-moz-transition: max-height 1s ease; /* Firefox */
+  	-o-transition: max-height 1s ease; /* IE 9 */
+  	-ms-transition: max-height 1s ease; /* Opera */
+  	transition: max-height 1s ease;
 	background:#fdfdfd;
 	overflow:hidden;
 }
