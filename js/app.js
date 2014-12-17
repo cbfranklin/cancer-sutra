@@ -42,17 +42,19 @@ function begin(){
 
 function bindings(){
 	//menu
-	$('.nav-toggle').on('click',function(){
+	$('.menu-toggle').on('click',function(){
 		var $that = $(this)
 		if(!$that.hasClass('active')){
-			$('nav').addClass('open')
+			//$('nav').addClass('open')
+			$('nav').show();
 		}
 		else{
-			$('nav').removeClass('open')
+			//$('nav').removeClass('open')
+			$('nav').hide();
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
-		},750)
+		},500)
 	});
 	//filters
 	$filters.on('click',function(e){

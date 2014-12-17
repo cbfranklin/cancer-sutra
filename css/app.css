@@ -58,10 +58,10 @@ nav{
 	overflow:hidden;
 }
 
-.nav-toggle { position: absolute; left: 1%; top: 20px; }
+.menu-toggle { position: absolute; left: 1%; top: 20px; }
 
-.nav-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+.menu-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 3px;
@@ -77,26 +77,26 @@ nav{
 	display:none;
 }
 
-.nav-toggle span:before {
+.menu-toggle span:before {
   top: -7px; 
 }
-.nav-toggle span:after {
+.menu-toggle span:after {
   bottom: -7px;
 }
 
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
   transition: all 500ms ease-in-out;
 }
-.nav-toggle.active span {
+.menu-toggle.active span {
   background-color: transparent;
 }
-.nav-toggle.active span:before, .nav-toggle.active span:after {
+.menu-toggle.active span:before, .menu-toggle.active span:after {
   top: 0;
 }
-.nav-toggle.active span:before {
+.menu-toggle.active span:before {
   transform: rotate(45deg);
 }
-.nav-toggle.active span:after {
+.menu-toggle.active span:after {
   transform: rotate(-45deg);
 }
 
@@ -218,10 +218,11 @@ footer span{
 		height:45px;
 	}
 	nav{
-		max-height:0;
+		/*max-height:0;*/
+		display:none;
 	}
 	nav.open{
-		max-height:400px;
+		/*max-height:400px;*/
 	}
 	.filter{
 		padding:0;
