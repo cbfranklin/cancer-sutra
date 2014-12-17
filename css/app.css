@@ -85,7 +85,11 @@ nav{
 }
 
 .menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
-  transition: all 500ms ease-in-out;
+  	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.5s ease; /* Firefox */
+  	-o-transition: all 0.5s ease; /* IE 9 */
+  	-ms-transition: all 0.5s ease; /* Opera */
+  	transition: all 0.5s ease;
 }
 .menu-toggle.active span {
   background-color: transparent;
