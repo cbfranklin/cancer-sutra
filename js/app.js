@@ -18,6 +18,7 @@ $(function(){
 
 function begin(){
 	if(document.body.scrollTop === 0){
+		setStickies();
 		var scrolledTop = true;
 		setTimeout(intro,1500);
 	}
@@ -35,7 +36,7 @@ function begin(){
 		}
 		function showSutra(){
 			$sutra.removeClass('opacity0');
-			//new WOW().init();
+			new WOW().init();
 		}
 	}
 }
@@ -59,16 +60,10 @@ function bindings(){
 	});
 	//sticky menu
 	$('nav').sticky();
-	//show title on scroll
-	$(window).on('scroll', function() {
-		if($(window).scrollTop() > 10){
-			$('.device-menu').addClass('scrolling');
-		}
-		else{
-			$('.device-menu').removeClass('scrolling');
-		}
+	$(window).on('resize',function(){
+		delay(setStickies,300);
 	});
-	//filters
+	//combine filters: needs work
 	$filters.on('click',function(e){
 		$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
@@ -95,7 +90,7 @@ function bindings(){
 		$sutra.isotope({ filter: theFilter });
 		e.preventDefault();
 	});
-	//detail
+	//bring up detail in fancybox
 	$sutraPos.on('click',function(){
 		var fancyWidth = $container.width();
 		var $fancyContent = $(this).find('.detail');

@@ -44,22 +44,24 @@ header{
   	-o-transition: all 1.2s ease; /* IE 9 */
   	-ms-transition: all 1.2s ease; /* Opera */
   	transition: all 1.2s ease;
-  	border-top:1px solid #000;
   	border-bottom:1px solid #000;
   	padding-bottom:1%;
 }
 nav{
 	background:#fff;
+	background:rgba(253,253,253,0.85);
 	z-index:100;
+	overflow: hidden;
 }
 .filters{
 	/*-webkit-transition: max-height 1s ease;
   	-moz-transition: max-height 1s ease;
   	-o-transition: max-height 1s ease;
   	-ms-transition: max-height 1s ease;
-  	transition: max-height 1s ease;*/
-	background:#fdfdfd;
+  	transition: max-height 1s ease;
+	background:#fdfdfd;*/
 	overflow:hidden;
+	border-bottom:1px solid #000;
 }
 .device-menu{
 	position:relative;
@@ -210,7 +212,9 @@ footer span{
 .opacity0{
 	opacity:0;
 }
-
+.wrapper{
+	position: relative;
+}
 @media (max-width:768px){
 	.filter ul li,.filter ul li a{
 		display:block;
@@ -236,6 +240,28 @@ footer span{
 
 	.cancer-sutra > div{
 		width:50%;
+	}
+	.filter{
+		padding:0;
+		border-bottom:0;
+	}
+	.filter h3{
+		padding:0 0 5px 0;
+	}
+	.filter ul{
+		margin-top:10px;
+	}
+	.filter li{
+		border-top:1px solid #000;
+	}
+	.filter li:last-child{
+		border-bottom:1px solid #000;
+	}
+	.filter:last-child{
+		padding-top:15px;
+	}
+	.filters{
+		border-bottom:0;
 	}
 }
 @media (min-width:768px) and (max-width:1200px){
@@ -265,23 +291,10 @@ footer span{
 	.filters.open{
 		/*max-height:400px;*/
 	}
-	.filter{
-		padding:0;
-	}
-	.filter h3{
-		padding:0 0 5px 0;
-	}
-	.filter ul{
-		margin-top:10px;
-	}
-	.filter li{
-		border-top:1px solid #000;
-	}
-	.filter li:last-child{
-		border-bottom:1px solid #000;
-	}
-	.filter:last-child{
-		padding-top:15px;
+}
+@media (min-width:990px){
+	.filters{
+		display:block!important;
 	}
 }
 

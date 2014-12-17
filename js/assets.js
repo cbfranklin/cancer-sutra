@@ -15,3 +15,33 @@ jQuery.fn.extend({
         });
     }
 });
+//SHOWY
+//show title on scroll
+var showy = function(){
+    $(window).on('scroll', function() {
+        if($(window).scrollTop() > 10){
+            $('.device-menu').addClass('scrolling');
+        }
+        else{
+            $('.device-menu').removeClass('scrolling');
+        }
+    });
+}
+//DELAY
+var delay = (function(){
+  var timer = 0;
+  return function(callback, ms){
+    clearTimeout (timer);
+    timer = setTimeout(callback, ms);
+  };
+})();
+//SET STICKIES
+var setStickies = function(){
+    if($(window).width() < 990){
+        $('nav').sticky();
+        showy();
+    }
+    else{
+        $(window).off('scroll');
+    }
+};
