@@ -48,8 +48,7 @@ header{
   	padding-bottom:1%;
 }
 nav{
-	background:#fff;
-	background:rgba(253,253,253,0.85);
+	background:#fdfdfd;
 	z-index:100;
 	overflow: hidden;
 
@@ -113,10 +112,10 @@ nav{
 }
 
 .menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
-  	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
+  	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
   	transition: all 0.5s ease;
 }
 .menu-toggle.active span {
@@ -217,6 +216,9 @@ footer span{
 .wrapper{
 	position: relative;
 }
+.fixed{
+	position: fixed!important;
+}
 @media (max-width:768px){
 	.filter ul li,.filter ul li a{
 		display:block;
@@ -243,6 +245,14 @@ footer span{
 	.cancer-sutra > div{
 		width:50%;
 	}
+	.filters{
+		max-height:0;
+		/*display:none;*/
+		padding-top:10px;
+	}
+	.filters.open{
+		max-height:400px;
+	}
 }
 @media (min-width:768px) and (max-width:1200px){
 	.cancer-sutra > div{
@@ -254,15 +264,28 @@ footer span{
 		width:50%;
 	}
 	.filters{
-		position:absolute;
+		position:fixed;
 		width:50%;
+		height:100%;
 		left:1%;
-		background:#fff;
-		background:rgba(253,253,253,0.9);
+		background:#fdfdfd;
 		height:100%;
 		z-index:200;
-		box-shadow:2px 2px 600px 10px #000;
-		box-shadow:0px 2px 600px 10px rgba(0,0,0,0.25);
+		box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
+		border-right:1px solid #999;
+		padding-top:10px;
+	}
+	.filters{
+		left:-50%;
+		/*display:none;*/
+		-webkit-transition: all 0.5s ease;
+	  	-moz-transition: all 0.5s ease;
+	  	-o-transition: all 0.5s ease;
+	  	-ms-transition: all 0.5s ease;
+	  	transition: all 0.5s ease;
+	}
+	.filters.open{
+		left:0;
 	}
 }
 @media (max-width:990px){
@@ -274,15 +297,7 @@ footer span{
 		height:45px;
 		border-bottom:1px solid #444;
 	}
-	.filters{
-		/*max-height:0;*/
-		display:none;
-		padding-top:10px;
-	}
-	.filters.open{
-		/*max-height:400px;*/
-	}
-		.filter{
+	.filter{
 		padding:0;
 		border-bottom:0;
 	}

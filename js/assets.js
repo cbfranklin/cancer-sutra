@@ -37,9 +37,6 @@ var delay = (function(){
 })();
 //SET STICKIES
 var setStickies = function(){
-    if($(window).width() > 768 && $(window).width() < 990){
-        $('.filters').sticky();
-    }
     if($(window).width() < 990){
         $('nav').sticky();
         showy();

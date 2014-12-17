@@ -46,12 +46,12 @@ function bindings(){
 	$('.menu-toggle').on('click',function(e){
 		var $that = $(this)
 		if(!$that.hasClass('active')){
-			//$('.filters').addClass('open')
-			$('.filters').show();
+			$('.filters').addClass('open')
+			//$('.filters').show();
 		}
 		else{
-			//$('.filters').removeClass('open')
-			$('.filters').hide();
+			$('.filters').removeClass('open')
+			//$('.filters').hide();
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
