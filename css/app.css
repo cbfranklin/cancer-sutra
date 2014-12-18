@@ -1,17 +1,16 @@
-html,
+/*html,
 body{
 	height:100%;
 	width:100%;
 	overflow:auto;
 }
-
+body{-webkit-overflow-scrolling:touch;}*/
 html{
 	position:relative;
 }
 body{
 	font-family:Georgia;
 	color:#000;
-	-webkit-overflow-scrolling:touch;
 }
 
 body.loading{
@@ -412,12 +411,13 @@ footer span{
 	overflow:hidden;
 }
 .detail-image-horizontal img{
-	height:auto;
-	width:100%;
-}
-.detail-image.vertical img{
 	height:100%;
 	width:auto;
+	margin-top:45%;
+}
+.detail-image-vertical img{
+	height:auto;
+	width:100%;
 }
 .detail-text{
 	text-align: center;
