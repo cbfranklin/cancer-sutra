@@ -19,30 +19,19 @@ $(function(){
 });
 
 
-
-
 function begin(){
-	if(document.body.scrollTop === 0){
 		setStickies();
-		var scrolledTop = true;
-		setTimeout(intro,1500);
-	}
-	else{
-		intro(); 
-	}
+
+	intro();
+
 	function intro(){
-		$('body').removeClass('intro');
-		//$sutra.isotope('layout');
-		if(scrolledTop){
-			setTimeout(showSutra,1500)
-		}
-		else{
-			showSutra();
-		}
-		$body.removeClass('loading')
+		setTimeout(showSutra,500)
+
 		function showSutra(){
+			$body.removeClass('loading');
 			$sutra.removeClass('opacity0');
 			//new WOW().init();
+			$sutra.isotope('layout');
 
 		}
 	}
@@ -105,7 +94,6 @@ function bindings(){
 	$sutraPos.on('click',function(){
 		var fancyWidth = $container.width();
 		var $fancyContent = $(this).find('.detail');
-		console.log(fancyWidth)
 		$.fancybox.open({
 			autoSize: false,
 			width: '100%',

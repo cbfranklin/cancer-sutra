@@ -5,6 +5,7 @@ body{
 	font-family:Georgia;
 	color:#000;
 }
+
 body.loading{
 	overflow:hidden;
 }
@@ -195,6 +196,7 @@ footer span{
 .cancer-sutra > div > img{
 	width:100%;
 	height:auto;
+	margin:0 auto;
 	-webkit-transition: all 0.2s ease; /* Safari and Chrome */
   	-moz-transition: all 0.2s ease; /* Firefox */
   	-o-transition: all 0.2s ease; /* IE 9 */
@@ -268,6 +270,11 @@ footer span{
 		max-height:0;
 		/*display:none;*/
 		padding-top:10px;
+		-webkit-transition: max-height 0.5s ease;
+	  	-moz-transition: max-height 0.5s ease;
+	  	-o-transition: max-height 0.5s ease;
+	  	-ms-transition: max-height 0.5s ease;
+	  	transition: max-height 0.5s ease;
 	}
 	.filters.open{
 		max-height:400px;
@@ -344,6 +351,11 @@ footer span{
 	.filter{
 		text-align:center;
 	}
+	.filter a,
+	.filter a:hover,
+	.filter a:active{
+		text-decoration: none;
+	}
 }
 @media (min-width:990px){
 	.filters{
@@ -386,7 +398,14 @@ footer span{
 	padding-bottom:3%;
 	margin-bottom:3%;
 }
-.detail-image img{
+.detail-image{
+	overflow:hidden;
+}
+.detail-image-horizontal img{
+	height:auto;
+	width:100%;
+}
+.detail-image.vertical img{
 	height:100%;
 	width:auto;
 }
@@ -395,6 +414,7 @@ footer span{
 	position:relative;
 	display:block;
 	z-index:1;
+	height:100%;
 }
 .detail-text::after{
 	content: "";
@@ -405,11 +425,15 @@ footer span{
 	right: 0;
 	z-index:-1;
 	position: absolute;
-	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+.detail-image-horizontal{
+	background-size: auto 100%;
+}
+.detail-image-vertical{
+	background-size: 100% auto;
+}
 .slideUp {
    width: 100%;
    height:0;
@@ -417,4 +441,16 @@ footer span{
    -moz-transition: height 2s;
    -o-transition: height 2s;
    transition: height 2s;
+}
+
+/* removes moz button outlines */
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
 }

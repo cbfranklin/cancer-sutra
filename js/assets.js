@@ -1,6 +1,6 @@
 //STICKY NAV THAT DOESN'T SUCK
 jQuery.fn.extend({
-    sticky: function() {
+    sticky: function(){
         var offsetTop = $(this).offset().top;
         var offsetLeft = $(this).offset().left;
         var width = $(this).width();
@@ -13,6 +13,19 @@ jQuery.fn.extend({
                 el.attr('style', '');
             }
         });
+    },
+    stickyFixed: function(){
+        var offsetTop = $(this).css('top');
+        var width = $(this).width();
+        var position = $(window).scrollTop();
+        var el = $(this)
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > offsetTop) {
+                el.attr('style', 'position:fixed;top:'+offsetTop+';left:0px;width:' + width + 'px');
+            } else {
+                el.attr('style', '');
+            }
+        });  
     }
 });
 //SHOWY
@@ -38,7 +51,7 @@ var delay = (function(){
 //SET STICKIES
 var setStickies = function(){
     if($(window).width() > 768 && $(window).width() < 990){
-        $('.filters').sticky();
+        $('.filters').stickyFixed();
     }
     if($(window).width() < 990){
         $('nav').sticky();
