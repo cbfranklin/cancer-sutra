@@ -5,12 +5,9 @@ body{
 	overflow:auto;
 }
 body{-webkit-overflow-scrolling:touch;}
-html{
+/*html{
 	position:relative;
-}
-iframe{
-	background:transparent;
-}
+}*/
 body{
 	font-family:Georgia;
 	color:#000;
