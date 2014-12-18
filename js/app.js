@@ -32,7 +32,7 @@ function begin(){
 	}
 	function intro(){
 		$('body').removeClass('intro');
-		$sutra.isotope('layout');
+		//$sutra.isotope('layout');
 		if(scrolledTop){
 			setTimeout(showSutra,1500)
 		}
@@ -75,7 +75,7 @@ function bindings(){
 
 	//combine filters: needs work
 	$filters.on('click',function(e){
-		$sutra.find('> div').show();
+		//$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
 			$(this).data('toggle','on').attr('data-toggle','on')
 		}
@@ -84,7 +84,7 @@ function bindings(){
 		}
 		var filterArray = []
 		$filters.each(function(){
-			console.log($(this).parents('.filter').data('filter-type'))
+			//console.log($(this).parents('.filter').data('filter-type'))
 			if($(this).data('toggle') === 'on'){
 				var filterType = $(this).parents('.filter').data('filter-type');
 				var filterValue = $(this).data('filter')
