@@ -8,7 +8,7 @@ jQuery.fn.extend({
         var el = $(this)
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > offsetTop) {
-                el.attr('style', 'position:fixed;top:0px;left:' + offsetLeft + 'px;width:' + width + 'px');
+                el.attr('style', 'position:fixed;top:0px;10%;width:100%');
             } else {
                 el.attr('style', '');
             }

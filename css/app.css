@@ -240,7 +240,7 @@ footer span{
 .fixed{
 	position: fixed!important;
 }
-@media (max-width:768px){
+@media (max-width:479px){
 	.filter ul li,.filter ul li a{
 		display:block;
 	}
@@ -251,7 +251,7 @@ footer span{
 		display:none;
 	}
 	[data-position="1"] .detail-text::after{background-image:url(../positions/svg/1.svg);}
-	[data-position="2"] .detail-text::after{background-image:url(../positions/svg/2.svg);}
+	[data-position="2"] .detail-text::after{background-image:url(../positions/svg/2.alt.svg);}
 	[data-position="3"] .detail-text::after{background-image:url(../positions/svg/3.svg);}
 	[data-position="4"] .detail-text::after{background-image:url(../positions/svg/4.svg);}
 	[data-position="5"] .detail-text::after{background-image:url(../positions/svg/5.svg);}
@@ -277,20 +277,21 @@ footer span{
 	  	transition: max-height 0.5s ease;
 	}
 	.filters.open{
-		max-height:400px;
+		max-height:401px;
 	}
 }
-@media (min-width:768px) and (max-width:1200px){
+@media (min-width:480px) and (max-width:1200px){
 	.cancer-sutra > div{
 		width:33%;
 	}
 }
-@media (min-width:768px) and (max-width:990px){
+@media (min-width:480px) and (max-width:990px){
 	.cancer-sutra > div{
 		width:50%;
 	}
 	.filters{
 		position:fixed;
+		top:45px;
 		width:50%;
 		height:100%;
 		left:1%;
@@ -379,6 +380,7 @@ footer span{
 .fancybox-close::after{
 	content:'×';
 	background:#fff;
+	background:rgba(255,255,255,0.7);
 	display:block;
 	font-size:40px;
 	color:#ccc;
