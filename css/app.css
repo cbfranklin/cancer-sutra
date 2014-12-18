@@ -1,9 +1,9 @@
-html,
+/*html,
 body{
 	height:100%;
 	width:100%;
 	overflow:auto;
-}
+}*/
 
 html{
 	position:relative;
@@ -11,7 +11,7 @@ html{
 body{
 	font-family:Georgia;
 	color:#000;
-	/*-webkit-overflow-scrolling:touch;*/
+	-webkit-overflow-scrolling:touch;
 }
 
 body.loading{
