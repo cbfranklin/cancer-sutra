@@ -62,8 +62,9 @@ function bindings(){
 		delay(setStickies,300);
 	});
 
-	//combine filters: needs work
+	//COMBINE FILTERS:
 	$filters.on('click',function(e){
+				e.preventDefault();
 		//$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
 			$(this).data('toggle','on').attr('data-toggle','on')
@@ -71,23 +72,53 @@ function bindings(){
 		else{
 			$(this).data('toggle','off').attr('data-toggle','off')
 		}
-		var filterArray = []
-		$filters.each(function(){
-			//console.log($(this).parents('.filter').data('filter-type'))
+
+		//CANCER TYPE
+		var cancerTypeArray = []
+		$('[data-filter-type="cancer-type"] a').each(function(){
 			if($(this).data('toggle') === 'on'){
-				var filterType = $(this).parents('.filter').data('filter-type');
 				var filterValue = $(this).data('filter')
-				filterArray.push([filterType,filterValue]);
+				cancerTypeArray.push(['[data-cancer-type="'+filterValue+'"]']);
 			}
 		});
-		for(i in filterArray){
-			filterArray[i] = '[data-'+filterArray[i][0]+'="'+filterArray[i][1]+'"]';
+		var cancerType = cancerTypeArray.join(',');
+		var $cancerType = $(cancerType);
+		//console.log($cancerType,$cancerType.length);
+
+		//PARTNERSHIP
+		var partnershipArray = []
+		$('[data-filter-type="partnership"] a').each(function(){
+			if($(this).data('toggle') === 'on'){
+				var filterValue = $(this).data('filter')
+				partnershipArray.push(['[data-partnership="'+filterValue+'"]']);
+			}
+		});
+		var partnership = partnershipArray.join(',');
+		var $partnership = $(partnership);
+		//console.log($partnership,$partnership.length);
+
+		if($cancerType.length > 0 && $partnership.length > 0){
+			//console.log('ITS A MERGE')
+			//console.log($cancerType)
+			//console.log(partnership)
+			var $theFilter = $cancerType.filter($partnership);
 		}
-		console.log(filterArray)
-		var theFilter = filterArray.join(',');
-		console.log(theFilter)
-		$sutra.isotope({ filter: theFilter });
-		e.preventDefault();
+		else if($cancerType.length > 0 && $partnership.length == 0){
+			//console.log('ITS SINGLE: CANCER-TYPE')
+			var $theFilter = $cancerType;
+		}
+		else if($cancerType.length == 0 && $partnership.length > 0){
+			//console.log('ITS SINGLE: PARTNERSHIP')
+			var $theFilter = $partnership;
+		}
+		else{
+			var $theFilter = '';
+		}
+
+		//console.log($theFilter)
+
+
+		$sutra.isotope({ filter: $theFilter });
 	});
 
 	//bring up detail in fancybox

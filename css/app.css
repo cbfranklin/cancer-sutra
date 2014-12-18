@@ -296,30 +296,32 @@ footer span{
 	.cancer-sutra > div{
 		width:50%;
 	}
-	.filters{
-		position:fixed;
-		top:45px;
-		width:50%;
-		height:100%;
-		left:1%;
-		background:#fdfdfd;
-		height:100%;
-		z-index:200;
-		box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
-		border-right:1px solid #999;
-		padding-top:10px;
-	}
-	.filters{
-		left:-50%;
-		/*display:none;*/
-		-webkit-transition: left 0.5s ease;
-	  	-moz-transition: left 0.5s ease;
-	  	-o-transition: left 0.5s ease;
-	  	-ms-transition: left 0.5s ease;
-	  	transition: left 0.5s ease;
-	}
-	.filters.open{
-		left:0;
+	@media (min-height:372px){
+		.filters{
+			position:fixed;
+			top:45px;
+			width:50%;
+			height:100%;
+			left:1%;
+			background:#fdfdfd;
+			height:100%;
+			z-index:200;
+			box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
+			border-right:1px solid #999;
+			padding-top:10px;
+		}
+		.filters{
+			left:-50%;
+			/*display:none;*/
+			-webkit-transition: left 0.5s ease;
+		  	-moz-transition: left 0.5s ease;
+		  	-o-transition: left 0.5s ease;
+		  	-ms-transition: left 0.5s ease;
+		  	transition: left 0.5s ease;
+		}
+		.filters.open{
+			left:0;
+		}
 	}
 }
 @media (max-width:990px){
