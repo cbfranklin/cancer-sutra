@@ -370,7 +370,7 @@ footer span{
 		display:block!important;
 	}
 }
-
+/* FANCY BOX 2*/
 .fancybox-skin{
 	border-radius:0;
 	border:1px solid #000;
@@ -395,6 +395,47 @@ footer span{
 	height:45px;
 	border-radius:3px;
 }
+/* FANCY BOX v3 BETA
+.fancybox-skin{
+	border-radius:0;
+	border:0;
+	color:#000;
+}
+a.fancybox-close{
+	background-image:none!important;
+	top:10px;
+	right:10px;
+	width:32px;
+	height:32px;
+}
+.fancybox-close:hover{
+	text-decoration: none;
+}
+.fancybox-close::after{
+	content:'×';
+	background:#fff;
+	background:rgba(255,255,255,0.7);
+	display:block;
+	font-size:40px;
+	color:#ccc;
+	font-family:Arial,sans-serif;
+	height:25px;
+	border-radius:3px;
+	position:absolute;
+	line-height:25px;
+	left:-15px;
+	top:0;
+}
+#fancybox-lock{
+	overflow:hidden!important;
+}
+.fancybox-wrap{
+	top:10px!important;
+	width:100%!important;
+}*/
+
+
+
 .just-the-tip{
 	color:#999;
 }

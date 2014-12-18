@@ -98,7 +98,7 @@ function bindings(){
 			autoSize: false,
 			width: '100%',
 			height: '100%',
-			//margin: [0,0,0,0],
+			margin: [0,0,0,0],
 			content: $fancyContent,
 			scrolling: 'no',
 			helpers: {
@@ -128,6 +128,10 @@ function bindings(){
 	            	//default scroll behaviour
 	            }).off('touchmove');
 	        },
+	        /*v3 beta only
+	        openEffect  : 'drop',
+			closeEffect : 'fade',
+			*/
 		})
 	})
 }
