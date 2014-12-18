@@ -3,8 +3,8 @@ body{
 	height:100%;
 	width:100%;
 	overflow:auto;
-}
-body{-webkit-overflow-scrolling:touch;}*/
+}*/
+body{-webkit-overflow-scrolling:touch;}
 html{
 	position:relative;
 }
