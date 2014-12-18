@@ -8,6 +8,9 @@ body{-webkit-overflow-scrolling:touch;}
 html{
 	position:relative;
 }
+iframe{
+	background:transparent;
+}
 body{
 	font-family:Georgia;
 	color:#000;
