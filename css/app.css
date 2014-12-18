@@ -5,13 +5,12 @@ body{
 	overflow:auto;
 }
 body{-webkit-overflow-scrolling:touch;}
-/*html{
+html{
 	position:relative;
-}*/
+}
 body{
 	font-family:Georgia;
 	color:#000;
-	position:relative;
 }
 
 body.loading{
