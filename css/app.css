@@ -66,10 +66,10 @@ h1,h2,h3,h4,h5,.uppercase{
 }
 header{
 	text-align:center;
-	-webkit-transition: all 1.2s ease; /* Safari and Chrome */
-  	-moz-transition: all 1.2s ease; /* Firefox */
-  	-o-transition: all 1.2s ease; /* IE 9 */
-  	-ms-transition: all 1.2s ease; /* Opera */
+	-webkit-transition: all 1.2s ease;
+  	-moz-transition: all 1.2s ease;
+  	-o-transition: all 1.2s ease;
+  	-ms-transition: all 1.2s ease;
   	transition: all 1.2s ease;
   	border-bottom:1px solid #444;
   	padding-bottom:1%;
@@ -106,10 +106,10 @@ nav{
 	position:absolute;
 	font-size:20px;
 	opacity:0;
-	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
   	transition: all 0.5s ease;
 }
 .device-menu.scrolling::after{
@@ -167,10 +167,10 @@ nav{
 }
 
 footer{
-	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
   	transition: all 0.5s ease;
 	border-top:1px solid #000;
 	background:#fff;
@@ -185,16 +185,24 @@ footer img{
 footer span{
 	display:block;
 	line-height:2em;
-
 }
 .cancer-sutra{
 	padding-top:2%;
 	overflow:hidden;
-	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
   	transition: all 0.5s ease;
+  	-webkit-transition-delay: 1s;
+  	-moz-transition-delay: 1s;
+  	-webkit-transition-delay: 1s;
+  	-webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  	opacity:1;
+}
+.loading .cancer-sutra{
+	opacity:0;
 }
 .cancer-sutra > div{
 	width:25%;
@@ -204,10 +212,10 @@ footer span{
 	width:100%;
 	height:auto;
 	margin:0 auto;
-	-webkit-transition: all 0.2s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.2s ease; /* Firefox */
-  	-o-transition: all 0.2s ease; /* IE 9 */
-  	-ms-transition: all 0.2s ease; /* Opera */
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition: all 0.2s ease;
+  	-o-transition: all 0.2s ease;
+  	-ms-transition: all 0.2s ease;
   	transition: all 0.2s ease;
   	cursor:pointer;
 }
@@ -377,6 +385,7 @@ footer span{
 		  	-o-transition: max-height 0.5s ease;
 		  	-ms-transition: max-height 0.5s ease;
 		  	transition: max-height 0.5s ease;
+		  	left:1%;
 		}
 		.filters.open{
 			max-height:401px;
