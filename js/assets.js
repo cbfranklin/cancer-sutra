@@ -43,7 +43,7 @@ var showy = function(){
 //DELAY
 var delay = (function(){
   var timer = 0;
-  return function(callback, ms){
+  return function(callback, ms){s
     clearTimeout (timer);
     timer = setTimeout(callback, ms);
   };
