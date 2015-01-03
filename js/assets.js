@@ -50,14 +50,14 @@ var delay = (function(){
 })();
 //SET STICKIES
 var setStickies = function(){
-    if($(window).width() > 768 && $(window).width() < 990){
+    if($(window).width() > 768 /* && $(window).width() < 990 */){
         $('.filters').stickyFixed();
     }
-    if($(window).width() < 990){
+    /*#if($(window).width() < 990){*/
         $('nav').sticky();
         showy();
-    }
-    else{
+    /*}*/
+    /*else{
         $(window).off('scroll');
-    }
+    }*/
 };
