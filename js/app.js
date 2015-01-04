@@ -64,7 +64,7 @@ function bindings(){
 
 	//COMBINE FILTERS:
 	$filters.on('click',function(e){
-				e.preventDefault();
+		e.preventDefault();
 		//$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
 			//only one cancer type at a time

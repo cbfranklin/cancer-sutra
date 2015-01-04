@@ -12,6 +12,7 @@
 	  	-o-transition: max-height 0.5s ease;
 	  	-ms-transition: max-height 0.5s ease;
 	  	transition: max-height 0.5s ease;
+	  	overflow:hidden;
 	}
 	nav.open{
 		max-height:401px;
@@ -94,7 +95,6 @@
 	.device-menu{
 		display:block;
 		height:45px;
-		border-bottom:1px solid #444;
 	}
 	.filter{
 		padding:0;
