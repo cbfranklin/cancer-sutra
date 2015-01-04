@@ -1,13 +1,18 @@
-var $sutra,
+var $all,
+$about,
+$sutra,
 $filters,
 $sutraPos,
 $container,
 $loader,
-$body;
+$body,
+$fancyContent;
 
 $(function(){
 	$body = $('body');
+	$about = $('#about')
 	$sutra = $('#cancer-sutra');
+	$all = $('section');
 	$sutraPos = $('#cancer-sutra > div');
 	$filters = $('.filter a');
 	$container = $('.container');
@@ -24,26 +29,47 @@ function begin(){
 	routie({
 	    '' : function(){
 	    	//about
+	    	console.log('about')
+	    	showAbout();
 	    },
-	    'positions/:name' : function(name){
+	    '/positions' : function(){
+	    	console.log('positions')
+	    	showPositions();
+	    },
+	    '/positions/:name' : function(name){
+	    	console.log('position')
 	    	showPositions(name);
 	    }
 	});
 
-	
+	function showAbout(){
+		$body.removeClass('loading');
+		$all.hide()
+		$about.show();
+	};
 
 	//intro();
 
 	function showPositions(name){
+		console.log(name)
+		$body.addClass('loading');
+		$all.hide();
 		$sutra.isotope();
+		$sutra.show();
 		setTimeout(function(){
 			$body.removeClass('loading');
 			$sutra.isotope('layout');
 		},500)
 		if(name != undefined){
+			console.log('yes position')
 			setTimeout(function(){
+				$fancyContent = $sutra.find('[data-position="'+name+'"]').find('.detail');
 		    	showPosition(name)
 			},500);
+		}
+		else{
+			console.log('no position')
+			$.fancybox.close;
 		}
 	}
 }
@@ -136,46 +162,7 @@ function bindings(){
 
 	//bring up detail in fancybox
 	$sutraPos.on('click',function(){
-		var fancyWidth = $container.width();
-		var $fancyContent = $(this).find('.detail');
-		$.fancybox.open({
-			autoSize: false,
-			width: '100%',
-			height: '100%',
-			margin: [0,0,0,0],
-			content: $fancyContent,
-			scrolling: 'no',
-			helpers: {
-				overlay: {
-					locked: true 
-				}
-			},
-			afterShow: function(){
-	            //document.ontouchstart = function(e){
-	            //	e.preventDefault();
-	            //}
-	            $(document).on('scroll','body',function(e){
-	            	e.preventDefault();
-	            }).on('touchmove','body',function(e){
-	            	e.preventDefault();
-	            });
-	            this.wrap.find('.fancybox-inner').css({
-		            'overflow-y': 'auto',
-		            'overflow-x': 'hidden'
-		        });
-	        },
-	        afterClose: function(){
-	            //document.ontouchstart = function(e){
-	                //default scroll behaviour
-	            //}
-	            $(document).on('scroll','body',function(e){
-	            	//default scroll behaviour
-	            }).off('touchmove');
-	        },
-	        /*v3 beta only
-	        openEffect  : 'drop',
-			closeEffect : 'fade',
-			*/
-		})
+		$fancyContent = $(this).find('.detail');
+		showPosition();
 	})
 }

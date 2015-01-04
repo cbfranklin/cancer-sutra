@@ -264,6 +264,7 @@ footer .acc{
   	-webkit-transition-delay: 1s;
     transition-delay: 1s;
   	opacity:1;
+  	display:none;
 }
 #cancer-sutra > div{
 	width:25%;

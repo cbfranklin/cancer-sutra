@@ -61,3 +61,48 @@ var setStickies = function(){
         $(window).off('scroll');
     }*/
 };
+//SHOW POSITION IN FANCYBOX
+function showPosition(){
+
+    var fancyWidth = $container.width();
+
+    $.fancybox.open({
+        autoSize: false,
+        width: '100%',
+        height: '100%',
+        margin: [0,0,0,0],
+        content: $fancyContent,
+        scrolling: 'no',
+        helpers: {
+            overlay: {
+                locked: true
+            }
+        },
+        afterShow: function(){
+            //document.ontouchstart = function(e){
+            //  e.preventDefault();
+            //}
+            $(document).on('scroll','body',function(e){
+                e.preventDefault();
+            }).on('touchmove','body',function(e){
+                e.preventDefault();
+            });
+            this.wrap.find('.fancybox-inner').css({
+                'overflow-y': 'auto',
+                'overflow-x': 'hidden'
+            });
+        },
+        afterClose: function(){
+            //document.ontouchstart = function(e){
+                //default scroll behaviour
+            //}
+            $(document).on('scroll','body',function(e){
+                //default scroll behaviour
+            }).off('touchmove');
+        },
+        /*v3 beta only
+        openEffect  : 'drop',
+        closeEffect : 'fade',
+        */
+    })
+};
