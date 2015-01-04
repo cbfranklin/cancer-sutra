@@ -1,6 +1,6 @@
 @media (max-width:479px){
 
-	.cancer-sutra > div{
+	#cancer-sutra > div{
 		width:50%;
 	}
 	nav{
@@ -20,12 +20,12 @@
 
 }
 @media (min-width:480px) and (max-width:1200px){
-	.cancer-sutra > div{
+	#cancer-sutra > div{
 		width:33%;
 	}
 }
 @media (min-width:1200px) and (max-width:990px){*/
-	.cancer-sutra > div{
+	#cancer-sutra > div{
 		width:25%;
 	}
 }

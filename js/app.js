@@ -7,8 +7,8 @@ $body;
 
 $(function(){
 	$body = $('body');
-	$sutra = $('.cancer-sutra');
-	$sutraPos = $('.cancer-sutra > div');
+	$sutra = $('#cancer-sutra');
+	$sutraPos = $('#cancer-sutra > div');
 	$filters = $('.filter a');
 	$container = $('.container');
 	$loader = $('.loader');
@@ -29,7 +29,7 @@ function begin(){
 
 		function showSutra(){
 			$body.removeClass('loading');
-			$sutra.removeClass('opacity0');
+			//$sutra.removeClass('opacity0');
 			//new WOW().init();
 			$sutra.isotope('layout');
 

@@ -1,13 +1,18 @@
+/* GLOBAL */
+
 /*html,
 body{
 	height:100%;
 	width:100%;
 	overflow:auto;
 }*/
+
 body{-webkit-overflow-scrolling:touch;}
+
 html{
 	position:relative;
 }
+
 body{
 	font-family:'KeplerStd-Regular',Georgia;
 	color:#000;
@@ -19,7 +24,24 @@ body.loading{
 a,a:hover,a:active,a:visited{
 	color:#000;
 }
+h1,h2,h3,h4,h5,.uppercase{
+	text-transform: uppercase;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.opacity0{
+	opacity:0;
+}
+.wrapper{
+	position: relative;
+}
+.fixed{
+	position: fixed!important;
+}
 
+/* LOADING */
 .loader{
 	margin:20px 0 0 40%;
 	height: 100px;
@@ -36,37 +58,11 @@ a,a:hover,a:active,a:visited{
 .loading .loader{
 	display:inline-block;
 }
+.loading section{
+	opacity:0;
+}
+/* HEADER / NAV / FILTERS */
 
-
-.filter{
-	padding:20px;
-}
-.filter h3{
-	text-align:center;
-	font-size:0.9em;
-	color:#ccc;
-	margin:0;
-	padding:0;
-}
-.filter ul{
-	list-style:none;
-	display:block;
-	width:100%;
-	text-align:center;
-	margin:0;
-	padding:0;
-}
-.filter a{
-	display:inline-block;
-	padding:10px 5px;
-	color:#000;
-}
-.filter a[data-toggle="on"]{
-	background:#ccc;
-}
-h1,h2,h3,h4,h5,.uppercase{
-	text-transform: uppercase;
-}
 header{
 	text-align:center;
 	-webkit-transition: all 1.2s ease;
@@ -118,11 +114,11 @@ header p{
   	-ms-transition: all 0.5s ease;
   	transition: all 0.5s ease;
 }
+
 .device-menu.scrolling::after{
 	opacity:1;
 
 }
-
 .menu-toggle { position: absolute; left: 1%; top: 20px; z-index:101; }
 
 .menu-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
@@ -172,6 +168,33 @@ header p{
   transform: rotate(-45deg);
 }
 
+.filter{
+	padding:20px;
+}
+.filter h3{
+	text-align:center;
+	font-size:0.9em;
+	color:#ccc;
+	margin:0;
+	padding:0;
+}
+.filter ul{
+	list-style:none;
+	display:block;
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+.filter a{
+	display:inline-block;
+	padding:10px 5px;
+	color:#000;
+}
+.filter a[data-toggle="on"]{
+	background:#ccc;
+}
+
 footer{
 	-webkit-transition: all 0.5s ease;
   	-moz-transition: all 0.5s ease;
@@ -197,7 +220,32 @@ footer .acc{
 	color:#999;
 	font-size:12px;
 }
-.cancer-sutra{
+
+/* ABOUT */
+#about > div{
+	min-height:500px;
+}
+
+.onward{
+	text-align:center;
+	background:rgb(221,112,189);
+	color:#fff;
+	padding-top:10%;
+}
+.onward a{
+	color:#fff;
+	padding:10px 20px;
+	border:1px solid #fff;
+	font-size: 20px;
+}
+.onward a:hover{
+	text-decoration: none;
+	background:#fff;
+	color:rgb(221,112,189);
+}
+/* CANCER SUTRA */
+
+#cancer-sutra{
 	padding:2% 0;
 	overflow:hidden;
 	-webkit-transition: all 0.5s ease;
@@ -212,14 +260,11 @@ footer .acc{
     transition-delay: 1s;
   	opacity:1;
 }
-.loading .cancer-sutra{
-	opacity:0;
-}
-.cancer-sutra > div{
+#cancer-sutra > div{
 	width:25%;
 	height:auto;
 }
-.cancer-sutra > div > img{
+#cancer-sutra > div > img{
 	width:80%;
 	height:auto;
 	margin:0 auto;
@@ -230,17 +275,17 @@ footer .acc{
   	transition: all 0.2s ease;
   	cursor:pointer;
 }
-.cancer-sutra .detail{
+#cancer-sutra .detail{
 	display:none;
 }
-.cancer-sutra > div:hover img {
+#cancer-sutra > div:hover img {
     -webkit-transform:scale(1.18);
     -moz-transform:scale(1.18);
     -ms-transform:scale(1.18);
     -o-transform:scale(1.18);
      transform:scale(1.18);
 }
-.cancer-sutra > div:hover{
+#cancer-sutra > div:hover{
 	z-index:2;
 }
 
@@ -253,21 +298,10 @@ footer .acc{
 .intro footer{
 	opacity:0;
 }*/
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-.opacity0{
-	opacity:0;
-}
-.wrapper{
-	position: relative;
-}
-.fixed{
-	position: fixed!important;
-}
+
 
 /* FANCY BOX 2*/
+
 .fancybox-skin{
 	border-radius:0;
 	border:1px solid #000;
@@ -295,6 +329,7 @@ footer .acc{
 
 
 /* FANCY BOX v3 BETA
+
 .fancybox-skin{
 	border-radius:0;
 	border:0;
@@ -334,6 +369,7 @@ a.fancybox-close{
 }*/
 
 
+/* POPUP STYLES */
 
 .just-the-tip{
 	color:#999;
@@ -384,14 +420,8 @@ a.fancybox-close{
 .detail-image-vertical{
 	background-size: 100% auto;
 }
-.slideUp {
-   width: 100%;
-   height:0;
-   -webkit-transition: height 2s;
-   -moz-transition: height 2s;
-   -o-transition: height 2s;
-   transition: height 2s;
-}
+
+/* BROWSER SPECIFIC */
 
 /* removes moz button outlines */
 a:focus, a:active, 
