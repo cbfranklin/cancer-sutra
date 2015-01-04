@@ -11,11 +11,11 @@ $(function(){
 	$sutraPos = $('.cancer-sutra > div');
 	$filters = $('.filter a');
 	$container = $('.container');
-	$sutra.isotope();
 	$loader = $('.loader');
 	bindings();
 	//if images are loaded, begin
 	imagesLoaded('body',begin)
+	$sutra.isotope();
 });
 
 
@@ -67,6 +67,10 @@ function bindings(){
 				e.preventDefault();
 		//$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
+			//only one cancer type at a time
+			if($(this).parent().data('filter-type') === 'cancer-type'){
+				$(this).siblings.data('toggle','off').attr('data-toggle','off')
+			}
 			$(this).data('toggle','on').attr('data-toggle','on')
 		}
 		else{

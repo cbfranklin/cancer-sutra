@@ -48,11 +48,11 @@
 		.filters{
 			left:-50%;
 			/*display:none;*/
-			-webkit-transition: left 0.5s ease;
-		  	-moz-transition: left 0.5s ease;
-		  	-o-transition: left 0.5s ease;
-		  	-ms-transition: left 0.5s ease;
-		  	transition: left 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+		  	-moz-transition: all 0.5s ease;
+		  	-o-transition: all 0.5s ease;
+		  	-ms-transition: all 0.5s ease;
+		  	transition: all 0.5s ease;
 		}
 		.filters.open{
 			left:0;
@@ -146,3 +146,10 @@
 		}
 	}
 /*}*/
+@media (min-height:372px) and (min-width:900px){
+		.filters{
+			position:fixed;
+			top:45px;
+			width:33%;
+		}
+}
