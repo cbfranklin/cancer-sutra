@@ -68,9 +68,7 @@ function bindings(){
 		//$sutra.find('> div').show();
 		if($(this).data('toggle') === 'off'){
 			//only one cancer type at a time
-			if($(this).parent().data('filter-type') === 'cancer-type'){
-				$(this).siblings.data('toggle','off').attr('data-toggle','off')
-			}
+			$('[data-filter-type="cancer-type"] a').data('toggle','off').attr('data-toggle','off');
 			$(this).data('toggle','on').attr('data-toggle','on')
 		}
 		else{
