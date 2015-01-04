@@ -43,12 +43,12 @@ function bindings(){
 	$('.menu-toggle').on('click',function(e){
 		var $that = $(this)
 		if(!$that.hasClass('active')){
-			$('.filters').addClass('open')
-			//$('.filters').show();
+			$('nav').addClass('open')
+			//$('nav').show();
 		}
 		else{
-			$('.filters').removeClass('open')
-			//$('.filters').hide();
+			$('nav').removeClass('open')
+			//$('nav').hide();
 		}
 		setTimeout(function(){
 			$that.toggleClass('active');
@@ -57,7 +57,7 @@ function bindings(){
 	});
 
 	//sticky menu
-	$('nav').sticky();
+	$('.nav-bar').sticky();
 	$(window).on('resize',function(){
 		delay(setStickies,300);
 	});

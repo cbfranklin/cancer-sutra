@@ -43,7 +43,7 @@ var showy = function(){
 //DELAY
 var delay = (function(){
   var timer = 0;
-  return function(callback, ms){s
+  return function(callback, ms){
     clearTimeout (timer);
     timer = setTimeout(callback, ms);
   };
@@ -54,7 +54,7 @@ var setStickies = function(){
         $('.filters').stickyFixed();
     }
     /*#if($(window).width() < 990){*/
-        $('nav').sticky();
+        $('.nav-bar').sticky();
         showy();
     /*}*/
     /*else{

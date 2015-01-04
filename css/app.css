@@ -83,13 +83,10 @@ header p{
 	padding-left:10px;
   	padding-right:10px;
 }
-nav{
+.nav-bar{
 	background:#fdfdfd;
 	z-index:100;
 	overflow: hidden;
-
-}
-.filters{
 	/*-webkit-transition: max-height 1s ease;
   	-moz-transition: max-height 1s ease;
   	-o-transition: max-height 1s ease;
@@ -250,7 +247,7 @@ footer .acc{
 /*.intro header{
 	margin-top:100px;
 }
-.intro .filters{
+.intro nav{
 	opacity:0;
 }
 .intro footer{

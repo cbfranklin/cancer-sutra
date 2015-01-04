@@ -3,7 +3,7 @@
 	.cancer-sutra > div{
 		width:50%;
 	}
-	.filters{
+	nav{
 		max-height:0;
 		/*display:none;*/
 		padding-top:10px;
@@ -13,7 +13,7 @@
 	  	-ms-transition: max-height 0.5s ease;
 	  	transition: max-height 0.5s ease;
 	}
-	.filters.open{
+	nav.open{
 		max-height:401px;
 	}
 
@@ -32,7 +32,7 @@
 
 	/* MIN HEIGHT FOR NAV DRAWER */
 	@media (min-height:372px){
-		.filters{
+		nav{
 			position:fixed;
 			top:45px;
 			width:50%;
@@ -45,7 +45,7 @@
 			border-right:1px solid #999;
 			padding-top:10px;
 		}
-		.filters{
+		nav{
 			left:-50%;
 			/*display:none;*/
 			-webkit-transition: all 0.5s ease;
@@ -54,7 +54,7 @@
 		  	-ms-transition: all 0.5s ease;
 		  	transition: all 0.5s ease;
 		}
-		.filters.open{
+		nav.open{
 			left:0;
 		}
 	}
@@ -115,7 +115,7 @@
 	.filter:last-child{
 		padding-top:15px;
 	}
-	.filters{
+	nav{
 		border-bottom:0;
 	}
 	.filter ul li,.filter ul li a{
@@ -130,7 +130,7 @@
 		text-decoration: none;
 	}
 	@media (max-height:371px){
-		.filters{
+		nav{
 			max-height:0;
 			/*display:none;*/
 			padding-top:10px;
@@ -141,13 +141,13 @@
 		  	transition: max-height 0.5s ease;
 		  	left:1%;
 		}
-		.filters.open{
+		nav.open{
 			max-height:401px;
 		}
 	}
 /*}*/
 @media (min-height:372px) and (min-width:900px){
-		.filters{
+		nav{
 			position:fixed;
 			top:45px;
 			width:33%;
