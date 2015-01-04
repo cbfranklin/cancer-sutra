@@ -225,7 +225,12 @@ footer .acc{
 #about > div{
 	min-height:500px;
 }
-
+#about h3{
+	color:#ccc;
+}
+#about p{
+	font-size:20px;
+}
 .onward{
 	text-align:center;
 	background:rgb(221,112,189);

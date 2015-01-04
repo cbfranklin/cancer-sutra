@@ -15,24 +15,35 @@ $(function(){
 	bindings();
 	//if images are loaded, begin
 	imagesLoaded('body',begin)
-	$sutra.isotope();
 });
 
 
 function begin(){
-		setStickies();
+	setStickies();
 
-	intro();
+	routie({
+	    '' : function(){
+	    	//about
+	    },
+	    'positions/:name' : function(name){
+	    	showPositions(name);
+	    }
+	});
 
-	function intro(){
-		setTimeout(showSutra,500)
+	
 
-		function showSutra(){
+	//intro();
+
+	function showPositions(name){
+		$sutra.isotope();
+		setTimeout(function(){
 			$body.removeClass('loading');
-			//$sutra.removeClass('opacity0');
-			//new WOW().init();
 			$sutra.isotope('layout');
-
+		},500)
+		if(name != undefined){
+			setTimeout(function(){
+		    	showPosition(name)
+			},500);
 		}
 	}
 }
