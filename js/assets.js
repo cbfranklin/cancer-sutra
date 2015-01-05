@@ -114,19 +114,26 @@ function showPosition(){
 //SHOW POSITION CSS3
 var Odelay = {
     'open': function(content){
-        $overlay.html(content).addClass('open');
-        $wrapper.addClass('overlay-open')
+        var close = '<div id="close">&#215;</div>';
+        $overlay.html(content+close).addClass('open');
+        $wrapper.addClass('overlay-open');
         $body.addClass('noscroll');
 
+        $overlay.on('click','#close',function(){
+            Odelay.close()
+        });
+
         Mousetrap.bind('esc', function() {
-            history.back();
+            Odelay.close();
         });
     },
     'close': function(){
         $overlay.removeClass('open');
         $wrapper.removeClass('overlay-open');
         $body.removeClass('noscroll');
+        $sutraPos.removeClass('active');
         Mousetrap.unbind('esc');
+        history.pushState({}, '', '#/positions');
     },
     'isOpen': function(){
         if($overlay.hasClass('open')){

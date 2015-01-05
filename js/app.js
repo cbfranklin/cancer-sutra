@@ -70,6 +70,7 @@ function bindings(){
 	$sutraPos.on('click',function(e){
 		//$fancyContent = $(this).find('.detail');
 		//showPosition();
+		$(this).addClass('active')
 		var name = $(this).data('position');
 		history.pushState({}, '', '#/positions/'+name);
 

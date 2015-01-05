@@ -173,6 +173,14 @@ header p{
   transform: rotate(-45deg);
 }
 
+.navigation{
+	text-align:center;
+	text-transform: uppercase;
+	font-size:1.3em;
+	padding:10px 0;
+	border-bottom:1px solid #000;
+}
+
 .filter{
 	padding:20px;
 }
@@ -296,7 +304,8 @@ footer .acc{
 #cancer-sutra .detail{
 	display:none;
 }
-#cancer-sutra > div:hover img {
+#cancer-sutra > div:hover img,
+#cancer-sutra > div.active img{
     -webkit-transform:scale(1.18);
     -moz-transform:scale(1.18);
     -ms-transform:scale(1.18);
@@ -403,8 +412,17 @@ a.fancybox-close{
 	overflow-y: scroll;
 	z-index:1000;
 	border-top:1px solid #999;
+	padding:20px;
 }
-
+.overlay #close{
+	display:block;
+	font-size:40px;
+	color:#ccc;
+	font-family:Arial,sans-serif;
+	position:absolute;
+	top:0;
+	right:2%;
+}
 .overlay .overlay-close {
 	width: 80px;
 	height: 80px;
@@ -417,46 +435,7 @@ a.fancybox-close{
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
-	z-index: 100;
-}
-
-.overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
-}
-
-.overlay ul li {
-	display: block;
-	height: 20%;
-	height: calc(100% / 5);
-	min-height: 54px;
-}
-
-.overlay ul li a {
-	font-size: 54px;
-	font-weight: 300;
-	display: block;
-	color: #fff;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #f0f0f0;
+	z-index: 10001;
 }
 
 .wrapper.overlay-open {
@@ -479,16 +458,6 @@ a.fancybox-close{
 	transform: translateY(0%);
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
-}
-
-@media screen and (max-height: 30.5em) {
-	.overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
-	.overlay ul li {
-		min-height: 34px;
-	}
 }
 
 
@@ -521,9 +490,10 @@ a.fancybox-close{
 .detail-text{
 	text-align: center;
 	position:relative;
-	display:block;
 	z-index:1;
-	height:100%;
+}
+.detail-text table{
+	border-collapse: separate;
 }
 .detail-text::after{
 	content: "";
