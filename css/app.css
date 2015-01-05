@@ -7,7 +7,9 @@ body{
 	overflow:auto;
 }*/
 
-body{-webkit-overflow-scrolling:touch;}
+body{
+	-webkit-overflow-scrolling:touch;
+}
 
 html{
 	position:relative;
@@ -21,6 +23,12 @@ body{
 body.loading{
 	overflow:hidden;
 }
+.loading .loader{
+	display:inline-block;
+}
+.loading section{
+	display:none;
+}
 a,a:hover,a:active,a:visited{
 	color:#000;
 }
@@ -30,6 +38,9 @@ h1,h2,h3,h4,h5,.uppercase{
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+.noscroll{
+	overflow:hidden;
 }
 .opacity0{
 	opacity:0;
@@ -54,12 +65,6 @@ h1,h2,h3,h4,h5,.uppercase{
 .loader svg path,
 .loader svg rect{
   fill: #999;
-}
-.loading .loader{
-	display:inline-block;
-}
-.loading section{
-	opacity:0;
 }
 /* HEADER / NAV / FILTERS */
 
@@ -224,6 +229,13 @@ footer .acc{
 /* ABOUT */
 #about > div{
 	min-height:500px;
+	background-repeat: no-repeat;
+	background-position: center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow:hidden;
 }
 #about h3{
 	color:#ccc;
@@ -253,7 +265,7 @@ footer .acc{
 #cancer-sutra{
 	padding:2% 0;
 	overflow:hidden;
-	-webkit-transition: all 0.5s ease;
+	/*-webkit-transition: all 0.5s ease;
   	-moz-transition: all 0.5s ease;
   	-o-transition: all 0.5s ease;
   	-ms-transition: all 0.5s ease;
@@ -262,7 +274,7 @@ footer .acc{
   	-moz-transition-delay: 1s;
   	-webkit-transition-delay: 1s;
   	-webkit-transition-delay: 1s;
-    transition-delay: 1s;
+    transition-delay: 1s;*/
   	opacity:1;
   	display:none;
 }
@@ -293,6 +305,9 @@ footer .acc{
 }
 #cancer-sutra > div:hover{
 	z-index:2;
+}
+.overlay-open #cancer-sutra > div:hover{
+	z-index:1;
 }
 
 /*.intro header{
@@ -374,8 +389,110 @@ a.fancybox-close{
 	width:100%!important;
 }*/
 
+/* TYPMANUS OVERLAY */
 
-/* POPUP STYLES */
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+	background: rgba(255,255,255,0.9);
+	overflow-y: scroll;
+	z-index:1000;
+	border-top:1px solid #999;
+}
+
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	/*background: url(../img/cross.png) no-repeat center center;*/
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+.wrapper.overlay-open {
+	/*-webkit-transform: scale(0.8);
+	transform: scale(0.8);*/
+	overflow:hidden;
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+
+/* OVERLAY STYLES */
 
 .just-the-tip{
 	color:#999;

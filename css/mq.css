@@ -18,6 +18,12 @@
 		max-height:401px;
 	}
 
+	#about .one{background-image:url(../splash/mobile/CS_MobSplash_Illus_1.svg);}
+	#about .two{background-image:url(../splash/mobile/CS_MobSplash_Illus_2.svg);}
+	#about .three{background-image:url(../splash/mobile/CS_MobSplash_Illus_3.svg);}
+	#about .four{background-image:url(../splash/mobile/CS_MobSplash_Illus_4.svg);}
+	#about .onward{background-image:url(../splash/mobile/CS_MobSplash_Illus_5.svg);}
+
 }
 @media (min-width:480px) and (max-width:1200px){
 	#cancer-sutra > div{
@@ -30,6 +36,12 @@
 	}
 }
 @media (min-width:480px){
+
+	#about .one{background-image:url(../splash/full/CS_TabSplash_Illus_1.svg);}
+	#about .two{background-image:url(../splash/full/CS_TabSplash_Illus_2.svg);}
+	#about .three{background-image:url(../splash/full/CS_TabSplash_Illus_3.svg);}
+	#about .four{background-image:url(../splash/full/CS_TabSplash_Illus_4.svg);}
+	#about .onward{background-image:url(../splash/full/CS_TabSplash_Illus_5.svg);}
 
 	/* MIN HEIGHT FOR NAV DRAWER */
 	@media (min-height:372px){

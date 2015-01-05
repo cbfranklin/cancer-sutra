@@ -28,8 +28,9 @@ jQuery.fn.extend({
         });  
     }
 });
+
 //SHOWY
-//show title on scroll
+//shows title in navbar on scroll
 var showy = function(){
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 10){
@@ -61,8 +62,10 @@ var setStickies = function(){
         $(window).off('scroll');
     }*/
 };
+
+
 //SHOW POSITION IN FANCYBOX
-function showPosition(){
+/*function showPosition(){
 
     var fancyWidth = $container.width();
 
@@ -99,10 +102,38 @@ function showPosition(){
             $(document).on('scroll','body',function(e){
                 //default scroll behaviour
             }).off('touchmove');
-        },
-        /*v3 beta only
-        openEffect  : 'drop',
-        closeEffect : 'fade',
-        */
+        }
     })
+};*/
+
+//SHOW POSITION CSS3
+function showPosition(){
+    var content = $overlayContent.html();
+    Odelay.open(content);
 };
+//SHOW POSITION CSS3
+var Odelay = {
+    'open': function(content){
+        $overlay.html(content).addClass('open');
+        $wrapper.addClass('overlay-open')
+        $body.addClass('noscroll');
+
+        Mousetrap.bind('esc', function() {
+            history.back();
+        });
+    },
+    'close': function(){
+        $overlay.removeClass('open');
+        $wrapper.removeClass('overlay-open');
+        $body.removeClass('noscroll');
+        Mousetrap.unbind('esc');
+    },
+    'isOpen': function(){
+        if($overlay.hasClass('open')){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
