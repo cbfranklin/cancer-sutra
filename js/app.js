@@ -37,6 +37,18 @@ function bindings(){
 
 	setStickies();
 
+	$("#fingers").swipe({
+		swipe:function(event, direction, distance, duration, fingerCount){
+			if(direction === 'right' && !$('nav').hasClass('open')){
+				openCloseNav();
+			}
+			if(direction === 'left' && $('nav').hasClass('open')){
+				openCloseNav();
+			}
+		},
+		fingers:'2'
+	});
+
 	//keep 'about' sections sized to window height
 	setAboutHeights();
 	$(window).on('resize',function(){
@@ -45,19 +57,8 @@ function bindings(){
 
 	//menu
 	$('.menu-toggle').on('click',function(e){
+		openCloseNav();
 		e.preventDefault();
-		var $that = $(this)
-		if(!$that.hasClass('active')){
-			$('nav').addClass('open')
-			//$('nav').show();
-		}
-		else{
-			$('nav').removeClass('open')
-			//$('nav').hide();
-		}
-		setTimeout(function(){
-			$that.toggleClass('active');
-		},250)
 	});
 
 	//sticky menu

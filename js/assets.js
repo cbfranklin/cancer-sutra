@@ -153,3 +153,17 @@ function setAboutHeights(){
         $('#about .row').css('height',window.innerHeight);
     }
 }
+function openCloseNav(){
+    var $that = $('.menu-toggle');
+    if(!$that.hasClass('active')){
+        $('nav').addClass('open')
+        //$('nav').show();
+    }
+    else{
+        $('nav').removeClass('open')
+        //$('nav').hide();
+    }
+    setTimeout(function(){
+        $that.toggleClass('active');
+    },250)
+}

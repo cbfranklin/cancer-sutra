@@ -421,6 +421,9 @@ a.fancybox-close{
 	position:absolute;
 	top:0;
 	right:2%;
+	z-index:1002;
+	padding:0 0 20px 20px;
+	cursor:pointer;
 }
 .overlay .overlay-close {
 	width: 80px;
@@ -443,6 +446,13 @@ a.fancybox-close{
 	overflow:hidden;
 }
 
+/*.overlay-open #cancer-sutra > div{
+	filter: saturate(0%);
+}
+.overlay-open #cancer-sutra > div.active{
+	filter: none;
+}*/
+
 .overlay-contentscale {
 	visibility: hidden;
 	-webkit-transform: translateY(100%);
@@ -457,6 +467,7 @@ a.fancybox-close{
 	transform: translateY(0%);
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
+	transition-delay:0.25s;
 }
 
 
