@@ -37,6 +37,12 @@ function bindings(){
 
 	setStickies();
 
+	//keep 'about' sections sized to window height
+	setAboutHeights();
+	$(window).on('resize',function(){
+		setAboutHeights();
+	});
+
 	//menu
 	$('.menu-toggle').on('click',function(e){
 		e.preventDefault();

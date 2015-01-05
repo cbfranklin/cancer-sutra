@@ -144,3 +144,12 @@ var Odelay = {
         }
     }
 }
+//ABOUT CONTENT HEIGHT FOR SVG BGS
+function setAboutHeights(){
+    if(window.innerWidth > 480){
+        $('#about .row').css('height',window.innerWidth/2);
+    }
+    else{
+        $('#about .row').css('height',window.innerHeight);
+    }
+}

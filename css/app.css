@@ -236,7 +236,6 @@ footer .acc{
 
 /* ABOUT */
 #about > div{
-	min-height:500px;
 	background-repeat: no-repeat;
 	background-position: center center fixed; 
 	-webkit-background-size: cover;
