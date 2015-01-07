@@ -29,15 +29,49 @@ $(function(){
 	imagesLoaded('body',routes);
 });
 
+function routes(){
+	routie({
+	    '' : function(){
+	    	console.log('about')
+	    	load();
+	    	showAbout();
+	    },
+	    '#/' : function(){
+	    	console.log('about')
+	    	load();
+	    	showAbout();
+	    },
+	    '#/about' : function(){
+	    	console.log('about')
+	    	load();
+	    	showAbout();
+	    },
+	    '/positions' : function(){
+	    	console.log('positions')
+	    	showPositions();
+	    },
+	    '/positions/' : function(){
+	    	console.log('positions')
+	    	showPositions();
+	    },
+	    '/positions/:name' : function(name){
+	    	console.log('position #')
+	    	load();
+	    	showPositions(name);
+	    }
+	});
+};
+
 function load(){
 	$body.addClass('loading')
+	//openCloseNav();
 }
 
 function bindings(){
 
 	setStickies();
 
-	$("#fingers").swipe({
+	$('body').swipe({
 		swipe:function(event, direction, distance, duration, fingerCount){
 			if(direction === 'right' && !$('nav').hasClass('open')){
 				openCloseNav();
@@ -87,57 +121,29 @@ function bindings(){
 		e.preventDefault();
 	});
 
-	$('.onward a').on('click',function(e){
-		//history.pushState({}, '', $(this).attr("href"));
-		//e.preventDefault();
-	})
-}
-	
-function routes(){
-	routie({
-	    '' : function(){
-	    	console.log('about')
-	    	load();
-	    	showAbout();
-	    },
-	    '#/' : function(){
-	    	console.log('about')
-	    	load();
-	    	showAbout();
-	    },
-	    '#/about' : function(){
-	    	console.log('about')
-	    	load();
-	    	showAbout();
-	    },
-	    '/positions' : function(){
-	    	console.log('positions')
-	    	showPositions();
-	    },
-	    '/positions/' : function(){
-	    	console.log('positions')
-	    	showPositions();
-	    },
-	    '/positions/:name' : function(name){
-	    	console.log('position #')
-	    	load();
-	    	showPositions(name);
-	    }
+	/*$('.onward a').on('click',function(e){
+		history.pushState({}, '', $(this).attr("href"));
+		e.preventDefault();
+	})*/
+	$('.enough').on('click',function(){
+
 	});
-};
+}
+
+//ROUTES
 
 function showAbout(){
-	$body.removeClass('loading');
+	load();
+	$body.removeClass('loading about positions').addClass('about');
 	$all.hide()
 	$about.show();
 };
 
 function showPositions(name){
-	console.log('name: '+name)
 	load();
+	$body.removeClass('loading about positions').addClass('positions');
 	$all.hide();
 	if(name != undefined){
-		console.log('yes position')
 		setTimeout(function(){
 			//$fancyContent = $sutra.find('[data-position="'+name+'"]').find('.detail');
 			$overlayContent = $sutra.find('[data-position="'+name+'"]').find('.detail');

@@ -34,10 +34,10 @@ jQuery.fn.extend({
 var showy = function(){
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 10){
-            $('.device-menu').addClass('scrolling');
+            $('.nav-bar').addClass('scrolling');
         }
         else{
-            $('.device-menu').removeClass('scrolling');
+            $('.nav-bar').removeClass('scrolling');
         }
     });
 }

@@ -26,6 +26,9 @@ body.loading{
 .loading .loader{
 	display:inline-block;
 }
+section{
+	display:none;
+}
 .loading section{
 	display:none;
 }
@@ -62,10 +65,10 @@ h1,h2,h3,h4,h5,.uppercase{
 	vertical-align: top;
 	display:none;
 }
-.loader svg path,
+/*.loader svg path,
 .loader svg rect{
   fill: #999;
-}
+}*/
 /* HEADER / NAV / FILTERS */
 
 header{
@@ -95,12 +98,12 @@ header p{
   	transition: max-height 1s ease;
 	background:#fdfdfd;*/
 	overflow:hidden;
-	border-bottom:1px solid #444;
 }
 .device-menu{
 	position:relative;
 	display:none;
 	z-index:300;
+	border-bottom:1px solid #444;
 }
 
 .device-menu::after{
@@ -120,10 +123,38 @@ header p{
   	transition: all 0.5s ease;
 }
 
-.device-menu.scrolling::after{
+.nav-bar.scrolling .device-menu::after{
 	opacity:1;
 
 }
+
+.enough{
+	background:rgb(220,111,188);
+	height:25px;
+	text-align:center;
+	color: #fff!important;
+	font-family: Arial,sans-serif;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display:none;
+}
+
+.enough:hover{
+	text-decoration: none;
+}
+
+.about .nav-bar.scrolling .enough{
+	display:block;
+}
+
+.about .filters a{
+	pointer-events: none;
+	color:#ccc;
+}
+.about .filters li{
+	border-color:#ccc;
+}
+
 .menu-toggle { position: absolute; left: 1%; top: 20px; z-index:101; }
 
 .menu-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
@@ -179,8 +210,15 @@ header p{
 	font-size:1.3em;
 	padding:10px 0;
 	border-bottom:1px solid #000;
+	display:block;
+	width:100%;
 }
-
+.navigation:hover{
+	text-decoration: none;
+}
+.filters{
+	margin-top:15px;
+}
 .filter{
 	padding:20px;
 }
@@ -252,7 +290,7 @@ footer .acc{
 }
 .onward{
 	text-align:center;
-	background:rgb(221,112,189);
+	background:rgb(220,111,188);
 	color:#fff;
 	padding-top:10%;
 }
@@ -267,6 +305,8 @@ footer .acc{
 	background:#fff;
 	color:rgb(221,112,189);
 }
+
+
 /* CANCER SUTRA */
 
 #cancer-sutra{
@@ -438,12 +478,6 @@ a.fancybox-close{
 	color: transparent;
 	outline: none;
 	z-index: 10001;
-}
-
-.wrapper.overlay-open {
-	/*-webkit-transform: scale(0.8);
-	transform: scale(0.8);*/
-	overflow:hidden;
 }
 
 /*.overlay-open #cancer-sutra > div{
