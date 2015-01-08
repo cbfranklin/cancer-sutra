@@ -131,7 +131,7 @@ var Odelay = {
         $overlay.removeClass('open');
         $wrapper.removeClass('overlay-open');
         $body.removeClass('noscroll');
-        $sutraPos.removeClass('active');
+        $positions.find('> div').removeClass('active');
         Mousetrap.unbind('esc');
         history.pushState({}, '', '#/positions');
     },

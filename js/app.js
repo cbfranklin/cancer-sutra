@@ -2,9 +2,8 @@ var
 $wrapper,
 $all,
 $about,
-$sutra,
+$positions,
 $filters,
-$sutraPos,
 $container,
 $loader,
 $body,
@@ -16,9 +15,8 @@ $(function(){
 	$body = $('body');
 	$wrapper = $('.wrapper');
 	$about = $('#about')
-	$sutra = $('#cancer-sutra');
+	$positions = $('#positions');
 	$all = $('section');
-	$sutraPos = $('#cancer-sutra > div');
 	$filters = $('.filter a');
 	$container = $('.container');
 	$loader = $('.loader');
@@ -34,30 +32,30 @@ function routes(){
 	    '' : function(){
 	    	console.log('about')
 	    	load();
-	    	showAbout();
+	    	loadAbout();
 	    },
 	    '#/' : function(){
 	    	console.log('about')
 	    	load();
-	    	showAbout();
+	    	loadAbout();
 	    },
 	    '#/about' : function(){
 	    	console.log('about')
 	    	load();
-	    	showAbout();
+	    	loadAbout();
 	    },
 	    '/positions' : function(){
 	    	console.log('positions')
-	    	showPositions();
+	    	loadPositions();
 	    },
 	    '/positions/' : function(){
 	    	console.log('positions')
-	    	showPositions();
+	    	loadPositions();
 	    },
 	    '/positions/:name' : function(name){
 	    	console.log('position #')
 	    	load();
-	    	showPositions(name);
+	    	loadPositions(name);
 	    }
 	});
 };
@@ -80,7 +78,8 @@ function bindings(){
 				openCloseNav();
 			}
 		},
-		fingers:'2'
+		fingers:'2',
+		allowPageScroll: "vertical"
 	});
 
 	//keep 'about' sections sized to window height
@@ -108,7 +107,7 @@ function bindings(){
 	});
 
 	//bring up detail in fancybox
-	$sutraPos.on('click',function(e){
+	$positions.find('> div').on('click',function(e){
 		//$fancyContent = $(this).find('.detail');
 		//showPosition();
 		$(this).addClass('active')
@@ -125,29 +124,38 @@ function bindings(){
 		history.pushState({}, '', $(this).attr("href"));
 		e.preventDefault();
 	})*/
-	$('.enough').on('click',function(){
+	$('.foreplay').on('click',function(){
 
 	});
 }
 
 //ROUTES
 
-function showAbout(){
+function loadAbout(){
 	load();
-	$body.removeClass('loading about positions').addClass('about');
-	$all.hide()
 	$about.show();
+	$body.removeClass('loading positions').addClass('about');
+	setTimeout(function(){
+		$positions.hide();
+	},400);
+	/*$all.hide();
+	$about.show();*/
 };
 
-function showPositions(name){
+function loadPositions(name){
 	load();
-	$body.removeClass('loading about positions').addClass('positions');
-	$all.hide();
+	$positions.show();
+	$body.removeClass('loading about').addClass('positions');
+	setTimeout(function(){
+		$about.hide();
+	},400);
+	/*$positions.show();
+	$all.hide();*/
 	if(name != undefined){
 		setTimeout(function(){
-			//$fancyContent = $sutra.find('[data-position="'+name+'"]').find('.detail');
-			$overlayContent = $sutra.find('[data-position="'+name+'"]').find('.detail');
-			//console.log($sutra.find('[data-position="'+name+'"]').find('.detail'))
+			//$fancyContent = $positions.find('[data-position="'+name+'"]').find('.detail');
+			$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
+			//console.log($positions.find('[data-position="'+name+'"]').find('.detail'))
 	    	showPosition(name)
 		},500);
 	}
@@ -157,13 +165,13 @@ function showPositions(name){
 		//$.fancybox.close;
 	}
 	$body.removeClass('loading');
-	$sutra.isotope();
-	$sutra.show();
-	$sutra.isotope('layout');
+	$positions.isotope();
+	$positions.show();
+	$positions.isotope('layout');
 }
 
 function filters($obj){
-	//$sutra.find('> div').show();
+	//$positions.find('> div').show();
 	if($obj.data('toggle') === 'off'){
 		//only one cancer type at a time
 		$('[data-filter-type="cancer-type"] a').data('toggle','off').attr('data-toggle','off');
@@ -218,5 +226,5 @@ function filters($obj){
 	//console.log($theFilter)
 
 
-	$sutra.isotope({ filter: $theFilter });
+	$positions.isotope({ filter: $theFilter });
 }

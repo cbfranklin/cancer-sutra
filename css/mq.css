@@ -1,9 +1,9 @@
 @media (max-width:479px){
 
-	#cancer-sutra > div{
+	#positions > div{
 		width:100%;
 	}
-	#cancer-sutra > div:hover img{
+	#positions > div:hover img{
 		transform:none;
 	}
 	nav{
@@ -28,18 +28,18 @@
 	#about .onward{background-image:url(../splash/mobile/CS_MobSplash_Illus_5.svg);}
 
 }
-@media (min-width:480px) and (max-width:768px){
-	#cancer-sutra > div{
+@media (min-width:480px) and (max-width:767px){
+	#positions > div{
 		width:50%;
 	}
 }
 @media (min-width:769px) and (max-width:1200px){
-	#cancer-sutra > div{
+	#positions > div{
 		width:33%;
 	}
 }
 @media (min-width:1200px){*/
-	#cancer-sutra > div{
+	#positions > div{
 		width:25%;
 	}
 }
@@ -80,7 +80,7 @@
 	}
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 
 	.detail-image{
 		display:none;

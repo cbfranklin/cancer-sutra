@@ -29,9 +29,44 @@ body.loading{
 section{
 	display:none;
 }
-.loading section{
-	display:none;
+/*.loading section{
+	display:none;f
+}*/
+
+.about section#positions,
+.positions section#about
+{
+	-webkit-animation: scaleDownCenter .4s ease-in both;
+	animation: scaleDownCenter .4s ease-in both;
 }
+
+.about section#about,
+.positions section#positions
+{
+	-webkit-animation: scaleUpCenter .4s ease-out both;
+	animation: scaleUpCenter .4s ease-out both;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+	/*display:block;*/
+	display:block;
+}
+
+@-webkit-keyframes scaleDownCenter {
+	from { }
+	to { opacity: 0; -webkit-transform: scale(.7); }
+}
+@keyframes scaleDownCenter {
+	from { }
+	to { opacity: 0; -webkit-transform: scale(.7); transform: scale(.7); }
+}
+
+@-webkit-keyframes scaleUpCenter {
+	from { opacity: 0; -webkit-transform: scale(.7); }
+}
+@keyframes scaleUpCenter {
+	from { opacity: 0; -webkit-transform: scale(.7); transform: scale(.7); }
+}
+
 a,a:hover,a:active,a:visited{
 	color:#000;
 }
@@ -73,11 +108,11 @@ h1,h2,h3,h4,h5,.uppercase{
 
 header{
 	text-align:center;
-	-webkit-transition: all 1.2s ease;
+	/*-webkit-transition: all 1.2s ease;
   	-moz-transition: all 1.2s ease;
   	-o-transition: all 1.2s ease;
   	-ms-transition: all 1.2s ease;
-  	transition: all 1.2s ease;
+  	transition: all 1.2s ease;*/
   	border-bottom:1px solid #444;
   	padding-bottom:20px;
 }
@@ -116,11 +151,11 @@ header p{
 	position:absolute;
 	font-size:20px;
 	opacity:0;
-	-webkit-transition: all 0.5s ease;
-  	-moz-transition: all 0.5s ease;
-  	-o-transition: all 0.5s ease;
-  	-ms-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+  	-moz-transition: opacity 0.5s ease;
+  	-o-transition: opacity 0.5s ease;
+  	-ms-transition: opacity 0.5s ease;
+  	transition: opacity 0.5s ease;
 }
 
 .nav-bar.scrolling .device-menu::after{
@@ -128,23 +163,29 @@ header p{
 
 }
 
-.enough{
+.foreplay{
 	background:rgb(220,111,188);
-	height:25px;
+	height:0px;
 	text-align:center;
 	color: #fff!important;
 	font-family: Arial,sans-serif;
 	text-transform: uppercase;
 	vertical-align: middle;
-	display:none;
+	display:block;
+	-webkit-transition: height 0.5s ease;
+  	-moz-transition: height 0.5s ease;
+  	-o-transition: height 0.5s ease;
+  	-ms-transition: height 0.5s ease;
+  	transition: height 0.5s ease;
+  	boxshadow
 }
 
-.enough:hover{
+.foreplay:hover{
 	text-decoration: none;
 }
 
-.about .nav-bar.scrolling .enough{
-	display:block;
+.about .nav-bar.scrolling .foreplay{
+	height:25px;
 }
 
 .about .filters a{
@@ -154,6 +195,8 @@ header p{
 .about .filters li{
 	border-color:#ccc;
 }
+
+/* THIS IS GONNA BE REPLACED BY AN SMIL */
 
 .menu-toggle { position: absolute; left: 1%; top: 20px; z-index:101; }
 
@@ -247,11 +290,11 @@ header p{
 }
 
 footer{
-	-webkit-transition: all 0.5s ease;
+	/*-webkit-transition: all 0.5s ease;
   	-moz-transition: all 0.5s ease;
   	-o-transition: all 0.5s ease;
   	-ms-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
+  	transition: all 0.5s ease;*/
 	border-top:1px solid #000;
 	background:#fff;
 	padding-top:25px;
@@ -309,7 +352,7 @@ footer .acc{
 
 /* CANCER SUTRA */
 
-#cancer-sutra{
+#positions{
 	padding:2% 0;
 	overflow:hidden;
 	/*-webkit-transition: all 0.5s ease;
@@ -323,38 +366,37 @@ footer .acc{
   	-webkit-transition-delay: 1s;
     transition-delay: 1s;*/
   	opacity:1;
-  	display:none;
 }
-#cancer-sutra > div{
+#positions > div{
 	width:25%;
 	height:auto;
 }
-#cancer-sutra > div > img{
+#positions > div > img{
 	width:80%;
 	height:auto;
 	margin:0 auto;
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition: all 0.2s ease;
-  	-o-transition: all 0.2s ease;
-  	-ms-transition: all 0.2s ease;
-  	transition: all 0.2s ease;
+	-webkit-transition: transform 0.2s ease;
+  	-moz-transition: transform 0.2s ease;
+  	-o-transition: transform 0.2s ease;
+  	-ms-transition: transform 0.2s ease;
+  	transition: transform 0.2s ease;
   	cursor:pointer;
 }
-#cancer-sutra .detail{
+#positions .detail{
 	display:none;
 }
-#cancer-sutra > div:hover img,
-#cancer-sutra > div.active img{
+#positions > div:hover img,
+#positions > div.active img{
     -webkit-transform:scale(1.18);
     -moz-transform:scale(1.18);
     -ms-transform:scale(1.18);
     -o-transform:scale(1.18);
      transform:scale(1.18);
 }
-#cancer-sutra > div:hover{
+#positions > div:hover{
 	z-index:2;
 }
-.overlay-open #cancer-sutra > div:hover{
+.overlay-open #positions > div:hover{
 	z-index:1;
 }
 
@@ -459,7 +501,7 @@ a.fancybox-close{
 	color:#ccc;
 	font-family:Arial,sans-serif;
 	position:absolute;
-	top:0;
+	top:-5px;
 	right:2%;
 	z-index:1002;
 	padding:0 0 20px 20px;
@@ -480,10 +522,10 @@ a.fancybox-close{
 	z-index: 10001;
 }
 
-/*.overlay-open #cancer-sutra > div{
+/*.overlay-open #positions > div{
 	filter: saturate(0%);
 }
-.overlay-open #cancer-sutra > div.active{
+.overlay-open #positions > div.active{
 	filter: none;
 }*/
 
