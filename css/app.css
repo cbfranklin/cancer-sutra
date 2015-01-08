@@ -1,12 +1,14 @@
 /* GLOBAL */
-
 /*html,
 body{
 	height:100%;
 	width:100%;
 	overflow:auto;
 }*/
-
+/*{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}*/
 body{
 	-webkit-overflow-scrolling:touch;
 }

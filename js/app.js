@@ -138,6 +138,7 @@ function loadAbout(){
 	setTimeout(function(){
 		$positions.hide();
 	},400);
+	$("html, body").animate({ scrollTop: '0px' });
 	/*$all.hide();
 	$about.show();*/
 };
@@ -149,6 +150,7 @@ function loadPositions(name){
 	setTimeout(function(){
 		$about.hide();
 	},400);
+	$("html, body").animate({ scrollTop: '0px' });
 	/*$positions.show();
 	$all.hide();*/
 	if(name != undefined){
