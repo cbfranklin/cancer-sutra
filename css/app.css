@@ -254,7 +254,7 @@ overflow:hidden;
   transform: rotate(-45deg);
 }
 nav{
-	background:#fff;
+	display:none;
 }
 .navigation{
 	padding:0;
