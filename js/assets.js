@@ -128,7 +128,7 @@ var Odelay = {
         });
     },
     'close': function(){
-        
+
         $overlay.removeClass('open');
         $wrapper.removeClass('overlay-open');
         $body.removeClass('noscroll');
@@ -154,10 +154,12 @@ var Odelay = {
 //ABOUT CONTENT HEIGHT FOR SVG BGS
 function setAboutHeights(){
     if(window.innerWidth > 767){
-        $('#about .row').css('height',window.innerWidth/2 - 75);
+        /*$('#about .row').css('height',window.innerWidth/2 - 75);*/
+        $('#about .row').css('height',$(window).width()/2 - 75);
     }
     else{
-        $('#about .row').css('height',window.innerHeight - 75);
+        /*$('#about .row').css('height',window.innerHeight - 75);*/
+        $('#about .row').css('height',$(window).height() - 75);
     }
 }
 function openCloseNav(){

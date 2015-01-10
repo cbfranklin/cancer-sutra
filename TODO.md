@@ -22,3 +22,5 @@ TODO
 -sie.js SVG polyfill doesnt seem to play nice with ANY <IMG> properties. i'll go full jpg/gif on IE8 for sure.
 
 -IE9/10/11 tests
+
+- use MQ to decide which jquery version to use? or how else?
