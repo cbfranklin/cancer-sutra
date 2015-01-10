@@ -128,12 +128,14 @@ var Odelay = {
         });
     },
     'close': function(){
+        
+        $overlay.removeClass('open');
+        $wrapper.removeClass('overlay-open');
+        $body.removeClass('noscroll');
+        $positions.find('> div').removeClass('active');
+        Mousetrap.unbind('esc');
+
         if(Modernizr.history){
-            $overlay.removeClass('open');
-            $wrapper.removeClass('overlay-open');
-            $body.removeClass('noscroll');
-            $positions.find('> div').removeClass('active');
-            Mousetrap.unbind('esc');
             history.pushState({}, '', '#/positions');
         }
         else{
