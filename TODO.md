@@ -26,3 +26,7 @@ TODO
 - use MQ to decide which jquery version to use? or how else?
 
 - get svg <img>s to scale in IE9: http://stackoverflow.com/questions/9777143/svg-in-img-element-proportions-not-respected-in-ie9
+	https://gist.github.com/larrybotha/7881691
+	"Further, CSS transitions do not allow you to animate SVG elements on IE9, nor can they be used to apply transforms to SVGs on any version of IE."
+	http://davidwalsh.name/svg-animation
+
