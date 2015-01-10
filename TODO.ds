@@ -1,0 +1,8 @@
+TODO
+=====
+
+1. Replace menu-toggle with SVG alternative AND provide IE fallback (icon?)
+
+2. Decide on whether JSON is the way to feed data (with mustache)
+
+3. Write Modernizr logic into template logic/css logic to swap between SVG/JPG and SMIL/GIF
