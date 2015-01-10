@@ -71,7 +71,7 @@ function bindings(){
 
 	setStickies();
 
-	$('body').swipe({
+	/*$('body').swipe({
 		swipe:function(event, direction, distance, duration, fingerCount){
 			if(direction === 'right' && !$('nav').hasClass('open')){
 				openCloseNav();
@@ -82,7 +82,7 @@ function bindings(){
 		},
 		fingers:'2',
 		allowPageScroll: "vertical"
-	});
+	});*/
 
 	//keep 'about' sections sized to window height
 	setAboutHeights();
