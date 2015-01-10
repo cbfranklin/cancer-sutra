@@ -8,6 +8,7 @@
 	}
 	nav{
 		height:0;
+		left:0;
 		/*display:none;*/
 		-webkit-transition: height 0.5s ease;
 	  	-moz-transition: height 0.5s ease;
@@ -21,7 +22,7 @@
 		box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
 	}
 	nav.open{
-		max-height:100%;
+		height:auto;
 	}
 
 	.about .foreplay{
