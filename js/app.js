@@ -114,7 +114,12 @@ function bindings(){
 		//showPosition();
 		$(this).addClass('active')
 		var name = $(this).data('position');
-		history.pushState({}, '', '#/positions/'+name);
+		if(Modernizr.history){
+			history.pushState({}, '', '#/positions/'+name);
+		}
+		else{
+			window.location.hash = '#/positions/'+name;
+		}
 
 		$overlayContent = $(this).find('.detail');
 		showPosition();
