@@ -433,8 +433,17 @@
 		<a id="close">&#215;</a>
 	</div>
 	<script src="js/routie.min.js"></script>
-	<!--<script src="js/jquery-2.1.1.min.js"></script>-->
-	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- jQuery 2 For Modern Browsers -->
+	<!--[if !IE]><!-->
+		<script src="js/jquery-2.1.1.min.js"></script>
+	<!--<![endif]-->
+
+	<!-- jQuery 1 for IE9 and Earlier -->
+	<!--[if lte IE 9]>
+		<script src="js/jquery-1.11.2.min.js"></script>
+	<![endif]-->
+	
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<!--<script src="js/jquery.touchSwipe.min.js"></script>-->
 	<!--<script src="js/hammer.min.js"></script>-->
