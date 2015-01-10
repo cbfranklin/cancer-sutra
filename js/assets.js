@@ -146,17 +146,21 @@ var Odelay = {
 }
 //ABOUT CONTENT HEIGHT FOR SVG BGS
 function setAboutHeights(){
-    if(window.innerWidth > 480){
-        $('#about .row').css('height',window.innerWidth/2);
+    if(window.innerWidth > 767){
+        $('#about .row').css('height',window.innerWidth/2 - 75);
     }
     else{
-        $('#about .row').css('height',window.innerHeight);
+        $('#about .row').css('height',window.innerHeight - 75);
     }
 }
 function openCloseNav(){
     var $that = $('.menu-toggle');
     if(!$that.hasClass('active')){
         $('nav').addClass('open')
+        if($(window).width() < 480){
+            window.scrollTo(0, 0);
+            console.log('hi')
+        }
         //$('nav').show();
     }
     else{

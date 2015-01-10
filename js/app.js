@@ -124,6 +124,11 @@ function bindings(){
 
 	//CHAPTERS
 	$('.expand').on('click',function(){
+		if($(this).hasClass('open')){
+			var height = $('#chapters .part1').height()  - $('.expand').height() + 20;
+			console.log(height)
+			window.scrollTo(0, height);
+		}
 		$(this).toggleClass('open');
 		$(this).siblings('.part2').toggleClass('open');
 	});
@@ -137,9 +142,9 @@ function loadAbout(){
 	$body.removeClass('loading positions').addClass('about');
 	setTimeout(function(){
 		$positionsContainer.hide();
-	},400);
-	setTimeout(function(){
 		window.scrollTo(0, 0);
+		$('nav').removeClass('open');
+		$('.menu-toggle').removeClass('active');
 	},400);
 };
 
@@ -181,14 +186,15 @@ function filters($obj){
 			var cancerType = $obj.data('filter');
 			$('#chapters > div').removeClass('open');
 			$('#chapters [data-cancer-type='+cancerType+']').addClass('open');
-
+			window.scrollTo(0, 0);
 		}
 		$obj.data('toggle','on').attr('data-toggle','on')
 	}
 	else{
 		$obj.data('toggle','off').attr('data-toggle','off');
 		if($obj.data('filter-type') === 'cancer-type'){
-			$('#chapters > div').removeClass('open');
+			$('#chapters > div').removeClass('open').children().removeClass('open');
+			window.scrollTo(0, 0);
 		}
 	}
 
