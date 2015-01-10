@@ -186,8 +186,10 @@ function filters($obj){
 		$obj.data('toggle','on').attr('data-toggle','on')
 	}
 	else{
-		$obj.data('toggle','off').attr('data-toggle','off')
-		$('#chapters > div').removeClass('open');
+		$obj.data('toggle','off').attr('data-toggle','off');
+		if($obj.data('filter-type') === 'cancer-type'){
+			$('#chapters > div').removeClass('open');
+		}
 	}
 
 	//CANCER TYPE
