@@ -3,6 +3,7 @@ $wrapper,
 $all,
 $about,
 $positions,
+$positionsContainer,
 $filters,
 $container,
 $loader,
@@ -16,6 +17,7 @@ $(function(){
 	$wrapper = $('.wrapper');
 	$about = $('#about')
 	$positions = $('#positions');
+	$positionsContainer = $('#positions-container');
 	$all = $('section');
 	$filters = $('.filter a');
 	$container = $('.container');
@@ -106,7 +108,7 @@ function bindings(){
 		filters($(this));
 	});
 
-	//bring up detail in fancybox
+	//bring up detail
 	$positions.find('> div').on('click',function(e){
 		//$fancyContent = $(this).find('.detail');
 		//showPosition();
@@ -120,12 +122,10 @@ function bindings(){
 		e.preventDefault();
 	});
 
-	/*$('.onward a').on('click',function(e){
-		history.pushState({}, '', $(this).attr("href"));
-		e.preventDefault();
-	})*/
-	$('.foreplay').on('click',function(){
-
+	//CHAPTERS
+	$('.expand').on('click',function(){
+		$(this).toggleClass('open');
+		$(this).siblings('.part2').toggleClass('open');
 	});
 }
 
@@ -136,28 +136,27 @@ function loadAbout(){
 	$about.show();
 	$body.removeClass('loading positions').addClass('about');
 	setTimeout(function(){
-		$positions.hide();
+		$positionsContainer.hide();
 	},400);
-	$("html, body").animate({ scrollTop: '0px' });
-	/*$all.hide();
-	$about.show();*/
+	setTimeout(function(){
+		window.scrollTo(0, 0);
+	},400);
 };
 
 function loadPositions(name){
 	load();
-	$positions.show();
+	$positionsContainer.show();
 	$body.removeClass('loading about').addClass('positions');
+
 	setTimeout(function(){
 		$about.hide();
+		window.scrollTo(0, 0);
 	},400);
-	$("html, body").animate({ scrollTop: '0px' });
-	/*$positions.show();
-	$all.hide();*/
 	if(name != undefined){
 		setTimeout(function(){
 			//$fancyContent = $positions.find('[data-position="'+name+'"]').find('.detail');
 			$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
-			//console.log($positions.find('[data-position="'+name+'"]').find('.detail'))
+
 	    	showPosition(name)
 		},500);
 	}
@@ -168,19 +167,27 @@ function loadPositions(name){
 	}
 	$body.removeClass('loading');
 	$positions.isotope();
-	$positions.show();
+	$positionsContainer.show();
 	$positions.isotope('layout');
 }
 
 function filters($obj){
-	//$positions.find('> div').show();
+
 	if($obj.data('toggle') === 'off'){
 		//only one cancer type at a time
-		$('[data-filter-type="cancer-type"] a').data('toggle','off').attr('data-toggle','off');
+		if($obj.data('filter-type') === 'cancer-type'){
+			$('[data-filter-type="cancer-type"] a').data('toggle','off').attr('data-toggle','off');
+
+			var cancerType = $obj.data('filter');
+			$('#chapters > div').removeClass('open');
+			$('#chapters [data-cancer-type='+cancerType+']').addClass('open');
+
+		}
 		$obj.data('toggle','on').attr('data-toggle','on')
 	}
 	else{
 		$obj.data('toggle','off').attr('data-toggle','off')
+		$('#chapters > div').removeClass('open');
 	}
 
 	//CANCER TYPE
@@ -193,7 +200,6 @@ function filters($obj){
 	});
 	var cancerType = cancerTypeArray.join(',');
 	var $cancerType = $(cancerType);
-	//console.log($cancerType,$cancerType.length);
 
 	//PARTNERSHIP
 	var partnershipArray = []
@@ -205,12 +211,8 @@ function filters($obj){
 	});
 	var partnership = partnershipArray.join(',');
 	var $partnership = $(partnership);
-	//console.log($partnership,$partnership.length);
 
 	if($cancerType.length > 0 && $partnership.length > 0){
-		//console.log('ITS A MERGE')
-		//console.log($cancerType)
-		//console.log(partnership)
 		var $theFilter = $cancerType.filter($partnership);
 	}
 	else if($cancerType.length > 0 && $partnership.length == 0){
@@ -224,9 +226,6 @@ function filters($obj){
 	else{
 		var $theFilter = '';
 	}
-
-	//console.log($theFilter)
-
 
 	$positions.isotope({ filter: $theFilter });
 }

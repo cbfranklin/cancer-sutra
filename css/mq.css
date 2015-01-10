@@ -16,9 +16,10 @@
 	  	-ms-transition: max-height 0.5s ease;
 	  	transition: max-height 0.5s ease;
 	  	overflow:hidden;
+	  	border-bottom:1px solid #000;
 	}
 	nav.open{
-		max-height:401px;
+		max-height:100%;
 	}
 
 	#about .one{background-image:url(../splash/mobile/CS_MobSplash_Illus_1.svg);}
@@ -52,7 +53,7 @@
 	#about .onward{background-image:url(../splash/full/CS_TabSplash_Illus_5.svg);}
 
 	/* MIN HEIGHT FOR NAV DRAWER */
-	@media (min-height:372px){
+	@media (min-height:515px){
 		nav{
 			position:fixed;
 			top:45px;
@@ -128,9 +129,9 @@
 	.filter li{
 		border-top:1px solid #000;
 	}
-	.filter li:last-child{
+	/*.filter li:last-child{
 		border-bottom:1px solid #444;
-	}
+	}*/
 	.filter:last-child{
 		padding-top:15px;
 	}
@@ -148,7 +149,7 @@
 	.filter a:active{
 		text-decoration: none;
 	}
-	@media (max-height:371px){
+	@media (max-height:514px){
 		nav{
 			max-height:0;
 			/*display:none;*/
@@ -165,7 +166,7 @@
 		}
 	}
 /*}*/
-@media (min-height:372px) and (min-width:900px){
+@media (min-height:515px) and (min-width:900px){
 		nav{
 			position:fixed;
 			top:45px;
