@@ -262,6 +262,9 @@ overflow:hidden;
 nav{
 	left:-50%;
 }
+nav.open{
+	left:0%;
+}
 .navigation{
 	padding:0;
 	margin:0;
