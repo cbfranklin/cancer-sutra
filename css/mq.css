@@ -7,18 +7,18 @@
 		transform:none;
 	}
 	nav{
-		max-height:0;
+		height:0;
 		/*display:none;*/
-		-webkit-transition: max-height 0.5s ease;
-	  	-moz-transition: max-height 0.5s ease;
-	  	-o-transition: max-height 0.5s ease;
-	  	-ms-transition: max-height 0.5s ease;
-	  	transition: max-height 0.5s ease;
+		-webkit-transition: height 0.5s ease;
+	  	-moz-transition: height 0.5s ease;
+	  	-o-transition: height 0.5s ease;
+	  	-ms-transition: height 0.5s ease;
+	  	transition: height 0.5s ease;
 	  	overflow:hidden;
 	  	border-bottom:1px solid #000;
 	  	-webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
-	-moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
-	box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
+		-moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
+		box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
 	}
 	nav.open{
 		max-height:100%;
@@ -54,12 +54,11 @@
 	#about .onward{background-image:url(../splash/full/CS_TabSplash_Illus_5.svg);}
 
 	/* MIN HEIGHT FOR NAV DRAWER */
-	@media (min-height:515px){
+	@media (min-height:580px){
 		nav{
 			position:fixed;
 			top:45px;
 			width:50%;
-			height:100%;
 			left:1%;
 			background:#fdfdfd;
 			height:100%;
@@ -156,23 +155,25 @@
 	.filter a:active{
 		text-decoration: none;
 	}
-	@media (max-height:514px){
+	@media (max-height:579px){
 		nav{
-			max-height:0;
+			height:0;
 			/*display:none;*/
-			-webkit-transition: max-height 0.5s ease;
-		  	-moz-transition: max-height 0.5s ease;
-		  	-o-transition: max-height 0.5s ease;
-		  	-ms-transition: max-height 0.5s ease;
-		  	transition: max-height 0.5s ease;
+			-webkit-transition: height 0.5s ease;
+		  	-moz-transition: height 0.5s ease;
+		  	-o-transition: height 0.5s ease;
+		  	-ms-transition: height 0.5s ease;
+		  	transition: height 0.5s ease;
 		  	left:1%;
+		  	overflow:hidden;
 		}
 		nav.open{
-			max-height:401px;
+			height:auto;
+			overflow:hidden;
 		}
 	}
 /*}*/
-@media (min-height:515px) and (min-width:900px){
+@media (min-height:580px) and (min-width:900px){
 		nav{
 			position:fixed;
 			top:45px;

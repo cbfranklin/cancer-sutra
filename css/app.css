@@ -253,6 +253,9 @@ overflow:hidden;
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+nav{
+	background:#fff;
+}
 .navigation{
 	padding:0;
 	margin:0;
@@ -286,6 +289,7 @@ overflow:hidden;
 }
 .filters{
 	margin-top:15px;
+	overflow:hidden;
 }
 .filter{
 	padding:20px;
