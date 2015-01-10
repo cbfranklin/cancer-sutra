@@ -28,6 +28,17 @@
 	.about .foreplay{
 		height:30px;
 	}
+	#about > div{
+		text-align: center;
+	}
+	#about h2{font-size:1.5em;}
+	#about h3{font-size:1.2em;}
+	#about p{font-size:0.8em;}
+	#about .one{padding:0 0 0 0;}
+	#about .two{padding:40% 10% 0 0;}
+	#about .three{padding:80% 0 0 10%;}
+	#about .four{padding:90% 0 0 0;}
+	#about .onward{padding:10% 0 0 0;}
 
 
 }
