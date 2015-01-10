@@ -260,10 +260,25 @@ header p{
   transform: rotate(-45deg);
 }
 nav{
+	position:fixed;
+	top:45px;
+	width:33%;
+	left:1%;
+	background:#fdfdfd;
+	height:100%;
+	z-index:200;
+	box-shadow:2px 20px 25px 5px #444;
+	box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
+	border-right:1px solid #999;
 	left:-50%;
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	-ms-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
 }
 nav.open{
-	left:0%;
+	left:0;
 }
 .navigation{
 	padding:0;
@@ -748,29 +763,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     outline : 0;
 }
 
-/* NO MEDIA QUERIES */
 
-nav{
-	position:fixed;
-	top:45px;
-	width:50%;
-	left:1%;
-	background:#fdfdfd;
-	height:100%;
-	z-index:200;
-	box-shadow:2px 20px 25px 5px #444;
-	box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
-	border-right:1px solid #999;
-	left:-50%;
-	-webkit-transition: all 0.5s ease;
-  	-moz-transition: all 0.5s ease;
-  	-o-transition: all 0.5s ease;
-  	-ms-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
-}
-nav.open{
-	left:0;
-}
 
 /* ANIMATIONS */
 
