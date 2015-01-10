@@ -17,4 +17,8 @@ TODO
 
 - consider windows phone
 
-- what other Modernizr tests do i need? [svg,position:fixed,history,nojs?,]
+- what other Modernizr tests do i need? [svg,position:fixed,history,nojs?]
+
+-sie.js SVG polyfill doesnt seem to play nice with ANY <IMG> properties. i'll go full jpg/gif on IE8 for sure.
+
+-IE9/10/11 tests
