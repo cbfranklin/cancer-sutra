@@ -69,7 +69,7 @@ function load(){
 
 function bindings(){
 
-	setStickies();
+	//setStickies();
 
 	/*$('body').swipe({
 		swipe:function(event, direction, distance, duration, fingerCount){
@@ -97,10 +97,10 @@ function bindings(){
 	});
 
 	//sticky menu
-	$('.nav-bar').sticky();
+	/*$('.nav-bar').sticky();
 	$(window).on('resize',function(){
 		delay(setStickies,300);
-	});
+	});*/
 
 	//COMBINE FILTERS:
 	$filters.on('click',function(e){

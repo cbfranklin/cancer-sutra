@@ -91,6 +91,7 @@ h1{
 }
 .wrapper{
 	position: relative;
+	padding-top:45px;
 }
 .fixed{
 	position: fixed!important;
@@ -130,17 +131,13 @@ header p{
 }
 .nav-bar{
 	background:#fdfdfd;
-	z-index:100;
-	/*-webkit-transition: max-height 1s ease;
-  	-moz-transition: max-height 1s ease;
-  	-o-transition: max-height 1s ease;
-  	-ms-transition: max-height 1s ease;
-  	transition: max-height 1s ease;
-	background:#fdfdfd;*/
+	z-index:2000;
+	position:fixed;
+	width:100%;
 }
 .device-menu{
 	position:relative;
-	z-index:300;
+	z-index:2001;
 	border-bottom:1px solid #444;
 	background:#efefef;
 }
@@ -166,7 +163,7 @@ header p{
 
 }
 
-.foreplay{
+/*.foreplay{
 	background:rgb(220,111,188);
 	height:0px;
 	text-align:center;
@@ -195,11 +192,11 @@ header p{
 
 .foreplay a:hover{
 	text-decoration: none;
-}
+}*/
 
-.about .nav-bar.scrolling .foreplay{
+/*.about .nav-bar.scrolling .foreplay{
 	height:30px;
-}
+}*/
 
 .about .filters a{
 	pointer-events: none;
@@ -209,9 +206,9 @@ header p{
 	border-color:#ccc;
 }
 
-/* THIS IS GONNA BE REPLACED BY AN SMIL */
+/* THIS IS GONNA BE REPLACED BY AN SMIL
 
-.menu-toggle { position: absolute; left: 1%; top: 20px; z-index:101; }
+.menu-toggle { position: absolute; left: 1%; top: 20px; z-index:2002; }
 
 .menu-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
 .menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
@@ -259,6 +256,59 @@ header p{
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+*/
+
+/* SVG WITH CSS ANIMATION */
+
+.menu-toggle {
+  width: 30px;
+  height: 30px;
+  position: absolute; left: 1%; top: 5px; z-index:2002;
+}
+
+.svg-menu-toggle {
+  fill: #000;
+  pointer-events: all;
+  cursor: pointer;
+  height: 100%;
+}
+.svg-menu-toggle .bar {
+  -webkit-transform: rotate(0) translateY(0) translateX(0);
+  transform: rotate(0) translateY(0) translateX(0);
+  opacity: 1;
+  -webkit-transform-origin: 20px 10px;
+  transform-origin: 20px 10px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+.svg-menu-toggle .bar:nth-of-type(1) {
+  -webkit-transform-origin: 20px 10px;
+  transform-origin: 20px 10px;
+}
+.svg-menu-toggle .bar:nth-of-type(3) {
+  -webkit-transform-origin: 20px 20px;
+  transform-origin: 20px 20px;
+}
+
+.menu-toggle.active .svg-menu-toggle .bar:nth-of-type(1) {
+  -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
+  transform: rotate(-45deg) translateY(0) translateX(0);
+}
+.menu-toggle.active .svg-menu-toggle .bar:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-toggle.active .svg-menu-toggle .bar:nth-of-type(3) {
+  -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
+  transform: rotate(45deg) translateY(0em) translateX(0em);
+}
+
+.inline-svg {
+  display: block;
+  margin: 0 auto;
+}
+
+
 nav{
 	position:fixed;
 	top:45px;
@@ -266,7 +316,7 @@ nav{
 	left:1%;
 	background:#fdfdfd;
 	height:100%;
-	z-index:200;
+	z-index:2001;
 	box-shadow:2px 20px 25px 5px #444;
 	box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
 	border-right:1px solid #999;
@@ -404,15 +454,8 @@ footer .acc{
 	color:#fff;
 	padding-top:10%;
 }
-.onward a{
-	color:#fff;
-	padding:10px 20px;
-	border:1px solid #fff;
-	font-size: 20px;
-}
+
 .onward a:hover{
-	text-decoration: none;
-	background:#fff;
 	color:rgb(221,112,189);
 }
 
@@ -451,14 +494,6 @@ footer .acc{
 }
 #positions .detail{
 	display:none;
-}
-#positions > div:hover img,
-#positions > div.active img{
-    -webkit-transform:scale(1.18);
-    -moz-transform:scale(1.18);
-    -ms-transform:scale(1.18);
-    -o-transform:scale(1.18);
-     transform:scale(1.18);
 }
 .hover-title{
 	display:none;
@@ -560,10 +595,72 @@ footer .acc{
 	padding:5px 0 0 0;
 }
 
+/* SUPPORT THE CAUSE */
+#support-the-cause > div{
+	text-align: center;
+}
+
+
+/* BUTTON */
+.cs-button{
+	color:#fff;
+	padding:10px 20px;
+	border:1px solid #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	display:block;
+}
+.cs-button:hover{
+	text-decoration: none;
+	background:#fff;
+}
+
+/*MIGRATED FROM MQ.CSS*/
+header{
+		border-top:none;
+	}
+.device-menu{
+	display:block;
+	height:45px;
+}
+.filter{
+	padding:0;
+	border-bottom:0;
+}
+.filter h3{
+	padding:0 0 5px 0;
+}
+.filter ul{
+	margin-top:10px;
+}
+.filter li{
+	border-top:1px solid #000;
+}
+/*.filter li:last-child{
+	border-bottom:1px solid #444;
+}*/
+.filter:last-child{
+	padding-top:15px;
+}
+nav{
+	border-bottom:0;
+}
+.filter ul li,.filter ul li a{
+	display:block;
+}
+.filter{
+	text-align:center;
+}
+.filter a,
+.filter a:hover,
+.filter a:active{
+	text-decoration: none;
+}
+
 
 /* FANCY BOX 2*/
 
-.fancybox-skin{
+/*.fancybox-skin{
 	border-radius:0;
 	border:1px solid #000;
 	color:#000;
@@ -586,7 +683,7 @@ footer .acc{
 	font-family:Arial,sans-serif;
 	height:45px;
 	border-radius:3px;
-}
+}*/
 
 
 /* FANCY BOX v3 BETA
@@ -639,11 +736,10 @@ a.fancybox-close{
 	top: 0;
 	left: 0;
 	background: #fff;
-	background: rgba(255,255,255,0.9);
 	overflow-y: scroll;
 	z-index:1000;
 	border-top:1px solid #999;
-	padding:20px;
+	padding:65px 20px 20px 20px;
 }
 .overlay #close{
 	display:block;
@@ -651,7 +747,7 @@ a.fancybox-close{
 	color:#ccc;
 	font-family:Arial,sans-serif;
 	position:absolute;
-	top:-5px;
+	top:40px;
 	right:2%;
 	z-index:1002;
 	padding:0 0 20px 20px;

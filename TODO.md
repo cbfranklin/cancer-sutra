@@ -30,3 +30,23 @@ TODO
 	"Further, CSS transitions do not allow you to animate SVG elements on IE9, nor can they be used to apply transforms to SVGs on any version of IE."
 	http://davidwalsh.name/svg-animation
 
+NOTES:
+
+no more filter-by-partnership
+
+cancer-type (chapters) stays
+
+proxima nova light for all buttons
+
+HOVER EFFECT: smaller slower and desktop ONLY, add cancer type which links to chapter page, appears on all positions only.
+
+dropcaps: desktop & tablet only
+
+splash page arrow for all pages
+
+DISCOVER: only appears when you DONT arrive from ABOUT page, dissapears once you've gone to about, text increases size on hover, still visible over the drawer LIKE NAVIGATIONS
+
+positions drawer background 100% opaque
+
+positions: some are horizontal, some are
+

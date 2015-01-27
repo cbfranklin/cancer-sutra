@@ -1,5 +1,5 @@
 //STICKY NAV THAT DOESN'T SUCK
-jQuery.fn.extend({
+/*jQuery.fn.extend({
     sticky: function(){
         var offsetTop = $(this).offset().top;
         var offsetLeft = $(this).offset().left;
@@ -27,11 +27,11 @@ jQuery.fn.extend({
             }
         });  
     }
-});
+});*/
 
 //SHOWY
 //shows title in navbar on scroll
-var showy = function(){
+/*var showy = function(){
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 10){
             $('.nav-bar').addClass('scrolling');
@@ -40,7 +40,7 @@ var showy = function(){
             $('.nav-bar').removeClass('scrolling');
         }
     });
-}
+}*/
 //DELAY
 var delay = (function(){
   var timer = 0;
@@ -50,18 +50,16 @@ var delay = (function(){
   };
 })();
 //SET STICKIES
+/*
 var setStickies = function(){
-    if($(window).width() > 768 /* && $(window).width() < 990 */){
+    if($(window).width() > 768){
         $('.filters').stickyFixed();
     }
-    /*#if($(window).width() < 990){*/
+
         $('.nav-bar').sticky();
         showy();
-    /*}*/
-    /*else{
-        $(window).off('scroll');
-    }*/
 };
+/*
 
 
 //SHOW POSITION IN FANCYBOX
