@@ -3,7 +3,7 @@ function loadAboutAnimations(){
 	//Load SVG INFO FROM JSON
 	$.getJSON('data/animations-about.json',function(about){
 		//Load SVGs into containers
-		for(key in about){
+		for(var key in about){
 			var anim = about[key];
 			//console.log(key,anim);
 			//console.log(container)
@@ -12,13 +12,13 @@ function loadAboutAnimations(){
 				//onSVGLoaded(data,container)
 				console.log(container)
 			});*/
-			var svg = Snap.load(anim.file,
+			Snap.load(anim.file,
 				(function(key){
 					return function(data){
 						var container = Snap('#about .'+key);
 						console.log(container)
 						//onSVGLoaded(data,container)
-					}()
+					};
 				})(key);
 			);
 
