@@ -9,5 +9,6 @@ function loadAboutAnimations(){
 }
 
 function onSVGLoaded(container,svg){
+	console.log(container,svg)
 	container.append(svg);
 }
