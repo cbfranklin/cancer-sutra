@@ -7,9 +7,11 @@ function loadAboutAnimations(){
 			var anim = about[key];
 			console.log(key,anim);
 			var container = Snap('#about .'+key);
-			var svg = Snap.load(anim.file,function(data){
+			/*var svg = Snap.load(anim.file,function(data){
 				onSVGLoaded(data,container)
-			});
+			});*/
+			var svg = Snap.load(anim.file,onSVGLoaded,container);
+
 		}
 
 		/*var about1Container = Snap('#about .one')
@@ -20,7 +22,7 @@ function loadAboutAnimations(){
 	});
 }
 
-function onSVGLoaded(svg,container){
+function onSVGLoaded(data,container){
 	console.log('onSVGLoaded')
-	console.log(svg,container)
+	console.log(data,container)
 }
