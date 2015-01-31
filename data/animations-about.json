@@ -1,6 +1,6 @@
 {
     "one": {
-        "file": "img/about/full/1.png",
+        "file": "img/about/full/1.svg",
         "topLevelSelector": "#about1",
         "animatedEls": [
             {
@@ -40,7 +40,7 @@
         ]
     },
     "two": {
-        "file": "img/about/full/2.png",
+        "file": "img/about/full/2.svg",
         "topLevelSelector": "#about2",
         "animatedEls": [
             {
@@ -92,7 +92,7 @@
         ]
     },
     "three": {
-        "file": "img/about/full/3.png",
+        "file": "img/about/full/3.svg",
         "topLevelSelector": "#about3",
         "animatedEls": [
             {
@@ -115,7 +115,7 @@
         ]
     },
     "four": {
-        "file": "img/about/full/4.png",
+        "file": "img/about/full/4.svg",
         "topLevelSelector": "#about4",
         "animatedEls": [
             {
@@ -200,7 +200,7 @@
         ]
     },
     "five": {
-        "file": "img/about/full/5.png",
+        "file": "img/about/full/5.svg",
         "topLevelSelector": "#about5",
         "animatedEls": [
             {
