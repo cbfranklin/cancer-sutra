@@ -7,7 +7,9 @@ function loadAboutAnimations(){
 			var anim = about[key];
 			console.log(key,anim);
 			var container = Snap('#about .'+key);
+			console.log(container)
 			var svg = Snap.load(anim.file,function(data,container){
+				console.log(data,container)
 				onSVGLoaded(data,container)
 			});
 			/*var svg = Snap.load(anim.file,onSVGLoaded,container);*/
