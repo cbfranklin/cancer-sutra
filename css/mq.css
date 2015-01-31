@@ -42,7 +42,7 @@
 	#about .two{padding:40% 10% 0 0;}
 	#about .three{padding:80% 0 0 10%;}
 	#about .four{padding:90% 0 0 0;}
-	#about .onward{padding:10% 0 0 0;}
+	#about .five{padding:10% 0 0 0;}
 
 
 }
@@ -54,7 +54,7 @@
 	#about .two{background-image:url(../img/about/mobile/CS_MobSplash_Illus_2.svg);}
 	#about .three{background-image:url(../img/about/mobile/CS_MobSplash_Illus_3.svg);}
 	#about .four{background-image:url(../img/about/mobile/CS_MobSplash_Illus_4.svg);}
-	#about .onward{background-image:url(../img/about/mobile/CS_MobSplash_Illus_5.svg);}*/
+	#about .five{background-image:url(../img/about/mobile/CS_MobSplash_Illus_5.svg);}*/
 
 	.detail-image{
 		/*display:none;*/
@@ -94,7 +94,7 @@
 	#about .two{background-image:url(../img/about/full/CS_TabSplash_Illus_2.svg);}
 	#about .three{background-image:url(../img/about/full/CS_TabSplash_Illus_3.svg);}
 	#about .four{background-image:url(../img/about/full/CS_TabSplash_Illus_4.svg);}
-	#about .onward{background-image:url(../img/about/full/CS_TabSplash_Illus_5.svg);}*/
+	#about .five{background-image:url(../img/about/full/CS_TabSplash_Illus_5.svg);}*/
 
 	/* MIN HEIGHT FOR NAV DRAWER */
 	/*@media (min-height:580px){

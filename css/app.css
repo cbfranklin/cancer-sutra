@@ -448,14 +448,14 @@ footer .acc{
 #about p{
 	font-size:20px;
 }
-.onward{
+#about .five{
 	text-align:center;
 	background:rgb(220,111,188);
 	color:#fff;
 	padding-top:10%;
 }
 
-.onward a:hover{
+#about .five a:hover{
 	color:rgb(221,112,189);
 }
 
