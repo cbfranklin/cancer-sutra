@@ -8,10 +8,10 @@ function loadAboutAnimations(){
 			//console.log(key,anim);
 			//console.log(container)
 			var container = Snap('#about .'+key);
-			var svg = Snap.load(anim.file,function(data,j){
+			var svg = Snap.load(anim.file,function(data,key){
 				return function(){
 					//onSVGLoaded(data,container)
-					console.log(key,j)
+					console.log(key)
 				}()
 				
 				//console.log(data,container)
