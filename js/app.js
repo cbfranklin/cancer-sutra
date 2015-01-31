@@ -151,6 +151,7 @@ function loadAbout(){
 		$('nav').removeClass('open');
 		$('.menu-toggle').removeClass('active');
 	},400);
+	loadAboutAnimations();
 };
 
 function loadPositions(name){

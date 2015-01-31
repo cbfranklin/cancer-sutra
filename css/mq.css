@@ -50,11 +50,11 @@
 /* TABLET AND PHONE */
 @media (max-width:767px){
 
-	#about .one{background-image:url(../img/about/mobile/CS_MobSplash_Illus_1.svg);}
+	/*#about .one{background-image:url(../img/about/mobile/CS_MobSplash_Illus_1.svg);}
 	#about .two{background-image:url(../img/about/mobile/CS_MobSplash_Illus_2.svg);}
 	#about .three{background-image:url(../img/about/mobile/CS_MobSplash_Illus_3.svg);}
 	#about .four{background-image:url(../img/about/mobile/CS_MobSplash_Illus_4.svg);}
-	#about .onward{background-image:url(../img/about/mobile/CS_MobSplash_Illus_5.svg);}
+	#about .onward{background-image:url(../img/about/mobile/CS_MobSplash_Illus_5.svg);}*/
 
 	.detail-image{
 		/*display:none;*/
@@ -90,11 +90,11 @@
 /* SPLASH, TABLET AND UP */
 @media (min-width:480px){
 
-	#about .one{background-image:url(../img/about/full/CS_TabSplash_Illus_1.svg);}
+	/*#about .one{background-image:url(../img/about/full/CS_TabSplash_Illus_1.svg);}
 	#about .two{background-image:url(../img/about/full/CS_TabSplash_Illus_2.svg);}
 	#about .three{background-image:url(../img/about/full/CS_TabSplash_Illus_3.svg);}
 	#about .four{background-image:url(../img/about/full/CS_TabSplash_Illus_4.svg);}
-	#about .onward{background-image:url(../img/about/full/CS_TabSplash_Illus_5.svg);}
+	#about .onward{background-image:url(../img/about/full/CS_TabSplash_Illus_5.svg);}*/
 
 	/* MIN HEIGHT FOR NAV DRAWER */
 	/*@media (min-height:580px){

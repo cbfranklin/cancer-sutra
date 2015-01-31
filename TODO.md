@@ -50,3 +50,14 @@ positions drawer background 100% opaque
 
 positions: some are horizontal, some are
 
+
+
+1/29 CALL:
+
+NEW SOW: LINE ITEM OUT THIS NEW PORTION
+
+-general social sharing  FB/TW/TUM VS ecard sharing
+
+-email best practices for email
+
+SOW TONIGHT!!

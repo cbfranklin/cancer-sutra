@@ -1,46 +1,3 @@
-//STICKY NAV THAT DOESN'T SUCK
-/*jQuery.fn.extend({
-    sticky: function(){
-        var offsetTop = $(this).offset().top;
-        var offsetLeft = $(this).offset().left;
-        var width = $(this).width();
-        var position = $(window).scrollTop();
-        var el = $(this)
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > offsetTop) {
-                el.attr('style', 'position:fixed;top:0px;10%;width:100%');
-            } else {
-                el.attr('style', '');
-            }
-        });
-    },
-    stickyFixed: function(){
-        var offsetTop = $(this).css('top');
-        var width = $(this).width();
-        var position = $(window).scrollTop();
-        var el = $(this)
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > offsetTop) {
-                el.attr('style', 'position:fixed;top:'+offsetTop+';left:0px;width:' + width + 'px');
-            } else {
-                el.attr('style', '');
-            }
-        });  
-    }
-});*/
-
-//SHOWY
-//shows title in navbar on scroll
-/*var showy = function(){
-    $(window).on('scroll', function() {
-        if($(window).scrollTop() > 10){
-            $('.nav-bar').addClass('scrolling');
-        }
-        else{
-            $('.nav-bar').removeClass('scrolling');
-        }
-    });
-}*/
 //DELAY
 var delay = (function(){
   var timer = 0;
@@ -49,67 +6,14 @@ var delay = (function(){
     timer = setTimeout(callback, ms);
   };
 })();
-//SET STICKIES
-/*
-var setStickies = function(){
-    if($(window).width() > 768){
-        $('.filters').stickyFixed();
-    }
-
-        $('.nav-bar').sticky();
-        showy();
-};
-/*
-
-
-//SHOW POSITION IN FANCYBOX
-/*function showPosition(){
-
-    var fancyWidth = $container.width();
-
-    $.fancybox.open({
-        autoSize: false,
-        width: '100%',
-        height: '100%',
-        margin: [0,0,0,0],
-        content: $fancyContent,
-        scrolling: 'no',
-        helpers: {
-            overlay: {
-                locked: true
-            }
-        },
-        afterShow: function(){
-            //document.ontouchstart = function(e){
-            //  e.preventDefault();
-            //}
-            $(document).on('scroll','body',function(e){
-                e.preventDefault();
-            }).on('touchmove','body',function(e){
-                e.preventDefault();
-            });
-            this.wrap.find('.fancybox-inner').css({
-                'overflow-y': 'auto',
-                'overflow-x': 'hidden'
-            });
-        },
-        afterClose: function(){
-            //document.ontouchstart = function(e){
-                //default scroll behaviour
-            //}
-            $(document).on('scroll','body',function(e){
-                //default scroll behaviour
-            }).off('touchmove');
-        }
-    })
-};*/
 
 //SHOW POSITION CSS3
 function showPosition(){
     var content = $overlayContent.html();
     Odelay.open(content);
 };
-//SHOW POSITION CSS3
+
+//ODELAY
 var Odelay = {
     'open': function(content){
         var close = '<div id="close">&#215;</div>';
@@ -149,6 +53,7 @@ var Odelay = {
         }
     }
 }
+
 //ABOUT CONTENT HEIGHT FOR SVG BGS
 function setAboutHeights(){
     if(window.innerWidth > 767){
@@ -177,4 +82,28 @@ function openCloseNav(){
     setTimeout(function(){
         $that.toggleClass('active');
     },250)
+}
+
+//ANIMATION
+function animateThisSVG(name){
+    var container = Snap.select(animations[name].topLevelSelector);
+    var animatedEls = animations[name].animatedEls;
+
+    for(i in animatedEls){
+        console.log(animatedEls[i].selector)
+
+        var el = container.select(animatedEls[i].selector);
+
+        for(j in animatedEls[i].states){
+
+            var state = animatedEls[i].states[j];
+
+            function animate(el,state){
+                console.log(el)
+                el.animate({d:state.d},state.time,state.easing);
+            }
+
+            setTimeout(animate, state.delay, el,state);
+        }
+    }
 }
