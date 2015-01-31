@@ -18,7 +18,7 @@ function loadAboutAnimations(){
 						var container = Snap('#about .'+key);
 						console.log(container)
 						//onSVGLoaded(data,container)
-					}
+					}()
 				})(key);
 			);
 
