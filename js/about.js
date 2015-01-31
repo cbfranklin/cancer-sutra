@@ -5,11 +5,11 @@ function loadAboutAnimations(){
 		//Load SVGs into containers
 		var about1Container = Snap('#about .one')
 		console.log(about.one.file)
-		var about1 = Snap.load(about.one.file, onSVGLoaded);
+		var about1 = Snap.load(about.one.file,onSVGLoaded,about1Container);
 	});
 }
 
-function onSVGLoaded(svg){
+function onSVGLoaded(svg,container){
 	console.log('onSVGLoaded')
-	console.log(svg)
+	console.log(svg,container)
 }
