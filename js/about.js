@@ -8,11 +8,11 @@ function loadAboutAnimations(){
 			//console.log(key,anim);
 			//console.log(container)
 			var svg = Snap.load(anim.file,function(data){
-				console.log(anim.file,key)
+				console.log(key)
 				var container = Snap('#about .'+key);
 				//console.log(data,container)
 				onSVGLoaded(data,container)
-			});
+			},key);
 			/*var svg = Snap.load(anim.file,onSVGLoaded,container);*/
 
 		}
