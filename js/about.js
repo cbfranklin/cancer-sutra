@@ -27,5 +27,6 @@ function loadAboutAnimations(){
 function onSVGLoaded(data,container){
 	//console.log('onSVGLoaded')
 	//console.log(data,container)
+	console.log(container)
 	container.append(data);
 }
