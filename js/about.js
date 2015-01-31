@@ -8,16 +8,19 @@ function loadAboutAnimations(){
 			//console.log(key,anim);
 			//console.log(container)
 			var container = Snap('#about .'+key);
-			var svg = Snap.load(anim.file,function(data,key){
-				return function(){
-					//onSVGLoaded(data,container)
-					console.log(key)
-				}()
-				
-				//console.log(data,container)
-				
-			},key);
-			/*var svg = Snap.load(anim.file,onSVGLoaded,container);*/
+			/*var svg = Snap.load(anim.file,function(data){
+				//onSVGLoaded(data,container)
+				console.log(container)
+			});*/
+			var svg = Snap.load(anim.file,
+				(function(key){
+					return function(data){
+						var container = Snap('#about .'+key);
+						console.log(container)
+						//onSVGLoaded(data,container)
+					}
+				})(key);
+			);
 
 		}
 
