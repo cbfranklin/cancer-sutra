@@ -12,14 +12,13 @@ function loadAboutAnimations(){
 				//onSVGLoaded(data,container)
 				console.log(container)
 			});*/
-			Snap.load(anim.file,
-				(function(key){
+			Snap.load(anim.file,function(key){
 					return function(data){
 						var container = Snap('#about .'+key);
 						console.log(container)
 						//onSVGLoaded(data,container)
 					};
-				})(key);
+				}(key)
 			);
 
 		}
@@ -31,7 +30,6 @@ function loadAboutAnimations(){
 		});*/
 	});
 }
-
 function onSVGLoaded(data,container){
 	//console.log('onSVGLoaded')
 	//console.log(data,container)
