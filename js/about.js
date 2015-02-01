@@ -10,7 +10,7 @@ function loadAboutAnimations(){
 						var container = Snap('#about .'+key);
 						container.append(data);
 					};
-				}(key)
-			);
+			}(key));
 		}
+	});
 }
