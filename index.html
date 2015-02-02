@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="css/app.css"></style>
 	<link rel="stylesheet" href="css/mq.css"></style>
 	<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.js"></script>
+      <script src="js/assets/html5shiv.js"></script>
+      <script src="js/assets/respond.js"></script>
     <![endif]-->
-	<script src="js/modernizr-latest.js"></script>
+	<script src="js/assets/modernizr-latest.js"></script>
 </head>
 <body class="loading container-fluid">
 	<div class="nav-bar row">
@@ -60,20 +60,11 @@
 						<li><a href data-filter-type="cancer-type" data-filter="prostate" data-toggle="off">Prostate</a></li>
 					</ul>
 				</div>
-				<!--<div data-filter-type="partnership" class="filter partnership">
-					<h3>Filter by Partnership</h3>
-					<ul class="uppercase">
-						<li><a href data-filter="mm" data-toggle="off" class="test">Male/Male</a></li>
-						<li><a href data-filter="ff" data-toggle="off">Female/Female</a></li>
-						<li><a href data-filter="mf" data-toggle="off">Male/Female</a></li>
-					</ul>
-				</div>-->
 			</div>
+			<ul class="navigation">
+				<li><a class="nav-support" href="#/support">Support the Cause</a></li>
+			</ul>
 		</nav>
-		<!--<header class="animated fadeIn row">
-			<h1>The Cancer Sutra</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		</header>-->
 		<div class="loader">
 			<!--<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		     width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
@@ -89,51 +80,68 @@
 		  </svg>-->
 		  <img alt="" src="img/loader.svg">
 		</div>
-		<!--<section id="about">
-			<div class="one row">
-				<div class="col-sm-5 col-sm-offset-7">
+		<section id="about">
+			<div id="one" class="one row">
+				<div class="copy">
+					<div class="col-sm-5 col-sm-offset-7">
 					<h2>This project exists to help save lives.</h2>
 					<h3>One tweak, thrust, heave, and pant at a time</h3>
 				</div>
-			</div>
-			<div class="two row">
-				<div class="col-sm-6">
-					<h2>Before the What, <em>the Why.</em></h2>
-					<p>Because fear of cancer can be as bad as cancer itself.<br>
-						Because 90% of cancer can be cured if checked by stage one.<br>
-						Beause fear, like cancer, may have the power to spread &mdash;<br>
-						but they both share one major weakness:</p>
+				</div>
+				<div class="about-navigation">
+					<span>1/5</span>
+					<img id="next" src="img/desktop-arrow-down.png"/>
 				</div>
 			</div>
-			<div class="three row">
-				<div class="col-sm-6 col-sm-offset-6">
-					<h2>KNOWLEDGE.</h2>
-					<p>Because of all this, The Cancer Sutra is designed to challenge the taboos and conventions about cancer.<br>
-						Firstly by talking about how to look for cancer, not just find it.<br>
-						Secondly, by bringing the fight against cancer, and the prevention of it, out of a place of isolation.</p>
+			<div id="two" class="two row">
+				<div class="copy">
+					<div class="col-sm-6">
+						<h2>Before the What, <em>the Why.</em></h2>
+						<p>Because fear of cancer can be as bad as cancer itself.<br>
+							Because 90% of cancer can be cured if checked by stage one.<br>
+							Beause fear, like cancer, may have the power to spread &mdash;<br>
+							but they both share one major weakness:</p>
+					</div>
+				</div>
+				<div class="about-navigation">
+					<img id="prev" src="img/desktop-arrow-up.png"/>
+					<span>2/5</span>
+					<img id="next" src="img/desktop-arrow-down.png"/>
 				</div>
 			</div>
-			<div class="four row">
-				<div class="col-sm-6">
-					<h2>After all, saving lives is <em>one thing.</em></h2>
-					<p>Having fun while doing it &mdash; well, that's something we can all get behind. (Or in front of, depending.)</p>
+			<div id="three" class="three row">
+				<div class="copy">
+					<div class="col-sm-6 col-sm-offset-6">
+						<h2>KNOWLEDGE.</h2>
+						<p>Because of all this, The Cancer Sutra is designed to challenge the taboos and conventions about cancer.<br>
+							Firstly by talking about how to look for cancer, not just find it.<br>
+							Secondly, by bringing the fight against cancer, and the prevention of it, out of a place of isolation.</p>
+					</div>
+				</div>
+				<div class="about-navigation">
+					<img id="prev" src="img/desktop-arrow-up.png"/>
+					<span>3/5</span>
+					<img id="next" src="img/desktop-arrow-down.png"/>
 				</div>
 			</div>
-			<div class="onward row">
-				<p>It's time we got to the real thrust of the matter.</p>
-				<a class="hvr-hang cs-button" href="#/positions">ONWARD &amp; UNDERWARD</a>
+			<div id="four" class="four row">
+				<div class="copy">
+					<div class="col-sm-6">
+						<h2>After all, saving lives is <em>one thing.</em></h2>
+						<p>Having fun while doing it &mdash; well, that's something we can all get behind. (Or in front of, depending.)</p>
+					</div>
+				</div>
+				<div class="about-navigation">
+					<img id="prev" src="img/desktop-arrow-up.png"/>
+					<span>4/5</span>
+					<img id="next" src="img/desktop-arrow-down.png"/>
+				</div>
 			</div>
-		</section>-->
-		<section id="about">
-			<div class="one row">
-			</div>
-			<div class="two row">
-			</div>
-			<div class="three row">
-			</div>
-			<div class="four row">
-			</div>
-			<div class="five row">
+			<div id="five" class="five row">
+				<div class="copy">
+					<p>It's time we got to the real thrust of the matter.</p>
+					<a class="hvr-hang cs-button" href="#/positions">ONWARD &amp; UNDERWARD</a>
+				</div>
 			</div>
 		</section>
 
@@ -141,205 +149,213 @@
 		<!-- POSITIONS CONTAINER-->
 		<section id="positions-container">
 			<!--CHAPTERS-->
-			<div id="chapters">
+			<div id="chapters" class="row">
 				<div data-cancer-type="breast">
-					<div class="part1">
-						<h2>Breast Cancer</h2>
-						<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
-						<p>Never you fret.</p>
-						<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
-					</div>
-					<div class="part2">
-						<h3>Just remember to...</h3>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+					<div class="chapter-inner">
+							<div class="part1">
+								<h2>Breast Cancer</h2>
+								<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
+								<p>Never you fret.</p>
+								<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
+							</div>
+						<div class="part2">
+							<h3>Just remember to...</h3>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
 							</div>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
+						<div class="expand">
+							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-					</div>
-					<div class="expand">
-						<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 					</div>
 				</div>
 				<div data-cancer-type="testicular">
-					<div class="part1">
-						<h2>Testicular Cancer</h2>
-						<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
-						<p>Never you fret.</p>
-						<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
-					</div>
-					<div class="part2">
-						<h3>Just remember to...</h3>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+					<div class="chapter-inner">
+						<div class="part1">
+							<h2>Testicular Cancer</h2>
+							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
+							<p>Never you fret.</p>
+							<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
+						</div>
+						<div class="part2">
+							<h3>Just remember to...</h3>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
 							</div>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
+						<div class="expand">
+							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-					</div>
-					<div class="expand">
-						<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 					</div>
 				</div>
 				<div data-cancer-type="skin">
-					<div class="part1">
-						<h2>Skin Cancer</h2>
-						<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
-						<p>Never you fret.</p>
-						<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
-					</div>
-					<div class="part2">
-						<h3>Just remember to...</h3>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+					<div class="chapter-inner">
+						<div class="part1">
+							<h2>Skin Cancer</h2>
+							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
+							<p>Never you fret.</p>
+							<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
+						</div>
+						<div class="part2">
+							<h3>Just remember to...</h3>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
 							</div>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
+						<div class="expand">
+							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-					</div>
-					<div class="expand">
-						<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 					</div>
 				</div>
 				<div data-cancer-type="prostate">
-					<div class="part1">
-						<h2>Prostate Cancer</h2>
-						<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
-						<p>Never you fret.</p>
-						<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
-					</div>
-					<div class="part2">
-						<h3>Just remember to...</h3>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+					<div class="chapter-inner">
+						<div class="part1">
+							<h2>Prostate Cancer</h2>
+							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
+							<p>Never you fret.</p>
+							<p>You'll soon have your parner's every curve and swerve under both wraps and yourself.</p>
+						</div>
+						<div class="part2">
+							<h3>Just remember to...</h3>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
+							</div>
+							<div class="acrostic">
+								<div class="row">
+									<div class="col-xs-2 letter">F</div>
+									<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
+								</div>
 							</div>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
+						<div class="expand">
+							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-						<div class="acrostic">
-							<div class="row">
-								<div class="col-xs-2 letter">F</div>
-								<div class="col-xs-10 words">Find any marks or bumps on your partner's body and try to memorize their general shape and size.</div>
-							</div>
-						</div>
-					</div>
-					<div class="expand">
-						<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
 					</div>
 				</div>
 			</div>
@@ -569,15 +585,36 @@
 				</div>
 			</div>
 			<!--SUPPORT THE CAUSE-->
-			<div id="support-the-cause">
+			<div id="support-the-cause" class="row">
 				<div data-cancer-type="breast">
 					<h4>Not Titillated Yet?</h4>
 					<p>Well perk up!</p>
 					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
-					<a class="cs-button hvr-bob">Support the Cause</a>
+					<a class="cs-button hvr-bob" href="#/support">Support the Cause</a>
+				</div>
+				<div data-cancer-type="testicular">
+					<h4>Not Titillated Yet?</h4>
+					<p>Well perk up!</p>
+					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<a class="cs-button hvr-bob" href="#/support">Support the Cause</a>
+				</div>
+				<div data-cancer-type="skin">
+					<h4>Not Titillated Yet?</h4>
+					<p>Well perk up!</p>
+					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<a class="cs-button hvr-bob" href="#/support">Support the Cause</a>
+				</div>
+				<div data-cancer-type="prostate">
+					<h4>Not Titillated Yet?</h4>
+					<p>Well perk up!</p>
+					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<a class="cs-button hvr-bob" href="#/support">Support the Cause</a>
 				</div>
 			</div>
 		</section>
+		<section id="support">
+			<h1>Support the Cause</h1>
+		</div>
 		<footer class="row uppercase">
 			<div class="col-md-1"></div>
 			<div class="col-md-1 col-sm-2 nopadding">
@@ -613,7 +650,8 @@
 	<![endif]-->
 
 	<script src="js/assets/imagesloaded.pkgd.min.js"></script>
-	<!--<script src="js/jquery.touchSwipe.min.js"></script>-->
+	<!--<script src="js/assets/jquery.touchSwipe.min.js"></script>-->
+	<script src="js/assets/jquery.onscreen.min.js"></script>
 	<script src="js/assets/snap.svg-min.js"></script>
 	<script src="js/assets/isotope.pkgd.min.js"></script>
 	<!--<script src="js/wow.min.js"></script>-->

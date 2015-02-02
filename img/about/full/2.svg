@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="about2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1600 1060" enable-background="new 0 0 1600 1060" xml:space="preserve">
+<svg version="1.1" id="about2" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 1060" enable-background="new 0 0 1600 1060" preserveAspectRatio="xMaxYMin meet" xml:space="preserve">
 <g>
 	<path id="blue_leg" fill="#1AC2EC" d="M346.5,1006.2c-31.9,17.7-63,35.6-93.3,53.8h97C348.9,1042.5,347.6,1024.5,346.5,1006.2z"/>
 	<path id="red_eye" d="M1213.3,159.8c-0.9-0.7-1.8-1-2.6-1.4l-0.8-0.4c-2-1-3.6-2.9-4.4-5.3s-0.6-4.9,0.4-6.8l2.3-4.2l-4.7,0.8

@@ -35,24 +35,42 @@ section{
 	display:none;f
 }*/
 
+section#support{
+	min-height:500px;
+}
+/* PAGE LOAD ANIMATIONS */
 .about section#positions-container,
-.positions section#about
+.about section#support,
+.positions section#about,
+.positions section#support,
+.support section#about,
+.support section#positions-container
 {
 	-webkit-animation: scaleDownCenter .4s ease-in both;
 	animation: scaleDownCenter .4s ease-in both;
 }
 
 .about section#about,
-.positions section#positions-container
+.positions section#positions-container,
+.support section#support
 {
 	-webkit-animation: scaleUpCenter .4s ease-out both;
 	animation: scaleUpCenter .4s ease-out both;
 	-webkit-animation-delay: .4s;
 	animation-delay: .4s;
-	/*display:block;*/
 	display:block;
 }
-
+/*section.out{
+	-webkit-animation: scaleDownCenter .4s ease-in both;
+	animation: scaleDownCenter .4s ease-in both;
+}
+section.in{
+	-webkit-animation: scaleUpCenter .4s ease-out both;
+	animation: scaleUpCenter .4s ease-out both;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+	display:block;
+}*/
 @-webkit-keyframes scaleDownCenter {
 	from { }
 	to { opacity: 0; -webkit-transform: scale(.7); }
@@ -107,10 +125,7 @@ h1{
 	vertical-align: top;
 	display:none;
 }
-/*.loader svg path,
-.loader svg rect{
-  fill: #999;
-}*/
+
 /* HEADER / NAV / FILTERS */
 
 header{
@@ -141,22 +156,6 @@ header p{
 	border-bottom:1px solid #444;
 	background:#efefef;
 }
-
-/*.device-menu::after{
-	content:'The Cancer Sutra';
-	text-transform: uppercase;
-	top:10px;
-	width:100%;
-	height:100%;
-	text-align: center;
-	position:absolute;
-	font-size:20px;
-	-webkit-transition: opacity 0.5s ease;
-  	-moz-transition: opacity 0.5s ease;
-  	-o-transition: opacity 0.5s ease;
-  	-ms-transition: opacity 0.5s ease;
-  	transition: opacity 0.5s ease;
-}*/
 
 .nav-bar.scrolling .device-menu::after{
 	opacity:1;
@@ -198,66 +197,15 @@ header p{
 	height:30px;
 }*/
 
-.about .filters a{
+.about .filters a,
+.support .filters a{
 	pointer-events: none;
 	color:#ccc;
 }
-.about .filters li{
+.about .filters li,
+.support .filters li{
 	border-color:#ccc;
 }
-
-/* THIS IS GONNA BE REPLACED BY AN SMIL
-
-.menu-toggle { position: absolute; left: 1%; top: 20px; z-index:2002; }
-
-.menu-toggle { cursor: pointer; padding: 0px 26px 12px 0px; }
-.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 26px;
-  background: #000;
-  position: absolute;
-  display: block;
-  content: '';
-}
-
-.menu-toggle span:before {
-  top: -7px; 
-}
-.menu-toggle span:after {
-  bottom: -7px;
-}
-
-.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
-  	-webkit-transition: all 0.5s ease;
-  	-moz-transition: all 0.5s ease;
-  	-o-transition: all 0.5s ease;
-  	-ms-transition: all 0.5s ease;
-  	transition: all 0.5s ease;
-}
-.menu-toggle.active span {
-  background-color: transparent;
-}
-.menu-toggle.active span:before, .menu-toggle.active span:after {
-  top: 0;
-}
-.menu-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.menu-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-*/
 
 /* SVG WITH CSS ANIMATION */
 
@@ -356,6 +304,9 @@ nav.open{
 .about .nav-about{
 	background:#ccc;
 }
+.support .nav-support{
+	background:#ccc;
+}
 .nav-about{
 	border-bottom:1px solid #ccc;
 }
@@ -432,9 +383,29 @@ footer .acc{
 	-o-background-size: cover;
 	background-size: cover;*/
 	overflow:hidden;
+	position:relative;
 }
-#about > div > div{
+#about > div .copy{
 	height:100%;
+}
+#about .copy{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.about-navigation{
+	position:absolute;
+	bottom:20px;
+	width:100%;
+	text-align:center;
+	color:#eaeaea;
+	font-size:20px;
+}
+.about-navigation span{
+	padding:10px;
+}
+.about-navigation img{
+	cursor:pointer;
 }
 .paddingtop25{
 
@@ -450,7 +421,7 @@ footer .acc{
 }
 #about .five{
 	text-align:center;
-	background:rgb(220,111,188);
+	background:#950068;
 	color:#fff;
 	padding-top:10%;
 }
@@ -485,11 +456,11 @@ footer .acc{
 	width:80%;
 	height:auto;
 	margin:0 auto;
-	-webkit-transition: transform 0.2s ease;
-  	-moz-transition: transform 0.2s ease;
-  	-o-transition: transform 0.2s ease;
-  	-ms-transition: transform 0.2s ease;
-  	transition: transform 0.2s ease;
+	-webkit-transition: transform 0.5s ease;
+  	-moz-transition: transform 0.5s ease;
+  	-o-transition: transform 0.5s ease;
+  	-ms-transition: transform 0.5s ease;
+  	transition: transform 0.5s ease;
   	cursor:pointer;
 }
 #positions .detail{
@@ -541,9 +512,13 @@ footer .acc{
 #chapters > div{
 	padding:10px;
 	text-align:center;
-	max-width:768px;
 	margin:0 auto;
 	display:none;
+	border-bottom:1px solid #666;
+}
+.chapter-inner{
+	max-width:768px;
+	margin:0 auto;
 }
 #chapters > div.open{
 	display:block;
@@ -563,8 +538,6 @@ footer .acc{
 	color:rgb(220,111,188);
 	cursor:pointer;
 	padding:10px 0;
-	border-bottom:1px solid #666;
-	
 }
 
 .expand .open{
@@ -598,6 +571,14 @@ footer .acc{
 /* SUPPORT THE CAUSE */
 #support-the-cause > div{
 	text-align: center;
+	display:none;
+	padding:10px;
+}
+#support-the-cause > div.open{
+	display:block;
+}
+#support-the-cause h4{
+	font-size:28px;
 }
 
 
@@ -609,6 +590,7 @@ footer .acc{
 	font-size: 20px;
 	text-transform: uppercase;
 	display:block;
+	cursor:pointer;
 }
 .cs-button:hover{
 	text-decoration: none;
@@ -656,75 +638,6 @@ nav{
 .filter a:active{
 	text-decoration: none;
 }
-
-
-/* FANCY BOX 2*/
-
-/*.fancybox-skin{
-	border-radius:0;
-	border:1px solid #000;
-	color:#000;
-}
-.fancybox-close{
-	background-image:none;
-	top:0;
-	right:0;
-}
-.fancybox-close:hover{
-	text-decoration: none;
-}
-.fancybox-close::after{
-	content:'×';
-	background:#fff;
-	background:rgba(255,255,255,0.7);
-	display:block;
-	font-size:40px;
-	color:#ccc;
-	font-family:Arial,sans-serif;
-	height:45px;
-	border-radius:3px;
-}*/
-
-
-/* FANCY BOX v3 BETA
-
-.fancybox-skin{
-	border-radius:0;
-	border:0;
-	color:#000;
-}
-a.fancybox-close{
-	background-image:none!important;
-	top:10px;
-	right:10px;
-	width:32px;
-	height:32px;
-}
-.fancybox-close:hover{
-	text-decoration: none;
-}
-.fancybox-close::after{
-	content:'×';
-	background:#fff;
-	background:rgba(255,255,255,0.7);
-	display:block;
-	font-size:40px;
-	color:#ccc;
-	font-family:Arial,sans-serif;
-	height:25px;
-	border-radius:3px;
-	position:absolute;
-	line-height:25px;
-	left:-15px;
-	top:0;
-}
-#fancybox-lock{
-	overflow:hidden!important;
-}
-.fancybox-wrap{
-	top:10px!important;
-	width:100%!important;
-}*/
 
 /* TYPMANUS OVERLAY */
 
@@ -917,6 +830,74 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
 	-webkit-animation-name: hvr-hang-sink, hvr-hang;
 	animation-name: hvr-hang-sink, hvr-hang;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
 	-webkit-animation-duration: .3s, 1.5s;
 	animation-duration: .3s, 1.5s;
 	-webkit-animation-delay: 0s, .3s;

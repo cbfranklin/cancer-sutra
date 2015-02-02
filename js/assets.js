@@ -1,19 +1,12 @@
-//DELAY
-var delay = (function(){
-  var timer = 0;
-  return function(callback, ms){
-    clearTimeout (timer);
-    timer = setTimeout(callback, ms);
-  };
-})();
+//SHOW POSITION USING OVERLAY
 
-//SHOW POSITION CSS3
 function showPosition(){
     var content = $overlayContent.html();
     Odelay.open(content);
 };
 
-//ODELAY
+//OVERLAY
+
 var Odelay = {
     'open': function(content){
         var close = '<div id="close">&#215;</div>';
@@ -36,12 +29,13 @@ var Odelay = {
         $body.removeClass('noscroll');
         $positions.find('> div').removeClass('active');
         Mousetrap.unbind('esc');
-
-        if(Modernizr.history){
-            history.pushState({}, '', '#/positions');
-        }
-        else{
-            window.location.href = '#/positions';
+        if(window.location.hash.indexOf('#/positions/') > -1){
+            if(Modernizr.history){
+                history.pushState({}, '', '#/positions');
+            }
+            else{
+                window.location.href = '#/positions';
+            }
         }
     },
     'isOpen': function(){
@@ -57,40 +51,57 @@ var Odelay = {
 //ABOUT CONTENT HEIGHT FOR SVG BGS
 function setAboutHeights(){
     if(window.innerWidth > 767){
-        /*$('#about .row').css('height',window.innerWidth/2 - 75);*/
-        $('#about .row').css('height',$(window).width()/2 - 75);
+        $('#about .row').css('height',$(window.innerHeight - 50));
     }
     else{
         /*$('#about .row').css('height',window.innerHeight - 75);*/
         $('#about .row').css('height',$(window).height() - 75);
     }
 }
-function openCloseNav(){
-    var $that = $('.menu-toggle');
-    if(!$that.hasClass('active')){
+
+//TOOGLE NAVIGATION
+
+var Nav = {
+    'toggle': function(){
+        var $that = $('.menu-toggle');
+        if(!$that.hasClass('active')){
+            $('nav').addClass('open')
+            if($(window).width() < 480){
+                window.scrollTo(0, 0);
+            }
+        }
+        else{
+            $('nav').removeClass('open')
+            //$('nav').hide();
+        }
+        setTimeout(function(){
+            $that.toggleClass('active');
+        },250)
+    },
+    'close': function(){
+        var $that = $('.menu-toggle');
+        $('nav').removeClass('open');
+        $that.removeClass('active');
+    },
+    'open': function(){
+        var $that = $('.menu-toggle');
         $('nav').addClass('open')
         if($(window).width() < 480){
             window.scrollTo(0, 0);
-            console.log('hi')
         }
-        //$('nav').show();
+        $that.addClass('active');
     }
-    else{
-        $('nav').removeClass('open')
-        //$('nav').hide();
-    }
-    setTimeout(function(){
-        $that.toggleClass('active');
-    },250)
 }
 
 //ANIMATION
-function animateThisSVG(name){
-    var container = Snap.select(animations[name].topLevelSelector);
-    var animatedEls = animations[name].animatedEls;
+
+function animateThisSVG(obj,name){
+    //console.log(obj[name].topLevelSelector)
+    var container = Snap.select(obj[name].topLevelSelector);
+    var animatedEls = obj[name].animatedEls;
 
     for(i in animatedEls){
-        console.log(animatedEls[i].selector)
+        //console.log(animatedEls[i].selector)
 
         var el = container.select(animatedEls[i].selector);
 
@@ -99,7 +110,7 @@ function animateThisSVG(name){
             var state = animatedEls[i].states[j];
 
             function animate(el,state){
-                console.log(el)
+                //console.log(el)
                 el.animate({d:state.d},state.time,state.easing);
             }
 
@@ -107,3 +118,91 @@ function animateThisSVG(name){
         }
     }
 }
+
+//FILTERS
+
+function filters($obj){
+    Odelay.close();
+    if($obj.data('toggle') === 'off'){
+        //only one cancer type at a time
+        if($obj.data('filter-type') === 'cancer-type'){
+            $('[data-filter-type="cancer-type"] a').data('toggle','off').attr('data-toggle','off');
+
+            var cancerType = $obj.data('filter');
+            $('#chapters > div,#support-the-cause > div').removeClass('open');
+            $('#chapters [data-cancer-type='+cancerType+'],#support-the-cause [data-cancer-type='+cancerType+']').addClass('open');
+            window.scrollTo(0, 0);
+        }
+        $obj.data('toggle','on').attr('data-toggle','on')
+    }
+    else{
+        $obj.data('toggle','off').attr('data-toggle','off');
+        if($obj.data('filter-type') === 'cancer-type'){
+            $('#chapters > div').removeClass('open').children().removeClass('open');
+            window.scrollTo(0, 0);
+        }
+    }
+
+    //CANCER TYPE
+    var cancerTypeArray = []
+    $('[data-filter-type="cancer-type"] a').each(function(){
+        if($(this).data('toggle') === 'on'){
+            var filterValue = $(this).data('filter')
+            cancerTypeArray.push(['[data-cancer-type="'+filterValue+'"]']);
+        }
+    });
+    var cancerType = cancerTypeArray.join(',');
+    var $cancerType = $(cancerType);
+
+    //PARTNERSHIP
+    var partnershipArray = []
+    $('[data-filter-type="partnership"] a').each(function(){
+        if($(this).data('toggle') === 'on'){
+            var filterValue = $(this).data('filter')
+            partnershipArray.push(['[data-partnership="'+filterValue+'"]']);
+        }
+    });
+    var partnership = partnershipArray.join(',');
+    var $partnership = $(partnership);
+
+    if($cancerType.length > 0 && $partnership.length > 0){
+        var $theFilter = $cancerType.filter($partnership);
+    }
+    else if($cancerType.length > 0 && $partnership.length == 0){
+        //console.log('ITS SINGLE: CANCER-TYPE')
+        var $theFilter = $cancerType;
+    }
+    else if($cancerType.length == 0 && $partnership.length > 0){
+        //console.log('ITS SINGLE: PARTNERSHIP')
+        var $theFilter = $partnership;
+    }
+    else{
+        var $theFilter = '';
+    }
+
+    $positions.isotope({ filter: $theFilter });
+}
+
+//DELAY
+var delay = (function(){
+  var timer = 0;
+  return function(callback, ms){
+    clearTimeout (timer);
+    timer = setTimeout(callback, ms);
+  };
+})();
+
+jQuery.fn.extend({
+    scrollToAnchor: function(theOffset, theTime) {
+        var theSelector = this;
+        if (!theTime) {
+            var theTime = 500
+        }
+        if (!theOffset) {
+            var theOffset = 0;
+        }
+        $('html,body').animate({
+            scrollTop: theSelector.offset().top - 50
+        }, theTime);
+    }
+});

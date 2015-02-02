@@ -1,5 +1,5 @@
 /* PHONE ONLY*/
-@media (max-width:479px){
+@media (max-width:480px){
 
 	#positions > div{
 		width:100%;
@@ -10,26 +10,23 @@
 	}
 
 	nav{
-		height:0;
+		max-height:0;
 		position:static;
 		width:auto;
-		-webkit-transition: height 0.5s ease;
-	  	-moz-transition: height 0.5s ease;
-	  	-o-transition: height 0.5s ease;
-	  	-ms-transition: height 0.5s ease;
-	  	transition: height 0.5s ease;
 	  	overflow:hidden;
 	  	-webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
 		-moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
 		box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.50);
 	}
 	nav.open{
-		height:auto;
+		max-height:1000px;
+		-webkit-transition: all 0.75s ease;
+		  	-moz-transition: all 0.75s ease;
+		  	-o-transition: all 0.75s ease;
+		  	-ms-transition: all 0.75s ease;
+		  	transition: all 0.75s ease;
+		  	border-bottom:1px solid #444;
 	}
-
-	/*.about .foreplay{
-		height:30px;
-	}*/
 
 	#about > div{
 		text-align: center;
@@ -49,13 +46,6 @@
 
 /* TABLET AND PHONE */
 @media (max-width:767px){
-
-	/*#about .one{background-image:url(../img/about/mobile/CS_MobSplash_Illus_1.svg);}
-	#about .two{background-image:url(../img/about/mobile/CS_MobSplash_Illus_2.svg);}
-	#about .three{background-image:url(../img/about/mobile/CS_MobSplash_Illus_3.svg);}
-	#about .four{background-image:url(../img/about/mobile/CS_MobSplash_Illus_4.svg);}
-	#about .five{background-image:url(../img/about/mobile/CS_MobSplash_Illus_5.svg);}*/
-
 	.detail-image{
 		/*display:none;*/
 		height:300px;
@@ -66,19 +56,6 @@
 		width:auto;
 	}
 
-	/*[data-position="1"] .detail-text::after{background-image:url(../positions/svg/1.svg);}
-	[data-position="2"] .detail-text::after{background-image:url(../positions/svg/2.alt.svg);}
-	[data-position="3"] .detail-text::after{background-image:url(../positions/svg/3.svg);}
-	[data-position="4"] .detail-text::after{background-image:url(../positions/svg/4.svg);}
-	[data-position="5"] .detail-text::after{background-image:url(../positions/svg/5.svg);}
-	[data-position="6"] .detail-text::after{background-image:url(../positions/svg/6.svg);}
-	[data-position="7"] .detail-text::after{background-image:url(../positions/svg/7.svg);}
-	[data-position="8"] .detail-text::after{background-image:url(../positions/svg/8.svg);}
-	[data-position="9"] .detail-text::after{background-image:url(../positions/svg/9.svg);}
-	[data-position="10"] .detail-text::after{background-image:url(../positions/svg/10.svg);}
-	[data-position="11"] .detail-text::after{background-image:url(../positions/svg/11.svg);}
-	[data-position="12"] .detail-text::after{background-image:url(../positions/svg/12.svg);}*/
-
 	.filter ul li,.filter ul li a{
 		display:block;
 	}
@@ -88,61 +65,26 @@
 }
 
 /* SPLASH, TABLET AND UP */
-@media (min-width:480px){
+@media (min-width:481px){
 
-	/*#about .one{background-image:url(../img/about/full/CS_TabSplash_Illus_1.svg);}
-	#about .two{background-image:url(../img/about/full/CS_TabSplash_Illus_2.svg);}
-	#about .three{background-image:url(../img/about/full/CS_TabSplash_Illus_3.svg);}
-	#about .four{background-image:url(../img/about/full/CS_TabSplash_Illus_4.svg);}
-	#about .five{background-image:url(../img/about/full/CS_TabSplash_Illus_5.svg);}*/
-
-	/* MIN HEIGHT FOR NAV DRAWER */
-	/*@media (min-height:580px){
-		nav{
-			position:fixed;
-			top:45px;
-			width:50%;
-			left:1%;
-			background:#fdfdfd;
-			height:100%;
-			z-index:200;
-			box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
-			border-right:1px solid #999;
-			left:-50%;
-			-webkit-transition: all 0.5s ease;
-		  	-moz-transition: all 0.5s ease;
-		  	-o-transition: all 0.5s ease;
-		  	-ms-transition: all 0.5s ease;
-		  	transition: all 0.5s ease;
-		}
-		nav.open{
-			left:0;
-		}
-	}*/
 }
 
 /* NAV WIDTH */
-@media (min-width:480px) and (max-width:767px){
+@media (min-width:481px) and (max-width:768px){
 	nav{
-			width:50%;
+		width:50%;
 	}
 }
 	
 /* MAX HEIGHT FOR DRAWER TO SLIDE FROM TOP */
 @media (max-height:579px){
 	nav{
-		height:0;
-		/*display:none;*/
-		-webkit-transition: height 0.5s ease;
-	  	-moz-transition: height 0.5s ease;
-	  	-o-transition: height 0.5s ease;
-	  	-ms-transition: height 0.5s ease;
-	  	transition: height 0.5s ease;
+		max-height:0;
 	  	left:1%;
 	  	overflow:hidden;
 	}
 	nav.open{
-		height:auto;
+		max-height:1000px;
 		overflow:hidden;
 	}
 }
@@ -157,7 +99,7 @@
 }
 
 /* POSITIONS COLUMNS */
-@media (min-width:480px) and (max-width:767px){
+@media (min-width:481px) and (max-width:768px){
 	#positions > div{
 		width:50%;
 	}
@@ -177,57 +119,94 @@
 @media (min-width:769px){
 	#positions > div:hover img,
 	#positions > div.active img{
-		-webkit-transform:scale(1.18);
-		-moz-transform:scale(1.18);
-		-ms-transform:scale(1.18);
-		-o-transform:scale(1.18);
-		 transform:scale(1.18);
+		-webkit-transform:scale(1.1);
+		-moz-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+		-o-transform:scale(1.1);
+		 transform:scale(1.1);
 	}
 }
 /* SUPPORT THE CAUSE */
 @media (max-width:480px){
 	#support-the-cause > div{
-		border-color:#fff;
+		color:#fff;
 	}
 	#support-the-cause [data-cancer-type=breast]{
-		background-color:;
+		background-color:#33ccff;
+	}
+	#support-the-cause [data-cancer-type=breast] a:hover{
+		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=testicular]{
-		background-color:;
+		background-color:#33ccff;
+	}
+	#support-the-cause [data-cancer-type=testicular] a:hover{
+		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=skin]{
-		background-color:;
+		background-color:#33ccff;
+	}
+	#support-the-cause [data-cancer-type=skin] a:hover{
+		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=prostate]{
-
+		background-color:#33ccff;
+	}
+	#support-the-cause [data-cancer-type=prostate] a:hover{
+		color:#33ccff;
 	}
 }
 @media (min-width:481px){
+	#support-the-cause .cs-button{
+		display:block;
+		width:300px;
+		margin:0 auto;
+	}
+	#support-the-cause .cs-button:hover{
+		color:#fff;
+	}
 	#support-the-cause > div{
 		background-color:#fff;
+		padding-bottom:10px;
 	}
-	#support-the-cause [data-cancer-type=breast]{
-		border-color:;
+	#support-the-cause [data-cancer-type=breast] a{
+		border-color:#f0532a;
+		color:#f0532a;
+	}
+	#support-the-cause [data-cancer-type=breast] a:hover{
+		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=breast] h4{
-		color:;
+		color:#f0532a;
 	}
-	#support-the-cause [data-cancer-type=testicular]{
-
+	#support-the-cause [data-cancer-type=testicular] a{
+		border-color:#f0532a;
+		color:#f0532a;
+	}
+	#support-the-cause [data-cancer-type=testicular] a:hover{
+		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=testicular] h4{
-		color:;
+		color:#f0532a;
 	}
-	#support-the-cause [data-cancer-type=skin]{
-
+	#support-the-cause [data-cancer-type=skin] a{
+		border-color:#f0532a;
+		color:#f0532a;
+	}
+	#support-the-cause [data-cancer-type=skin] a:hover{
+		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=skin] h4{
-		color:;
+		color:#f0532a;
 	}
-	#support-the-cause [data-cancer-type=prostate]{
-
+	#support-the-cause [data-cancer-type=prostate] a{
+		border-color:#f0532a;
+		color:#f0532a;
+	}
+	#support-the-cause [data-cancer-type=prostate] a:hover{
+		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=prostate] h4{
-		color:;
+		color:#f0532a;
 	}
 }
