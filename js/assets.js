@@ -21,6 +21,9 @@ var Odelay = {
         Mousetrap.bind('esc', function() {
             Odelay.close();
         });
+        $wrapper.on('click',function(){
+            Nav.close();
+        });
     },
     'close': function(){
 
@@ -37,6 +40,7 @@ var Odelay = {
                 window.location.href = '#/positions';
             }
         }
+         $wrapper.off('click');
     },
     'isOpen': function(){
         if($overlay.hasClass('open')){
@@ -48,19 +52,7 @@ var Odelay = {
     }
 }
 
-//ABOUT CONTENT HEIGHT FOR SVG BGS
-function setAboutHeights(){
-    if(window.innerWidth > 767){
-        $('#about .row').css('height',$(window.innerHeight - 50));
-    }
-    else{
-        /*$('#about .row').css('height',window.innerHeight - 75);*/
-        $('#about .row').css('height',$(window).height() - 75);
-    }
-}
-
 //TOOGLE NAVIGATION
-
 var Nav = {
     'toggle': function(){
         var $that = $('.menu-toggle');
@@ -93,8 +85,13 @@ var Nav = {
     }
 }
 
-//ANIMATION
+//ABOUT CONTENT HEIGHT FOR SVG BGS
+function setAboutHeights(){
+    console.log(window.innerHeight)
+    $('#about .row').css('height',window.innerHeight - 45);
+}
 
+//ANIMATION
 function animateThisSVG(obj,name){
     //console.log(obj[name].topLevelSelector)
     var container = Snap.select(obj[name].topLevelSelector);
@@ -118,6 +115,22 @@ function animateThisSVG(obj,name){
         }
     }
 }
+
+//SCROLL TO ANCHOR
+jQuery.fn.extend({
+    scrollToAnchor: function(theOffset, theTime) {
+        var theSelector = this;
+        if (!theTime) {
+            var theTime = 500
+        }
+        if (!theOffset) {
+            var theOffset = 0;
+        }
+        $('html,body').animate({
+            scrollTop: theSelector.offset().top - 45
+        }, theTime);
+    }
+});
 
 //FILTERS
 
@@ -169,7 +182,6 @@ function filters($obj){
         var $theFilter = $cancerType.filter($partnership);
     }
     else if($cancerType.length > 0 && $partnership.length == 0){
-        //console.log('ITS SINGLE: CANCER-TYPE')
         var $theFilter = $cancerType;
     }
     else if($cancerType.length == 0 && $partnership.length > 0){
@@ -191,18 +203,3 @@ var delay = (function(){
     timer = setTimeout(callback, ms);
   };
 })();
-
-jQuery.fn.extend({
-    scrollToAnchor: function(theOffset, theTime) {
-        var theSelector = this;
-        if (!theTime) {
-            var theTime = 500
-        }
-        if (!theOffset) {
-            var theOffset = 0;
-        }
-        $('html,body').animate({
-            scrollTop: theSelector.offset().top - 50
-        }, theTime);
-    }
-});

@@ -1,5 +1,6 @@
 //ABOUT.JS
 var aboutAnimations;
+
 function loadAboutAnimations(){
 	//Load SVG INFO FROM JSON
 	$.getJSON('data/animations-about.json',function(about){
