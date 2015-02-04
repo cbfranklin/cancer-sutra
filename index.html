@@ -48,7 +48,7 @@
 		<nav class="row">
 			<ul class="navigation">
 				<li><a class="nav-about" href="#">About</a></li>
-				<li><a class="nav-positions" href="#/positions">Positions</a></li>
+				<li><a class="nav-positions" href="#/positions">All Positions</a></li>
 			</ul>
 			<div class="filters">
 				<div data-filter-type="cancer-type" class="filter cancer-type">
@@ -81,7 +81,7 @@
 		  <img alt="" src="img/loader.svg">
 		</div>
 		<section id="about">
-			<div id="one" class="one row">
+			<div id="one" class="one row onScreen">
 				<div class="copy">
 					<div class="col-sm-5 col-sm-offset-7">
 					<h2>This project exists to help save lives.</h2>
@@ -142,6 +142,10 @@
 					<p>It's time we got to the real thrust of the matter.</p>
 					<a class="hvr-hang cs-button" href="#/positions">ONWARD &amp; UNDERWARD</a>
 				</div>
+				<div style="display:none" class="about-navigation">
+					<img id="prev" src="img/desktop-arrow-up.png"/>
+					<span>5/5</span>
+				</div>
 			</div>
 		</section>
 
@@ -153,6 +157,7 @@
 				<div data-cancer-type="breast">
 					<div class="chapter-inner">
 							<div class="part1">
+								<img class="dropcap hidden-xs" src="img/dropcaps/B.svg">
 								<h2>Breast Cancer</h2>
 								<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
 								<p>Never you fret.</p>
@@ -198,13 +203,14 @@
 							</div>
 						</div>
 						<div class="expand">
-							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
+							<img class="open" src="img/desktop-arrow-up.png"/><img class="closed" src="img/desktop-arrow-down.png"/>
 						</div>
 					</div>
 				</div>
 				<div data-cancer-type="testicular">
 					<div class="chapter-inner">
 						<div class="part1">
+							<img class="dropcap hidden-xs" src="img/dropcaps/T.svg">
 							<h2>Testicular Cancer</h2>
 							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
 							<p>Never you fret.</p>
@@ -250,13 +256,14 @@
 							</div>
 						</div>
 						<div class="expand">
-							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
+							<img class="open" src="img/desktop-arrow-up.png"/><img class="closed" src="img/desktop-arrow-down.png"/>
 						</div>
 					</div>
 				</div>
 				<div data-cancer-type="skin">
 					<div class="chapter-inner">
 						<div class="part1">
+							<img class="dropcap hidden-xs" src="img/dropcaps/S.svg">
 							<h2>Skin Cancer</h2>
 							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
 							<p>Never you fret.</p>
@@ -302,13 +309,14 @@
 							</div>
 						</div>
 						<div class="expand">
-							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
+							<img class="open" src="img/desktop-arrow-up.png"/><img class="closed" src="img/desktop-arrow-down.png"/>
 						</div>
 					</div>
 				</div>
 				<div data-cancer-type="prostate">
 					<div class="chapter-inner">
 						<div class="part1">
+							<img class="dropcap hidden-xs" src="img/dropcaps/P.svg">
 							<h2>Prostate Cancer</h2>
 							<p>The skin is the largest of the body's organs (yes, men, even yours), which likely means the thought of memorizing every delicious curve, nook, and cranny has paralyzed your brain under the weight of this seemingly impossible task.</p>
 							<p>Never you fret.</p>
@@ -354,7 +362,7 @@
 							</div>
 						</div>
 						<div class="expand">
-							<span class="glyphicon glyphicon-circle-arrow-down closed"></span><span class="glyphicon glyphicon-circle-arrow-up open"></span>
+							<img class="open" src="img/desktop-arrow-up.png"/><img class="closed" src="img/desktop-arrow-down.png"/>
 						</div>
 					</div>
 				</div>
@@ -363,7 +371,7 @@
 			<div id="positions">
 				<div data-position="1" data-cancer-type="breast" data-partnership="ff">
 					<img alt="" src="img/positions/svg/1.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="1" class="detail detail-image-vertical">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -387,7 +395,7 @@
 				</div>
 				<div data-position="2" data-cancer-type="skin" data-partnership="mf">
 					<img alt="" src="img/positions/svg/2.alt.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="2" class="detail detail-image-horizontal">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -405,7 +413,7 @@
 				</div>
 				<div data-position="3" data-cancer-type="testicular" data-partnership="mf">
 					<img alt="" src="img/positions/svg/3.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="3" class="detail detail-image-vertical">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -423,7 +431,7 @@
 				</div>
 				<div data-position="4" data-cancer-type="skin" data-partnership="ff">
 					<img alt="" src="img/positions/svg/4.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="4" class="detail detail-image-horizontal">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -441,7 +449,7 @@
 				</div>
 				<div data-position="5" data-cancer-type="prostate" data-partnership="mm">
 					<img alt="" src="img/positions/svg/5.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="5" class="detail detail-image-horizontal">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -459,7 +467,7 @@
 				</div>
 				<div data-position="6" data-cancer-type="breast" data-partnership="ff">
 					<img alt="" src="img/positions/svg/6.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="6" class="detail detail-image-vertical">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -477,7 +485,7 @@
 				</div>
 				<!--<div data-position="7" data-cancer-type="" data-partnership="mm">
 					<img alt="" src="img/positions/svg/7.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="7" class="detail">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -494,7 +502,7 @@
 					</div>
 				</div>-->
 				<div data-position="8" data-cancer-type="breast" data-partnership="ff">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<img alt="" src="img/positions/svg/8.svg">
 					<div data-position="8" class="detail detail-image-vertical">
 						<div class="row-fluid">
@@ -513,7 +521,7 @@
 				</div>
 				<div data-position="9" data-cancer-type="testicular" data-partnership="mf">
 					<img alt="" src="img/positions/svg/9.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="9" class="detail detail-image-vertical">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -531,7 +539,7 @@
 				</div>
 				<div data-position="10" data-cancer-type="skin" data-partnership="ff">
 					<img alt="" src="img/positions/svg/10.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="10" class="detail detail-image-horizontal">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -549,7 +557,7 @@
 				</div>
 				<div data-position="11" data-cancer-type="testicular" data-partnership="mf">
 					<img alt="" src="img/positions/svg/11.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="11" class="detail detail-image-vertical">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -567,7 +575,7 @@
 				</div>
 				<div data-position="12" data-cancer-type="prostate" data-partnership="mm">
 					<img alt="" src="img/positions/svg/12.svg">
-					<div class="hover-title">Hover Title</div>
+					<div class="hover-title">Hover Title<small>Cancer Type</small></div>
 					<div data-position="12" class="detail detail-image-horizontal">
 						<div class="row-fluid">
 							<div class="col-sm-6 col-md-6 detail-image">
@@ -651,11 +659,13 @@
 
 	<script src="js/assets/imagesloaded.pkgd.min.js"></script>
 	<!--<script src="js/assets/jquery.touchSwipe.min.js"></script>-->
+	<script src="js/assets/underscore-min.js"></script>
+	<script src="js/assets/jquery.mousewheel.min.js"></script>
+	<script src="js/assets/mousetrap.min.js"></script>
 	<script src="js/assets/jquery.onscreen.min.js"></script>
 	<script src="js/assets/snap.svg-min.js"></script>
 	<script src="js/assets/isotope.pkgd.min.js"></script>
 	<!--<script src="js/wow.min.js"></script>-->
-	<script src="js/assets/mousetrap.min.js"></script>
 	<script src="js/assets.js"></script>
 	<script src="js/about.js"></script>
 	<script src="js/app.js"></script>

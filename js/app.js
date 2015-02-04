@@ -55,10 +55,14 @@ function routes(){
 	    	console.log('positions')
 	    	loadPositions();
 	    },
-	    '/positions/:name' : function(name){
+	    '/positions/:position' : function(position){
 	    	console.log('position #')
 	    	load();
-	    	loadPositions(name);
+	    	loadPositions('positions', positionName);
+	    },
+	     '/chapters/:cancerType' : function(cancerType){
+	     	console.log('chapter #')
+	     	loadPositions('chapters', cancerType);
 	    },
 	     '/support' : function(){
 	     	loadSupport();
@@ -147,7 +151,8 @@ function loadAbout(){
 			animateThisSVG(aboutAnimations,id)
 		},
 		tolerance: 200,
-		throttle: 1000
+		throttle: 1000,
+		toggleClass: 'onScreen'
 	});
 	$('.about-navigation img').on('click',function(){
 		var id = $(this).attr('id');
@@ -158,9 +163,19 @@ function loadAbout(){
 			$(this).parents('.row').prev().scrollToAnchor()
 		}
 	});
+	Mousetrap.bind(['up','left',',','['], function() {
+			console.log('previous')
+            $('#about .onScreen #prev').click();
+            return false;
+    });
+    Mousetrap.bind(['down','right','.',']'], function() {
+    		console.log('next')
+            $('#about .onScreen #next').click();
+            return false;
+    });
 };
 
-function loadPositions(name){
+function loadPositions(route,name){
 	load();
 	$positionsContainer.show();
 	$body.removeClass('loading about support').addClass('positions');
@@ -170,14 +185,29 @@ function loadPositions(name){
 		$support.hide();
 		window.scrollTo(0, 0);
 	},400);
-
-	if(name != undefined){
-		setTimeout(function(){
-			$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
-	    	showPosition(name)
-		},500);
+	//no position or chapter
+	if(route != undefined){
+		//position
+		if(route === 'positions'){
+			setTimeout(function(){
+				$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
+		    	showPosition(name)
+			},500);
+		}
+		//chapter
+		else if(route === 'chapters'){
+			setTimeout(function(){
+				var $obj = $('.filter [data-filter="'+name+'"]')
+		    	filters($obj);
+			},500);
+		}
+		else{
+			clearFilters();
+			Odelay.close();
+		}
 	}
 	else{
+		clearFilters();
 		Odelay.close();
 	}
 	$positions.isotope();

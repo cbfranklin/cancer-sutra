@@ -133,7 +133,12 @@ jQuery.fn.extend({
 });
 
 //FILTERS
-
+function clearFilters(){
+    if($('.filters [data-toggle=on]')){
+        var $obj = $('.filters [data-toggle=on]')
+        filters($obj);
+    }
+}
 function filters($obj){
     Odelay.close();
     if($obj.data('toggle') === 'off'){
@@ -147,12 +152,25 @@ function filters($obj){
             window.scrollTo(0, 0);
         }
         $obj.data('toggle','on').attr('data-toggle','on')
+
+        if(Modernizr.history){
+            history.pushState({}, '', '#/chapter/'+cancerType);
+        }
+        else{
+            window.location.hash = '#/chapter/'+cancerType;
+        }
     }
     else{
         $obj.data('toggle','off').attr('data-toggle','off');
         if($obj.data('filter-type') === 'cancer-type'){
             $('#chapters > div').removeClass('open').children().removeClass('open');
             window.scrollTo(0, 0);
+        }
+        if(Modernizr.history){
+            history.pushState({}, '', '#/positions');
+        }
+        else{
+            window.location.hash = '#/positions';
         }
     }
 

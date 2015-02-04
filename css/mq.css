@@ -77,7 +77,7 @@
 }
 	
 /* MAX HEIGHT FOR DRAWER TO SLIDE FROM TOP */
-@media (max-height:579px){
+/*@media (max-height:579px){
 	nav{
 		max-height:0;
 	  	left:1%;
@@ -87,16 +87,16 @@
 		max-height:1000px;
 		overflow:hidden;
 	}
-}
+}*/
 
 /* MIN HEIGHT FOR NAV DRAWER TO SLIDE FROM LEFT */
-@media (min-height:580px) and (min-width:900px){
+/*@media (min-height:580px) and (min-width:900px){
 		nav{
 			position:fixed;
 			top:45px;
 			width:33%;
 		}
-}
+}*/
 
 /* POSITIONS COLUMNS */
 @media (min-width:481px) and (max-width:768px){
