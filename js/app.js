@@ -84,13 +84,13 @@ function bindings(){
 	});
 
 	$('body').on('swipe','#about',function(event){
-		$('body').css('background','blue');
+		//$('body').css('background','blue');
 		var dir = event.direction
-		$('.device-menu h1').html('').text(dir);
+		$('.device-menu h1').text('not yet...').text(dir);
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
-	    if (event.direction === 'left') {
+	    if (event.direction === 'down') {
 	        $('body').css('background','red');
 	    }
 	});
