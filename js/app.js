@@ -83,7 +83,7 @@ function bindings(){
 		$(this).siblings('.part2').toggleClass('open');
 	});
 
-	$('body').on('swipe',function(event){
+	$('body').on('swipe','#about',function(event){
 		$('body').css('background','blue');
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
