@@ -93,7 +93,7 @@ function bindings(){
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
-	    $('.device-menu h1').text(touches)
+	    $('.device-menu h1').text(touches.length)
 	});
 }
 
