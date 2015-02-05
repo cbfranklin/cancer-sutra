@@ -117,8 +117,7 @@
 
 /* HOVER FOR FULL SITE ONLY */
 @media (min-width:769px){
-	.no-touch #positions > div:hover img,
-	.no-touch #positions > div.active img{
+	.no-touch #positions > div:hover img{
 		-webkit-transform:scale(1.1);
 		-moz-transform:scale(1.1);
 		-ms-transform:scale(1.1);
@@ -134,25 +133,29 @@
 	#support-the-cause [data-cancer-type=breast]{
 		background-color:#33ccff;
 	}
-	.no-touch #support-the-cause [data-cancer-type=breast] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=breast] a:hover,
+	#support-the-cause [data-cancer-type=breast] a:active{
 		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=testicular]{
 		background-color:#33ccff;
 	}
-	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover,
+	#support-the-cause [data-cancer-type=testicular] a:active{
 		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=skin]{
 		background-color:#33ccff;
 	}
-	.no-touch #support-the-cause [data-cancer-type=skin] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=skin] a:hover,
+	#support-the-cause [data-cancer-type=skin] a:active{
 		color:#33ccff;
 	}
 	#support-the-cause [data-cancer-type=prostate]{
 		background-color:#33ccff;
 	}
-	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
+	#support-the-cause [data-cancer-type=prostate] a:active{
 		color:#33ccff;
 	}
 }
@@ -162,7 +165,8 @@
 		width:300px;
 		margin:0 auto;
 	}
-	.no-touch #support-the-cause .cs-button:hover{
+	.no-touch #support-the-cause .cs-button:hover,
+	#support-the-cause .cs-button:active{
 		color:#fff;
 	}
 	#support-the-cause > div{
@@ -173,7 +177,8 @@
 		border-color:#f0532a;
 		color:#f0532a;
 	}
-	.no-touch #support-the-cause [data-cancer-type=breast] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=breast] a:hover,
+	#support-the-cause [data-cancer-type=breast] a:active{
 		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=breast] h4{
@@ -183,7 +188,8 @@
 		border-color:#f0532a;
 		color:#f0532a;
 	}
-	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover,
+	#support-the-cause [data-cancer-type=testicular] a:active{
 		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=testicular] h4{
@@ -193,7 +199,8 @@
 		border-color:#f0532a;
 		color:#f0532a;
 	}
-	.no-touch #support-the-cause [data-cancer-type=skin] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=skin] a:hover,
+	#support-the-cause [data-cancer-type=skin] a:active{
 		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=skin] h4{
@@ -203,7 +210,8 @@
 		border-color:#f0532a;
 		color:#f0532a;
 	}
-	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover{
+	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
+	#support-the-cause [data-cancer-type=prostate] a:active{
 		background-color:#f0532a;
 	}
 	#support-the-cause [data-cancer-type=prostate] h4{

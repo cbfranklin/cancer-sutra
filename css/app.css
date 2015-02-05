@@ -299,7 +299,8 @@ nav.open{
 	text-decoration: none;
 	color:#000;
 }
-.no-touch .navigation:hover{
+.no-touch .navigation:hover,
+.navigation:active{
 	text-decoration: none;
 }
 .about .nav-about{
@@ -427,7 +428,8 @@ footer .acc{
 	padding-top:10%;
 }
 
-.no-touch #about .five a:hover{
+.no-touch #about .five a:hover,
+#about .five a:active{
 	color:rgb(221,112,189);
 }
 
@@ -602,7 +604,8 @@ footer .acc{
 	display:block;
 	cursor:pointer;
 }
-.no-touch .cs-button:hover{
+.no-touch .cs-button:hover,
+.cs-button:active{
 	text-decoration: none;
 	background:#fff;
 }
