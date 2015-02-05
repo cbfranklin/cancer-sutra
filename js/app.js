@@ -90,7 +90,7 @@ function bindings(){
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
-	    if (event.direction === 'down') {
+	    if (dir === 'down') {
 	        $('body').css('background','red');
 	    }
 	});
