@@ -137,7 +137,7 @@ function loadAbout(){
 	$about.show();
 	$body.removeClass('loading positions support').addClass('about');
 	//disable scrolling
-	$(window).on('touchmove', true);
+	$(window).on('touchmove', false);
 	setTimeout(function(){
 		$positionsContainer.hide();
 		window.scrollTo(0, 0);
