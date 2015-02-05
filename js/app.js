@@ -82,19 +82,6 @@ function bindings(){
 		$(this).toggleClass('open');
 		$(this).siblings('.part2').toggleClass('open');
 	});
-
-	$('body').on('swipe','#about',function(event){
-		//$('body').css('background','blue');
-		/*var dir = event.direction
-		$('.device-menu h1').text('not yet...').text(dir);
-		if (dir === 'down') {
-	        $('.device-menu h1').text('not yet...').text('it was down!');
-	    }*/
-	    var original = event.originalEvent,
-	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
-
-	    $('.device-menu h1').text(original.touches.length)
-	});
 }
 
 //LOAD
@@ -187,16 +174,25 @@ function loadAbout(){
 			$(this).parents('.row').prev().scrollToAnchor()
 		}
 	});
-	Mousetrap.bind(['up','left',',','['], function() {
-			console.log('previous')
-            $('#about .onScreen #prev').click();
-            return false;
-    });
     Mousetrap.bind(['down','right','.',']'], function() {
-    		console.log('next')
             $('#about .onScreen #next').click();
             return false;
     });
+    	Mousetrap.bind(['up','left',',','['], function() {
+            $('#about .onScreen #prev').click();
+            return false;
+    });
+    $('body').on('swipe','#about',function(event){
+		var dir = event.direction
+		if (dir === 'down') {
+	        $('#about .onScreen #next').click();
+            return false;
+	    }
+	    if(dir === 'up'){
+	    	$('#about .onScreen #next').click();
+            return false;
+	    }
+	});
 };
 
 //POSITIONS
