@@ -90,28 +90,33 @@ function setAboutHeights(){
     console.log(window.innerHeight)
     $('#about .row').css('height',window.innerHeight - 45);
 }
+function setSectionHeights(){
+    $('section').css('minHeight',window.innerHeight - 195);
+}
 
 //ANIMATION
 function animateThisSVG(obj,name){
     //console.log(obj[name].topLevelSelector)
-    var container = Snap.select(obj[name].topLevelSelector);
-    var animatedEls = obj[name].animatedEls;
+    if(obj){
+        var container = Snap.select(obj[name].topLevelSelector);
+        var animatedEls = obj[name].animatedEls;
 
-    for(i in animatedEls){
-        //console.log(animatedEls[i].selector)
+        for(i in animatedEls){
+            //console.log(animatedEls[i].selector)
 
-        var el = container.select(animatedEls[i].selector);
+            var el = container.select(animatedEls[i].selector);
 
-        for(j in animatedEls[i].states){
+            for(j in animatedEls[i].states){
 
-            var state = animatedEls[i].states[j];
+                var state = animatedEls[i].states[j];
 
-            function animate(el,state){
-                //console.log(el)
-                el.animate({d:state.d},state.time,state.easing);
+                function animate(el,state){
+                    //console.log(el)
+                    el.animate({d:state.d},state.time,state.easing);
+                }
+
+                setTimeout(animate, state.delay, el,state);
             }
-
-            setTimeout(animate, state.delay, el,state);
         }
     }
 }
@@ -154,10 +159,10 @@ function filters($obj){
         $obj.data('toggle','on').attr('data-toggle','on')
 
         if(Modernizr.history){
-            history.pushState({}, '', '#/chapter/'+cancerType);
+            history.pushState({}, '', '#/chapters/'+cancerType);
         }
         else{
-            window.location.hash = '#/chapter/'+cancerType;
+            window.location.hash = '#/chapters/'+cancerType;
         }
     }
     else{

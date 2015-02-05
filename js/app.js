@@ -74,14 +74,19 @@ function load(){
 	$body.addClass('loading');
 	Odelay.close();
 	Nav.close();
+	//enable scrolling
+	$(document).bind('touchmove', true);
 }
 
 function bindings(){
 
 	//keep 'about' sections sized to window height
+	//and section min-height appropriate
 	setAboutHeights();
+	setSectionHeights();
 	$(window).on('resize',function(){
 		setAboutHeights();
+		setSectionHeights();
 	});
 
 	//menu
@@ -131,6 +136,8 @@ function loadAbout(){
 
 	$about.show();
 	$body.removeClass('loading positions support').addClass('about');
+	//disable scrolling
+	$(document).bind('touchmove', false);
 	setTimeout(function(){
 		$positionsContainer.hide();
 		window.scrollTo(0, 0);
