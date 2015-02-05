@@ -88,7 +88,7 @@ function bindings(){
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
-	    if (touches.length === 2 && event.direction === 'left') {
+	    if (event.direction === 'left') {
 	        $('body').css('background','red');
 	    }
 	});
