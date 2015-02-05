@@ -237,14 +237,16 @@ function loadPositions(route,name){
 
 	$('body').on('swipe','#positions-container',function(event){
 		var dir = event.direction;
-		if(dir === 'right'){
-            Nav.open();
-            return false;
-	    }
-		if (dir === 'left') {
-			Nav.close();
-            return false;
-	    }
+		if($(window).innerWidth() > 480){
+			if(dir === 'right'){
+	            Nav.open();
+	            return false;
+		    }
+			if (dir === 'left') {
+				Nav.close();
+	            return false;
+		    }
+		}
 	});
 }
 
