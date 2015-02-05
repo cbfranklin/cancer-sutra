@@ -185,11 +185,11 @@ function loadAbout(){
     $('body').on('swipe','#about',function(event){
 		var dir = event.direction
 		if (dir === 'down') {
-	        $('#about .onScreen #next').click();
+			$('#about .onScreen #prev').click();
             return false;
 	    }
 	    if(dir === 'up'){
-	    	$('#about .onScreen #prev').click();
+            $('#about .onScreen #next').click();
             return false;
 	    }
 	});
