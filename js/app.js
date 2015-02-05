@@ -85,15 +85,15 @@ function bindings(){
 
 	$('body').on('swipe','#about',function(event){
 		//$('body').css('background','blue');
-		var dir = event.direction
+		/*var dir = event.direction
 		$('.device-menu h1').text('not yet...').text(dir);
 		if (dir === 'down') {
 	        $('.device-menu h1').text('not yet...').text('it was down!');
-	    }
+	    }*/
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
-	    $('.device-menu h1').text(touches.length)
+	    $('.device-menu h1').text(original.touches.length)
 	});
 }
 
