@@ -75,7 +75,7 @@ function load(){
 	Odelay.close();
 	Nav.close();
 	//enable scrolling
-	$(document).bind('touchmove', true);
+	$(window).on('touchmove', true);
 }
 
 function bindings(){
@@ -137,7 +137,7 @@ function loadAbout(){
 	$about.show();
 	$body.removeClass('loading positions support').addClass('about');
 	//disable scrolling
-	$(document).bind('touchmove', false);
+	$(window).on('touchmove', true);
 	setTimeout(function(){
 		$positionsContainer.hide();
 		window.scrollTo(0, 0);
