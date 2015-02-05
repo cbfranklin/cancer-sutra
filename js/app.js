@@ -189,7 +189,7 @@ function loadAbout(){
             return false;
 	    }
 	    if(dir === 'up'){
-	    	$('#about .onScreen #next').click();
+	    	$('#about .onScreen #prev').click();
             return false;
 	    }
 	});
