@@ -88,7 +88,7 @@ function bindings(){
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
 
 	    if (touches.length === 2 && event.direction === 'left') {
-	        $('body').css('color','red');
+	        $('body').css('background','red');
 	    }
 	});
 }
