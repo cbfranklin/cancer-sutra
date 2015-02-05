@@ -524,6 +524,7 @@ footer .acc{
 .chapter-inner{
 	max-width:768px;
 	margin:0 auto;
+	padding-top:15px;
 }
 #chapters > div.open{
 	display:block;
