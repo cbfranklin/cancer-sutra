@@ -85,10 +85,10 @@ function bindings(){
 
 	$('body').on('swipe','#about',function(event){
 		$('body').css('background','blue');
+		var dir = event.direction
+		$('.device-menu h1').html('').text(dir);
 	    var original = event.originalEvent,
 	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
-
-	        $('.device-menu h1').text(event.direction)
 
 	    if (event.direction === 'left') {
 	        $('body').css('background','red');
