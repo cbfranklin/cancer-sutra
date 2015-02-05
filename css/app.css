@@ -190,7 +190,7 @@ header p{
 	vertical-align: middle;
 }
 
-.foreplay a:hover{
+.no-touch .foreplay a:hover{
 	text-decoration: none;
 }*/
 
@@ -299,7 +299,7 @@ nav.open{
 	text-decoration: none;
 	color:#000;
 }
-.navigation:hover{
+.no-touch .navigation:hover{
 	text-decoration: none;
 }
 .about .nav-about{
@@ -427,7 +427,7 @@ footer .acc{
 	padding-top:10%;
 }
 
-#about .five a:hover{
+.no-touch #about .five a:hover{
 	color:rgb(221,112,189);
 }
 
@@ -492,14 +492,14 @@ footer .acc{
 	display:block;
 	font-size:0.7em;
 }
-#positions > div:hover .hover-title,
-#positions > div.active .hover-title{
+.no-touch #positions > div:hover .hover-title,
+.no-touch #positions > div.active .hover-title{
 	display:block;
 }
-#positions > div:hover{
+.no-touch #positions > div:hover{
 	z-index:2;
 }
-.overlay-open #positions > div:hover{
+.no-touch .overlay-open #positions > div:hover{
 	z-index:1;
 }
 
@@ -602,7 +602,7 @@ footer .acc{
 	display:block;
 	cursor:pointer;
 }
-.cs-button:hover{
+.no-touch .cs-button:hover{
 	text-decoration: none;
 	background:#fff;
 }
@@ -644,7 +644,7 @@ nav{
 	text-align:center;
 }
 .filter a,
-.filter a:hover,
+.no-touch .filter a:hover,
 .filter a:active{
 	text-decoration: none;
 }
@@ -837,7 +837,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 }
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+.no-touch .hvr-hang:hover, .no-touch .hvr-hang:focus, .no-touch .hvr-hang:active {
 	-webkit-animation-name: hvr-hang-sink, hvr-hang;
 	animation-name: hvr-hang-sink, hvr-hang;
 	-webkit-animation-duration: .3s, 1.5s;
@@ -905,7 +905,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+.no-touch .hvr-bob:hover, .no-touch .hvr-bob:focus, .no-touch .hvr-bob:active {
 	-webkit-animation-name: hvr-bob-float, hvr-bob;
 	animation-name: hvr-bob-float, hvr-bob;
 	-webkit-animation-duration: .3s, 1.5s;
