@@ -82,6 +82,21 @@ function bindings(){
 		$(this).toggleClass('open');
 		$(this).siblings('.part2').toggleClass('open');
 	});
+
+	//MENU SWIPE
+	$('body').on('swipe','.wrapper',function(event){
+		var dir = event.direction;
+		if($(window).innerWidth() > 480){
+			if(dir === 'right'){
+	            Nav.open();
+	            return false;
+		    }
+			if (dir === 'left') {
+				Nav.close();
+	            return false;
+		    }
+		}
+	});
 }
 
 //LOAD
@@ -234,20 +249,6 @@ function loadPositions(route,name){
 	$positions.isotope();
 	$positionsContainer.show();
 	$positions.isotope('layout');
-
-	$('body').on('swipe','#positions-container',function(event){
-		var dir = event.direction;
-		if($(window).innerWidth() > 480){
-			if(dir === 'right'){
-	            Nav.open();
-	            return false;
-		    }
-			if (dir === 'left') {
-				Nav.close();
-	            return false;
-		    }
-		}
-	});
 }
 
 //SUPPORT
