@@ -75,7 +75,7 @@ function load(){
 	Odelay.close();
 	Nav.close();
 	//enable scrolling
-	$(window).on('touchmove', true);
+	//$(window).on('touchmove', true);
 }
 
 function bindings(){
