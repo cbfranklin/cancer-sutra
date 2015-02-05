@@ -12,6 +12,7 @@ $body,
 $overlay,
 $overlayContent;
 
+//READY
 $(function(){
 	$body = $('body');
 	$wrapper = $('.wrapper');
@@ -30,54 +31,7 @@ $(function(){
 	imagesLoaded('body',routes);
 });
 
-function routes(){
-	routie({
-	    '' : function(){
-	    	console.log('about')
-	    	load();
-	    	loadAbout();
-	    },
-	    '/' : function(){
-	    	console.log('about')
-	    	load();
-	    	loadAbout();
-	    },
-	    '/about' : function(){
-	    	console.log('about')
-	    	load();
-	    	loadAbout();
-	    },
-	    '/positions' : function(){
-	    	console.log('positions')
-	    	loadPositions();
-	    },
-	    '/positions/' : function(){
-	    	console.log('positions')
-	    	loadPositions();
-	    },
-	    '/positions/:position' : function(position){
-	    	console.log('position #')
-	    	load();
-	    	loadPositions('positions', positionName);
-	    },
-	     '/chapters/:cancerType' : function(cancerType){
-	     	console.log('chapter #')
-	     	loadPositions('chapters', cancerType);
-	    },
-	     '/support' : function(){
-	     	loadSupport();
-	    }
-	});
-};
-
-function load(){
-	$body.addClass('loading');
-	Odelay.close();
-	Nav.close();
-	//enable scrolling
-	$(window).off('touchmove');
-}
-
+//BINDINGS
 function bindings(){
 
 	//keep 'about' sections sized to window height
@@ -128,9 +82,68 @@ function bindings(){
 		$(this).toggleClass('open');
 		$(this).siblings('.part2').toggleClass('open');
 	});
+
+	$('body').on('swipe',function(event){
+	    var original = event.originalEvent,
+	        touches = original.touches.length > 0 ? original.touches : original.changedTouches;
+
+	    if (touches.length === 2 && event.direction === 'left') {
+	        $('body').css('color','red');
+	    }
+	});
+}
+
+//LOAD
+function load(){
+	$body.addClass('loading');
+	Odelay.close();
+	Nav.close();
+	//enable scrolling
+	$(window).off('touchmove');
 }
 
 //ROUTES
+function routes(){
+	routie({
+	    '' : function(){
+	    	console.log('about')
+	    	load();
+	    	loadAbout();
+	    },
+	    '/' : function(){
+	    	console.log('about')
+	    	load();
+	    	loadAbout();
+	    },
+	    '/about' : function(){
+	    	console.log('about')
+	    	load();
+	    	loadAbout();
+	    },
+	    '/positions' : function(){
+	    	console.log('positions')
+	    	loadPositions();
+	    },
+	    '/positions/' : function(){
+	    	console.log('positions')
+	    	loadPositions();
+	    },
+	    '/positions/:position' : function(position){
+	    	console.log('position #')
+	    	load();
+	    	loadPositions('positions', positionName);
+	    },
+	     '/chapters/:cancerType' : function(cancerType){
+	     	console.log('chapter #')
+	     	loadPositions('chapters', cancerType);
+	    },
+	     '/support' : function(){
+	     	loadSupport();
+	    }
+	});
+};
+
+//ABOUT
 function loadAbout(){
 	load();
 
@@ -182,6 +195,7 @@ function loadAbout(){
     });
 };
 
+//POSITIONS
 function loadPositions(route,name){
 	load();
 	$positionsContainer.show();
@@ -222,6 +236,7 @@ function loadPositions(route,name){
 	$positions.isotope('layout');
 }
 
+//SUPPORT
 function loadSupport(){
 	console.log('support')
 	load();
