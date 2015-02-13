@@ -8,8 +8,11 @@
 	.no-touch #positions > div:hover img{
 		transform:none;
 	}
-
 	nav{
+		/*width:90%;*/
+		left:-90%;
+	}
+	/*nav{
 		max-height:0;
 		position:static;
 		width:auto;
@@ -26,21 +29,38 @@
 		  	-ms-transition: all 0.75s ease;
 		  	transition: all 0.75s ease;
 		  	border-bottom:1px solid #444;
-	}
+	}*/
 
 	#about > div{
 		text-align: center;
 	}
 
-	#about h2{font-size:1.5em;}
+	/*#about h2{font-size:1.5em;}
 	#about h3{font-size:1.2em;}
 	#about p{font-size:0.8em;}
 	#about .one{padding:0 0 0 0;}
 	#about .two{padding:40% 10% 0 0;}
 	#about .three{padding:80% 0 0 10%;}
 	#about .four{padding:90% 0 0 0;}
-	#about .five{padding:10% 0 0 0;}
-
+	#about .five{padding:10% 0 0 0;}*/
+	#about .copy{
+		padding-top:5%;
+	}
+	#about .five h2{
+		text-transform: none;
+		font-size:14px;
+	}
+	.about-navigation #prev{
+		position:absolute;
+		left:10px;
+	}
+	.about-navigation #next{
+		position:absolute;
+		right:10px;
+	}
+	.about-navigation span{
+		display:none;
+	}
 
 }
 
@@ -64,39 +84,17 @@
 	}
 }
 
-/* SPLASH, TABLET AND UP */
-@media (min-width:481px){
-
-}
-
 /* NAV WIDTH */
 @media (min-width:481px) and (max-width:768px){
 	nav{
-		width:50%;
+		/*width:50%;*/
 	}
 }
-	
-/* MAX HEIGHT FOR DRAWER TO SLIDE FROM TOP */
-/*@media (max-height:579px){
+@media (min-width:992px){
 	nav{
-		max-height:0;
-	  	left:1%;
-	  	overflow:hidden;
+		/*width:25%;*/
 	}
-	nav.open{
-		max-height:1000px;
-		overflow:hidden;
-	}
-}*/
-
-/* MIN HEIGHT FOR NAV DRAWER TO SLIDE FROM LEFT */
-/*@media (min-height:580px) and (min-width:900px){
-		nav{
-			position:fixed;
-			top:45px;
-			width:33%;
-		}
-}*/
+}
 
 /* POSITIONS COLUMNS */
 @media (min-width:481px) and (max-width:768px){
@@ -160,6 +158,7 @@
 	}
 }
 @media (min-width:481px){
+
 	#support-the-cause .cs-button{
 		display:block;
 		width:300px;

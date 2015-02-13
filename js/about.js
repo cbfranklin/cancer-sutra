@@ -7,7 +7,12 @@ function loadAboutAnimations(){
 		//Load SVGs into containers
 		aboutAnimations = about;
 		for(var key in about){
-			var file = about[key].file;
+			if(windowWidth > 479){
+				var file = about[key]['file-full'];
+			}
+			else{
+				var file = about[key]['file-mobile'];
+			}
 			Snap.load(file,function(key){
 					return function(data){
 						var container = Snap('#about .'+key);

@@ -34,8 +34,9 @@ body.loading{
 section{
 	display:none;
 }
+
 /*.loading section{
-	display:none;f
+	display:none;
 }*/
 
 
@@ -198,15 +199,7 @@ header p{
 	height:30px;
 }*/
 
-.about .filters a,
-.support .filters a{
-	pointer-events: none;
-	color:#ccc;
-}
-.about .filters li,
-.support .filters li{
-	border-color:#ccc;
-}
+
 
 /* SVG WITH CSS ANIMATION */
 
@@ -257,19 +250,31 @@ header p{
   margin: 0 auto;
 }
 
-
+.nav-closer{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1999;
+}
+.nav-open .nav-closer{
+	display:block;
+}
 nav{
 	position:fixed;
 	top:45px;
-	width:33%;
-	left:1%;
+	/*width:33%;*/
 	background:#fdfdfd;
 	height:100%;
 	z-index:2001;
 	box-shadow:2px 20px 25px 5px #444;
 	box-shadow:2px 20px 25px 5px rgba(0,0,0,0.4);
 	border-right:1px solid #999;
+	border-bottom:0;
 	left:-50%;
+	width:250px;
 	overlow:hidden;
 	-webkit-transition: all 0.5s ease;
   	-moz-transition: all 0.5s ease;
@@ -316,7 +321,6 @@ nav.open{
 	background:#ccc;
 }
 .filters{
-	margin-top:15px;
 	overflow:hidden;
 }
 .filter{
@@ -347,6 +351,19 @@ nav.open{
 }
 .about .filter a[data-toggle="on"]{
 	color:#fff;
+}
+.double-underline{
+	border-bottom:3px double #000;
+}
+
+.about .filters a,
+.support .filters a{
+	/*pointer-events: none;*/
+	color:#ccc;
+}
+.about .filters li,
+.support .filters li{
+	border-color:#ccc;
 }
 
 footer{
@@ -383,7 +400,7 @@ footer .acc{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;*/
+	background-size: cover;
 	overflow:hidden;
 	position:relative;
 }
@@ -394,6 +411,7 @@ footer .acc{
 	position:absolute;
 	width:100%;
 	height:100%;
+	text-align:center;
 }
 .about-navigation{
 	position:absolute;
@@ -408,6 +426,8 @@ footer .acc{
 }
 .about-navigation img{
 	cursor:pointer;
+	width:35px;
+	height:auto;
 }
 .paddingtop25{
 
@@ -416,15 +436,18 @@ footer .acc{
 
 }
 #about h3{
-	color:#ccc;
+	color:#aaa;
+	font-size:14px;
 }
 #about p{
-	font-size:20px;
+	font-size:14px;
 }
 #about .five{
 	text-align:center;
 	background:#950068;
 	color:#fff;
+}
+#about .five .copy{
 	padding-top:10%;
 }
 
@@ -433,6 +456,7 @@ footer .acc{
 	color:rgb(221,112,189);
 	background:#fff;
 }
+
 
 
 /* CANCER SUTRA */
@@ -455,9 +479,10 @@ footer .acc{
 #positions > div{
 	width:25%;
 	height:auto;
+	padding:1%;
 }
 #positions > div > img{
-	width:80%;
+	width:75%;
 	height:auto;
 	margin:0 auto;
 	-webkit-transition: transform 0.5s ease;
@@ -466,13 +491,14 @@ footer .acc{
   	-ms-transition: transform 0.5s ease;
   	transition: transform 0.5s ease;
   	cursor:pointer;
+  	display:block;
 }
 #positions .detail{
 	display:none;
 }
 .hover-title{
 	display:none;
-	width:80%;
+	width:100%;
 	z-index:3;
 	position:absolute;
 	top:35%;
@@ -552,7 +578,10 @@ footer .acc{
 	cursor:pointer;
 	padding:10px 0;
 }
-
+#chapters .expand img{
+	width:35px;
+	height:auto;
+}
 .expand .open{
 	display:none;
 }
@@ -585,10 +614,10 @@ footer .acc{
 #support-the-cause > div{
 	text-align: center;
 	display:none;
-	padding:10px;
 }
 #support-the-cause > div.open{
 	display:block;
+	padding:25px;
 }
 #support-the-cause h4{
 	font-size:28px;
@@ -602,6 +631,7 @@ footer .acc{
 	border:1px solid #fff;
 	font-size: 20px;
 	text-transform: uppercase;
+	text-decoration: none;
 	display:block;
 	cursor:pointer;
 }
@@ -618,6 +648,13 @@ header{
 .device-menu{
 	display:block;
 	height:45px;
+}
+.device-menu h1 a{
+	color:#000;
+	text-decoration: none;
+}
+.device-menu h1 a:hover{
+	color:#000;
 }
 .filter{
 	padding:0;
@@ -638,9 +675,7 @@ header{
 .filter:last-child{
 	padding-top:15px;
 }
-nav{
-	border-bottom:0;
-}
+
 .filter ul li,.filter ul li a{
 	display:block;
 }

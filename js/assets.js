@@ -66,6 +66,9 @@ var Nav = {
             $('nav').removeClass('open')
             //$('nav').hide();
         }
+
+        $('body').toggleClass('nav-open')
+
         setTimeout(function(){
             $that.toggleClass('active');
         },250)
@@ -74,6 +77,7 @@ var Nav = {
         var $that = $('.menu-toggle');
         $('nav').removeClass('open');
         $that.removeClass('active');
+        $('body').removeClass('nav-open')
     },
     'open': function(){
         var $that = $('.menu-toggle');
@@ -82,6 +86,7 @@ var Nav = {
             window.scrollTo(0, 0);
         }
         $that.addClass('active');
+        $('body').addClass('nav-open')
     }
 }
 
@@ -92,6 +97,9 @@ function setAboutHeights(){
 }
 function setSectionHeights(){
     $('section').css('minHeight',window.innerHeight - 195);
+}
+function logWindowWidth(){
+    windowWidth = window.innerWidth
 }
 
 //ANIMATION
@@ -139,12 +147,11 @@ jQuery.fn.extend({
 
 //FILTERS
 function clearFilters(){
-    if($('.filters [data-toggle=on]')){
-        var $obj = $('.filters [data-toggle=on]')
-        filters($obj);
-    }
+        $('.filters [data-toggle=on]').attr('data-toggle','off')
+        filters();
 }
-function filters($obj){
+function filters(type){
+    var $obj = $('.filter [data-filter="'+type+'"]');
     Odelay.close();
     if($obj.data('toggle') === 'off'){
         //only one cancer type at a time
@@ -158,12 +165,12 @@ function filters($obj){
         }
         $obj.data('toggle','on').attr('data-toggle','on')
 
-        if(Modernizr.history){
+        /*if(Modernizr.history){
             history.pushState({}, '', '#/chapters/'+cancerType);
         }
         else{
             window.location.hash = '#/chapters/'+cancerType;
-        }
+        }*/
     }
     else{
         $obj.data('toggle','off').attr('data-toggle','off');
@@ -171,12 +178,12 @@ function filters($obj){
             $('#chapters > div').removeClass('open').children().removeClass('open');
             window.scrollTo(0, 0);
         }
-        if(Modernizr.history){
+        /*if(Modernizr.history){
             history.pushState({}, '', '#/positions');
         }
         else{
             window.location.hash = '#/positions';
-        }
+        }*/
     }
 
     //CANCER TYPE

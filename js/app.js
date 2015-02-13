@@ -10,7 +10,8 @@ $container,
 $loader,
 $body,
 $overlay,
-$overlayContent;
+$overlayContent,
+windowWidth;
 
 //READY
 $(function(){
@@ -38,11 +39,17 @@ function bindings(){
 	//and section min-height appropriate
 	setAboutHeights();
 	setSectionHeights();
+	logWindowWidth();
 	$(window).on('resize',function(){
 		setAboutHeights();
 		setSectionHeights();
+		logWindowWidth();
 	});
 
+	$('.nav-closer').on('click',function(){
+		Nav.toggle();
+		console.log('hey!')
+	});
 	//menu
 	$('.menu-toggle').on('click',function(e){
 		Nav.toggle();
@@ -50,10 +57,10 @@ function bindings(){
 	});
 
 	//COMBINE FILTERS:
-	$filters.on('click',function(e){
+	/*$filters.on('click',function(e){
 		e.preventDefault();
 		filters($(this));
-	});
+	});*/
 
 	//bring up detail
 	$positions.find('> div').on('click',function(e){
@@ -76,8 +83,7 @@ function bindings(){
 	$('.expand').on('click',function(){
 		if($(this).hasClass('open')){
 			var height = $('#chapters .part1').height()  - $('.expand').height() + 20;
-			console.log(height)
-			window.scrollTo(0, height);
+			//window.scrollTo(0, height);
 		}
 		$(this).toggleClass('open');
 		$(this).siblings('.part2').toggleClass('open');
@@ -139,6 +145,9 @@ function routes(){
 	    	load();
 	    	loadPositions('positions', positionName);
 	    },
+	     '/chapters/' : function(cancerType){
+	     	loadPositions();
+	    },
 	     '/chapters/:cancerType' : function(cancerType){
 	     	console.log('chapter #')
 	     	loadPositions('chapters', cancerType);
@@ -152,7 +161,7 @@ function routes(){
 //ABOUT
 function loadAbout(){
 	load();
-
+	clearFilters();
 	$about.show();
 	$body.removeClass('loading positions support').addClass('about');
 	//disable scrolling
@@ -177,7 +186,7 @@ function loadAbout(){
 			animateThisSVG(aboutAnimations,id)
 		},
 		tolerance: 200,
-		throttle: 1000,
+		throttle: 500,
 		toggleClass: 'onScreen'
 	});
 	$('.about-navigation img').on('click',function(){
@@ -221,7 +230,7 @@ function loadPositions(route,name){
 		$support.hide();
 		window.scrollTo(0, 0);
 	},400);
-	//no position or chapter
+	//position or chapter
 	if(route != undefined){
 		//position
 		if(route === 'positions'){
@@ -232,10 +241,11 @@ function loadPositions(route,name){
 		}
 		//chapter
 		else if(route === 'chapters'){
-			setTimeout(function(){
-				var $obj = $('.filter [data-filter="'+name+'"]')
-		    	filters($obj);
-			},500);
+			if(name){
+				setTimeout(function(){
+			    	filters(name);
+				},500);
+			}
 		}
 		else{
 			clearFilters();
