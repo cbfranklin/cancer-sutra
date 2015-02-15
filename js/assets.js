@@ -6,7 +6,6 @@ function showPosition(){
 };
 
 //OVERLAY
-
 var Odelay = {
     'open': function(content){
         var close = '<div id="close">&#215;</div>';
@@ -99,18 +98,16 @@ function setSectionHeights(){
     $('section').css('minHeight',window.innerHeight - 195);
 }
 function logWindowWidth(){
-    windowWidth = window.innerWidth
+    windowWidth = window.innerWidth;
 }
 
 //ANIMATION
 function animateThisSVG(obj,name){
-    //console.log(obj[name].topLevelSelector)
     if(obj){
         var container = Snap.select(obj[name].topLevelSelector);
         var animatedEls = obj[name].animatedEls;
 
         for(i in animatedEls){
-            //console.log(animatedEls[i].selector)
 
             var el = container.select(animatedEls[i].selector);
 
@@ -119,10 +116,8 @@ function animateThisSVG(obj,name){
                 var state = animatedEls[i].states[j];
 
                 function animate(el,state){
-                    //console.log(el)
                     el.animate({d:state.d},state.time,state.easing);
                 }
-
                 setTimeout(animate, state.delay, el,state);
             }
         }
@@ -146,10 +141,6 @@ jQuery.fn.extend({
 });
 
 //FILTERS
-function clearFilters(){
-        $('.filters [data-toggle=on]').attr('data-toggle','off')
-        filters();
-}
 function filters(type){
     var $obj = $('.filter [data-filter="'+type+'"]');
     Odelay.close();
@@ -223,6 +214,10 @@ function filters(type){
     }
 
     $positions.isotope({ filter: $theFilter });
+}
+function clearFilters(){
+        $('.filters [data-toggle=on]').attr('data-toggle','off')
+        filters();
 }
 
 //DELAY

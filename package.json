@@ -1,0 +1,8 @@
+{
+  "name": "cancer-sutra",
+  "version": "0.1.0",
+  "repository": "https://connor3ep@bitbucket.org/connor3ep/cancer-sutra.git",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
