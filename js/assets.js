@@ -142,7 +142,9 @@ jQuery.fn.extend({
 
 //FILTERS
 function filters(type){
+    console.log('filters() is running')
     var $obj = $('.filter [data-filter="'+type+'"]');
+    console.log($obj)
     Odelay.close();
     if($obj.data('toggle') === 'off'){
         //only one cancer type at a time
@@ -166,7 +168,7 @@ function filters(type){
     else{
         $obj.data('toggle','off').attr('data-toggle','off');
         if($obj.data('filter-type') === 'cancer-type'){
-            $('#chapters > div').removeClass('open').children().removeClass('open');
+            $('#chapters > div').removeClass('open').children('part2,expand').removeClass('open');
             window.scrollTo(0, 0);
         }
         /*if(Modernizr.history){
@@ -216,8 +218,11 @@ function filters(type){
     $positions.isotope({ filter: $theFilter });
 }
 function clearFilters(){
+        console.log('clearFilters()')
         $('.filters [data-toggle=on]').attr('data-toggle','off')
-        filters();
+        $('#chapters > div').removeClass('open').children('part2,expand').removeClass('open');
+        $positions.isotope({ filter: '' });
+        window.scrollTo(0, 0);
 }
 
 //DELAY

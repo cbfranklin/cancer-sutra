@@ -551,7 +551,7 @@ footer .acc{
 	border-bottom:1px solid #666;
 }
 .chapter-inner{
-	max-width:768px;
+	max-width:900px;
 	margin:0 auto;
 	padding-top:15px;
 }
@@ -598,7 +598,7 @@ footer .acc{
 	margin:0 auto;
 	text-align:left;
 }
-.acrostic .row{
+/*.acrostic .row{
 	padding:2px 10px
 }
 .acrostic .letter{
@@ -608,6 +608,44 @@ footer .acc{
 }
 .acrostic .words{
 	padding:5px 0 0 0;
+}*/
+.acrostic-wrapper{
+	border-collapse: separate;
+  	border-spacing: 5px;
+  	display:table;
+}
+.acrostic{
+	display:table-row;
+}
+.acrostic .letter{
+	width:10%;
+	font-size:2.5em;
+	text-align:center;
+}
+.acrostic .words{
+	width: 90%;
+}
+.acrostic > div{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/* CHAPTER COLORS */
+#chapters [data-cancer-type=breast] .letter,
+#chapters [data-cancer-type=breast] .words strong{
+	color:#F05429;
+}
+#chapters [data-cancer-type=testicular] .letter,
+#chapters [data-cancer-type=testicular] .words strong{
+	color:#87236A;
+}
+#chapters [data-cancer-type=skin] .letter,
+#chapters [data-cancer-type=skin] .words strong{
+	color:#60C29D;
+}
+#chapters [data-cancer-type=prostate] .letter,
+#chapters [data-cancer-type=prostate] .words strong{
+	color:#E6B422;
 }
 
 /* SUPPORT THE CAUSE */

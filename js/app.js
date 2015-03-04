@@ -153,7 +153,6 @@ function routes(){
 //ABOUT
 function loadAbout(){
 	load();
-	clearFilters();
 	$about.show();
 	$body.removeClass('loading positions support').addClass('about');
 
@@ -165,6 +164,7 @@ function loadAbout(){
 		window.scrollTo(0, 0);
 		$('nav').removeClass('open');
 		$('.menu-toggle').removeClass('active');
+		clearFilters();
 	},400);
 
 	if($('#about svg').length === 0){
@@ -172,7 +172,7 @@ function loadAbout(){
 	}
 	setTimeout(function(){
 		animateThisSVG(aboutAnimations,'one')
-	},1000)
+	},800)
 	$('#about > div').onScreen({
 		direction: 'vertical',
 		doIn: function() {
@@ -224,10 +224,12 @@ function loadPositions(route,name){
 		$support.hide();
 		window.scrollTo(0, 0);
 	},400);
+
 	//position or chapter
 	if(route != undefined){
 		//position
 		if(route === 'positions'){
+			console.log('')
 			setTimeout(function(){
 				$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
 		    	showPosition(name)
@@ -235,6 +237,7 @@ function loadPositions(route,name){
 		}
 		//chapter
 		else if(route === 'chapters'){
+			console.log('')
 			if(name){
 				setTimeout(function(){
 			    	filters(name);
@@ -265,6 +268,7 @@ function loadSupport(){
 	setTimeout(function(){
 		$about.hide();
 		$positionsContainer.hide()
+		clearFilters();
 		window.scrollTo(0, 0);
 	},400);
 }
