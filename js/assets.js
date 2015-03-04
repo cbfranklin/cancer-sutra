@@ -105,8 +105,12 @@ function logWindowWidth(){
 function animateThisSVG(obj,name){
     if(obj){
         var container = Snap.select(obj[name].topLevelSelector);
-        var animatedEls = obj[name].animatedEls;
-
+        if(windowWidth > 479){
+            var animatedEls = obj[name]['animatedEls-full'];
+        }
+        else{
+            var animatedEls = obj[name]['animatedEls-mobile'];
+        }
         for(i in animatedEls){
 
             var el = container.select(animatedEls[i].selector);

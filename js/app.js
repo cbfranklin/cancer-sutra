@@ -178,29 +178,43 @@ function loadAbout(){
 		doIn: function() {
 			var id = $(this).attr('id');
 			animateThisSVG(aboutAnimations,id)
+			var index = $(this).index();
+			$('#about').attr('data-scroll-status',index);
 		},
 		tolerance: 200,
 		throttle: 500,
 		toggleClass: 'onScreen'
 	});
-	$('.about-navigation img').on('click',function(){
+	$('#about').on('click','.about-navigation img',function(){
 		var id = $(this).attr('id');
 		if(id === 'next'){
 			$(this).parents('.row').next().scrollToAnchor()
+			$('#about').attr('data-is-scrolling',true);
+			setTimeout(function(){
+				$('#about').attr('data-is-scrolling',false);
+			},700)
 		}
-		else{
+		if(id === 'prev'){
 			$(this).parents('.row').prev().scrollToAnchor()
+			$('#about').attr('data-is-scrolling',true);
+			setTimeout(function(){
+				$('#about').attr('data-is-scrolling',false);
+			},700)
 		}
 	});
-    Mousetrap.bind(['down','right','.',']'], function() {
-            $('#about .onScreen #next').click();
+    Mousetrap.bind(['down','right','.',']'],function(){
+    		if($('#about').attr('data-is-scrolling') == 'false'){
+    			$('#about .onScreen #next').click();
+    		}
             return false;
     });
-    	Mousetrap.bind(['up','left',',','['], function() {
-            $('#about .onScreen #prev').click();
+    	Mousetrap.bind(['up','left',',','['],function(){
+    		if($('#about').attr('data-is-scrolling') == 'false'){
+            	$('#about .onScreen #prev').click();
+            }
             return false;
     });
-    $('body').on('swipe','#about',function(event){
+    $('body').on('swipe','#about[data-is-scrolling=false]',function(event){
 		var dir = event.direction;
 		if (dir === 'down') {
 			$('#about .onScreen #prev').click();
