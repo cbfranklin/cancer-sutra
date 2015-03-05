@@ -179,7 +179,7 @@ function loadAbout(){
 			var id = $(this).attr('id');
 			animateThisSVG(aboutAnimations,id)
 			var index = $(this).index();
-			$('#about').attr('data-scroll-status',index);
+			//$('#about').attr('data-scroll-status',index);
 		},
 		tolerance: 200,
 		throttle: 500,
@@ -188,18 +188,30 @@ function loadAbout(){
 	$('#about').on('click','.about-navigation img',function(){
 		var id = $(this).attr('id');
 		if(id === 'next'){
-			$(this).parents('.row').next().scrollToAnchor()
+			//$(this).parents('.row').next().scrollToAnchor()
+			var status = parseFloat($('#about').attr('data-scroll-status')) + 1;
+			console.log(status)
+			if($('#about > div').eq(status)){
+				$('#about > div').eq(status).scrollToAnchor();
+			}
 			$('#about').attr('data-is-scrolling',true);
 			setTimeout(function(){
 				$('#about').attr('data-is-scrolling',false);
-			},700)
+				$('#about').attr('data-scroll-status',status);
+			},600)
 		}
 		if(id === 'prev'){
-			$(this).parents('.row').prev().scrollToAnchor()
+			//$(this).parents('.row').prev().scrollToAnchor()
+			var status = parseFloat($('#about').attr('data-scroll-status')) - 1;
+			console.log(status)
+			if($('#about > div').eq(status)){
+				$('#about > div').eq(status).scrollToAnchor();
+			}
 			$('#about').attr('data-is-scrolling',true);
 			setTimeout(function(){
 				$('#about').attr('data-is-scrolling',false);
-			},700)
+				$('#about').attr('data-scroll-status',status);
+			},600)
 		}
 	});
     Mousetrap.bind(['down','right','.',']'],function(){

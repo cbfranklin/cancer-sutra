@@ -120,7 +120,7 @@ function animateThisSVG(obj,name){
                 var state = animatedEls[i].states[j];
 
                 function animate(el,state){
-                    el.animate({d:state.d},state.time,state.easing);
+                    el.animate({d:state.d},state.time,eval(state.easing));
                 }
                 setTimeout(animate, state.delay, el,state);
             }

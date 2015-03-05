@@ -13,6 +13,7 @@ function loadAboutAnimations(){
 			else{
 				var file = about[key]['file-mobile'];
 			}
+			console.log(file)
 			Snap.load(file,function(key){
 					return function(data){
 						var container = Snap('#about .'+key);
