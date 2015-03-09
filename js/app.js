@@ -125,17 +125,18 @@ function routes(){
 	    	loadAbout();
 	    },
 	    '/positions' : function(){
-	    	console.log('positions')
+	    	console.log('/positions')
 	    	loadPositions();
 	    },
 	    '/positions/' : function(){
-	    	console.log('positions')
+	    	console.log('/positions/')
 	    	loadPositions();
 	    },
 	    '/positions/:position' : function(position){
+	    	console.log('/positions/:position')
 	    	console.log('position #')
 	    	load();
-	    	loadPositions('positions', positionName);
+	    	loadPositions('positions', position);
 	    },
 	     '/chapters/' : function(cancerType){
 	     	loadPositions();
@@ -255,15 +256,15 @@ function loadPositions(route,name){
 	if(route != undefined){
 		//position
 		if(route === 'positions'){
-			console.log('')
+			console.log('position',name)
 			setTimeout(function(){
 				$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
-		    	showPosition(name)
+		    	showPosition();
 			},500);
 		}
 		//chapter
 		else if(route === 'chapters'){
-			console.log('')
+			console.log('chapter',name)
 			if(name){
 				setTimeout(function(){
 			    	filters(name);

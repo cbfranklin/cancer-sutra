@@ -1,7 +1,8 @@
 //SHOW POSITION USING OVERLAY
 
 function showPosition(){
-    var content = $overlayContent.html();
+    //var content = $overlayContent.html();
+    var content = $overlayContent[0].outerHTML;
     Odelay.open(content);
 };
 

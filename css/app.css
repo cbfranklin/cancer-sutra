@@ -672,6 +672,8 @@ footer .acc{
 	text-decoration: none;
 	display:block;
 	cursor:pointer;
+	font-family:"proxima-nova", sans-serif;
+	border-radius:0;
 }
 .no-touch .cs-button:hover,
 .cs-button:active{
@@ -801,6 +803,13 @@ header{
 .detail{
 	max-width:1100px;
 	margin:auto auto;
+	overflow:hidden;
+	height:100%;
+}
+.detail .row,
+.detail .row-fluid{
+	overflow:hidden;
+	height:100%;
 }
 .detail h2{
 	border-bottom:1px solid #00aeef;
@@ -809,15 +818,18 @@ header{
 }
 .detail-image{
 	overflow:hidden;
+	height:100%;
 }
 .detail-image-horizontal img{
-	height:100%;
-	width:auto;
-	margin-top:45%;
-}
-.detail-image-vertical img{
 	height:auto;
 	width:100%;
+	margin-top:45%;
+	max-height:100%;
+}
+.detail-image-vertical img{
+	height:100%;
+	width:auto;
+	max-width:100%;
 }
 .detail-text{
 	text-align: center;

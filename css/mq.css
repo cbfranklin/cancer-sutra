@@ -71,11 +71,17 @@
 		height:300px;
 		text-align:center;
 	}
-	.detail-image img{
+	/*.detail-image img{
 		height:100%;
 		width:auto;
+	}*/
+	.detail-image,
+	.detail,
+	.detail .row,
+	.detail .row-fluid{
+		height:auto;
+		overflow:auto;
 	}
-
 	.filter ul li,.filter ul li a{
 		display:block;
 	}
@@ -113,7 +119,7 @@
 	}
 }
 
-/* HOVER FOR FULL SITE ONLY */
+/* FULL SITE ONLY */
 @media (min-width:769px){
 	.no-touch #positions > div:hover img{
 		-webkit-transform:scale(1.1);
@@ -121,6 +127,9 @@
 		-ms-transform:scale(1.1);
 		-o-transform:scale(1.1);
 		 transform:scale(1.1);
+	}
+	#about .copy{
+		padding-top:20px;
 	}
 }
 /* SUPPORT THE CAUSE */
