@@ -122,11 +122,16 @@
 /* FULL SITE ONLY */
 @media (min-width:769px){
 	.no-touch #positions > div:hover img{
-		-webkit-transform:scale(1.1);
-		-moz-transform:scale(1.1);
-		-ms-transform:scale(1.1);
-		-o-transform:scale(1.1);
-		 transform:scale(1.1);
+		-webkit-transform:scale(1.05);
+		-moz-transform:scale(1.05);
+		-ms-transform:scale(1.05);
+		-o-transform:scale(1.05);
+		 transform:scale(1.05);
+		 -webkit-transition: transform 1s ease;
+  	-moz-transition: transform 1s ease;
+  	-o-transition: transform 1s ease;
+  	-ms-transition: transform 1s ease;
+  	transition: transform 1s ease;
 	}
 	#about .copy{
 		padding-top:20px;
