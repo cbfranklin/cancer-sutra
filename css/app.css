@@ -420,6 +420,7 @@ footer .acc{
 	text-align:center;
 	color:#eaeaea;
 	font-size:20px;
+	padding-top:33px;
 }
 .about-navigation span{
 	padding:10px;
@@ -651,7 +652,7 @@ footer .acc{
 }
 #support-the-cause > div.open{
 	display:block;
-	padding:25px;
+	padding:25px 25px 50px 25px;
 }
 #support-the-cause h4{
 	font-size:28px;

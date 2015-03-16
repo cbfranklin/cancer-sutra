@@ -280,9 +280,15 @@ function loadPositions(route,name){
 		clearFilters();
 		Odelay.close();
 	}
-	$positions.isotope();
+	$positions.isotope({
+		layoutMode: 'masonry',
+		masonry: {
+			//columnWidth: '.position-test'
+			columnWidth: '#positions > div:not(.position-full-width)'
+		}
+	});
 	$positionsContainer.show();
-	$positions.isotope('layout');
+	//$positions.isotope('layout');
 }
 
 //SUPPORT
