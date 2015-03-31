@@ -56,7 +56,7 @@ function bindings(){
 	});
 
 	//bring up detail
-	$positions.find('> div').on('click',function(e){
+	$positions.on('click','> div',function(e){
 		$(this).addClass('active')
 		var name = $(this).data('position');
 		if(Modernizr.history){
@@ -243,8 +243,10 @@ function loadAbout(){
 //POSITIONS
 function loadPositions(route,name){
 	load();
-	loadPositionsJSON()
-	$positionsContainer.show();
+	if($positions.hasClass('empty')){
+		loadPositionsJSON()
+	}
+	//$positionsContainer.show();
 	$body.removeClass('loading about support').addClass('positions');
 
 	setTimeout(function(){

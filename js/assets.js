@@ -231,12 +231,13 @@ function clearFilters(){
 }
 
 function loadPositionsJSON(){
-    $.getJSON('data/positions.json',function(positions){
-        var rendered_html = Mustache.to_html($('#templates .position').html(),{
-           positions: positions
+    //$.getJSON('data/positions.json',function(positions){
+        console.log('loadPositionsJSON')
+        var rendered_html = Mustache.to_html($('#templates .positions').html(),{
+           positions: positionsData
         });
-        $('#positions').html(rendered_html);
-    });
+        $('#positions').html(rendered_html).removeClass('empty');
+    //});
 }
 
 //DELAY
