@@ -230,6 +230,15 @@ function clearFilters(){
         window.scrollTo(0, 0);
 }
 
+function loadPositionsJSON(){
+    $.getJSON('data/positions.json',function(positions){
+        var rendered_html = Mustache.to_html($('#templates .position').html(),{
+           positions: positions
+        });
+        $('#positions').html(rendered_html);
+    });
+}
+
 //DELAY
 var delay = (function(){
   var timer = 0;

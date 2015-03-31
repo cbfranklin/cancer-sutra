@@ -243,6 +243,7 @@ function loadAbout(){
 //POSITIONS
 function loadPositions(route,name){
 	load();
+	loadPositionsJSON()
 	$positionsContainer.show();
 	$body.removeClass('loading about support').addClass('positions');
 

@@ -318,7 +318,7 @@
 			</div>
 			<!--POSITIONS-->
 			<div id="positions">
-				<div data-position="inspect-a-pec" data-cancer-type="breast" class="position-full-width">
+				<!--<div data-position="inspect-a-pec" data-cancer-type="breast" class="position-full-width">
 					<img alt="" src="img/positions/svg/InspectAPec.svg">
 					<div class="hover-title">Inspect-a-Pec<small>Breast Cancer</small></div>
 					<div data-position="inspect-a-pec" class="detail detail-image-horizontal">
@@ -607,7 +607,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 			<!--SUPPORT THE CAUSE CTAs-->
 			<div id="support-the-cause" class="row">
@@ -667,6 +667,36 @@
 	<div class="overlay overlay-contentscale">
 		<a id="close">&#215;</a>
 	</div>
+	<div id="templates">
+		<script type="template" class="positions">
+			{{#positions}}
+			<div data-position="{{element-name}}" data-cancer-type="{{cancer-type}}" class="{{#fullWidth}}position-full-width{{/fullWidth}}">
+				<img alt="" src="img/positions/svg/{{svg-name}}">
+				<div class="hover-title">{{display-name}}<small>{{display-cancer-type}}</small></div>
+				<div data-position="{{element-name}}" class="detail detail-image-{{orientation}}">
+					<div class="row-fluid">
+						<div class="col-sm-6 col-md-6 detail-image">
+							<img alt="" src="img/positions/svg/{{svg-name}}">
+						</div>
+						<div class="col-sm-6 col-md-6 detail-text">
+							<h2>{{display-name}}</h2>
+							<div class="detail-text-main">
+								{{detail-html}}
+								<p class="just-the-tip">Just the Tip:<br>*{{just-the-tip}}</p>
+							</div>
+							<div class="detail-social">
+								<img src="img/social/email.png"/>
+								<img src="img/social/facebook.png"/>
+								<img src="img/social/twitter.png"/>
+								<img src="img/social/tumblr.png"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/positions}}
+		</script>
+	</div>
 
 	<script src="js/assets/routie.min.js"></script>
 
@@ -689,6 +719,7 @@
 	<script src="js/assets/easing-min.js"></script>
 	<script src="js/assets/snap.svg-min.js"></script>
 	<script src="js/assets/isotope.pkgd.min.js"></script>
+	<script src="js/assets/mustache.min.js"></script>
 	<!--<script src="js/wow.min.js"></script>-->
 	<script src="js/assets.js"></script>
 	<script src="js/about.js"></script>
