@@ -322,39 +322,53 @@
 			<!--SUPPORT THE CAUSE CTAs-->
 			<div id="support-the-cause" class="row">
 				<div data-cancer-type="breast">
-					<h4>Not Titillated Yet?</h4>
-					<p>Well perk up!</p>
-					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<h4><em>Not Titillated Yet?</em></h4>
+					<p>Visit our Support Page to help put the squeeze on cancer.</p>
 					<br>
 					<a class="cs-button btn hvr-bob" href="#/support">Support the Cause</a>
 				</div>
 				<div data-cancer-type="testicular">
-					<h4>Not Titillated Yet?</h4>
-					<p>Well perk up!</p>
-					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<h4><em>Now, now &mdash; don’t leave us hanging.</em></h4>
+					<p>Lend us a hand on our Support Page to help spread the word about early detection.</p>
 					<br>
 					<a class="cs-button btn hvr-bob" href="#/support">Support the Cause</a>
 				</div>
 				<div data-cancer-type="skin">
-					<h4>Not Titillated Yet?</h4>
-					<p>Well perk up!</p>
-					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<h4><em>Now that we’ve bared it all...</em></h4>
+					<p>Visit our Support Page to help make early detection top (or bottom) of mind.</p>
 					<br>
 					<a class="cs-button btn hvr-bob" href="#/support">Support the Cause</a>
 				</div>
 				<div data-cancer-type="prostate">
-					<h4>Not Titillated Yet?</h4>
-					<p>Well perk up!</p>
-					<p>A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze</p>
+					<h4><em>Shameless plug here...</em></h4>
+					<p>Visit our support page to see how you can help give cancer the finger!</p>
 					<br>
 					<a class="cs-button btn hvr-bob" href="#/support">Support the Cause</a>
 				</div>
 			</div>
 		</section>
 		<section id="support">
-			<h2>You’ve got to give some to get some.</h2>
-			<p>Support for The Cancer Sutra goes to XXXXX to help raise awareness, fund research, and spread the message about how early detection can help save lives. Please give whatever you can, keeping in mind that it’s not always the size of your contribution, but how you use it.</p>
+			<h2><em>You’ve got to give some to get some.</em></h2>
+			<p class="support-text">Support for <em>The Cancer Sutra</em> goes toward helping raise awareness, funding research, and spreading the message about how early detection can help save lives. Please give whatever you can, keeping in mind that it’s not always the size of your contribution, but how you use it.</p>
 			<small>(All right, it’s a bit about the size, too.) </small>
+			<br><br>
+			<table class="table"> 
+				<tr>
+					<td><em>"Naughty, naughty"</em></td>
+					<td>$10</td>
+					<td>Donate $10 and get The Cancer Sutra ebook, available on Kindle,iBooks&reg;, and NOOK&reg;.</td>
+				</tr>
+				<tr>
+					<td><em>"Oo-la-la"</em></td>
+					<td>$25</td>
+					<td>Donate $25 and get The Cancer Sutra ebook, plus a limited edition poster of your choosing.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
 		</div>
 		<footer class="row uppercase">
 			<div class="col-md-1"></div>
@@ -364,6 +378,7 @@
 			<div class="col-md-4 col-sm-4">
 				<span>&copy; 2014 | The Bull White House</span>
 				<span><a href="#">Contact</a></span>
+				<span><a id="legal" href="#">LEGAL</a></span>
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-1 col-sm-2 nopadding">
@@ -374,13 +389,17 @@
 			</div>
 		</footer>
 	</div>
+	<div class="legal" style="display:none">
+		<br>
+		<div class="legal-text">
+		The information contained within <em>The Cancer Sutra</em> project is not intended or implied to be substituted for professional medical advice. It is provided to supplement both self-checks and regular visits to a medical professional. Please, check yourself regularly, check your partner (as many times a night as you can manage, preferably), and always, always seek the advice of a physician.</div></div>
 	<div class="overlay overlay-contentscale">
 		<a id="close">&#215;</a>
 	</div>
 	<div id="templates">
 		<script type="template" class="positions">
 			{{#positions}}
-			<div data-position="{{element-name}}" data-cancer-type="{{cancer-type}}" class="{{#fullWidth}}position-full-width{{/fullWidth}}">
+			<div data-index="{{overview-index}}" data-position="{{element-name}}" data-cancer-type="{{cancer-type}}" class="position-{{orientation}} {{#full-size}}position-full-size{{/full-size}}">
 				<img alt="" src="img/positions/svg/{{svg-name}}">
 				<div class="hover-title">{{display-name}}<small>{{display-cancer-type}}</small></div>
 				<div data-position="{{element-name}}" class="detail detail-image-{{orientation}}">

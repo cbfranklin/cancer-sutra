@@ -95,6 +95,11 @@ function bindings(){
 		    }
 		}
 	});
+	//LEGAL
+	$('body').on('click','#legal',function(e){
+		Odelay.open($('.legal').html())
+		e.preventDefault();
+	});
 }
 
 //LOAD
@@ -244,34 +249,47 @@ function loadAbout(){
 function loadPositions(route,name){
 	load();
 	if($positions.hasClass('empty')){
-		loadPositionsJSON()
+		loadPositionsJSON(route,name)
 	}
-	//$positionsContainer.show();
-	$body.removeClass('loading about support').addClass('positions');
+	else{
+		loadPositionsState(route,name);
+	}
 
 	setTimeout(function(){
-		$about.hide();
-		$support.hide();
-		window.scrollTo(0, 0);
-	},400);
+			$about.hide();
+			$support.hide();
+			window.scrollTo(0, 0);
+		},400);
 
-	//position or chapter
-	if(route != undefined){
-		//position
-		if(route === 'positions'){
-			console.log('position',name)
-			setTimeout(function(){
-				$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
-		    	showPosition();
-			},500);
-		}
-		//chapter
-		else if(route === 'chapters'){
-			console.log('chapter',name)
-			if(name){
+	$body.removeClass('loading about support').addClass('positions');
+}
+
+	function loadPositionsState(route,name){
+		//$positionsContainer.show();
+
+
+		//position or chapter
+		if(route != undefined){
+			//position
+			if(route === 'positions'){
+				console.log('position',name)
 				setTimeout(function(){
-			    	filters(name);
+					$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
+			    	showPosition();
 				},500);
+			}
+			//chapter
+			else if(route === 'chapters'){
+				console.log('chapter',name)
+				if(name){
+					setTimeout(function(){
+				    	filters(name);
+					},500);
+				}
+			}
+			else{
+				clearFilters();
+				Odelay.close();
 			}
 		}
 		else{
@@ -279,20 +297,6 @@ function loadPositions(route,name){
 			Odelay.close();
 		}
 	}
-	else{
-		clearFilters();
-		Odelay.close();
-	}
-	$positions.isotope({
-		layoutMode: 'masonry',
-		masonry: {
-			//columnWidth: '.position-test'
-			columnWidth: '#positions > div:not(.position-full-width)'
-		}
-	});
-	$positionsContainer.show();
-	//$positions.isotope('layout');
-}
 
 //SUPPORT
 function loadSupport(){

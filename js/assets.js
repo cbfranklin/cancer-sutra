@@ -226,17 +226,31 @@ function clearFilters(){
         console.log('clearFilters()')
         $('.filters [data-toggle=on]').attr('data-toggle','off')
         $('#chapters > div').removeClass('open').children('part2,expand').removeClass('open');
-        $positions.isotope({ filter: '' });
+        //$positions.isotope({ filter: '' });
         window.scrollTo(0, 0);
 }
 
-function loadPositionsJSON(){
+function loadPositionsJSON(route,name){
     //$.getJSON('data/positions.json',function(positions){
         console.log('loadPositionsJSON')
         var rendered_html = Mustache.to_html($('#templates .positions').html(),{
            positions: positionsData
         });
         $('#positions').html(rendered_html).removeClass('empty');
+        $positions.isotope({
+            masonry: {
+                //columnWidth: '.position-test'
+                columnWidth: '#positions > div:not(.position-full-size)'
+            },
+            getSortData: {
+                index: '[data-index] parseInt',
+            },
+            //layoutMode: 'masonry',
+            //sortBy: 'index'
+        });
+        $positionsContainer.show();
+        $positions.isotope('layout');
+    loadPositionsState(route,name);
     //});
 }
 

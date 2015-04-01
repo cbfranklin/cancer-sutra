@@ -2,8 +2,13 @@
 	width:45%;
 }
 
-#positions > div.position-full-width{
+#positions > div.position-full-size.position-horizontal{
 	width:100%;
+}
+
+.legal-text,
+.support-text{
+	font-size:20px;
 }
 /* PHONE ONLY*/
 @media (max-width:480px){
@@ -94,6 +99,11 @@
 	}
 	.filter,footer{
 		text-align:center;
+	}
+	.detail-image-horizontal .detail-text-main{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+	    column-count: 1;
 	}
 }
 
