@@ -5,6 +5,16 @@
 #positions > div.position-full-size.position-horizontal{
 	width:100%;
 }
+#positions > div > img{
+	height:90%;
+	width:90%;
+	margin:0 auto;
+  	cursor:pointer;
+  	display:block;
+}
+#positions > div.position-float-right{
+	float:right;
+}
 
 .legal-text,
 .support-text{
@@ -105,6 +115,10 @@
 	    -moz-column-count: 1; /* Firefox */
 	    column-count: 1;
 	}
+	#support .cta{
+		position:static;
+		padding:10px;
+	}
 }
 
 /* NAV WIDTH */
@@ -190,6 +204,16 @@
 }
 @media (min-width:481px){
 
+	section{
+		margin:0 auto;
+		padding-top:20px;
+		padding-bottom:40px;
+	}
+	section#positions-container,
+	section#support{
+		width:90%;
+	}
+
 	#support-the-cause .cs-button{
 		display:block;
 		width:300px;
@@ -204,44 +228,25 @@
 		padding-bottom:10px;
 	}
 	#support-the-cause [data-cancer-type=breast] a{
-		border-color:#F05429;
-		color:#F05429;
-	}
-	.no-touch #support-the-cause [data-cancer-type=breast] a:hover,
-	#support-the-cause [data-cancer-type=breast] a:active{
 		background-color:#F05429;
+		color:white;
 	}
 	#support-the-cause [data-cancer-type=breast] h4{
 		color:#F05429;
 	}
 	#support-the-cause [data-cancer-type=testicular] a{
-		border-color:#87236A;
-		color:#87236A;
-	}
-	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover,
-	#support-the-cause [data-cancer-type=testicular] a:active{
 		background-color:#87236A;
 	}
 	#support-the-cause [data-cancer-type=testicular] h4{
 		color:#87236A;
 	}
 	#support-the-cause [data-cancer-type=skin] a{
-		border-color:#60C29D;
-		color:#60C29D;
-	}
-	.no-touch #support-the-cause [data-cancer-type=skin] a:hover,
-	#support-the-cause [data-cancer-type=skin] a:active{
 		background-color:#60C29D;
 	}
 	#support-the-cause [data-cancer-type=skin] h4{
 		color:#60C29D;
 	}
 	#support-the-cause [data-cancer-type=prostate] a{
-		border-color:#E6B422;
-		color:#E6B422;
-	}
-	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
-	#support-the-cause [data-cancer-type=prostate] a:active{
 		background-color:#E6B422;
 	}
 	#support-the-cause [data-cancer-type=prostate] h4{
