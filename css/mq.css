@@ -16,6 +16,10 @@
 	float:right;
 }
 
+#positions.overview > [data-overview-float=none]{
+	float:none!important;
+}
+
 .legal-text,
 .support-text{
 	font-size:20px;

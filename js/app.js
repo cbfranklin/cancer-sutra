@@ -277,8 +277,8 @@ function loadPositions(route,name){
 		loadPositionsState(route,name);
 	}
 
+	$positionsContainer.show();
 	var containerWidth = $('#positions').width()
-
 	setPositionSize();
 
 	$(window).on('resize',function(){

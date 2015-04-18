@@ -24,7 +24,7 @@ var positionsData = [
       "just-the-tip":"Try this position upright, try it laying down, try it on your side, or even upside down. For full effect, the Handy Scan is best enjoyed from multiple angles.",
       "full-size":false,
       "overview-index":2,
-      "chapter-index":0,
+      "chapter-index":3,
       "og:description":'The #CancerSutra Presents: HANDY SCAN. Let your lover fall into your capable hands (and other capable areas, as well).'
    },
    {
@@ -38,7 +38,7 @@ var positionsData = [
       "just-the-tip":"If the seated position is causing your fingers to fumble, give yourself an all-access pass, by simply lying your lover on his back.",
       "full-size":false,
       "overview-index":3,
-      "chapter-index":0,
+      "chapter-index":3,
       "og:description":'The #CancerSutra Presents: AMOROUS ANAL-YST. Here’s a pointer (at the very least) on how to check your partner tonight.'
    },
    {
@@ -66,7 +66,7 @@ var positionsData = [
       "just-the-tip":"Once you've explored this Everest, make your way to other climes by switching sides.",
       "full-size":false,
       "overview-index":5,
-      "chapter-index":0,
+      "chapter-index":2,
       "og:description":'The #CancerSutra Presents: MANOGRAM. A checkup with a couple of quality perks.'
    },
    {
@@ -94,7 +94,7 @@ var positionsData = [
       "just-the-tip":"Of course, flat can fall flat sometimes &mdash; and as we all know, gravity doesn't (and shouldn't) always pertain to the behavior of legs. Try placing a pillow under the small of his back for a more open kind of access.",
       "full-size":true,
       "overview-index":7,
-      "chapter-index":0,
+      "chapter-index":1,
       "og:description":'The #CancerSutra Presents: ENTER THE PROCTOLOGIST. Take this checkup to bed to put your finger on this most sensitive issue.'
    },
    {
@@ -108,11 +108,11 @@ var positionsData = [
       "just-the-tip":"Now just because he's reaching completion, doesn't mean he should sit idly by. While you attend to  his business, make sure he attends to your pleasure.",
       "full-size":false,
       "overview-index":8,
-      "chapter-index":0,
+      "chapter-index":4,
       "og:description":'The #CancerSutra Presents: DR. BEN DOVER. Let’s get to the bottom of this checkup!'
    },
    {
-      "element-name":"teste-teste-12",
+      "element-name":"teste-teste-1-2",
       "display-name":"Teste, Teste, 1, 2",
       "svg-name":"TesteTeste12.svg",
       "orientation":"vertical",
@@ -122,7 +122,7 @@ var positionsData = [
       "just-the-tip":"Windows and mirrors are especially handy, for the extra cheeky among you.",
       "full-size":false,
       "overview-index":9,
-      "chapter-index":0,
+      "chapter-index":6,
       "og:description":'The #CancerSutra Presents: TEST, TESTE, 1, 2. Tickle your lover’s fancy (among other things) with this position.'
    },
    {
@@ -136,7 +136,7 @@ var positionsData = [
       "just-the-tip":"If he's far too excitable, a little warmth from the palms of your hand should loosen things up enough for you to complete this little exam.",
       "full-size":true,
       "overview-index":10,
-      "chapter-index":0,
+      "chapter-index":5,
       "og:description":'The #CancerSutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging.'
    },
    {
@@ -150,7 +150,7 @@ var positionsData = [
       "just-the-tip":"While you're there, try teasing this beefy bosom of his. With stimulation coming from all directions, it won't be long until he's pining to discover your other talents.",
       "full-size":false,
       "overview-index":11,
-      "chapter-index":0,
+      "chapter-index":2,
       "og:description":'The #CancerSutra Presents: SACK & SAVE. Add some heat to the sack…by fondling his.'
    },
    {
@@ -192,7 +192,7 @@ var positionsData = [
       "just-the-tip":"This is a one-handed operation, so feel free to practice your ambidexterity on his more prominent urges while you perform this checkup.",
       "full-size":false,
       "overview-index":14,
-      "chapter-index":0,
+      "chapter-index":2,
       "og:description":'The #CancerSutra Presents: REARSEARCH METHOD. Pop in and enjoy this checkup tonight.'
    },
    {
@@ -206,7 +206,7 @@ var positionsData = [
       "just-the-tip":"It is widely regarded as a criminal act to neglect a free nipple.<br><br>Do not act criminally.&#10013;<br><br>&#10013;Unless you both know the safe word.",
       "full-size":false,
       "overview-index":15,
-      "chapter-index":0,
+      "chapter-index":12,
       "og:description":'The #CancerSutra Presents: WHAM BAM, MAMMOGRAM. A checkup with just the right amount of wiggle room.'
    },
       {
@@ -235,7 +235,7 @@ var positionsData = [
       "just-the-tip":"What goes down, must come up (and down, and up ...), so don't forget to raise his arms and take in the whole of his tantalizing torso.",
       "full-size":false,
       "overview-index":17,
-      "chapter-index":0,
+      "chapter-index":5,
       "og:description":'The #CancerSutra Presents: CHEST XXXAM. Checking for cancer has never been more tit-for-tat.'
    },
    {
@@ -249,7 +249,7 @@ var positionsData = [
       "just-the-tip":"There's nothing like a lopsided checkup. Don't forget to switch hands (and for that matter, what they're holding) after you've sated your initial curiosity.",
       "full-size":false,
       "overview-index":18,
-      "chapter-index":0,
+      "chapter-index":13,
       "og:description":'The #CancerSutra Presents: CLOSER EXAMINATION. Find yourself with a familiar squeeze. Or two.'
    },
    {
@@ -263,7 +263,7 @@ var positionsData = [
       "just-the-tip":"Or, perhaps, try both. Seeing the angle of his dangle from as many vantage points as possible is always advisable (and always fun).",
       "full-size":true,
       "overview-index":19,
-      "chapter-index":0,
+      "chapter-index":4,
       "og:description":'The #CancerSutra Presents: CHECK, PLEASE, PLEASE, PLEASE! Learn your way around a sack in the sack.'
    },
    {
@@ -277,7 +277,7 @@ var positionsData = [
       "just-the-tip":"Tap-tap, swipe, tap-rub-tap-tap, rub-a-dub-dub, tappity-tap, rub. Repeat.",
       "full-size":false,
       "overview-index":20,
-      "chapter-index":0,
+      "chapter-index":10,
       "og:description":'The Cancer Sutra Presents: PAIR-SCOPE. Because true love has always been about the perfect pair.'
    },
    {
@@ -305,7 +305,7 @@ var positionsData = [
       "just-the-tip":"With all of this stimulation, you may find that his testicles are starting to tighten into his body, restricting access to that second succulent egg. No matter. A little warm teasing from your tongue and mouth should coax this bashful little ball out of hiding.",
       "full-size":false,
       "overview-index":22,
-      "chapter-index":0,
+      "chapter-index":3,
       "og:description":'The #CancerSutra Presents: OPEN-BOOK TESTE. May your actions be a teste-ment to your love tonight.'
    },
       {
@@ -333,7 +333,7 @@ var positionsData = [
       "just-the-tip":"Forwards is fun, but upwards is unparalleled. Try bringing your partner to her full, upright position, and checking her chest from this upstanding position.",
       "full-size":true,
       "overview-index":24,
-      "chapter-index":0,
+      "chapter-index":9,
       "og:description":'The #CancerSutra Presents: WHAT’S CUPPED, DOC? When it comes to screening, this position is a handful.'
    },
       {
@@ -347,7 +347,7 @@ var positionsData = [
       "just-the-tip":"That is, until it's time for your partner to give you your own private screening.",
       "full-size":false,
       "overview-index":25,
-      "chapter-index":0,
+      "chapter-index":6,
       "og:description":'The #CancerSutra Presents: PRIVATE SCREENING. Proving cancer screening can be a handful—at least, when done correctly.'
    },
    {
@@ -361,7 +361,7 @@ var positionsData = [
       "just-the-tip":"Checking with his arms down is always a good start. But don't forget to raise each arm to let your digits dig into more delectable domains.",
       "full-size":false,
       "overview-index":26,
-      "chapter-index":0,
+      "chapter-index":8,
       "og:description":'The #CancerSutra Presents: INSPECTOR GRAB-IT. Take this sensual checkup into your own hands tonight.'
    },
    {
@@ -375,7 +375,7 @@ var positionsData = [
       "just-the-tip":"Remember that when it comes to relationships, privates should never be kept private. Be sure to offer yourself up for a little examination &mdash; and a lot of stimulation.",
       "full-size":true,
       "overview-index":27,
-      "chapter-index":0,
+      "chapter-index":1,
       "og:description":'The #CancerSutra Presents: NUTTY PROFESSOR. He’ll go nuts for this checkup tonight.'
    },
       {
@@ -389,7 +389,7 @@ var positionsData = [
       "just-the-tip":"A good Study Buddy always reciprocates. While you're giving your partner a handful, make sure she does the same.",
       "full-size":false,
       "overview-index":28,
-      "chapter-index":0,
+      "chapter-index":11,
       "og:description":'The #CancerSutra Presents: STUDY BUDDY. You’ll have your hands full with this checkup tonight.'
    },
    {
@@ -417,8 +417,9 @@ var positionsData = [
       "just-the-tip":"There's a time and a place for toys. This time is now, and that place is &mdash; well, we're sure you can think of <em>somewhere.</em>",
       "full-size":true,
       "overview-index":30,
-      "chapter-index":0,
+      "chapter-index":4,
       "float":"right",
+      "overview-float":"none",
       "og:description":'The #CancerSutra Presents: ULTRABOUND TEST. Sit on someone else’s laurels for a change, and receive this checkup.'
    },
    {
@@ -432,7 +433,7 @@ var positionsData = [
       "just-the-tip":"Speaking of opportunities, nothing says love (or lust) like letting your partner take the reins. Once you've given each breast your all, swap positions and let your partner get some hands-on time.",
       "full-size":false,
       "overview-index":31,
-      "chapter-index":0,
+      "chapter-index":7,
       "og:description":'The #CancerSutra Presents: AREOLA 51. For learning what to do with a boob, and how to avoid being one.'
    },
    {

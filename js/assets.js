@@ -145,12 +145,13 @@ jQuery.fn.extend({
 
 //FILTERS
 function filters(type){
+
     //kinda backwards now but whatever
     var $obj = $('.filter [data-filter="'+type+'"]');
     //close any open positions
+
     Odelay.close();
 
-    //
     if($obj.attr('data-toggle') === 'off'){
 
         //only one cancer type at a time
@@ -162,12 +163,14 @@ function filters(type){
             $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
             //show appropriate chapters and STGs
             $('#chapters [data-cancer-type='+cancerType+'],#support-the-cause [data-cancer-type='+cancerType+']').addClass('open');
+            $('#support-blurb').hide();
+            $('#positions').addClass('chapter')
             var $allPositions = $('#positions > div');
             //hide all positions
             $allPositions.hide();
-            $allPositions.sort(function(a,b){
-                var an = a.getAttribute('data-chapter-index'),
-                    bn = b.getAttribute('data-chapter-index');
+            $allPositions = $allPositions.sort(function(a,b){
+                var an = parseFloat(a.getAttribute('data-chapter-index')),
+                    bn = parseFloat(b.getAttribute('data-chapter-index'));
 
                 if(an > bn) {
                     return 1;
@@ -184,7 +187,6 @@ function filters(type){
             //scroll to top
             window.scrollTo(0, 0);
         }
-        //what dis do?
         $obj.data('toggle','on').attr('data-toggle','on')
     }
     else{
@@ -193,6 +195,7 @@ function filters(type){
             var $allPositions = $('#positions > div');
             //hide all positions
             $allPositions.hide();
+            console.log('sorting')
             $allPositions.sort(function(a,b){
                 var an = a.getAttribute('data-chapter-index'),
                     bn = b.getAttribute('data-chapter-index');
@@ -207,6 +210,8 @@ function filters(type){
             });
             $allPositions.detach().appendTo($positions)
             $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
+            $('#support-blurb').show();
+            $('#positions').removeClass('chapter')
             window.scrollTo(0, 0);
         }
     }
@@ -215,6 +220,8 @@ function clearFilters(){
         console.log('clearFilters()')
         $('.filters [data-toggle=on]').attr('data-toggle','off')
         $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
+        $('#support-blurb').show();
+        $('#positions').removeClass('chapter')
         var $allPositions = $('#positions > div');
             //hide all positions
             $allPositions.hide();

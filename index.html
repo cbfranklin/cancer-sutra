@@ -306,6 +306,10 @@
             <!--POSITIONS-->
             <div id="positions" class="empty">
             </div>
+            <div id="support-blurb">
+                <p>Little peeping Tom, why don’t you join the fun? Visit our <a href="#/support">Support Page</a> to see how you can help stick it to cancer, hard!</p>
+                <small>Support for The Cancer Sutra goes toward helping raise awareness, funding research, and spreading the message about how early detection can help save lives.</small>
+            </div>
             <!--SUPPORT THE CAUSE CTAs-->
             <div id="support-the-cause" class="row">
                 <div data-cancer-type="breast">
@@ -398,7 +402,7 @@
     <div id="templates">
         <script type="template" class="positions">
             {{#positions}}
-            <div data-index="{{overview-index}}" data-chapter-index="{{chapter-index}}" data-position="{{element-name}}" data-cancer-type="{{cancer-type}}" class="position-{{orientation}} {{#full-size}}position-full-size{{/full-size}} {{#float}}position-float-{{float}}{{/float}}">
+            <div data-index="{{overview-index}}" data-chapter-index="{{chapter-index}}" data-position="{{element-name}}" data-cancer-type="{{cancer-type}}" data-overview-float="{{overview-float}}" class="position-{{orientation}} {{#full-size}}position-full-size{{/full-size}} {{#float}}position-float-{{float}}{{/float}}">
                 <img alt="" src="img/positions/svg/{{svg-name}}">
                 <div class="hover-title">{{display-name}}<small>{{display-cancer-type}}</small></div>
                 <div data-position="{{element-name}}" class="detail detail-image-{{orientation}}">
