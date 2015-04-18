@@ -39,7 +39,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":3,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: AMOROUS ANAL-YST. Here’s a pointer (at the very least) on how to check your partner tonight.'
    },
    {
       "element-name":"legs-up-checkup",
@@ -95,7 +95,7 @@ var positionsData = [
       "full-size":true,
       "overview-index":7,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: ENTER THE PROCTOLOGIST. Take this checkup to bed to put your finger on this most sensitive issue.'
    },
    {
       "element-name":"dr-ben-dover",
@@ -109,7 +109,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":8,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: DR. BEN DOVER. Let’s get to the bottom of this checkup!'
    },
    {
       "element-name":"teste-teste-12",
@@ -123,7 +123,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":9,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: TEST, TESTE, 1, 2. Tickle your lover’s fancy (among other things) with this position.'
    },
    {
       "element-name":"guy-ropractor",
@@ -137,7 +137,7 @@ var positionsData = [
       "full-size":true,
       "overview-index":10,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging.'
    },
    {
       "element-name":"sack-and-save",
@@ -151,7 +151,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":11,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: SACK & SAVE. Add some heat to the sack…by fondling his.'
    },
    {
       "element-name":"insider-information",
@@ -193,7 +193,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":14,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: REARSEARCH METHOD. Pop in and enjoy this checkup tonight.'
    },
    {
       "element-name":"wham-bam-mamogram",
@@ -264,7 +264,7 @@ var positionsData = [
       "full-size":true,
       "overview-index":19,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: CHECK, PLEASE, PLEASE, PLEASE! Learn your way around a sack in the sack.'
    },
    {
       "element-name":"pair-scope",
@@ -306,7 +306,7 @@ var positionsData = [
       "full-size":false,
       "overview-index":22,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: OPEN-BOOK TESTE. May your actions be a teste-ment to your love tonight.'
    },
       {
       "element-name":"deep-ass-essment",
@@ -334,7 +334,7 @@ var positionsData = [
       "full-size":true,
       "overview-index":24,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: WHAT’S CUPPED, DOC? When it comes to screening, this position is a handful.'
    },
       {
       "element-name":"private-screening",
@@ -376,7 +376,7 @@ var positionsData = [
       "full-size":true,
       "overview-index":27,
       "chapter-index":0,
-      "og:description":''
+      "og:description":'The #CancerSutra Presents: NUTTY PROFESSOR. He’ll go nuts for this checkup tonight.'
    },
       {
       "element-name":"study-buddy",

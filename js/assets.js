@@ -1,7 +1,6 @@
 //SHOW POSITION USING OVERLAY
 
 function showPosition(){
-    //var content = $overlayContent.html();
     var content = $overlayContent[0].outerHTML;
     Odelay.open(content);
 };
@@ -25,14 +24,14 @@ var Odelay = {
             Nav.close();
         });
     },
-    'close': function(){
+    'close': function(refresh){
 
         $overlay.removeClass('open');
         $wrapper.removeClass('overlay-open');
         $body.removeClass('noscroll');
         $positions.find('> div').removeClass('active');
         Mousetrap.unbind('esc');
-        if(window.location.hash.indexOf('#/positions/') > -1){
+        if(window.location.hash.indexOf('#/positions/' && refresh === false) > -1){
             if(Modernizr.history){
                 history.pushState({}, '', '#/positions');
             }
@@ -237,27 +236,13 @@ function clearFilters(){
 }
 
 function loadPositionsJSON(route,name){
-    //$.getJSON('data/positions.json',function(positions){
         console.log('loadPositionsJSON')
         var rendered_html = Mustache.to_html($('#templates .positions').html(),{
            positions: positionsData
         });
         $('#positions').html(rendered_html).removeClass('empty');
-        /*$positions.isotope({
-            masonry: {
-                //columnWidth: '.position-test'
-                columnWidth: '#positions > div:not(.position-full-size)'
-            },
-            getSortData: {
-                index: '[data-index] parseInt',
-            },
-            //layoutMode: 'masonry',
-            //sortBy: 'index'
-        });*/
         $positionsContainer.show();
-        //$positions.isotope('layout');
     loadPositionsState(route,name);
-    //});
 }
 
 /**

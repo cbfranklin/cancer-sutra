@@ -108,7 +108,7 @@ function bindings(){
 //LOAD
 function load(){
 	$body.addClass('loading');
-	Odelay.close();
+	Odelay.close(true);
 	Nav.close();
 	//enable scrolling mobile
 	$(window).off('touchmove');
@@ -143,7 +143,7 @@ function routes(){
 	    },
 	    '/positions/:position' : function(position){
 	    	console.log('/positions/:position')
-	    	console.log('position #')
+	    	console.log(position)
 	    	load();
 	    	loadPositions('positions', position);
 	    },
@@ -375,6 +375,7 @@ function loadEBook(){
 	$ebook.show();
 	$body.removeClass('loading about positions support').addClass('ebook');
 
+	//NEED STICKINESS!
 
 	setTimeout(function(){
 		$about.hide();
