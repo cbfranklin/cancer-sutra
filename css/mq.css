@@ -38,6 +38,15 @@
 		text-align: center;
 	}
 
+	#about svg{
+		height:100%;
+		width:100%;
+	}
+	#about br{
+		display:none;
+		line-height: 0;
+	}
+
 	/*#about h2{font-size:1.5em;}
 	#about h3{font-size:1.2em;}
 	#about p{font-size:0.8em;}
@@ -52,6 +61,14 @@
 	#about .five h2{
 		text-transform: none;
 		font-size:14px;
+	}
+	.col-about-copy{
+		height:100%;
+	}
+	.about-navigation{
+		bottom:50px;
+		position:absolute;
+		left:0;
 	}
 	.about-navigation #prev{
 		position:absolute;
@@ -73,6 +90,10 @@
 		/*display:none;*/
 		height:300px;
 		text-align:center;
+	}
+
+	.detail-image img{
+		max-height:250px;
 	}
 	.detail-image,
 	.detail,

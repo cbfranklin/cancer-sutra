@@ -357,8 +357,7 @@ footer a{
 	text-align:center;
 }
 .about-navigation{
-	/*position:absolute;
-	bottom:20px;*/
+	position:relative;
 	width:100%;
 	text-align:center;
 	color:#eaeaea;
