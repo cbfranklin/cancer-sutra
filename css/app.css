@@ -367,6 +367,7 @@ footer a{
 .about-navigation span{
 	padding:10px;
 	color:#fff;
+	line-height:0;
 }
 .about-navigation img{
 	cursor:pointer;
@@ -436,6 +437,11 @@ footer a{
 }
 .padding-10{
 	padding:10px;
+}
+
+.ebook-screenshots img{
+	width:100%;
+	height:auto;
 }
 
 

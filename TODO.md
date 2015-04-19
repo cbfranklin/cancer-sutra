@@ -16,6 +16,10 @@ POSTFIX FOR EMAIL FORWARDING AND SHARING (yikes). this is going to be interestin
 -OK, maybe nodemailer with amazon SES as the platform (SES allows 62k emails for free, up to 15GB)
 (2h)
 
+NEED ANSWER ON ULTRABOUND TEST (is it skin or breast?)
+and TypeKit issue.
+(0.2h)
+
 
 
 IE
@@ -33,16 +37,13 @@ IE
  proxima nova light for all buttons
 (0.5h)
 
-ADDITIONAL SUPPORT CTA FOR ALL POSITIONS PAGE
-(0.2h)
-
-NEW SUPPORT/EBOOK PAGE: fix stickiness
+NEW SUPPORT/EBOOK PAGE: make stickiness work
 (0.5h)
 
-FIX ALL POSITIONS NAV BUG
-(0.2h)
-
 CLEANUP AND LAUNCH:
+
+POSTERS_NEW and ebook need compression
+(0.1h)
 
 compression, concatenation: 0.5h
 deployment: 0.2h

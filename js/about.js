@@ -21,5 +21,8 @@ function loadAboutAnimations(){
 					};
 			}(key));
 		}
+		setTimeout(function(){
+			animateThisSVG(aboutAnimations,'one')
+		},800)
 	});
 }

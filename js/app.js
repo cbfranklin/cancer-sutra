@@ -187,9 +187,6 @@ function loadAbout(){
 	if($('#about svg').length === 0){
 		loadAboutAnimations();
 	}
-	setTimeout(function(){
-		animateThisSVG(aboutAnimations,'one')
-	},800)
 	$('#about > div').onScreen({
 		direction: 'vertical',
 		doIn: function() {
@@ -349,14 +346,15 @@ function loadSupport(){
 	load();
 	$support.show();
 	$body.removeClass('loading about positions').addClass('support');
-
-	$('.store-item-wrapper').matchHeight();
+	if($(window).height() > 768){
+		$('.store-item-wrapper').matchHeight();
+	}
 	$(window).on('resize',function(){
 		if($(window).height() > 768){
 			$('.store-item-wrapper').matchHeight();
 		}
 		else{
-			$('.store-item-wrapper').attr('style','')
+			$('.store-item-wrapper').attr('style','');
 		}
 	})
 
@@ -374,6 +372,18 @@ function loadEBook(){
 	load();
 	$ebook.show();
 	$body.removeClass('loading about positions support').addClass('ebook');
+
+	if($(window).height() > 768){
+		$('.ebook .row > div').matchHeight();
+	}
+	$(window).on('resize',function(){
+		if($(window).height() > 768){
+			$('.ebook .row > div').matchHeight();
+		}
+		else{
+			$('.ebook .row > div').attr('style','')
+		}
+	})
 
 	//NEED STICKINESS!
 
