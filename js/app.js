@@ -122,45 +122,50 @@ function routes(){
 	    	load();
 	    	loadAbout();
 	    },
-	    '/' : function(){
+	    '!' : function(){
 	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
-	    '/about' : function(){
+	    '!/' : function(){
 	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
-	    '/positions' : function(){
+	    '!/about' : function(){
+	    	console.log('about')
+	    	load();
+	    	loadAbout();
+	    },
+	    '!/positions' : function(){
 	    	console.log('/positions')
 	    	loadPositions();
 	    },
-	    '/positions/' : function(){
+	    '!/positions/' : function(){
 	    	console.log('/positions/')
 	    	load();
 	    	loadPositions();
 	    },
-	    '/positions/:position' : function(position){
+	    '!/positions/:position' : function(position){
 	    	console.log('/positions/:position')
 	    	console.log(position)
 	    	load();
 	    	loadPositions('positions', position);
 	    },
-	     '/chapters/' : function(cancerType){
+	     '!/chapters/' : function(cancerType){
 	     	load();
 	     	loadPositions();
 	    },
-	     '/chapters/:cancerType' : function(cancerType){
+	     '!/chapters/:cancerType' : function(cancerType){
 	     	console.log('chapter #')
 	     	load();
 	     	loadPositions('chapters', cancerType);
 	    },
-	     '/support' : function(){
+	     '!/support' : function(){
 	     	load();
 	     	loadSupport();
 	    },
-	     '/support/ebook' : function(){
+	     '!/support/ebook' : function(){
 	     	load();
 	     	loadEBook();
 	    }

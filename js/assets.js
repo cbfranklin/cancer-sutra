@@ -31,12 +31,13 @@ var Odelay = {
         $body.removeClass('noscroll');
         $positions.find('> div').removeClass('active');
         Mousetrap.unbind('esc');
-        if(window.location.hash.indexOf('#/positions/' && refresh === false) > -1){
+        console.log('refresh',refresh,'indexOf',window.location.hash.indexOf('#!/positions/'))
+        if(window.location.hash.indexOf('#!/positions/') > -1 && !refresh){
             if(Modernizr.history){
-                history.pushState({}, '', '#/positions');
+                history.pushState({}, '', '#!/positions');
             }
             else{
-                window.location.href = '#/positions';
+                window.location.href = '#!/positions';
             }
         }
          $wrapper.off('click');
