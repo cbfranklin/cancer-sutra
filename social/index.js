@@ -17,7 +17,6 @@ fs.readFile('../data/positions.json', function read(err, data) {
 		throw err;
 	}
 	positionsData = JSON.parse(data);
-	//console.log(positionsData)
 });
 
 app.get('/positions/:position', function (req, res) {

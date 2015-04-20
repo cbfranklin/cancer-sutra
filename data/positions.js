@@ -482,4 +482,4 @@ var positionsData = [
     "og:description": "The #CancerSutra Presents: DOCTOR’S ORDERS. Turn cancer’s world upside down. (It’s worth it for the view.)",
     "banner-name": "CS_Social_DoctorsOrders.png"
   }
-]
+];
