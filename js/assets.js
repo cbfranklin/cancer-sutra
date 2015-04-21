@@ -181,10 +181,18 @@ function filters(type){
                 }
                 return 0;
             });
+            $allPositions
+                .filter('[data-chapter-float]')
+                .each(function(){
+                    if($(this).attr('data-cancer-type') === cancerType){
+                        var chapterFloat = $(this).attr('data-chapter-float');
+                        $(this).css('float',chapterFloat);
+                    }
+            });
             //show appropriate positions
             console.log($allPositions)
             $allPositions.detach().appendTo($positions)
-            $('#positions > [data-cancer-type='+cancerType+']').show();
+            $('#positions > [data-cancer-type='+cancerType+']').show()
             //scroll to top
             window.scrollTo(0, 0);
         }
@@ -198,8 +206,8 @@ function filters(type){
             $allPositions.hide();
             console.log('sorting')
             $allPositions.sort(function(a,b){
-                var an = a.getAttribute('data-chapter-index'),
-                    bn = b.getAttribute('data-chapter-index');
+                var an = parseFloat(a.getAttribute('data-index')),
+                    bn = parseFloat(b.getAttribute('data-index'));
 
                 if(an > bn) {
                     return 1;
@@ -209,6 +217,7 @@ function filters(type){
                 }
                 return 0;
             });
+            $allPositions.filter('[data-chapter-float]').css('float','');
             $allPositions.detach().appendTo($positions)
             $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
             $('#support-blurb').show();
@@ -227,8 +236,8 @@ function clearFilters(){
             //hide all positions
             $allPositions.hide();
             $allPositions.sort(function(a,b){
-                var an = a.getAttribute('data-index'),
-                    bn = b.getAttribute('data-index');
+                var an = parseFloat(a.getAttribute('data-index')),
+                    bn = parseFloat(b.getAttribute('data-index'));
 
                 if(an > bn) {
                     return 1;
