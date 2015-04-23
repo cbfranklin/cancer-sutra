@@ -190,6 +190,29 @@ function filters(type){
                         $(this).css('float',chapterFloat);
                     }
             });
+            $allPositions
+                .filter('[data-chapter-full-size]')
+                .each(function(){
+                    console.log($(this))
+                    /*if($(this).hasClass('position-horizontal') === cancerType){
+                        console.log('its horz!')
+                        $(this).css({
+                            width: containerWidth,
+                            height: containerWidth/2-10
+                        })
+                    }*/
+                    /*if($(this).hasClass('position-vertical') === cancerType){
+                        console.log('its vert!')
+                        $(this).css({
+                            width: containerWidth/2-10,
+                            height: containerWidth
+                        })
+                    }*/
+                    $(this).css({
+                            width: containerWidth,
+                            height: containerWidth/2-10
+                        })
+                });
             //show appropriate positions
             $allPositions.detach().appendTo($positions)
             $('#positions > [data-cancer-type='+cancerType+']').show()
@@ -217,6 +240,7 @@ function filters(type){
                 return 0;
             });
             $allPositions.filter('[data-chapter-float]').css('float','');
+            setPositionSize();
             $allPositions.detach().appendTo($positions)
             $('#chapters > div,#support-the-cause > div').removeClass('open')
         $('#chapters').find('.part2,.expand').removeClass('open');
@@ -227,13 +251,15 @@ function filters(type){
     }
 }
 function clearFilters(){
-
+var $allPositions = $('#positions > div');
         $('.filters [data-toggle=on]').attr('data-toggle','off')
         $('#chapters > div,#support-the-cause > div').removeClass('open')
         $('#chapters').find('.part2,.expand').removeClass('open');
         $('#support-blurb').show();
-        $('#positions').removeClass('chapter')
-        var $allPositions = $('#positions > div');
+        $('#positions').removeClass('chapter');
+        $allPositions.filter('[data-chapter-float]').css('float','');
+        setPositionSize();
+        
             //hide all positions
             $allPositions.hide();
             $allPositions.sort(function(a,b){
