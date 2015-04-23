@@ -63,10 +63,10 @@ function bindings(){
 		$(this).addClass('active')
 		var name = $(this).data('position');
 		if(Modernizr.history){
-			history.pushState({}, '', '#/positions/'+name);
+			history.pushState({}, '', '#!/positions/'+name);
 		}
 		else{
-			window.location.hash = '#/positions/'+name;
+			window.location.hash = '#!/positions/'+name;
 		}
 
 		$overlayContent = $(this).find('.detail');
@@ -290,6 +290,7 @@ function loadPositions(route,name){
 	setTimeout(function(){
 			$about.hide();
 			$support.hide();
+			$ebook.hide();
 			window.scrollTo(0, 0);
 		},400);
 
@@ -335,8 +336,8 @@ function setPositionSize(){
 	containerWidth = $('#positions').width()
 
 	$('#positions > div').css({
-		width: containerWidth/2-5,
-		height: containerWidth/2-5
+		width: containerWidth/2-10,
+		height: containerWidth/2-10
 	})
 
 	$('#positions > div.position-full-size.position-vertical').css('height',containerWidth)
@@ -361,6 +362,13 @@ function loadSupport(){
 		else{
 			$('.store-item-wrapper').attr('style','');
 		}
+	})
+	$('body').on('click','.store-item-ebook',function(){
+		routie('#!/support/ebook')
+	})
+
+	$('body').on('click','.store-item-posters',function(){
+		routie('#!/support/posters')
 	})
 
 	setTimeout(function(){

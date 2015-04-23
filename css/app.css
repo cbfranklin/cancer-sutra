@@ -25,11 +25,17 @@ section{
 	display:none;
 }
 
+#positions-container{
+	padding-bottom:20px;
+}
+
 /* PAGE LOAD ANIMATIONS */
 .about section#positions-container,
 .about section#support,
+.about section#ebook,
 .positions section#about,
 .positions section#support,
+.positions section#ebook,
 .support section#about,
 .support section#positions-container,
 .support section#ebook
@@ -327,6 +333,10 @@ footer{
 	padding-top:25px;
 	padding-bottom:25px;
 	color:#999;
+	display:none;
+}
+.loading footer{
+	display:none;
 }
 .footer-links{
 	font-size:16px;
@@ -395,7 +405,7 @@ footer a{
 	color:#fff;
 }
 #about .five .copy{
-	padding-top:5%;
+	padding-top:20%;
 }
 
 .no-touch #about .five a:hover,
@@ -430,6 +440,8 @@ footer a{
 	box-shadow:1px 1px 10px #ccc;
 	padding:10px;
 	margin-bottom:20px;
+	display:block;
+	cursor:pointer;
 }
 #support .store-info{
 	padding:0 10px;
@@ -705,7 +717,7 @@ header{
 }
 .overlay #close{
 	display:block;
-	font-size:40px;
+	font-size:60px;
 	color:#ccc;
 	font-family:Arial,sans-serif;
 	position:absolute;
@@ -773,6 +785,11 @@ header{
 .detail-image{
 	overflow:hidden;
 	height:100%;
+	text-align: center;
+}
+.detail-image img{
+	height:100%;
+	width:100%;
 }
 .detail-image-horizontal .detail-image img{
 	height:auto;

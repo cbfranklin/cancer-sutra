@@ -89,7 +89,7 @@
 }
 
 /* TABLET AND PHONE */
-@media (max-width:767px){
+@media (max-width:768px){
 	.detail-image{
 		/*display:none;*/
 		height:300px;
@@ -120,6 +120,15 @@
 	#support .cta{
 		position:static;
 		padding:10px;
+	}
+	.loader{
+		margin:0 0 0 33%;
+		width:40%;
+		height:300px;
+	}
+	.loader img{
+		height:100%;
+		width:100%;
 	}
 }
 

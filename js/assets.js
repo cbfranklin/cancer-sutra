@@ -31,7 +31,6 @@ var Odelay = {
         $body.removeClass('noscroll');
         $positions.find('> div').removeClass('active');
         Mousetrap.unbind('esc');
-        console.log('refresh',refresh,'indexOf',window.location.hash.indexOf('#!/positions/'))
         if(window.location.hash.indexOf('#!/positions/') > -1 && !refresh){
             if(Modernizr.history){
                 history.pushState({}, '', '#!/positions');
@@ -161,7 +160,9 @@ function filters(type){
 
             var cancerType = $obj.data('filter');
             //close all chapters and STCs
-            $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
+            console.log('close stuff')
+            $('#chapters > div,#support-the-cause > div').removeClass('open')
+        $('#chapters').find('.part2,.expand').removeClass('open');
             //show appropriate chapters and STGs
             $('#chapters [data-cancer-type='+cancerType+'],#support-the-cause [data-cancer-type='+cancerType+']').addClass('open');
             $('#support-blurb').hide();
@@ -190,7 +191,6 @@ function filters(type){
                     }
             });
             //show appropriate positions
-            console.log($allPositions)
             $allPositions.detach().appendTo($positions)
             $('#positions > [data-cancer-type='+cancerType+']').show()
             //scroll to top
@@ -204,7 +204,6 @@ function filters(type){
             var $allPositions = $('#positions > div');
             //hide all positions
             $allPositions.hide();
-            console.log('sorting')
             $allPositions.sort(function(a,b){
                 var an = parseFloat(a.getAttribute('data-index')),
                     bn = parseFloat(b.getAttribute('data-index'));
@@ -219,7 +218,8 @@ function filters(type){
             });
             $allPositions.filter('[data-chapter-float]').css('float','');
             $allPositions.detach().appendTo($positions)
-            $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
+            $('#chapters > div,#support-the-cause > div').removeClass('open')
+        $('#chapters').find('.part2,.expand').removeClass('open');
             $('#support-blurb').show();
             $('#positions').removeClass('chapter')
             window.scrollTo(0, 0);
@@ -227,9 +227,10 @@ function filters(type){
     }
 }
 function clearFilters(){
-        console.log('clearFilters()')
+
         $('.filters [data-toggle=on]').attr('data-toggle','off')
-        $('#chapters > div,#support-the-cause > div').removeClass('open').children('part2,expand').removeClass('open');
+        $('#chapters > div,#support-the-cause > div').removeClass('open')
+        $('#chapters').find('.part2,.expand').removeClass('open');
         $('#support-blurb').show();
         $('#positions').removeClass('chapter')
         var $allPositions = $('#positions > div');
@@ -247,13 +248,11 @@ function clearFilters(){
                 }
                 return 0;
             });
-            console.log($allPositions)
         $allPositions.detach().appendTo($positions).show();
         window.scrollTo(0, 0);
 }
 
 function loadPositionsJSON(route,name){
-        console.log('loadPositionsJSON')
         var rendered_html = Mustache.to_html($('#templates .positions').html(),{
            positions: positionsData
         });
@@ -269,12 +268,13 @@ jQuery.fn.extend({
         var offsetLeft = $(this).offset().left;
         var width = $(this).width();
         var position = $(window).scrollTop();
+        var $el = $(this);
+        $el.clone().appendTo('body').attr('id','fixed-item').attr('style', 'position:fixed;top:'+offsetTop+';left:' + offsetLeft + 'px;width:' + width + 'px');
         $(window).on('scroll', function() {
-            console.log($(window).scrollTop())
             if ($(window).scrollTop() > offsetTop) {
-                $(this).attr('style', 'position:fixed;top:0px;left:' + offsetLeft + 'px;width:' + width + 'px');
+                $el.attr('style', 'position:fixed;top:'+offsetTop+';left:' + offsetLeft + 'px;width:' + width + 'px');
             } else {
-                $(this).attr('style', '');
+                $el.attr('style', '');
             }
         });
     }

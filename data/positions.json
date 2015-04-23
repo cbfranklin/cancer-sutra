@@ -117,7 +117,8 @@
     "overview-index": 8,
     "chapter-index": 4,
     "og:description": "The #CancerSutra Presents: DR. BEN DOVER. Let’s get to the bottom of this checkup!",
-    "banner-name": "CS_Social_DrBenDover.png"
+    "banner-name": "CS_Social_DrBenDover.png",
+    "chapter-full-size": true
   },
   {
     "element-name": "teste-teste-1-2",
@@ -147,7 +148,7 @@
     "overview-index": 10,
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging.",
-    "banner-name": "CS_Social_Guyropractor.png"
+    "banner-name": "CS_Social_GuyRopractor.png"
   },
   {
     "element-name": "sack-and-save",
