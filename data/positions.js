@@ -12,7 +12,8 @@ var positionsData = [
     "overview-index": 1,
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: INSPECT-A-PEC. Put this squeeze on cancer with this position.",
-    "banner-name": "CS_Social_InspectAPec.png"
+    "banner-name": "CS_Social_InspectAPec.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECT-A-PEC.%20Put%20this%20squeeze%20on%20cancer%20with%20this%20position."
   },
   {
     "element-name": "handy-scan",
@@ -27,7 +28,8 @@ var positionsData = [
     "overview-index": 2,
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: HANDY SCAN. Let your lover fall into your capable hands (and other capable areas, as well).",
-    "banner-name": "CS_Social_HandyScan.png"
+    "banner-name": "CS_Social_HandyScan.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20HANDY%20SCAN.%20Let%20your%20lover%20fall%20into%20your%20capable%20hands%20(and%20other%20capable%20areas%2C%20as%20well)."
   },
   {
     "element-name": "amorous-anal-yst",
@@ -42,7 +44,8 @@ var positionsData = [
     "overview-index": 3,
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: AMOROUS ANAL-YST. Here’s a pointer (at the very least) on how to check your partner tonight.",
-    "banner-name": "CS_Social_AmorousAnalyst.png"
+    "banner-name": "CS_Social_AmorousAnalyst.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AMOROUS%20ANAL-YST.%20Here%E2%80%99s%20a%20pointer%20(at%20the%20very%20least)%20on%20how%20to%20check%20your%20partner%20tonight."
   },
   {
     "element-name": "legs-up-checkup",
@@ -57,7 +60,8 @@ var positionsData = [
     "overview-index": 4,
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: LEGS UP Checkup. Open yourself up to a new kind of checkup.",
-    "banner-name": "CS_Social_LegsUpCheckup.png"
+    "banner-name": "CS_Social_LegsUpCheckup.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20LEGS%20UP%20Checkup.%20Open%20yourself%20up%20to%20a%20new%20kind%20of%20checkup."
   },
   {
     "element-name": "manogram",
@@ -72,7 +76,8 @@ var positionsData = [
     "overview-index": 5,
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: MANOGRAM. A checkup with a couple of quality perks.",
-    "banner-name": "CS_Social_Manogram.png"
+    "banner-name": "CS_Social_Manogram.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20MANOGRAM.%20A%20checkup%20with%20a%20couple%20of%20quality%20perks."
   },
   {
     "element-name": "cat-or-matt-scan",
@@ -87,7 +92,8 @@ var positionsData = [
     "overview-index": 6,
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: CAT (OR MATT) SCAN. Stick it to cancer, hard, with this position.",
-    "banner-name": "CS_Social_CatOrMattScan.png"
+    "banner-name": "CS_Social_CatOrMattScan.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CAT%20(OR%20MATT)%20SCAN.%20Stick%20it%20to%20cancer%2C%20hard%2C%20with%20this%20position."
   },
   {
     "element-name": "enter-the-proctologist",
@@ -102,7 +108,8 @@ var positionsData = [
     "overview-index": 7,
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: ENTER THE PROCTOLOGIST. Take this checkup to bed to put your finger on this most sensitive issue.",
-    "banner-name": "CS_Social_EnterTheProctologist.png"
+    "banner-name": "CS_Social_EnterTheProctologist.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ENTER%20THE%20PROCTOLOGIST.%20Take%20this%20checkup%20to%20bed%20to%20put%20your%20finger%20on%20this%20most%20sensitive%20issue."
   },
   {
     "element-name": "dr-ben-dover",
@@ -118,7 +125,8 @@ var positionsData = [
     "chapter-index": 4,
     "og:description": "The #CancerSutra Presents: DR. BEN DOVER. Let’s get to the bottom of this checkup!",
     "banner-name": "CS_Social_DrBenDover.png",
-    "chapter-full-size": true
+    "chapter-full-size": true,
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DR.%20BEN%20DOVER.%20Let%E2%80%99s%20get%20to%20the%20bottom%20of%20this%20checkup!"
   },
   {
     "element-name": "teste-teste-1-2",
@@ -133,7 +141,8 @@ var positionsData = [
     "overview-index": 9,
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: TEST, TESTE, 1, 2. Tickle your lover’s fancy (among other things) with this position.",
-    "banner-name": "CS_Social_TesteTeste12.png"
+    "banner-name": "CS_Social_TesteTeste12.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TEST%2C%20TESTE%2C%201%2C%202.%20Tickle%20your%20lover%E2%80%99s%20fancy%20(among%20other%20things)%20with%20this%20position."
   },
   {
     "element-name": "guy-ropractor",
@@ -148,7 +157,8 @@ var positionsData = [
     "overview-index": 10,
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging.",
-    "banner-name": "CS_Social_GuyRopractor.png"
+    "banner-name": "CS_Social_GuyRopractor.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20GUY-ROPRACTOR.%20This%20checkup%20will%20never%20leave%20your%20lover%20hanging."
   },
   {
     "element-name": "sack-and-save",
@@ -163,7 +173,8 @@ var positionsData = [
     "overview-index": 11,
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: SACK & SAVE. Add some heat to the sack...by fondling his.",
-    "banner-name": "CS_Social_SackAndSave.png"
+    "banner-name": "CS_Social_SackAndSave.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SACK%20%26%20SAVE.%20Add%20some%20heat%20to%20the%20sack...by%20fondling%20his."
   },
   {
     "element-name": "insider-information",
@@ -178,7 +189,8 @@ var positionsData = [
     "overview-index": 12,
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: INSIDER INFORMATION. Give cancer the pounding of a lifetime tonight.",
-    "banner-name": "CS_Social_InsiderInformation.png"
+    "banner-name": "CS_Social_InsiderInformation.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSIDER%20INFORMATION.%20Give%20cancer%20the%20pounding%20of%20a%20lifetime%20tonight."
   },
   {
     "element-name": "triple-x-ray",
@@ -193,7 +205,8 @@ var positionsData = [
     "overview-index": 13,
     "chapter-index": 10,
     "og:description": "The #CancerSutra Presents: TRIPLE X-RAY. Give your partner a leg-up (or two): Enjoy this checkup tonight.",
-    "banner-name": "CS_Social_TripleXRay.png"
+    "banner-name": "CS_Social_TripleXRay.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TRIPLE%20X-RAY.%20Give%20your%20partner%20a%20leg-up%20(or%20two)%3A%20Enjoy%20this%20checkup%20tonight."
   },
   {
     "element-name": "rearsearch-method",
@@ -208,7 +221,8 @@ var positionsData = [
     "overview-index": 14,
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: REARSEARCH METHOD. Pop in and enjoy this checkup tonight.",
-    "banner-name": "CS_Social_RearsearchMethod.png"
+    "banner-name": "CS_Social_RearsearchMethod.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20REARSEARCH%20METHOD.%20Pop%20in%20and%20enjoy%20this%20checkup%20tonight."
   },
   {
     "element-name": "wham-bam-mamogram",
@@ -223,7 +237,8 @@ var positionsData = [
     "overview-index": 15,
     "chapter-index": 7,
     "og:description": "The #CancerSutra Presents: WHAM BAM, MAMMOGRAM. A checkup with just the right amount of wiggle room.",
-    "banner-name": "CS_Social_WhamBamMammogram.png"
+    "banner-name": "CS_Social_WhamBamMammogram.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAM%20BAM%2C%20MAMMOGRAM.%20A%20checkup%20with%20just%20the%20right%20amount%20of%20wiggle%20room."
   },
   {
     "element-name": "split-screening",
@@ -239,7 +254,8 @@ var positionsData = [
     "chapter-index": 4,
     "float": "right",
     "og:description": "The #CancerSutra Presents: SPLIT-SCREENING. Fit a little check up (among other things) in between you and your lover.",
-    "banner-name": "CS_Social_SplitScreening.png"
+    "banner-name": "CS_Social_SplitScreening.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SPLIT-SCREENING.%20Fit%20a%20little%20check%20up%20(among%20other%20things)%20in%20between%20you%20and%20your%20lover."
   },
   {
     "element-name": "chest-xxxam",
@@ -254,7 +270,8 @@ var positionsData = [
     "overview-index": 17,
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: CHEST XXXAM. Checking for cancer has never been more tit-for-tat.",
-    "banner-name": "CS_Social_ChestXXXam.png"
+    "banner-name": "CS_Social_ChestXXXam.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHEST%20XXXAM.%20Checking%20for%20cancer%20has%20never%20been%20more%20tit-for-tat."
   },
   {
     "element-name": "closer-examination",
@@ -269,7 +286,8 @@ var positionsData = [
     "overview-index": 18,
     "chapter-index": 11,
     "og:description": "The #CancerSutra Presents: CLOSER EXAMINATION. Find yourself with a familiar squeeze. Or two.",
-    "banner-name": "CS_Social_CloserExamination.png"
+    "banner-name": "CS_Social_CloserExamination.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CLOSER%20EXAMINATION.%20Find%20yourself%20with%20a%20familiar%20squeeze.%20Or%20two."
   },
   {
     "element-name": "check-please-please-please",
@@ -284,7 +302,8 @@ var positionsData = [
     "overview-index": 19,
     "chapter-index": 4,
     "og:description": "The #CancerSutra Presents: CHECK, PLEASE, PLEASE, PLEASE! Learn your way around a sack in the sack.",
-    "banner-name": "CS_Social_CheckPleasePleasePlease.png"
+    "banner-name": "CS_Social_CheckPleasePleasePlease.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHECK%2C%20PLEASE%2C%20PLEASE%2C%20PLEASE!%20Learn%20your%20way%20around%20a%20sack%20in%20the%20sack."
   },
   {
     "element-name": "pair-scope",
@@ -299,7 +318,8 @@ var positionsData = [
     "overview-index": 20,
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: PAIR-SCOPE. Because true love has always been about the perfect pair.",
-    "banner-name": "CS_Social_PairScope.png"
+    "banner-name": "CS_Social_PairScope.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PAIR-SCOPE.%20Because%20true%20love%20has%20always%20been%20about%20the%20perfect%20pair."
   },
   {
     "element-name": "derm-oh-oh-oh-tology",
@@ -314,7 +334,8 @@ var positionsData = [
     "overview-index": 21,
     "chapter-index": 8,
     "og:description": "The #CancerSutra Presents: DERM-OH-OH-OH-TOLOGY. Checkups are like anything else between the sheets: It pays to go deeper.",
-    "banner-name": "CS_Social_DermOhOhOhTology.png"
+    "banner-name": "CS_Social_DermOhOhOhTology.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DERM-OH-OH-OH-TOLOGY.%20Checkups%20are%20like%20anything%20else%20between%20the%20sheets%3A%20It%20pays%20to%20go%20deeper."
   },
   {
     "element-name": "open-book-teste",
@@ -329,7 +350,8 @@ var positionsData = [
     "overview-index": 22,
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: OPEN-BOOK TESTE. May your actions be a teste-ment to your love tonight.",
-    "banner-name": "CS_Social_OpenBookTeste.png"
+    "banner-name": "CS_Social_OpenBookTeste.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20OPEN-BOOK%20TESTE.%20May%20your%20actions%20be%20a%20teste-ment%20to%20your%20love%20tonight."
   },
   {
     "element-name": "deep-ass-essment",
@@ -344,7 +366,8 @@ var positionsData = [
     "overview-index": 23,
     "chapter-index": 9,
     "og:description": "The #CancerSutra Presents: DEEP ASS-ESSMENT. A position to help fill your curiosity—among other things—tonight.",
-    "banner-name": "CS_Social_DeepAssessment.png"
+    "banner-name": "CS_Social_DeepAssessment.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DEEP%20ASS-ESSMENT.%20A%20position%20to%20help%20fill%20your%20curiosity%E2%80%94among%20other%20things%E2%80%94tonight."
   },
   {
     "element-name": "whats-cupped-doc",
@@ -359,7 +382,8 @@ var positionsData = [
     "overview-index": 24,
     "chapter-index": 8,
     "og:description": "The #CancerSutra Presents: WHAT’S CUPPED, DOC? When it comes to screening, this position is a handful.",
-    "banner-name": "CS_Social_WhatsCuppedDoc.png"
+    "banner-name": "CS_Social_WhatsCuppedDoc.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAT%E2%80%99S%20CUPPED%2C%20DOC%3F%20When%20it%20comes%20to%20screening%2C%20this%20position%20is%20a%20handful."
   },
   {
     "element-name": "private-screening",
@@ -374,7 +398,8 @@ var positionsData = [
     "overview-index": 25,
     "chapter-index": 10,
     "og:description": "The #CancerSutra Presents: PRIVATE SCREENING. Proving cancer screening can be a handful—at least, when done correctly.",
-    "banner-name": "CS_Social_PrivateScreening.png"
+    "banner-name": "CS_Social_PrivateScreening.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PRIVATE%20SCREENING.%20Proving%20cancer%20screening%20can%20be%20a%20handful%E2%80%94at%20least%2C%20when%20done%20correctly."
   },
   {
     "element-name": "inspector-grab-it",
@@ -389,7 +414,8 @@ var positionsData = [
     "overview-index": 26,
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: INSPECTOR GRAB-IT. Take this sensual checkup into your own hands tonight.",
-    "banner-name": "CS_Social_InspectorGrabIt.png"
+    "banner-name": "CS_Social_InspectorGrabIt.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECTOR%20GRAB-IT.%20Take%20this%20sensual%20checkup%20into%20your%20own%20hands%20tonight."
   },
   {
     "element-name": "nutty-professor",
@@ -404,7 +430,8 @@ var positionsData = [
     "overview-index": 27,
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: NUTTY PROFESSOR. He’ll go nuts for this checkup tonight.",
-    "banner-name": "CS_Social_NuttyProfessor.png"
+    "banner-name": "CS_Social_NuttyProfessor.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20NUTTY%20PROFESSOR.%20He%E2%80%99ll%20go%20nuts%20for%20this%20checkup%20tonight."
   },
   {
     "element-name": "study-buddy",
@@ -419,7 +446,8 @@ var positionsData = [
     "overview-index": 28,
     "chapter-index": 12,
     "og:description": "The #CancerSutra Presents: STUDY BUDDY. You’ll have your hands full with this checkup tonight.",
-    "banner-name": "CS_Social_StudyBuddy.png"
+    "banner-name": "CS_Social_StudyBuddy.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20STUDY%20BUDDY.%20You%E2%80%99ll%20have%20your%20hands%20full%20with%20this%20checkup%20tonight."
   },
   {
     "element-name": "oral-exam",
@@ -434,7 +462,8 @@ var positionsData = [
     "overview-index": 29,
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: ORAL EXAM. Here’s one test you’ll love taking (and receiving).",
-    "banner-name": "CS_Social_OralExam.png"
+    "banner-name": "CS_Social_OralExam.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ORAL%20EXAM.%20Here%E2%80%99s%20one%20test%20you%E2%80%99ll%20love%20taking%20(and%20receiving)."
   },
   {
     "element-name": "ultrabound-test",
@@ -451,7 +480,8 @@ var positionsData = [
     "float": "right",
     "chapter-float": "left",
     "og:description": "The #CancerSutra Presents: ULTRABOUND TEST. Sit on someone else’s laurels for a change, and receive this checkup.",
-    "banner-name": "CS_Social_UltraboundTest.png"
+    "banner-name": "CS_Social_UltraboundTest.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ULTRABOUND%20TEST.%20Sit%20on%20someone%20else%E2%80%99s%20laurels%20for%20a%20change%2C%20and%20receive%20this%20checkup."
   },
   {
     "element-name": "areola-51",
@@ -466,7 +496,8 @@ var positionsData = [
     "overview-index": 31,
     "chapter-index": 9,
     "og:description": "The #CancerSutra Presents: AREOLA 51. For learning what to do with a boob, and how to avoid being one.",
-    "banner-name": "CS_Social_Areola51.png"
+    "banner-name": "CS_Social_Areola51.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AREOLA%2051.%20For%20learning%20what%20to%20do%20with%20a%20boob%2C%20and%20how%20to%20avoid%20being%20one."
   },
   {
     "element-name": "doctors-orders",
@@ -481,6 +512,7 @@ var positionsData = [
     "overview-index": 32,
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: DOCTOR’S ORDERS. Turn cancer’s world upside down. (It’s worth it for the view.)",
-    "banner-name": "CS_Social_DoctorsOrders.png"
+    "banner-name": "CS_Social_DoctorsOrders.png",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DOCTOR%E2%80%99S%20ORDERS.%20Turn%20cancer%E2%80%99s%20world%20upside%20down.%20(It%E2%80%99s%20worth%20it%20for%20the%20view.)"
   }
-];
+]

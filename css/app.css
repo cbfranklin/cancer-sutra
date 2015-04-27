@@ -33,12 +33,23 @@ section{
 .about section#positions-container,
 .about section#support,
 .about section#ebook,
+.about section#posters,
 .positions section#about,
 .positions section#support,
 .positions section#ebook,
+.positions section#posters,
 .support section#about,
 .support section#positions-container,
-.support section#ebook
+.support section#ebook,
+.support section#posters
+.ebook section#about,
+.ebook section#positions-container,
+.ebook section#posters,
+.ebook section#support,
+.posters section#about,
+.posters section#positions-container,
+.posters section#ebook,
+.posters section#support
 {
 	-webkit-animation: scaleDownCenter .4s ease-in both;
 	animation: scaleDownCenter .4s ease-in both;
@@ -47,7 +58,8 @@ section{
 .about section#about,
 .positions section#positions-container,
 .support section#support,
-.ebook section#ebook
+.ebook section#ebook,
+.posters section#posters
 {
 	-webkit-animation: scaleUpCenter .4s ease-out both;
 	animation: scaleUpCenter .4s ease-out both;
@@ -463,6 +475,33 @@ footer a{
 .ebook-screenshots img{
 	width:100%;
 	height:auto;
+}
+
+#posters input[type=text]{
+	width:100%;
+}
+#posters input[type=submit]{
+	float:right;
+	margin-top:25px;
+	background-color:#950068;
+	color:#fff;
+}
+#posters input[type=submit]:hover{
+	color:#fff;
+}
+.google-form .row{
+	margin-top:10px;
+}
+.google-form label{
+	font-size:18px;
+}
+.return-to-cancer-sutra{
+	margin-top:25px;
+	background-color:#950068!important;
+}
+.return-to-cancer-sutra:hover{
+	background-color:#950068!important;
+	color:#fff;
 }
 
 

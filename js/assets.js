@@ -279,11 +279,11 @@ var $allPositions = $('#positions > div');
 }
 
 function loadPositionsJSON(route,name){
-        var rendered_html = Mustache.to_html($('#templates .positions').html(),{
-           positions: positionsData
-        });
-        $('#positions').html(rendered_html).removeClass('empty');
-        $positionsContainer.show();
+    var rendered_html = Mustache.to_html($('#templates .positions').html(),{
+       positions: positionsData
+    });
+    $('#positions').html(rendered_html).removeClass('empty');
+    $positionsContainer.show();
     loadPositionsState(route,name);
 }
 
@@ -304,6 +304,14 @@ jQuery.fn.extend({
             }
         });
     }
+});
+
+//GOOGLE FORM
+$("body").on("click", ".google-form input[type=submit]", function() {
+    $(".form-thank-you").show();
+});
+$("body").on("click", "button.form-dismiss", function() {
+    $(".form-thank-you").hide();
 });
 
 /*

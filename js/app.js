@@ -12,6 +12,7 @@ $loader,
 $body,
 $overlay,
 $overlayContent,
+$posters,
 containerWidth,
 windowWidth;
 
@@ -24,6 +25,7 @@ $(function(){
 	$support = $('#support')
 	$positionsContainer = $('#positions-container');
 	$ebook = $('#ebook');
+	$posters = $('#posters');
 	$all = $('section');
 	$filters = $('.filter a');
 	$container = $('.container');
@@ -168,6 +170,10 @@ function routes(){
 	     '!/support/ebook' : function(){
 	     	load();
 	     	loadEBook();
+	    },
+	    '!/support/posters' : function(){
+	     	load();
+	     	loadPosters();
 	    }
 	});
 };
@@ -182,7 +188,7 @@ function loadAbout(){
 	$(window).on('touchmove', false);
 
 	setTimeout(function(){
-		$positionsContainer.hide();
+		$('section').not('#about').hide()
 		window.scrollTo(0, 0);
 		$('nav').removeClass('open');
 		$('.menu-toggle').removeClass('active');
@@ -288,9 +294,7 @@ function loadPositions(route,name){
 	})
 
 	setTimeout(function(){
-			$about.hide();
-			$support.hide();
-			$ebook.hide();
+			$('section').not('#positions-container').hide()
 			window.scrollTo(0, 0);
 		},400);
 
@@ -368,13 +372,11 @@ function loadSupport(){
 	})
 
 	$('body').on('click','.store-item-posters',function(){
-		/*routie('#!/support/posters')*/
+		routie('#!/support/posters')
 	})
 
 	setTimeout(function(){
-		$about.hide();
-		$positionsContainer.hide()
-		$ebook.hide();
+		$('section').not('#support').hide()
 		clearFilters();
 		window.scrollTo(0, 0);
 	},400);
@@ -384,7 +386,7 @@ function loadSupport(){
 function loadEBook(){
 	load();
 	$ebook.show();
-	$body.removeClass('loading about positions support').addClass('ebook');
+	$body.removeClass('loading about positions support posters').addClass('ebook');
 
 	if($(window).height() > 768){
 		$('.ebook .row > div').matchHeight();
@@ -401,9 +403,20 @@ function loadEBook(){
 	//NEED STICKINESS!
 
 	setTimeout(function(){
-		$about.hide();
-		$positionsContainer.hide()
-		$support.hide()
+		$('section').not('#ebook').hide()
+		clearFilters();
+		window.scrollTo(0, 0);
+	},400);
+}
+
+//posters
+function loadPosters(){
+	load();
+	$posters.show();
+	$body.removeClass('loading about positions support ebook').addClass('posters');
+
+	setTimeout(function(){
+		$('section').not('#posters').hide()
 		clearFilters();
 		window.scrollTo(0, 0);
 	},400);
