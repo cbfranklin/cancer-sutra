@@ -239,7 +239,7 @@ function loadAbout(){
 			},600)
 		}
 	});
-    Mousetrap.bind(['down','right','.',']'],function(){
+    /*Mousetrap.bind(['down','right','.',']'],function(){
     		if($('#about').attr('data-is-scrolling') == 'false'){
     			$('#about .onScreen #next').click();
     		}
@@ -250,7 +250,7 @@ function loadAbout(){
             	$('#about .onScreen #prev').click();
             }
             return false;
-    });
+    });*/
     $('body').on('swipe','#about[data-is-scrolling=false]',function(event){
 		var dir = event.direction;
 		if (dir === 'down') {
@@ -262,7 +262,7 @@ function loadAbout(){
             return false;
 	    }
 	});
-	var mousewheelScroll = _.debounce(function(e) {
+	/*var mousewheelScroll = _.debounce(function(e) {
 		console.log(e.deltaY)
 		if(e.deltaY < 0){
 			$('#about .onScreen #next').click();
@@ -272,7 +272,7 @@ function loadAbout(){
 		}
 	}, 100, true);
 
-	$('#about').on('mousewheel',mousewheelScroll);
+	$('#about').on('mousewheel',mousewheelScroll);*/
 };
 
 //POSITIONS
