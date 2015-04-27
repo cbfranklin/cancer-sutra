@@ -368,7 +368,7 @@ function loadSupport(){
 	})
 
 	$('body').on('click','.store-item-posters',function(){
-		routie('#!/support/posters')
+		/*routie('#!/support/posters')*/
 	})
 
 	setTimeout(function(){

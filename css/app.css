@@ -321,7 +321,6 @@ nav.open{
 .support .filters li{
 	border-color:#ccc;
 }
-
 footer{
 	/*-webkit-transition: all 0.5s ease;
   	-moz-transition: all 0.5s ease;
@@ -333,6 +332,9 @@ footer{
 	padding-top:25px;
 	padding-bottom:25px;
 	color:#999;
+	display:block;
+}
+.about footer{
 	display:none;
 }
 .loading footer{
@@ -413,27 +415,34 @@ footer a{
 	color:rgb(221,112,189);
 	background:#fff;
 }
-#support .cta{
+.store-item-name{
+	font-size:18px;
 	display:block;
-	color:#950068;
-	text-transform: uppercase;
+	padding-top:10px;
+}
+.store-item-price{
+	color:#666;
 	font-size:24px;
-	position:absolute;
-	bottom:0px;
-	right:20px;
+	display:block;
+}
+.store-item-cta{
+	text-transform: uppercase;
 	font-family:sans-serif;
-	width:100%;
+	text-align:right;
+	color:#950068;
+	display:block;
+	font-size:24px;
+}
+.store-item-available{
+	text-transform: uppercase;
+	font-family:sans-serif;
+	text-align:right;
+	color:#999;
+	display:block;
 	text-align: right;
 }
-#support .cta small{
-	color:#999;
-	font-size: 16px
-}
-#support .cta:hover{
-	text-decoration: none;
-}
-#support h3, #support h4{
-	text-transform: none;
+.item-desc h4{
+	text-transform:none;
 }
 #support .store-item-wrapper{
 	border:1px solid #ccc;
