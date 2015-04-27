@@ -420,4 +420,9 @@ function loadPosters(){
 		clearFilters();
 		window.scrollTo(0, 0);
 	},400);
+
+	$('.return-to-cancer-sutra').on('click',function(){
+		$(this).closest('form').find("input[type=text], textarea").val("");
+		$('.form-thank-you').hide()
+	});
 }
