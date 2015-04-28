@@ -38,7 +38,7 @@ fs.readFile('../data/positions.json', function read(err, data) {
 	positionsData = JSON.parse(data);
 });
 
-app.get('/email/:position/:email', function (req, res) {
+app.get('/email/:position/:email/:message', function (req, res) {
 
 	var positionIndex;
 	for(i in positionsData){
@@ -52,7 +52,7 @@ app.get('/email/:position/:email', function (req, res) {
 	};
 	var output = mustache.render(template, view);
 
-	console.log(output)
+	output = '<p>'+decodeURI(req.params.message)+'</p><br><br>'+output;
 
 	transport.sendMail({
 	    to: req.params.email,

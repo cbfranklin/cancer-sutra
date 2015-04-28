@@ -1,57 +1,55 @@
-#positions > div{
-	width:45%;
+#positions > div {
+    width: 45%;
 }
 
-#positions > div.position-full-size.position-horizontal{
-	width:100%;
-}
-#positions > div > img{
-	height:90%;
-	width:90%;
-	margin:0 auto;
-  	cursor:pointer;
-  	display:block;
-}
-#positions > div.position-float-right{
-	float:right;
+#positions > div.position-full-size.position-horizontal {
+    width: 100%;
 }
 
-#positions.overview > [data-overview-float=none]{
-	float:none!important;
+#positions > div > img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+}
+
+#positions > div.position-float-right {
+    float: right;
+}
+
+#positions.overview > [data-overview-float=none] {
+    float: none!important;
 }
 
 .legal-text,
-.support-text{
-	font-size:20px;
+.support-text {
+    font-size: 20px;
 }
 /* PHONE ONLY*/
-@media (max-width:480px){
 
-	#positions > div{
-		width:100%;
-	}
-
-	.no-touch #positions > div:hover img{
-		transform:none;
-	}
-	nav{
-		left:-90%;
-	}
-
-	#about > div{
-		text-align: center;
-	}
-
-	#about svg{
-		height:100%;
-		width:100%;
-	}
-	#about br{
-		display:none;
-		line-height: 0;
-	}
-
-	/*#about h2{font-size:1.5em;}
+@media (max-width: 480px) {
+    #positions > div {
+        width: 100%;
+    }
+    .no-touch #positions > div:hover img {
+        transform: none;
+    }
+    nav {
+        left: -90%;
+    }
+    #about > div {
+        text-align: center;
+    }
+    #about svg {
+        height: 100%;
+        width: 100%;
+    }
+    #about br {
+        display: none;
+        line-height: 0;
+    }
+    /*#about h2{font-size:1.5em;}
 	#about h3{font-size:1.2em;}
 	#about p{font-size:0.8em;}
 	#about .one{padding:0 0 0 0;}
@@ -59,211 +57,216 @@
 	#about .three{padding:80% 0 0 10%;}
 	#about .four{padding:90% 0 0 0;}
 	#about .five{padding:10% 0 0 0;}*/
-	#about .copy{
-		padding-top:5%;
-	}
-	#about .five h2{
-		text-transform: none;
-		font-size:14px;
-	}
-	.col-about-copy{
-		height:100%;
-	}
-	.about-navigation{
-		bottom:50px;
-		position:absolute;
-		left:0;
-	}
-	.about-navigation #prev{
-		position:absolute;
-		left:10px;
-	}
-	.about-navigation #next{
-		position:absolute;
-		right:10px;
-	}
-	.about-navigation span{
-		display:none;
-	}
-
+    
+    #about .copy {
+        padding-top: 5%;
+    }
+    #about .five h2 {
+        text-transform: none;
+        font-size: 14px;
+    }
+    .col-about-copy {
+        height: 100%;
+    }
+    .about-navigation {
+        bottom: 50px;
+        position: absolute;
+        left: 0;
+    }
+    .about-navigation #prev {
+        position: absolute;
+        left: 10px;
+    }
+    .about-navigation #next {
+        position: absolute;
+        right: 10px;
+    }
+    .about-navigation span {
+        display: none;
+    }
 }
-
 /* TABLET AND PHONE */
-@media (max-width:768px){
-	.detail-image{
-		/*display:none;*/
-		height:300px;
-		text-align:center;
-	}
 
-	.detail-image img{
-		max-height:250px;
-	}
-	.detail-image,
-	.detail,
-	.detail .row,
-	.detail .row-fluid{
-		height:auto;
-		overflow:auto;
-	}
-	.filter ul li,.filter ul li a{
-		display:block;
-	}
-	.filter,footer{
-		text-align:center;
-	}
-	.detail-image-horizontal .detail-text-main{
-		-webkit-column-count: 1; /* Chrome, Safari, Opera */
-	    -moz-column-count: 1; /* Firefox */
-	    column-count: 1;
-	}
-	#support .cta{
-		position:static;
-		padding:10px;
-	}
-	.loader{
-		margin:0 0 0 33%;
-		width:40%;
-		height:300px;
-	}
-	.loader img{
-		height:100%;
-		width:100%;
-	}
-	.google-form label{
-		width:100%;
-		text-align:left;
-		display:block;
-	}
-	.google-form input[type=submit]{
-		width:100%;
-		float:none;
-		margin-bottom:25px;
-	}
+@media (max-width: 768px) {
+    .detail-image {
+        /*display:none;*/
+        
+        height: 300px;
+        text-align: center;
+    }
+    .detail-image img {
+        max-height: 250px;
+    }
+    .detail-image,
+    .detail,
+    .detail .row,
+    .detail .row-fluid {
+        height: auto;
+        overflow: auto;
+    }
+    .filter ul li,
+    .filter ul li a {
+        display: block;
+    }
+    .filter,
+    footer {
+        text-align: center;
+    }
+    .detail-image-horizontal .detail-text-main {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        
+        -moz-column-count: 1;
+        /* Firefox */
+        
+        column-count: 1;
+    }
+    #support .cta {
+        position: static;
+        padding: 10px;
+    }
+    .loader {
+        margin: 0 0 0 33%;
+        width: 40%;
+        height: 300px;
+    }
+    .loader img {
+        height: 100%;
+        width: 100%;
+    }
+    .google-form label {
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+    .google-form input[type=submit] {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
 }
-
-
 /* FULL SITE ONLY */
-@media (min-width:769px){
-	.no-touch #positions > div:hover img{
-		-webkit-transform:scale(1.05);
-		-moz-transform:scale(1.05);
-		-ms-transform:scale(1.05);
-		-o-transform:scale(1.05);
-		 transform:scale(1.05);
-		 -webkit-transition: transform 1s ease;
-  	-moz-transition: transform 1s ease;
-  	-o-transition: transform 1s ease;
-  	-ms-transition: transform 1s ease;
-  	transition: transform 1s ease;
-	}
-	#about .copy{
-		padding-top:60px;
-	}
-	.store-item-posters{
-	width:63%;
-}
+
+@media (min-width: 769px) {
+    .no-touch #positions > div:hover img {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: transform 1s ease;
+        -moz-transition: transform 1s ease;
+        -o-transition: transform 1s ease;
+        -ms-transition: transform 1s ease;
+        transition: transform 1s ease;
+    }
+    #about .copy {
+        padding-top: 60px;
+    }
+    .store-item-posters {
+        width: 63%;
+    }
 }
 /* SUPPORT THE CAUSE */
-@media (max-width:480px){
-	#support-the-cause > div{
-		color:#fff;
-	}
-	#support-the-cause [data-cancer-type=breast]{
-		background-color:#F05429;
-	}
-	.no-touch #support-the-cause [data-cancer-type=breast] a:hover,
-	#support-the-cause [data-cancer-type=breast] a:active{
-		color:#F05429;
-	}
-	#support-the-cause [data-cancer-type=testicular]{
-		background-color:#87236A;
-	}
-	.no-touch #support-the-cause [data-cancer-type=testicular] a:hover,
-	#support-the-cause [data-cancer-type=testicular] a:active{
-		color:#87236A;
-	}
-	#support-the-cause [data-cancer-type=skin]{
-		background-color:#60C29D;
-	}
-	.no-touch #support-the-cause [data-cancer-type=skin] a:hover,
-	#support-the-cause [data-cancer-type=skin] a:active{
-		color:#33ccff;
-	}
-	#support-the-cause [data-cancer-type=prostate]{
-		background-color:#E6B422;
-	}
-	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
-	#support-the-cause [data-cancer-type=prostate] a:active{
-		color:#E6B422;
-	}
-	#support-blurb{
-		background-color:#950068;
-		color:#fff;
-	}
-	#support-blurb a:hover,
-	#support-blurb a:active{
-		color:#950068;
-	}
+
+@media (max-width: 480px) {
+    #support-the-cause > div {
+        color: #fff;
+    }
+    #support-the-cause [data-cancer-type=breast] {
+        background-color: #F05429;
+    }
+    .no-touch #support-the-cause [data-cancer-type=breast] a:hover,
+    #support-the-cause [data-cancer-type=breast] a:active {
+        color: #F05429;
+    }
+    #support-the-cause [data-cancer-type=testicular] {
+        background-color: #87236A;
+    }
+    .no-touch #support-the-cause [data-cancer-type=testicular] a:hover,
+    #support-the-cause [data-cancer-type=testicular] a:active {
+        color: #87236A;
+    }
+    #support-the-cause [data-cancer-type=skin] {
+        background-color: #60C29D;
+    }
+    .no-touch #support-the-cause [data-cancer-type=skin] a:hover,
+    #support-the-cause [data-cancer-type=skin] a:active {
+        color: #33ccff;
+    }
+    #support-the-cause [data-cancer-type=prostate] {
+        background-color: #E6B422;
+    }
+    .no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
+    #support-the-cause [data-cancer-type=prostate] a:active {
+        color: #E6B422;
+    }
+    #support-blurb {
+        background-color: #950068;
+        color: #fff;
+    }
+    #support-blurb a:hover,
+    #support-blurb a:active {
+        color: #950068;
+    }
 }
-@media (min-width:481px){
 
-	section{
-		margin:0 auto;
-		padding-top:20px;
-		padding-bottom:40px;
-	}
-	section#about{
-		padding-top:0;
-	}
-	section#positions-container,
-	section#support{
-		width:90%;
-	}
-
-	#support-the-cause .cs-button{
-		display:block;
-		width:300px;
-		margin:0 auto;
-	}
-	.no-touch #support-the-cause .cs-button:hover,
-	#support-the-cause .cs-button:active{
-		color:#fff;
-	}
-	#support-the-cause > div{
-		background-color:#fff;
-		padding-bottom:10px;
-	}
-	#support-the-cause [data-cancer-type=breast] a{
-		background-color:#F05429;
-		color:white;
-	}
-	#support-the-cause [data-cancer-type=breast] h4{
-		color:#F05429;
-	}
-	#support-the-cause [data-cancer-type=testicular] a{
-		background-color:#87236A;
-	}
-	#support-the-cause [data-cancer-type=testicular] h4{
-		color:#87236A;
-	}
-	#support-the-cause [data-cancer-type=skin] a{
-		background-color:#60C29D;
-	}
-	#support-the-cause [data-cancer-type=skin] h4{
-		color:#60C29D;
-	}
-	#support-the-cause [data-cancer-type=prostate] a{
-		background-color:#E6B422;
-	}
-	#support-the-cause [data-cancer-type=prostate] h4{
-		color:#E6B422;
-	}
-	#support-blurb a{
-		background-color:#950068;
-		color:white;
-	}
-	#support-blurb h4{
-		color:#950068;
-	}
+@media (min-width: 481px) {
+    section {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    section#about {
+        padding-top: 0;
+    }
+    section#positions-container,
+    section#support {
+        width: 90%;
+    }
+    #support-the-cause .cs-button {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .no-touch #support-the-cause .cs-button:hover,
+    #support-the-cause .cs-button:active {
+        color: #fff;
+    }
+    #support-the-cause > div {
+        background-color: #fff;
+        padding-bottom: 10px;
+    }
+    #support-the-cause [data-cancer-type=breast] a {
+        background-color: #F05429;
+        color: white;
+    }
+    #support-the-cause [data-cancer-type=breast] h4 {
+        color: #F05429;
+    }
+    #support-the-cause [data-cancer-type=testicular] a {
+        background-color: #87236A;
+    }
+    #support-the-cause [data-cancer-type=testicular] h4 {
+        color: #87236A;
+    }
+    #support-the-cause [data-cancer-type=skin] a {
+        background-color: #60C29D;
+    }
+    #support-the-cause [data-cancer-type=skin] h4 {
+        color: #60C29D;
+    }
+    #support-the-cause [data-cancer-type=prostate] a {
+        background-color: #E6B422;
+    }
+    #support-the-cause [data-cancer-type=prostate] h4 {
+        color: #E6B422;
+    }
+    #support-blurb a {
+        background-color: #950068;
+        color: white;
+    }
+    #support-blurb h4 {
+        color: #950068;
+    }
 }

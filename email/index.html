@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <title>Share by Email | The Cancer Sutra</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/assets/animate.css">
+    </style>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    </style>
+    <link rel="stylesheet" href="../fonts/keplerstd/keplerstd.css">
+    </style>
+    <link rel="stylesheet" href="../css/app.css">
+    </style>
+    <link rel="stylesheet" href="../css/mq.css">
+    </style>
+    <!--[if lt IE 9]>
+      <script src="js/assets/html5shiv.js"></script>
+      <script src="js/assets/respond.js"></script>
+    <![endif]-->
+    <script src="../js/assets/modernizr-latest.js"></script>
+</head>
+
+<body>
+    <div class="row before">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>Share via Email</h2>
+            <div id="preview"></div>
+            <div class="well">
+                <label style="display:block;width:100%">To<br>
+                    <input id="email-to" type="text" style="width:100%">
+                </label>
+                <label style="display:block;width:100%">Add a personal message<br>
+                    <textarea id="email-message"></textarea>
+                </label>
+                <a class="cs-button btn hvr-bob send-email">Send</a>
+            </div>
+        </div>
+    </div>
+    <div class="row after" style="display:none">
+        <div class="col-md-6 col-md-offset-3">
+        <h3><center>Your Email has been sent.</center></h2>
+        <a class="cs-button btn hvr-bob close-window">Back to Cancer Sutra</a>
+    </div>
+    </div>
+    <iframe style="width:0;height:0;" id="form-target"></iframe>
+    <script id="preview-template" type="text/template">
+       {{#position}}
+            <img style="width:100%;height:auto;padding:20px" src="http://qa.cancersutra.com:8080/img/social/banners/{{banner-name}}"/>
+            <br>
+            <p style="font-family:sans-serif;font-size:10px">{{{long-description}}}</p>
+        {{/position}}
+    </script>
+    <!-- jQuery 2 For Modern Browsers -->
+    <!--[if !IE]><!-->
+    <script src="../js/assets/jquery-2.1.1.min.js"></script>
+    <!--<![endif]-->
+    <!-- jQuery 1 for IE9 and Earlier -->
+    <!--[if lte IE 9]>
+        <script src="../js/assets/jquery-1.11.2.min.js"></script>
+    <![endif]-->
+    <script src="../js/assets/mustache.min.js"></script>
+    <script src="../data/positions.js"></script>
+    <script>
+        $(function(){
+            var positionIndex;
+            for(i in positionsData){
+                
+                if(positionsData[i]['element-name'] === window.location.hash.split('#')[1]){
+                    positionIndex = i;
+                    console.log(positionsData[i]['element-name'])
+                }
+            }
+            var position = positionsData[positionIndex]
+            var rendered_html = Mustache.to_html($('#preview-template').html(),{
+               position: position
+            });
+            $('#preview').html(rendered_html).show();
+            $('.send-email').on('click',function(){
+                var message = encodeURI($('#email-message').val());
+                var email = $('#email-to').val();
+                $('iframe').attr('src','http://cancersutra.com:3001/email/'+position['element-name']+'/'+email+'/'+message)
+            });
+            $('.close-window').on('click',function(){
+                window.close();
+            });
+        });
+    </script>
+</body>
+
+</html>
