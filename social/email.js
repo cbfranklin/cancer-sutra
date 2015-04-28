@@ -56,7 +56,7 @@ app.get('/email/:position/:email/:message', function (req, res) {
 
 	transport.sendMail({
 	    to: req.params.email,
-	    from: 'no-reply@cancersutra.com',
+	    from: '"The Cancer Sutra" <no-reply@cancersutra.com>',
 	    subject: 'Introducing The Cancer Sutra: At-home (In the Bed, On the Counter, Against a Wall) Cancer Detection',
 	    html: output
 	}, function(err, info) {
