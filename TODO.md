@@ -5,10 +5,6 @@ TWITTER
 -QA Twitter
 (?h)
 
-EMAIL FORWARDING AND SHARING (yikes).
--QA Mandrill
-(1h)
-
 IE
 -IE9: animations? i think its because eval()
 -IE9: SVG scaling on positions details
@@ -33,3 +29,19 @@ deployment: 0.2h
 robots.txt:
 block node directories
 (0.1h)
+
+EMAIL SHARE: update ss font style
+
+
+
+ALL POSITIONS:
+
+HANDYSCAN (and list of other square positions): align top
+
+COPY:
+
+SACK and SAVE & OPEN BOOK TESTE; MISSING ALL COPY
+
+CLOSER EXAM: missing first line
+
+

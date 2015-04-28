@@ -236,18 +236,6 @@ function loadAbout(){
 			},600)
 		}
 	});
-    /*Mousetrap.bind(['down','right','.',']'],function(){
-    		if($('#about').attr('data-is-scrolling') == 'false'){
-    			$('#about .onScreen #next').click();
-    		}
-            return false;
-    });
-    Mousetrap.bind(['up','left',',','['],function(){
-    		if($('#about').attr('data-is-scrolling') == 'false'){
-            	$('#about .onScreen #prev').click();
-            }
-            return false;
-    });*/
     $('body').on('swipe','#about[data-is-scrolling=false]',function(event){
 		var dir = event.direction;
 		if (dir === 'down') {
@@ -299,8 +287,6 @@ function loadPositions(route,name){
 
 function loadPositionsState(route,name){
 	//$positionsContainer.show();
-	var wow = new WOW();
-	wow.init();
 
 	//position or chapter
 	if(route != undefined){
