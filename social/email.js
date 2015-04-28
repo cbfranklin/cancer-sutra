@@ -64,7 +64,7 @@ app.get('/email/:position/:email/:message', function (req, res) {
 	        console.error(err);
 	    } else {
 	        console.log(info);
-	        res.send('sent'+req.params.position+' to '+req.params.email)
+	        res.send('sent '+req.params.position+' to '+req.params.email)
 	    }
 	});
 
