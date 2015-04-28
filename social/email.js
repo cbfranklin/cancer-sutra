@@ -17,7 +17,7 @@ var template,
 
 var transport = nodemailer.createTransport(smtpTransport({
     host: 'smtp.mandrillapp.com',
-    port: 25,
+    port: 587,
     auth: {
         user: 'connorbfranklin@gmail.com',
         pass: 'DxGGsCBodLBYErsgYxB25w'
@@ -56,6 +56,7 @@ app.get('/email/:position/:email', function (req, res) {
 
 	transport.sendMail({
 	    to: req.params.email,
+	    from: 'no-reply@cancersutra.com',
 	    subject: 'Introducing The Cancer Sutra: At-home (In the Bed, On the Counter, Against a Wall) Cancer Detection',
 	    html: output
 	}, function(err, info) {
