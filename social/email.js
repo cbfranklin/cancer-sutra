@@ -20,7 +20,7 @@ var transport = nodemailer.createTransport(smtpTransport({
     port: 25,
     auth: {
         user: 'connorbfranklin@gmail.com',
-        pass: 'UQUrsfPnPmhfFGdL1'
+        pass: 'DxGGsCBodLBYErsgYxB25w'
     }
 }));
 
