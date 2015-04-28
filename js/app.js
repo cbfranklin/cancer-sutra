@@ -110,6 +110,7 @@ function bindings(){
 
 //LOAD
 function load(){
+	console.log('load');
 	$body.addClass('loading');
 	Odelay.close(true);
 	Nav.close();
