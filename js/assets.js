@@ -160,7 +160,6 @@ function filters(type){
 
             var cancerType = $obj.data('filter');
             //close all chapters and STCs
-            console.log('close stuff')
             $('#chapters > div,#support-the-cause > div').removeClass('open')
         $('#chapters').find('.part2,.expand').removeClass('open');
             //show appropriate chapters and STGs
@@ -193,7 +192,6 @@ function filters(type){
             $allPositions
                 .filter('[data-chapter-full-size]')
                 .each(function(){
-                    console.log($(this))
                     /*if($(this).hasClass('position-horizontal') === cancerType){
                         console.log('its horz!')
                         $(this).css({

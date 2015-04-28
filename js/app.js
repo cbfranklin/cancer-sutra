@@ -130,37 +130,29 @@ function load(){
 function routes(){
 	routie({
 	    '' : function(){
-	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
 	    '!' : function(){
-	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
 	    '!/' : function(){
-	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
 	    '!/about' : function(){
-	    	console.log('about')
 	    	load();
 	    	loadAbout();
 	    },
 	    '!/positions' : function(){
-	    	console.log('/positions')
 	    	loadPositions();
 	    },
 	    '!/positions/' : function(){
-	    	console.log('/positions/')
 	    	load();
 	    	loadPositions();
 	    },
 	    '!/positions/:position' : function(position){
-	    	console.log('/positions/:position')
-	    	console.log(position)
 	    	load();
 	    	loadPositions('positions', position);
 	    },
@@ -169,7 +161,6 @@ function routes(){
 	     	loadPositions();
 	    },
 	     '!/chapters/:cancerType' : function(cancerType){
-	     	console.log('chapter #')
 	     	load();
 	     	loadPositions('chapters', cancerType);
 	    },
@@ -225,7 +216,6 @@ function loadAbout(){
 		if(id === 'next'){
 			//$(this).parents('.row').next().scrollToAnchor()
 			var status = parseFloat($('#about').attr('data-scroll-status')) + 1;
-			console.log(status)
 			if($('#about > div').eq(status)){
 				$('#about > div').eq(status).scrollToAnchor();
 			}
@@ -238,7 +228,6 @@ function loadAbout(){
 		if(id === 'prev'){
 			//$(this).parents('.row').prev().scrollToAnchor()
 			var status = parseFloat($('#about').attr('data-scroll-status')) - 1;
-			console.log(status)
 			if($('#about > div').eq(status)){
 				$('#about > div').eq(status).scrollToAnchor();
 			}
@@ -273,7 +262,6 @@ function loadAbout(){
 	    }
 	});
 	/*var mousewheelScroll = _.debounce(function(e) {
-		console.log(e.deltaY)
 		if(e.deltaY < 0){
 			$('#about .onScreen #next').click();
 		}
@@ -320,7 +308,6 @@ function loadPositionsState(route,name){
 	if(route != undefined){
 		//position
 		if(route === 'positions'){
-			console.log('position',name)
 			setTimeout(function(){
 				$overlayContent = $positions.find('[data-position="'+name+'"]').find('.detail');
 		    	showPosition();
@@ -328,7 +315,6 @@ function loadPositionsState(route,name){
 		}
 		//chapter
 		else if(route === 'chapters'){
-			console.log('chapter',name)
 			if(name){
 				setTimeout(function(){
 			    	filters(name);
@@ -362,7 +348,6 @@ function setPositionSize(){
 
 //SUPPORT
 function loadSupport(){
-	console.log('support')
 	load();
 	$support.show();
 	$body.removeClass('loading about positions').addClass('support');
