@@ -1,2 +1,0 @@
-/*! scripts/tumblr/flat_select.js */
-(function(c,b,e,a){var d=e.View.extend({el:"body",defaults:{},events:{"change .flat_select select":"__select_change"},__select_change:function(g){var f=c(g.currentTarget);this.update_select(f)},initialize:function(f){this.options=b.extend({},this.defaults,f)},update_select:function(g){var f=g.siblings("label");f.text(g.find(":selected").text())}});a.FlatSelect=d})(jQuery,_,Backbone,Tumblr);
