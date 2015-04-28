@@ -166,6 +166,9 @@
     .store-item-posters {
         width: 63%;
     }
+    .detail-image-square .detail-image img{
+        height:85%;
+    }
 }
 /* SUPPORT THE CAUSE */
 

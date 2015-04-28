@@ -16,7 +16,6 @@ IE
 
 
 CONVERT TO PNG and test site using PNG
--use sprites?
 (0.5h)
 
 
@@ -30,3 +29,7 @@ POSTERS_NEW and ebook need compression
 
 compression, concatenation: 0.5h
 deployment: 0.2h
+
+robots.txt:
+block node directories
+(0.1h)

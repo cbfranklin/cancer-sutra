@@ -967,7 +967,7 @@ header {
 }
 
 .detail h2 {
-    border-bottom: 1px solid #00aeef;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
