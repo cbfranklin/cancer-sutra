@@ -37,9 +37,10 @@ $(function(){
 	imagesLoaded('body',routes);
 
 	
-	$(window).hashchange(function() {
+	$(window).hashchange(function(){
 	    if (window.location.hash.indexOf('#!/') > -1) {
 	        ga('send', 'pageview', '/' + window.location.hash);
+	        console.log('sent pageview')
 	    }
 	});
 
