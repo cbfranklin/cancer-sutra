@@ -682,6 +682,7 @@ footer a {
     margin: 0 auto;
     display: none;
     border-bottom: 1px solid #CCC;
+    max-width:624px;
 }
 
 .chapter-inner {
