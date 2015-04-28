@@ -1063,6 +1063,9 @@ header {
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+input[type=text]{
+    font-weight:normal;
+}
 textarea {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
