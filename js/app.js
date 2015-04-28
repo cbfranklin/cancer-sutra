@@ -118,6 +118,9 @@ function load(){
 	if(window.location.hash.indexOf('#!/') > -1){
 		ga('send', 'pageview', '/' + window.location.hash);
 	}
+	else{
+		ga('send', 'pageview', '/');
+	}
 }
 
 //ROUTES
