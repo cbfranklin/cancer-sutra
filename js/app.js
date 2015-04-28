@@ -71,7 +71,7 @@ function bindings(){
 		else{
 			window.location.hash = '#!/positions/'+name;
 		}
-
+		ga('send', 'pageview', '/' + window.location.hash);
 		$overlayContent = $(this).find('.detail');
 		showPosition();
 
