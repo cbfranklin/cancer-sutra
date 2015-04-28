@@ -11,9 +11,11 @@ var positionsData = [
     "full-size": true,
     "overview-index": 1,
     "chapter-index": 1,
-    "og:description": "The #CancerSutra Presents: INSPECT-A-PEC. Put the squeeze on cancer with this position.",
+    "og:descriptiwon": "The #CancerSutra Presents: INSPECT-A-PEC. Put the squeeze on cancer with this position.",
     "banner-name": "CS_Social_InspectAPec.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECT-A-PEC.%20Put%20this%20squeeze%20on%20cancer%20with%20this%20position."
+    "long-description": "Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECT-A-PEC.%20Put%20this%20squeeze%20on%20cancer%20with%20this%20position.",
+    "long-description-encoded": "Or%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "handy-scan",
@@ -29,7 +31,9 @@ var positionsData = [
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: HANDY SCAN. Let your lover fall into your capable hands (and other capable areas, as well).",
     "banner-name": "CS_Social_HandyScan.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20HANDY%20SCAN.%20Let%20your%20lover%20fall%20into%20your%20capable%20hands%20(and%20other%20capable%20areas%2C%20as%20well)."
+    "long-description": "The Cancer Sutra Presents: HANDY SCAN. Let your lover fall into your capable hands (and other capable areas, as well). <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20HANDY%20SCAN.%20Let%20your%20lover%20fall%20into%20your%20capable%20hands%20(and%20other%20capable%20areas%2C%20as%20well).",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20HANDY%20SCAN.%20Let%20your%20lover%20fall%20into%20your%20capable%20hands%20(and%20other%20capable%20areas,%20as%20well).%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "amorous-anal-yst",
@@ -43,9 +47,11 @@ var positionsData = [
     "full-size": false,
     "overview-index": 3,
     "chapter-index": 3,
-    "og:description": "The #CancerSutra Presents: AMOROUS ANAL-YST. Here’s a pointer (at the very least) on how to check your partner tonight.",
+    "og:description": "The #CancerSutra Presents: AMOROUS ANAL-YST. Here's a pointer (at the very least) on how to check your partner tonight.",
     "banner-name": "CS_Social_AmorousAnalyst.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AMOROUS%20ANAL-YST.%20Here%E2%80%99s%20a%20pointer%20(at%20the%20very%20least)%20on%20how%20to%20check%20your%20partner%20tonight."
+    "long-description": "The Cancer Sutra Presents: AMOROUS ANAL-YST. Here's a pointer (at the very least) on how to check your partner tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AMOROUS%20ANAL-YST.%20Here%E2%80%99s%20a%20pointer%20(at%20the%20very%20least)%20on%20how%20to%20check%20your%20partner%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20AMOROUS%20ANAL-YST.%20Here's%20a%20pointer%20(at%20the%20very%20least)%20on%20how%20to%20check%20your%20partner%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "legs-up-checkup",
@@ -61,7 +67,9 @@ var positionsData = [
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: LEGS UP Checkup. Open yourself up to a new kind of checkup.",
     "banner-name": "CS_Social_LegsUpCheckup.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20LEGS%20UP%20Checkup.%20Open%20yourself%20up%20to%20a%20new%20kind%20of%20checkup."
+    "long-description": "The Cancer Sutra Presents: LEGS UP Checkup. More than a mouthful, it's the quickest of any at-home cancer check. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20LEGS%20UP%20Checkup.%20Open%20yourself%20up%20to%20a%20new%20kind%20of%20checkup.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20LEGS%20UP%20Checkup.%20More%20than%20a%20mouthful,%20it's%20the%20quickest%20of%20any%20at-home%20cancer%20check.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "manogram",
@@ -77,7 +85,9 @@ var positionsData = [
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: MANOGRAM. A checkup with a couple of quality perks.",
     "banner-name": "CS_Social_Manogram.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20MANOGRAM.%20A%20checkup%20with%20a%20couple%20of%20quality%20perks."
+    "long-description": "The Cancer Sutra Presents: MANOGRAM. A checkup with a couple of quality perks. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20MANOGRAM.%20A%20checkup%20with%20a%20couple%20of%20quality%20perks.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20MANOGRAM.%20A%20checkup%20with%20a%20couple%20of%20quality%20perks.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "cat-or-matt-scan",
@@ -93,7 +103,9 @@ var positionsData = [
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: CAT (OR MATT) SCAN. Stick it to cancer, hard, with this position.",
     "banner-name": "CS_Social_CatOrMattScan.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CAT%20(OR%20MATT)%20SCAN.%20Stick%20it%20to%20cancer%2C%20hard%2C%20with%20this%20position."
+    "long-description": "The Cancer Sutra Presents: CAT (OR MATT) SCAN. Stick it to cancer, hard, with this position. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CAT%20(OR%20MATT)%20SCAN.%20Stick%20it%20to%20cancer%2C%20hard%2C%20with%20this%20position.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20CAT%20(OR%20MATT)%20SCAN.%20Stick%20it%20to%20cancer,%20hard,%20with%20this%20position.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "enter-the-proctologist",
@@ -109,7 +121,9 @@ var positionsData = [
     "chapter-index": 1,
     "og:description": "The #CancerSutra Presents: ENTER THE PROCTOLOGIST. Take this checkup to bed to put your finger on this most sensitive issue.",
     "banner-name": "CS_Social_EnterTheProctologist.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ENTER%20THE%20PROCTOLOGIST.%20Take%20this%20checkup%20to%20bed%20to%20put%20your%20finger%20on%20this%20most%20sensitive%20issue."
+    "long-description": "The Cancer Sutra Presents: ENTER THE PROCTOLOGIST. Take this checkup to bed to put your finger on this most sensitive issue. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ENTER%20THE%20PROCTOLOGIST.%20Take%20this%20checkup%20to%20bed%20to%20put%20your%20finger%20on%20this%20most%20sensitive%20issue.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20ENTER%20THE%20PROCTOLOGIST.%20Take%20this%20checkup%20to%20bed%20to%20put%20your%20finger%20on%20this%20most%20sensitive%20issue.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "dr-ben-dover",
@@ -123,10 +137,12 @@ var positionsData = [
     "full-size": false,
     "overview-index": 8,
     "chapter-index": 4,
-    "og:description": "The #CancerSutra Presents: DR. BEN DOVER. Let’s get to the bottom of this checkup!",
+    "og:description": "The #CancerSutra Presents: DR. BEN DOVER. Let's get to the bottom of this checkup!",
     "banner-name": "CS_Social_DrBenDover.png",
+    "long-description": "The Cancer Sutra Presents: DR. BEN DOVER. Let's get to the bottom of this checkup! <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
     "chapter-full-size": true,
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DR.%20BEN%20DOVER.%20Let%E2%80%99s%20get%20to%20the%20bottom%20of%20this%20checkup!"
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DR.%20BEN%20DOVER.%20Let%E2%80%99s%20get%20to%20the%20bottom%20of%20this%20checkup!",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20DR.%20BEN%20DOVER.%20Let's%20get%20to%20the%20bottom%20of%20this%20checkup!%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "teste-teste-1-2",
@@ -140,9 +156,11 @@ var positionsData = [
     "full-size": false,
     "overview-index": 9,
     "chapter-index": 6,
-    "og:description": "The #CancerSutra Presents: TEST, TESTE, 1, 2. Tickle your lover’s fancy (among other things) with this position.",
+    "og:description": "The #CancerSutra Presents: TEST, TESTE, 1, 2. Tickle your lover's fancy (among other things) with this position.",
     "banner-name": "CS_Social_TesteTeste12.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TEST%2C%20TESTE%2C%201%2C%202.%20Tickle%20your%20lover%E2%80%99s%20fancy%20(among%20other%20things)%20with%20this%20position."
+    "long-description": "The Cancer Sutra Presents: TEST, TESTE, 1, 2. Tickle your lover's fancy (among other things) with this position. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TEST%2C%20TESTE%2C%201%2C%202.%20Tickle%20your%20lover%E2%80%99s%20fancy%20(among%20other%20things)%20with%20this%20position.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20TEST,%20TESTE,%201,%202.%20Tickle%20your%20lover's%20fancy%20(among%20other%20things)%20with%20this%20position.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "guy-ropractor",
@@ -158,7 +176,9 @@ var positionsData = [
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging.",
     "banner-name": "CS_Social_GuyRopractor.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20GUY-ROPRACTOR.%20This%20checkup%20will%20never%20leave%20your%20lover%20hanging."
+    "long-description": "The Cancer Sutra Presents: GUY-ROPRACTOR. This checkup will never leave your lover hanging. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20GUY-ROPRACTOR.%20This%20checkup%20will%20never%20leave%20your%20lover%20hanging.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20GUY-ROPRACTOR.%20This%20checkup%20will%20never%20leave%20your%20lover%20hanging.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "sack-and-save",
@@ -174,7 +194,9 @@ var positionsData = [
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: SACK & SAVE. Add some heat to the sack...by fondling his.",
     "banner-name": "CS_Social_SackAndSave.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SACK%20%26%20SAVE.%20Add%20some%20heat%20to%20the%20sack...by%20fondling%20his."
+    "long-description": "The Cancer Sutra Presents: SACK &amp; SAVE. Add some heat to the sack…by fondling his. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SACK%20%26%20SAVE.%20Add%20some%20heat%20to%20the%20sack...by%20fondling%20his.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20SACK%20&amp;%20SAVE.%20Add%20some%20heat%20to%20the%20sack%E2%80%A6by%20fondling%20his.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "insider-information",
@@ -190,7 +212,9 @@ var positionsData = [
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: INSIDER INFORMATION. Give cancer the pounding of a lifetime tonight.",
     "banner-name": "CS_Social_InsiderInformation.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSIDER%20INFORMATION.%20Give%20cancer%20the%20pounding%20of%20a%20lifetime%20tonight."
+    "long-description": "The Cancer Sutra Presents: INSIDER INFORMATION. Give cancer the pounding of a lifetime tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSIDER%20INFORMATION.%20Give%20cancer%20the%20pounding%20of%20a%20lifetime%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20INSIDER%20INFORMATION.%20Give%20cancer%20the%20pounding%20of%20a%20lifetime%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "triple-x-ray",
@@ -206,7 +230,9 @@ var positionsData = [
     "chapter-index": 10,
     "og:description": "The #CancerSutra Presents: TRIPLE X-RAY. Give your partner a leg-up (or two): Enjoy this checkup tonight.",
     "banner-name": "CS_Social_TripleXRay.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TRIPLE%20X-RAY.%20Give%20your%20partner%20a%20leg-up%20(or%20two)%3A%20Enjoy%20this%20checkup%20tonight."
+    "long-description": "The Cancer Sutra Presents: TRIPLE X-RAY. Give your partner a leg-up (or two): Enjoy this checkup tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20TRIPLE%20X-RAY.%20Give%20your%20partner%20a%20leg-up%20(or%20two)%3A%20Enjoy%20this%20checkup%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20TRIPLE%20X-RAY.%20Give%20your%20partner%20a%20leg-up%20(or%20two):%20Enjoy%20this%20checkup%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "rearsearch-method",
@@ -222,7 +248,9 @@ var positionsData = [
     "chapter-index": 2,
     "og:description": "The #CancerSutra Presents: REARSEARCH METHOD. Pop in and enjoy this checkup tonight.",
     "banner-name": "CS_Social_RearsearchMethod.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20REARSEARCH%20METHOD.%20Pop%20in%20and%20enjoy%20this%20checkup%20tonight."
+    "long-description": "The Cancer Sutra Presents: REARSEARCH METHOD. Pop in and enjoy this checkup tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20REARSEARCH%20METHOD.%20Pop%20in%20and%20enjoy%20this%20checkup%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20REARSEARCH%20METHOD.%20Pop%20in%20and%20enjoy%20this%20checkup%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "wham-bam-mamogram",
@@ -238,7 +266,9 @@ var positionsData = [
     "chapter-index": 7,
     "og:description": "The #CancerSutra Presents: WHAM BAM, MAMMOGRAM. A checkup with just the right amount of wiggle room.",
     "banner-name": "CS_Social_WhamBamMammogram.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAM%20BAM%2C%20MAMMOGRAM.%20A%20checkup%20with%20just%20the%20right%20amount%20of%20wiggle%20room."
+    "long-description": "The Cancer Sutra Presents: WHAM BAM, MAMMOGRAM. A checkup with just the right amount of wiggle room. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAM%20BAM%2C%20MAMMOGRAM.%20A%20checkup%20with%20just%20the%20right%20amount%20of%20wiggle%20room.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20WHAM%20BAM,%20MAMMOGRAM.%20A%20checkup%20with%20just%20the%20right%20amount%20of%20wiggle%20room.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "split-screening",
@@ -247,15 +277,17 @@ var positionsData = [
     "orientation": "vertical",
     "cancer-type": "skin",
     "display-cancer-type": "Skin Cancer",
-    "detail-html": "<p>Position yourself in a seated, half-upright position on a bed or deep chair, and bend your knee so that it can be kept effortlessly raised.</p><p>Now, let your partner straddle this raised knee, facing away, so that your world and hers collide (part, collide, part, and collide again). While she’s free to gyrate and thrust to her heart’s (and other parts’) content,* take this rare opportunity to admire the view of an oft-hidden sight: her back.</p><p>Your gaze should take you from shoulder blades to the small of her back, all while allowing your fingertips to venture where vision cannot.</p>",
-    "just-the-tip": "While your partner’s back is to you, you may find your view obstructed by her hair. For those of you so inclined and reclined, take matters into your own hands — literally. A firm grasp of her luscious locks won’t just clear the path for your intimately watchful gaze, but can also let you steer the course in the sack. ",
+    "detail-html": "<p>Position yourself in a seated, half-upright position on a bed or deep chair, and bend your knee so that it can be kept effortlessly raised.</p><p>Now, let your partner straddle this raised knee, facing away, so that your world and hers collide (part, collide, part, and collide again). While she's free to gyrate and thrust to her heart's (and other parts') content,* take this rare opportunity to admire the view of an oft-hidden sight: her back.</p><p>Your gaze should take you from shoulder blades to the small of her back, all while allowing your fingertips to venture where vision cannot.</p>",
+    "just-the-tip": "While your partner's back is to you, you may find your view obstructed by her hair. For those of you so inclined and reclined, take matters into your own hands — literally. A firm grasp of her luscious locks won't just clear the path for your intimately watchful gaze, but can also let you steer the course in the sack. ",
     "full-size": true,
     "overview-index": 16,
     "chapter-index": 4,
     "float": "right",
     "og:description": "The #CancerSutra Presents: SPLIT-SCREENING. Fit a little check up (among other things) in between you and your lover.",
     "banner-name": "CS_Social_SplitScreening.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SPLIT-SCREENING.%20Fit%20a%20little%20check%20up%20(among%20other%20things)%20in%20between%20you%20and%20your%20lover."
+    "long-description": "The Cancer Sutra Presents: SPLIT-SCREENING. Fit a little check up (among other things) in between you and your lover. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20SPLIT-SCREENING.%20Fit%20a%20little%20check%20up%20(among%20other%20things)%20in%20between%20you%20and%20your%20lover.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20SPLIT-SCREENING.%20Fit%20a%20little%20check%20up%20(among%20other%20things)%20in%20between%20you%20and%20your%20lover.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "chest-xxxam",
@@ -271,7 +303,9 @@ var positionsData = [
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: CHEST XXXAM. Checking for cancer has never been more tit-for-tat.",
     "banner-name": "CS_Social_ChestXXXam.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHEST%20XXXAM.%20Checking%20for%20cancer%20has%20never%20been%20more%20tit-for-tat."
+    "long-description": "The Cancer Sutra Presents: CHEST XXXAM. Checking for cancer has never been more tit-for-tat. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHEST%20XXXAM.%20Checking%20for%20cancer%20has%20never%20been%20more%20tit-for-tat.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20CHEST%20XXXAM.%20Checking%20for%20cancer%20has%20never%20been%20more%20tit-for-tat.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "closer-examination",
@@ -287,7 +321,9 @@ var positionsData = [
     "chapter-index": 11,
     "og:description": "The #CancerSutra Presents: CLOSER EXAMINATION. Find yourself with a familiar squeeze. Or two.",
     "banner-name": "CS_Social_CloserExamination.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CLOSER%20EXAMINATION.%20Find%20yourself%20with%20a%20familiar%20squeeze.%20Or%20two."
+    "long-description": "Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CLOSER%20EXAMINATION.%20Find%20yourself%20with%20a%20familiar%20squeeze.%20Or%20two.",
+    "long-description-encoded": "Or%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "check-please-please-please",
@@ -303,7 +339,9 @@ var positionsData = [
     "chapter-index": 4,
     "og:description": "The #CancerSutra Presents: CHECK, PLEASE, PLEASE, PLEASE! Learn your way around a sack in the sack.",
     "banner-name": "CS_Social_CheckPleasePleasePlease.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHECK%2C%20PLEASE%2C%20PLEASE%2C%20PLEASE!%20Learn%20your%20way%20around%20a%20sack%20in%20the%20sack."
+    "long-description": "The Cancer Sutra Presents: CHECK, PLEASE, PLEASE, PLEASE! Learn your way around a sack in the sack. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20CHECK%2C%20PLEASE%2C%20PLEASE%2C%20PLEASE!%20Learn%20your%20way%20around%20a%20sack%20in%20the%20sack.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20CHECK,%20PLEASE,%20PLEASE,%20PLEASE!%20Learn%20your%20way%20around%20a%20sack%20in%20the%20sack.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "pair-scope",
@@ -319,7 +357,9 @@ var positionsData = [
     "chapter-index": 5,
     "og:description": "The #CancerSutra Presents: PAIR-SCOPE. Because true love has always been about the perfect pair.",
     "banner-name": "CS_Social_PairScope.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PAIR-SCOPE.%20Because%20true%20love%20has%20always%20been%20about%20the%20perfect%20pair."
+    "long-description": "The Cancer Sutra Presents: PAIR-SCOPE. Because true love has always been about the perfect pair. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PAIR-SCOPE.%20Because%20true%20love%20has%20always%20been%20about%20the%20perfect%20pair.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20PAIR-SCOPE.%20Because%20true%20love%20has%20always%20been%20about%20the%20perfect%20pair.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "derm-oh-oh-oh-tology",
@@ -335,7 +375,9 @@ var positionsData = [
     "chapter-index": 8,
     "og:description": "The #CancerSutra Presents: DERM-OH-OH-OH-TOLOGY. Checkups are like anything else between the sheets: It pays to go deeper.",
     "banner-name": "CS_Social_DermOhOhOhTology.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DERM-OH-OH-OH-TOLOGY.%20Checkups%20are%20like%20anything%20else%20between%20the%20sheets%3A%20It%20pays%20to%20go%20deeper."
+    "long-description": "The Cancer Sutra Presents: DERM-OH-OH-OH-TOLOGY. Checkups are like anything else between the sheets: It pays to go deeper. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DERM-OH-OH-OH-TOLOGY.%20Checkups%20are%20like%20anything%20else%20between%20the%20sheets%3A%20It%20pays%20to%20go%20deeper.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20DERM-OH-OH-OH-TOLOGY.%20Checkups%20are%20like%20anything%20else%20between%20the%20sheets:%20It%20pays%20to%20go%20deeper.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "open-book-teste",
@@ -351,7 +393,9 @@ var positionsData = [
     "chapter-index": 3,
     "og:description": "The #CancerSutra Presents: OPEN-BOOK TESTE. May your actions be a teste-ment to your love tonight.",
     "banner-name": "CS_Social_OpenBookTeste.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20OPEN-BOOK%20TESTE.%20May%20your%20actions%20be%20a%20teste-ment%20to%20your%20love%20tonight."
+    "long-description": "The #CancerSutra Presents: OPEN-BOOK TESTE. May your actions be a teste-ment to your love tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20OPEN-BOOK%20TESTE.%20May%20your%20actions%20be%20a%20teste-ment%20to%20your%20love%20tonight.",
+    "long-description-encoded": "The%20#CancerSutra%20Presents:%20OPEN-BOOK%20TESTE.%20May%20your%20actions%20be%20a%20teste-ment%20to%20your%20love%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "deep-ass-essment",
@@ -367,7 +411,9 @@ var positionsData = [
     "chapter-index": 9,
     "og:description": "The #CancerSutra Presents: DEEP ASS-ESSMENT. A position to help fill your curiosity—among other things—tonight.",
     "banner-name": "CS_Social_DeepAssessment.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DEEP%20ASS-ESSMENT.%20A%20position%20to%20help%20fill%20your%20curiosity%E2%80%94among%20other%20things%E2%80%94tonight."
+    "long-description": "The Cancer Sutra Presents: DEEP ASS-ESSMENT. A position to help fill your curiosity—among other things—tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DEEP%20ASS-ESSMENT.%20A%20position%20to%20help%20fill%20your%20curiosity%E2%80%94among%20other%20things%E2%80%94tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20DEEP%20ASS-ESSMENT.%20A%20position%20to%20help%20fill%20your%20curiosity%E2%80%94among%20other%20things%E2%80%94tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "whats-cupped-doc",
@@ -381,9 +427,11 @@ var positionsData = [
     "full-size": true,
     "overview-index": 24,
     "chapter-index": 8,
-    "og:description": "The #CancerSutra Presents: WHAT’S CUPPED, DOC? When it comes to screening, this position is a handful.",
+    "og:description": "The #CancerSutra Presents: WHAT'S CUPPED, DOC? When it comes to screening, this position is a handful.",
     "banner-name": "CS_Social_WhatsCuppedDoc.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAT%E2%80%99S%20CUPPED%2C%20DOC%3F%20When%20it%20comes%20to%20screening%2C%20this%20position%20is%20a%20handful."
+    "long-description": "The Cancer Sutra Presents: WHAT'S CUPPED, DOC? When it comes to screening, this position is a handful. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20WHAT%E2%80%99S%20CUPPED%2C%20DOC%3F%20When%20it%20comes%20to%20screening%2C%20this%20position%20is%20a%20handful.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20WHAT'S%20CUPPED,%20DOC?%20When%20it%20comes%20to%20screening,%20this%20position%20is%20a%20handful.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "private-screening",
@@ -399,7 +447,9 @@ var positionsData = [
     "chapter-index": 10,
     "og:description": "The #CancerSutra Presents: PRIVATE SCREENING. Proving cancer screening can be a handful—at least, when done correctly.",
     "banner-name": "CS_Social_PrivateScreening.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PRIVATE%20SCREENING.%20Proving%20cancer%20screening%20can%20be%20a%20handful%E2%80%94at%20least%2C%20when%20done%20correctly."
+    "long-description": "The Cancer Sutra Presents: PRIVATE SCREENING. Proving cancer screening can be a handful—at least, when done correctly. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20PRIVATE%20SCREENING.%20Proving%20cancer%20screening%20can%20be%20a%20handful%E2%80%94at%20least%2C%20when%20done%20correctly.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20PRIVATE%20SCREENING.%20Proving%20cancer%20screening%20can%20be%20a%20handful%E2%80%94at%20least,%20when%20done%20correctly.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "inspector-grab-it",
@@ -415,7 +465,9 @@ var positionsData = [
     "chapter-index": 6,
     "og:description": "The #CancerSutra Presents: INSPECTOR GRAB-IT. Take this sensual checkup into your own hands tonight.",
     "banner-name": "CS_Social_InspectorGrabIt.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECTOR%20GRAB-IT.%20Take%20this%20sensual%20checkup%20into%20your%20own%20hands%20tonight."
+    "long-description": "The Cancer Sutra Presents: INSPECTOR GRAB-IT. Take this sensual checkup into your own hands tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20INSPECTOR%20GRAB-IT.%20Take%20this%20sensual%20checkup%20into%20your%20own%20hands%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20INSPECTOR%20GRAB-IT.%20Take%20this%20sensual%20checkup%20into%20your%20own%20hands%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "nutty-professor",
@@ -429,9 +481,11 @@ var positionsData = [
     "full-size": true,
     "overview-index": 27,
     "chapter-index": 1,
-    "og:description": "The #CancerSutra Presents: NUTTY PROFESSOR. He’ll go nuts for this checkup tonight.",
+    "og:description": "The #CancerSutra Presents: NUTTY PROFESSOR. He'll go nuts for this checkup tonight.",
     "banner-name": "CS_Social_NuttyProfessor.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20NUTTY%20PROFESSOR.%20He%E2%80%99ll%20go%20nuts%20for%20this%20checkup%20tonight."
+    "long-description": "The Cancer Sutra Presents: NUTTY PROFESSOR. He'll go nuts for this checkup tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20NUTTY%20PROFESSOR.%20He%E2%80%99ll%20go%20nuts%20for%20this%20checkup%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20NUTTY%20PROFESSOR.%20He'll%20go%20nuts%20for%20this%20checkup%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "study-buddy",
@@ -445,9 +499,11 @@ var positionsData = [
     "full-size": false,
     "overview-index": 28,
     "chapter-index": 12,
-    "og:description": "The #CancerSutra Presents: STUDY BUDDY. You’ll have your hands full with this checkup tonight.",
+    "og:description": "The #CancerSutra Presents: STUDY BUDDY. You'll have your hands full with this checkup tonight.",
     "banner-name": "CS_Social_StudyBuddy.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20STUDY%20BUDDY.%20You%E2%80%99ll%20have%20your%20hands%20full%20with%20this%20checkup%20tonight."
+    "long-description": "The Cancer Sutra Presents: STUDY BUDDY. You'll have your hands full with this checkup tonight. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20STUDY%20BUDDY.%20You%E2%80%99ll%20have%20your%20hands%20full%20with%20this%20checkup%20tonight.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20STUDY%20BUDDY.%20You'll%20have%20your%20hands%20full%20with%20this%20checkup%20tonight.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "oral-exam",
@@ -461,9 +517,11 @@ var positionsData = [
     "full-size": false,
     "overview-index": 29,
     "chapter-index": 5,
-    "og:description": "The #CancerSutra Presents: ORAL EXAM. Here’s one test you’ll love taking (and receiving).",
+    "og:description": "The #CancerSutra Presents: ORAL EXAM. Here's one test you'll love taking (and receiving).",
     "banner-name": "CS_Social_OralExam.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ORAL%20EXAM.%20Here%E2%80%99s%20one%20test%20you%E2%80%99ll%20love%20taking%20(and%20receiving)."
+    "long-description": "The Cancer Sutra Presents: ORAL EXAM. Here's one test you'll love taking (and receiving). <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ORAL%20EXAM.%20Here%E2%80%99s%20one%20test%20you%E2%80%99ll%20love%20taking%20(and%20receiving).",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20ORAL%20EXAM.%20Here's%20one%20test%20you'll%20love%20taking%20(and%20receiving).%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "ultrabound-test",
@@ -479,9 +537,11 @@ var positionsData = [
     "chapter-index": 7,
     "float": "right",
     "chapter-float": "left",
-    "og:description": "The #CancerSutra Presents: ULTRABOUND TEST. Sit on someone else’s laurels for a change, and receive this checkup.",
+    "og:description": "The #CancerSutra Presents: ULTRABOUND TEST. Sit on someone else's laurels for a change, and receive this checkup.",
     "banner-name": "CS_Social_UltraboundTest.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ULTRABOUND%20TEST.%20Sit%20on%20someone%20else%E2%80%99s%20laurels%20for%20a%20change%2C%20and%20receive%20this%20checkup."
+    "long-description": "The Cancer Sutra Presents: ULTRABOUND TEST. Sit on someone else's laurels for a change, and receive this checkup. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20ULTRABOUND%20TEST.%20Sit%20on%20someone%20else%E2%80%99s%20laurels%20for%20a%20change%2C%20and%20receive%20this%20checkup.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20ULTRABOUND%20TEST.%20Sit%20on%20someone%20else's%20laurels%20for%20a%20change,%20and%20receive%20this%20checkup.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "areola-51",
@@ -497,7 +557,9 @@ var positionsData = [
     "chapter-index": 9,
     "og:description": "The #CancerSutra Presents: AREOLA 51. For learning what to do with a boob, and how to avoid being one.",
     "banner-name": "CS_Social_Areola51.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AREOLA%2051.%20For%20learning%20what%20to%20do%20with%20a%20boob%2C%20and%20how%20to%20avoid%20being%20one."
+    "long-description": "The Cancer Sutra Presents: AREOLA 51. For learning what to do with a boob, and how to avoid being one. <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer. <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20AREOLA%2051.%20For%20learning%20what%20to%20do%20with%20a%20boob%2C%20and%20how%20to%20avoid%20being%20one.",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20AREOLA%2051.%20For%20learning%20what%20to%20do%20with%20a%20boob,%20and%20how%20to%20avoid%20being%20one.%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   },
   {
     "element-name": "doctors-orders",
@@ -511,8 +573,10 @@ var positionsData = [
     "full-size": false,
     "overview-index": 32,
     "chapter-index": 6,
-    "og:description": "The #CancerSutra Presents: DOCTOR’S ORDERS. Turn cancer’s world upside down. (It’s worth it for the view.)",
+    "og:description": "The #CancerSutra Presents: DOCTOR'S ORDERS. Turn cancer's world upside down. (It's worth it for the view.)",
     "banner-name": "CS_Social_DoctorsOrders.png",
-    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DOCTOR%E2%80%99S%20ORDERS.%20Turn%20cancer%E2%80%99s%20world%20upside%20down.%20(It%E2%80%99s%20worth%20it%20for%20the%20view.)"
+    "long-description": "The Cancer Sutra Presents: DOCTOR'S ORDERS. Turn cancer's world upside down. (It's worth it for the view.) <br><br>Or <a href='http://qa.cancersutra.com:8080'>explore the rest of The Cancer Sutra</a>. The world's first Kama Sutra designed to help you check your partner for cancer.  <br><br>After all, it is a fact that the earlier you detect cancer, the greater the chance of successfully treating it. It is also a fact that you probably do not check yourself as often as you should. <br><br>Well, perhaps we can't convince you to check yourself as regularly as you ought to. But then, maybe we can convince you to get your eyes (and other body parts) on someone else instead.",
+    "og:description-encoded": "The%20%23CancerSutra%20Presents%3A%20DOCTOR%E2%80%99S%20ORDERS.%20Turn%20cancer%E2%80%99s%20world%20upside%20down.%20(It%E2%80%99s%20worth%20it%20for%20the%20view.)",
+    "long-description-encoded": "The%20Cancer%20Sutra%20Presents:%20DOCTOR'S%20ORDERS.%20Turn%20cancer's%20world%20upside%20down.%20(It's%20worth%20it%20for%20the%20view.)%20%3Cbr%3E%3Cbr%3EOr%20%3Ca%20href='http://qa.cancersutra.com:8080'%3Eexplore%20the%20rest%20of%20The%20Cancer%20Sutra%3C/a%3E.%20The%20world's%20first%20Kama%20Sutra%20designed%20to%20help%20you%20check%20your%20partner%20for%20cancer.%20%20%3Cbr%3E%3Cbr%3EAfter%20all,%20it%20is%20a%20fact%20that%20the%20earlier%20you%20detect%20cancer,%20the%20greater%20the%20chance%20of%20successfully%20treating%20it.%20It%20is%20also%20a%20fact%20that%20you%20probably%20do%20not%20check%20yourself%20as%20often%20as%20you%20should.%20%3Cbr%3E%3Cbr%3EWell,%20perhaps%20we%20can't%20convince%20you%20to%20check%20yourself%20as%20regularly%20as%20you%20ought%20to.%20But%20then,%20maybe%20we%20can%20convince%20you%20to%20get%20your%20eyes%20(and%20other%20body%20parts)%20on%20someone%20else%20instead."
   }
 ]

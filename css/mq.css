@@ -130,6 +130,16 @@
 		height:100%;
 		width:100%;
 	}
+	.google-form label{
+		width:100%;
+		text-align:left;
+		display:block;
+	}
+	.google-form input[type=submit]{
+		width:100%;
+		float:none;
+		margin-bottom:25px;
+	}
 }
 
 
@@ -150,6 +160,9 @@
 	#about .copy{
 		padding-top:60px;
 	}
+	.store-item-posters{
+	width:63%;
+}
 }
 /* SUPPORT THE CAUSE */
 @media (max-width:480px){
@@ -183,6 +196,14 @@
 	.no-touch #support-the-cause [data-cancer-type=prostate] a:hover,
 	#support-the-cause [data-cancer-type=prostate] a:active{
 		color:#E6B422;
+	}
+	#support-blurb{
+		background-color:#950068;
+		color:#fff;
+	}
+	#support-blurb a:hover,
+	#support-blurb a:active{
+		color:#950068;
 	}
 }
 @media (min-width:481px){
@@ -237,5 +258,12 @@
 	}
 	#support-the-cause [data-cancer-type=prostate] h4{
 		color:#E6B422;
+	}
+	#support-blurb a{
+		background-color:#950068;
+		color:white;
+	}
+	#support-blurb h4{
+		color:#950068;
 	}
 }

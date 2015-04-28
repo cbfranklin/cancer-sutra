@@ -1,3 +1,7 @@
+@import url("http://hello.myfonts.net/count/2e0722");
+  
+@font-face {font-family: 'ProximaNova-Light';src: url('../fonts/proxima-nova/2E0722_2_0.eot');src: url('../fonts/proxima-nova/2E0722_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/proxima-nova/2E0722_2_0.woff2') format('woff2'),url('../fonts/proxima-nova/2E0722_2_0.woff') format('woff'),url('../fonts/proxima-nova/2E0722_2_0.ttf') format('truetype');}
+
 /* GLOBAL */
 body{
 	-webkit-overflow-scrolling:touch;
@@ -345,6 +349,7 @@ footer{
 	padding-bottom:25px;
 	color:#999;
 	display:block;
+	font-family:"ProximaNova-Light";
 }
 .about footer{
 	display:none;
@@ -447,6 +452,7 @@ footer a{
 	color:#950068;
 	display:block;
 	font-size:24px;
+	font-family:"ProximaNova-Light";
 }
 .store-item-available{
 	text-transform: uppercase;
@@ -672,11 +678,13 @@ footer a{
 	text-align: center;
 	display:none;
 }
-#support-the-cause > div.open{
+#support-the-cause > div.open,
+#support-blurb{
 	display:block;
 	padding:25px 25px 50px 25px;
 }
-#support-the-cause h4{
+#support-the-cause h4,
+#support-blurb h4{
 	font-size:28px;
 }
 
@@ -695,7 +703,7 @@ footer a{
 	text-decoration: none;
 	display:block;
 	cursor:pointer;
-	font-family:"proxima-nova", sans-serif;
+	font-family:"ProximaNova-Light", sans-serif;
 	border-radius:0;
 }
 .no-touch .cs-button:hover,
