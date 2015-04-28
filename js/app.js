@@ -35,6 +35,16 @@ $(function(){
 	bindings();
 
 	imagesLoaded('body',routes);
+
+	//virtual pageviews
+	if ("onhashchange" in window) {
+	    function locationHashChanged() {
+			if(window.location.hash.indexOf('#!/') > -1){
+				ga('send', 'pageview', '/' + window.location.hash);
+			}
+		}
+		window.onhashchange = locationHashChanged;
+	}
 });
 
 //BINDINGS
