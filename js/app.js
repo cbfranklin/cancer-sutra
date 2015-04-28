@@ -36,14 +36,6 @@ $(function(){
 
 	imagesLoaded('body',routes);
 
-	
-	$(window).hashchange(function(){
-	    if (window.location.hash.indexOf('#!/') > -1) {
-	        ga('send', 'pageview', '/' + window.location.hash);
-	        console.log('sent pageview')
-	    }
-	});
-
 });
 
 //BINDINGS
@@ -123,6 +115,9 @@ function load(){
 	Nav.close();
 	//enable scrolling mobile
 	$(window).off('touchmove');
+	if(window.location.hash.indexOf('#!/') > -1){
+		ga('send', 'pageview', '/' + window.location.hash);
+	}
 }
 
 //ROUTES
