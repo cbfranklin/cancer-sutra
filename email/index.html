@@ -23,8 +23,9 @@
 </head>
 
 <body>
+    <div class="container">
     <div class="row before">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
             <h3>Share via Email</h2>
             <div id="preview"></div>
             <div class="well">
@@ -39,12 +40,13 @@
         </div>
     </div>
     <div class="row after" style="display:none">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
         <h3><center>Your Email has been sent.</center></h2>
         <a class="cs-button btn hvr-bob close-window">Back to Cancer Sutra</a>
     </div>
     </div>
-    <iframe style="width:0;height:0;" id="form-target"></iframe>
+</div>
+    <div style="width:0;height:0;" id="form-target"></div>
     <script id="preview-template" type="text/template">
        {{#position}}
             <img style="width:100%;height:auto;padding:20px" src="http://qa.cancersutra.com:8080/img/social/banners/{{banner-name}}"/>
@@ -80,7 +82,12 @@
             $('.send-email').on('click',function(){
                 var message = encodeURI($('#email-message').val());
                 var email = $('#email-to').val();
-                $('iframe').attr('src','http://cancersutra.com:3001/email/'+position['element-name']+'/'+email+'/'+message)
+                //$('iframe').attr('src','http://cancersutra.com:3001/email/'+position['element-name']+'/'+email+'/'+message)
+                var req = 'http://cancersutra.com:3001/email/'+position['element-name']+'/'+email+'/'+message;
+                $('#form-target').load(req,function(){
+                    $('.before').fadeOut();
+                    $('.after').delay(200).fadeIn();
+                });
             });
             $('.close-window').on('click',function(){
                 window.close();
