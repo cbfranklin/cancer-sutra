@@ -1,0 +1,27 @@
+/* TEAM */
+
+The Bull White House
+
+Site: http://thebullwhitehouse.com
+
+Twitter: @bullwhitehouse
+
+Location: New York, NY
+
+
+/* WEB DEVELOPMENT */
+
+Connor Franklin
+
+Site: http://connorfranklin.com
+
+Location: Brooklyn, NY
+
+
+/* SITE */
+                            
+Last update: 2015/04/30
+                            
+Standards: HTML5, CSS3, SVG1.1
+                            
+Components: SnapSVG, Modernizr, jQuery, NodeJS, nginx
