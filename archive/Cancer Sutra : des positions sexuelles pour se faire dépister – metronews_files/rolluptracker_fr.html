@@ -1,0 +1,162 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <script type="text/javascript">
+    
+        //------------ CONFIGURATION ------------
+        // Google Analytics Account for rollup profile:
+        var gaAccount = "UA-19325268-1";
+        // Cookie name (the third party cookie):
+        var cookieName = "GA_Rollup_FR";
+        // Session timeout (in minutes). Default is 30 min:
+        var sessionCookieTimeout = "30";
+        // Visitor cookie timeout (in minutes). Default is 2 years (1051897 min):
+        var visitorCookieTimeout = "1051897";
+        //---------------------------------------
+	
+	
+
+        //------------ Helper functions ------------
+		
+		//Get querystring data
+        function gup( name ) {
+          name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+          var regexS = "[\\?&]"+name+"=([^&#]*)";
+          var regex = new RegExp( regexS );
+          var results = regex.exec( window.location.href );
+          if( results == null )
+            return "";
+          else
+            return results[1];
+        }
+        
+        
+        //Read cookie
+        function readCookie(nam) {
+            var tC = document.cookie.split('; ');
+            for (var i = tC.length - 1; i >= 0; i--) {
+                var x = tC[i].split('=');
+                if (nam == x[0]) 
+                    return unescape(x[1]);
+            }
+                return null;
+        }
+        
+        //Write cookie (expires = time in minutes)
+        function setCookie(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime( today.getTime() );
+            if ( expires ) {
+                expires = expires * 1000 * 60; //expires = expires * 1000 * 60 * 60 * 24;
+            }
+            var expires_date = new Date( today.getTime() + (expires) );
+            document.cookie = name + "=" +escape( value ) +
+                ( ( expires ) ? ";expires=" + expires_date.toUTCString() : "" ) +
+                ( ( path ) ? ";path=" + path : "" ) +
+                ( ( domain ) ? ";domain=" + domain : "" ) +
+                ( ( secure ) ? ";secure" : "" );
+        }
+    
+               
+        function isEmpty( inputStr ) { 
+            if ( null == inputStr || "" == inputStr ) {
+                return true; 
+            } 
+            return false;
+        }
+        
+        //Generates path to "utm.gif" with parameters 
+        function getGoogleAnalyticsImagePath(visitorID) {
+            var host = gup("host");
+            if (isEmpty(host)){
+                return "";
+            }
+            var d = new Date();
+            var url = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.")+"google-analytics.com/__utm.gif?";
+            url += "utmwv=4.6.5";
+            url += "&utmac=" + gaAccount;
+            url += "&utmn=" + Math.floor(Math.random()*2147483647);
+            url += "&utmp=/" + escape(host);
+            url += "&utmhn=Rollup"; 
+            url += "&utmr=-";
+            url += "&utmhid=" + Math.floor(Math.random()*2147483647);
+            url += "&utmcc=__utma%3D"+ visitorID +"%3B";
+            return url;
+        }
+        
+        function CreateSession()
+        {
+        	var s = Math.floor(Math.random()*2147483647);
+        	setCookie(cookieName + "Session", s, sessionCookieTimeout, "/", "", "");
+        }
+        
+        function UpdateSession()
+        {
+        	var s = readCookie(cookieName+"Session"); 
+        	setCookie(cookieName + "Session", s, sessionCookieTimeout, "/", "", "");
+        }
+        
+        function UpdateVisitorID()
+        {
+			var d = new Date();
+			var now = Math.floor(d.getTime()/1000);
+			var visitorID = readCookie(cookieName);
+			
+        	if(visitorID == null)
+        	{
+        		//Create new VisitorID
+        		visitorID = "1."+ Math.floor(Math.random()*2147483647) + "." + now + "." + now + "." + now + ".1";
+        	}
+        	else
+        	{
+        		//Update VisitorID
+        		var vArr = visitorID.split(".");
+        		var visits = parseInt(vArr[5]) + 1;
+        		visitorID = "1."+ vArr[1] + "." + vArr[2] + "." + vArr[4] + "." + now + "."+ visits;
+        	}
+        	
+        	setCookie(cookieName, visitorID, visitorCookieTimeout, "/", "", "");
+        }
+
+
+        //------------ Start  ------------
+        
+        var visitorID = "";
+        
+        //Write cookie to test if client supports third party cookies
+        setCookie(cookieName + "Test","yes","1", "/", "", "");
+        if(document.cookie.indexOf(cookieName + "Test=") == -1)
+        {
+            //Set VistorID to "0" if third party cookie can't be set
+            //No data will be tracked
+            visitorID = "0";
+        }
+        else 
+        {
+        	//If session is new
+        	if(readCookie(cookieName+"Session")==null)
+        	{
+        		CreateSession();
+        		UpdateVisitorID();
+        	}
+        	else
+        	{
+        		UpdateSession();
+        	}
+        	
+        	visitorID = readCookie(cookieName);
+	        //Create path to _utm.gif with VisitorID as event
+    	    var gaImgPath = getGoogleAnalyticsImagePath(visitorID);
+		
+        }
+                
+    </script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+		document.write("<img src='"+ gaImgPath +"' />");
+    </script>
+
+
+
+</body></html>

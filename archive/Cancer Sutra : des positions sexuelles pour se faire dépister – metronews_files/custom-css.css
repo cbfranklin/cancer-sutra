@@ -1,0 +1,2517 @@
+/* *** BEGIN FILE custom-css.css ***/ 
+
+/* fix scale window */
+
+body{  /*  zoom: reset; */ }
+
+.main-box{ margin-right: -1px; }
+
+.right-column{ margin-right: -2px; }
+
+.aside{  margin-left: -4px; }
+
+
+/* end fix*/
+
+.article-full-width .article-box-fact-inline {
+  padding-bottom: 0;
+}
+
+#section-1 .campaign-push {
+overflow: inherit !important;
+
+}
+
+
+#nav-wrapper {
+z-index: 6;
+}
+#nav-wrapper nav{
+z-index:10000;
+}
+
+ 
+#b-nav {
+ line-height: 22px; // #35
+}
+
+
+#um_ultimedia_wrapper_wrap_widget_default #um_ultimedia_wrapper_title_widget{
+ 
+  margin:15px 0;
+  line-height:18px !important;
+
+}
+
+#adadcomp-11 {
+    margin: 50px 0 0;
+}
+.right-column {
+    position:relative;
+}
+
+#adadcomp-2_expander > div[id^="EASOverlay"] {
+    left: -465px !important;
+    top: 67px !important;
+}
+
+
+
+/* BREADCRUMBS TEMP HIDDEN */
+#navigation {
+  /*display:none;*/
+}
+
+
+
+.edit-menu {
+  z-index: 100;
+}
+
+/* General typography */
+
+
+.caption, .credit {
+    font-size: 13px;
+}
+
+
+.main-area {
+   border-right: none;
+}
+
+.main-box.box-2, .main-box.box-5, .main-box.box-8 {
+    border-right: 1px solid #EEF1F5;
+}
+
+.main-box.box-3, .main-box.box-6, .main-box.box-9 {
+    border-left: 1px solid #EEF1F5;
+}
+
+#header-links {
+  background-color: #F1F2F3;
+}
+
+header {
+    border-bottom: 1px solid #EEF1F5;
+}
+
+
+
+.right-column {
+    border-left: 1px solid #EEF1F5;
+    margin-top: 5px;
+
+}
+
+#ad12 {
+/*  margin-bottom: 25px;
+  margin-top:0;*/
+}
+
+.push-component.supertop,.push-component.x-large, .push-component.x-large-low{
+   padding-top: 5px;
+}
+
+
+
+/* --  SEARCH --- */
+
+#custom-right-search{
+    background: none repeat scroll 0 0 #F4F2EE;
+    height:44px;
+    margin-bottom: 10px;
+}
+
+#custom-right-search #header-search-form {
+    margin: 0;
+}
+
+#custom-right-search #header-search-form .search-field {
+  background: none repeat scroll 0 0 #f1f2f3;
+  border: medium none;
+  float: left;
+  height: 44px;
+  outline: 0 none;
+  padding: 0 20px;
+  width: 216px;
+}
+
+
+#custom-right-search #header-search-form .search-field::-webkit-input-placeholder {
+   font-size:14px;
+   color: #555;
+}
+
+#custom-right-search #header-search-form .search-field:-moz-placeholder { /* Firefox 18- */
+   font-size:14px;
+   color: #555;  
+}
+
+#custom-right-search #header-search-form .search-field::-moz-placeholder {  /* Firefox 19+ */
+   font-size:14px;
+   color: #555;  
+}
+
+#custom-right-search #header-search-form .search-field:-ms-input-placeholder {  
+   font-size:14px;
+   color: #555;  
+}
+
+
+
+/* CUSTOM CSS FOR RIGHT SEARCH BOX */
+#right-search-box {
+    background: none repeat scroll 0 0 #f4f2ee;
+    height: 44px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#right-search-box #right-search-form .search-field {
+    background: none repeat scroll 0 0 #f1f2f3;
+    border: medium none;
+    float: left;
+    height: 44px;
+    outline: 0 none;
+    padding: 0 20px;
+    width: 216px;
+}
+
+#right-search-box #right-search-form .search-hyperlink {
+    background: url("/templates/v3/img/icons/custom-search-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 44px;
+    width: 44px;
+} 
+
+
+
+/* --  NAVIGATION CENTER --- */
+
+#header-links ul {
+  display: table;
+  margin: 0 auto;
+}
+
+/* --  LOGOTYPE CENTER --- */
+#promos {
+  /*width: 1176px;*/
+  width: 100%;
+}
+
+
+.takeover-netbook #promos {
+  width: 100%;
+}
+
+
+
+
+header .logotype {
+  float: left;
+  left: 35%;
+  margin: 0;
+  position: absolute;
+  z-index:4;
+}
+
+.svg header .logotype a {
+  background-image: url("locale/fr/templates/img/global/metronews_logo_341x72.png");
+}
+
+h1.logotype a {
+    background-image: url('/locale/fr/templates/img/global/metronews_logo_341x72.png');
+}
+
+.svg header .logotype a {
+   background-image: url('/locale/fr/templates/img/global/metronews_logo_341x72.png');
+}
+
+
+
+.takeover-netbook header .logotype a {
+  background-size: 90% auto;
+}
+
+
+header .logotype a {
+  width: 341px;
+  background-image: url("/locale/fr/templates/img/global/metronews_logo_341x72.png");
+}
+
+/* --  MENU --- */
+
+
+#menu-button-wrapper {
+  top: 15px;
+}
+
+
+#menu-button:before{
+  border-color: #A5A5A5 #A5A5A5 #A5A5A5 rgba(164, 164, 164, 0);
+  border-style: solid;
+  border-width: 0 0 6px 4px;
+  content: "";
+  display: block;
+  height: 0;
+  left: -4px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+#menu-button {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
+    -webkit-transform: 0;
+    font-size: 17px;
+    height: 25px;
+    padding: 12px;
+    width: 81px;
+    font-family: "Metro Headline","Arial Black";
+    font-weight: normal;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    
+}
+
+.takeover-netbook #menu-button {
+    width: 60px;
+    height:15px;
+    font-size:15px;
+}
+
+#menu-button div {
+  float: left;
+  font-family: arial;
+  font-size: 18px;
+  height: 25px;
+  overflow: hidden;
+  padding-top: 4px;
+  width: 14px;
+}
+
+/** CAPTION image MEDIUM et x-large   **/
+
+.push-component.x-large a, 
+.push-component.supertop a, .push-component.supertop-low a{
+    display: block;
+    position: relative;
+}
+
+.push-component.x-large h4 ,
+.push-component.supertop h4, .push-component.supertop-low h4{
+
+    background:rgb(0,0,0);
+    background: transparent\9;
+    background:rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+
+
+    bottom: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 25px;
+    position: absolute;
+    width: 96%;
+    z-index: 5;
+    min-height: 40px;
+}
+
+@media only screen and (max-width: 980px) {
+.push-component.x-large h4 ,
+.push-component.supertop h4, 
+.push-component.supertop-low h4{
+    padding: 5px 15px;
+  }
+
+.push-component.supertop .related li:not(:last-child), .push-component.supertop-low .related li:not(:last-child),
+ .push-component.x-large .related li:not(:last-child), .push-component.x-large-low .related li:not(:last-child),
+ .push-component.large .related li:not(:last-child), .push-component.large-low .related li:not(:last-child) {
+ 
+  margin-bottom: 20px;
+
+}
+
+#header-links ul {
+   font-size:11px;
+}
+
+
+}
+
+
+.push-component.supertop h4, .push-component.supertop-low h4,
+.push-component.x-large h4 {
+    font-size: 40px;
+}
+
+
+
+
+/************************************************************************************************************************
+
+
+/************************************************************************************************************************/
+
+
+.push-component.medium h4 {
+    font-size: 22px;
+    margin:0 0 0.2em;
+}
+.push-component h4 {
+    margin: 0;
+}
+
+.push-component.small h4 {
+    font-size: 16px;
+    margin:0 0 0.2em;
+}
+
+
+.push-component.small .image{
+    margin-bottom: 8px;
+}
+
+.push-component.medium .image{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/************************************************************************************************************************
+METRO NAVIGATION
+************************************************************************************************************************/
+
+
+
+#menu-navigation table tr.content-row td p b {
+  margin-bottom:15px;
+  display:block;
+}
+
+#menu-navigation table tr.content-row td p:not(:first-child) > a b  {
+   margin-top:20px;	
+}
+
+#menu-navigation  table tr.content-row td:last-child p:nth-last-child(-n+2) > a b {
+  margin-top:0px;
+  margin-bottom: 0;
+}
+
+
+#menu-navigation  table tr.content-row td:last-child p:nth-last-child(2) > a b {
+  margin-top: 54px;
+  color:#F47721;
+}
+ 
+/************************************************************************************************************************
+METRO KEYLINE
+************************************************************************************************************************/
+
+.keyline-component {
+  font-family: "Metro Headline","Arial Black";
+  border-bottom: none;
+  margin: 0 0 5px;
+}
+
+.keyline-component:before {
+  content: "  ";
+  display: table;
+  height: 27px;
+}
+
+.keyline-component .text{
+   text-align: center;
+   background: url("/v3/bglinegray.png") repeat-x scroll left 40% transparent
+}
+
+.keyline-component .text h4 {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 15px;
+    background:#fff;
+}
+
+
+#super-top, #section-1 {
+ position:relative;
+}
+
+
+
+#super-top #fullwidth-1 .keyline-component:before, 
+#section-1 > .keyline-component:first-child:before,
+#section-1 > .roxen-action-toolbar-on:first-child + .keyline-component:before {
+  border-color: #A5A5A5 #A5A5A5 #A5A5A5 rgba(164, 164, 164, 0);
+  border-style: solid;
+  border-width: 0 0 6px 4px;
+  content: "";
+  display: block;
+  height: 0;
+  left: -4px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 10000;
+}
+
+
+
+#super-top #fullwidth-1 .keyline-component, 
+#section-1 > .keyline-component:first-child,
+#section-1 > .roxen-action-toolbar-on:first-child + .keyline-component
+ {
+  background: none repeat scroll 0 0 #fff;
+  border-bottom: medium none;
+  left: 4px;
+  margin-top: 0;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+#super-top #fullwidth-1 .keyline-component .text h4, 
+#section-1 .keyline-component .text h4{
+
+  font-size: 17px;
+}
+*/
+
+
+
+/************************************************************************************************************************
+ARTICLE KEYLINE #F47420;
+************************************************************************************************************************/
+
+.article-wrapper .keyline-component .text {
+
+  background: none repeat scroll 0 0 #000;
+  text-align: left;
+}
+
+.article-wrapper .keyline-component .text h4 {
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px 0px;
+}
+
+
+.article-wrapper .keyline-component .text h4 a {
+  color: #fff;
+}
+
+
+/*
+#article-3 > .keyline-component:first-child:before,
+#article-1 > .keyline-component:first-child:before {
+*/
+div[id^="article-"] > .keyline-component:first-child:before{
+    content: "";
+    height: 0px;
+}
+
+
+
+
+
+
+/************************************************************************************************************************
+RIGHT COLUMN KEYLINE
+************************************************************************************************************************/
+
+
+
+
+
+
+
+.right-column  .keyline-component:before {
+    height: 40px;
+}
+
+.right-column .keyline-component {
+  border-bottom: medium none;
+  /* display:inline-block;*/
+}
+
+.right-column .keyline-component .text {
+  background: none;
+  text-align: left;
+}
+
+.right-column .keyline-component .text h4 {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0;
+  color:#000;
+}
+
+
+.right-column .keyline-component .text h4 a{
+    color: #000000;
+}
+
+
+/************************************************************************************************************************
+Right poll-component
+
+Le title ne peut \u00EAtre masquer - on force le masquage utilisation de keyline
+************************************************************************************************************************/
+
+
+.right-column .poll-component .poll-title {
+   display:none; 
+}
+
+
+.poll-component .poll-question {
+    font-family: "Metro Headline","Arial Black",Helvetica,sans-serif;
+    font-size:17px;
+}
+
+
+.poll-component .poll-content .poll-question {
+    margin-bottom: 30px;
+}
+
+
+.poll-component .poll-content .poll-form-total {
+  padding: 25px 0;
+}
+
+.right-column .teaser-component.most-read-1 .image {
+  float: none;
+  width: 300px;
+}
+
+
+.right-column  .teaser-component.most-read-1{
+     width: 300px;
+}
+
+.right-column   .teaser-component.most-read-1 li{
+  padding: 14px 0;
+}
+
+.teaser-component.most-read-1 li .number, .teaser-component.most-commented-1 li .number {
+
+  font-family: "Metro Headline","Arial Black",sans-serif !important;
+  font-weight: normal;
+
+}
+
+
+.teaser-component h4.teaser-title {
+  font-family: Arial,sans-serif !important;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0.6em
+  margin-bottom: 0.6em
+}
+
+.teaser-component.two-col h4.teaser-title {
+   font-size: 14px !important;
+   
+}
+
+
+.right-column  .text.first-text {
+  border-bottom: none;
+  padding-bottom:0;
+}
+
+.right-column  .teaser-component ul {
+ /* margin-top: 15px;*/
+
+}
+
+.right-column .date.date-title {
+  margin-right: 15px;
+}
+
+
+.right-column .teaser-component.one-col img {
+  max-height: 150px;
+  max-width: 300px;
+}
+.right-column .teaser-component.one-col {
+    width: 300px;
+}
+
+.right-column .teaser-component.one-col ul li.teaser-li,
+.right-column .teaser-component.two-col ul li.teaser-li,
+.right-column .teaser-component.most-recent-1 ul li.teaser-li {
+  padding: 10px 0;
+  line-height: 20px;
+}
+
+
+.right-column .date.date-title + div.text-inline {
+  /*float: right;*/
+  width: 225px;
+}
+
+/************************************************************************************************************************
+PROMO COMPONENT
+************************************************************************************************************************/
+
+.promo-1 .image {
+  height: 88px;
+  width: 125px;
+  left: 0;
+  position: relative;
+  float:left;
+  
+}
+
+
+
+.promo-1 .text .title, .promo-2 .text .title {
+  font-size: 16px;
+}
+
+.promo-1 .text .body, .promo-2 .text .body {
+  font-size: 12px;
+  color: #5F5F5F;
+}
+
+.promo-1 .inner {
+  float:none;
+  width: 135px;
+}
+
+
+.promo-1 .text {
+   width: 180px;
+}
+
+
+.promo-1 .cell {
+  text-align: left;
+}
+
+
+.takeover-netbook .promo-2 {
+  width: 200PX;
+}
+
+
+@media only screen and (min-width: 981px) and (max-width: 1199px) {
+
+#mb_container, #ultimedia_wrapper{
+ 		margin-left:0px !important;
+ 	}
+
+#promos .promo-2 {
+	display: none;
+    }
+}
+
+.promo-2 {
+  float: right;
+  position: relative;
+  /*width: 285px;*/
+  margin-right: 10%;
+  width: 225px;
+  overflow:hidden;
+  
+}
+
+
+.promo-2 img {
+ /* 
+  min-height: 100%;
+  height: auto !important;
+*/
+  height: 100%; /*for IE*/
+/*  
+width:100%;
+*/
+  width: 225px;
+  height:71px;
+}
+
+
+
+.promo-2 .image {
+  float: left;
+  position: relative;
+  width: 80px;
+}
+
+.promo-2 .image img {
+  top: 16px;
+}
+
+.promo-2 .promo-1  {
+  float: left;
+}
+
+.promo-2 .text {
+    margin-left: 0;
+    width:auto;
+}
+
+.promo-2  .promo-1 .inner {
+    width: 120px;
+    float: none;
+}
+
+
+/************************************************************************************************************************
+METRO FRANCE HOT TOPIC
+************************************************************************************************************************/
+
+.push-component .related li:before {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+
+.push-component.supertop .related li:nth-child(2n), .push-component.supertop-low .related li:nth-child(2n), 
+.push-component.x-large .related li:nth-child(2n), .push-component.x-large-low .related li:nth-child(2n), 
+.push-component.large .related li:nth-child(2n), .push-component.large-low .related li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.push-component.supertop .related li a, .push-component.supertop-low .related li a,
+ .push-component.x-large .related li a, .push-component.x-large-low .related li a, 
+.push-component.large .related li a, .push-component.large-low .related li a {
+  
+    display: inline-block;
+    font-size: 12px;
+    width: 375px;
+    vertical-align:top; 
+}
+
+
+
+.takeover-netbook .push-component.supertop .related li a, 
+.takeover-netbook .push-component.supertop-low .related li a,
+.takeover-netbook .push-component.x-large .related li a, 
+.takeover-netbook .push-component.x-large-low .related li a, 
+.takeover-netbook .push-component.large .related li a,
+.takeover-netbook .push-component.large-low .related li a {
+
+    width: 280px;
+}
+
+
+
+
+
+
+
+
+.push-component.supertop .related li:not(:nth-last-child(-n+2)), .push-component.supertop-low .related li:not(:nth-last-child(-n+2)),
+ .push-component.x-large .related li:not(:nth-last-child(-n+2)), .push-component.x-large-low .related li:not(:nth-last-child(-n+2)),
+ .push-component.large .related li:not(:nth-last-child(-n+2)), .push-component.large-low .related li:not(:nth-last-child(-n+2)) {
+ 
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+/************************************************************************************************************************
+METRO FRANCE HOT TOPIC
+************************************************************************************************************************/
+#topic-1 div.x-large.mt-photo > a > div.image + h4.title + div.text,
+#topic-1  div.x-large.mt-article > a > div.image + h4.title + div.text{
+	float:left;
+}
+
+div#topicmfp {
+    margin: 0 0 25px;;
+    height:52px;
+    font-weight:bold;
+}
+
+#topicmfp ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	height:52px;
+	background:#F1F2F3 url('/v3/hottopic/htbg_end_v3.gif') no-repeat right top;
+        overflow: hidden;
+}
+
+#topicmfp ul li.topic-title	{
+	background:#F47721 url('/v3/hottopic/htbg_v3.gif') no-repeat right top;
+	float:left;
+	height:52px;
+}
+
+#topicmfp ul li{
+	float:left;
+	height:52px;
+}
+
+
+#topicmfp ul li span {
+  font-family:"Metro Headline","Arial Black";
+	font-size:20px;
+	font-weight:normal;
+	color:#fff;
+	line-height:55px;
+	height:52px;
+	padding:0px;
+	margin:0 38px 0 18px;
+	display:block;
+	text-transform:uppercase;
+}
+
+#topicmfp ul li a {
+	display:block;
+	height:52px;
+	line-height:52px;
+	text-decoration:none;
+	font-family:Helvetica, arial, sans-serif;
+	color:#4f4f4f;
+	font-size:15px;
+	text-shadow:0px 1px 0px #fff;
+	padding:0 25px;
+	outline:none;
+}
+
+#topicmfp ul li a:hover {
+	color:#f47721;
+}
+
+
+
+
+.takeover-netbook #topicmfp ul li a {
+   padding: 0 12px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+	#topicmfp ul li a {
+		font-size:15px;
+		padding:0 25px;
+	}	
+        
+        .takeover-netbook #topicmfp ul li a {
+             padding: 0 12px;
+         }
+
+        #promos {
+           width: 100%;
+        }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1199px) {
+	
+         #topicmfp ul li a {
+		font-size:13px;
+		padding: 0 20px;
+	}	
+
+}
+
+
+
+@media only screen and (max-width: 980px) {
+	#topicmfp ul li span {
+		font-size:14px;
+	}
+	#topicmfp ul li a {
+		font-size:11px;
+		padding: 0 11px;
+	}	
+        .takeover-netbook #topicmfp ul li a {
+             padding: 0 11px;
+        }
+#header-links ul {
+   font-size:11px;
+}
+
+}
+
+
+/ * Ad Align Center *****/
+
+.float-left {
+  float:center!important;
+}
+
+
+
+/* ********************** UNAM ********************** */
+
+
+
+@font-face {
+	font-family:'Arial Black';
+	src:url('/templates/v3/css/ariblk-webfont.eot?') format('eot'),url('/templates/v3/css/ariblk-webfont.woff') format('woff');
+}
+
+
+html,button,input,select,textarea {
+	color:#272727;
+	font-family:Arial;
+}
+
+body.article {
+	line-height:26px;
+}
+
+.html-component object {
+	width:100%;
+}
+
+/* adserve comp 6 aside */
+.aside #article-1 .float-left {
+     float: none;
+     text-align:center;
+}
+
+#mb_container + #outbrain-areamet {
+    margin-top: 30px;
+}
+
+#outbrain-areamet .ob_what {
+     padding-bottom: 5px;
+}
+
+#outbrain-areamet .ob_what a {
+     color: #999999;
+     font-family: arial;
+     font-size: 10px;
+     text-decoration: none;
+}
+
+#outbrain-areamet .ob_what {
+     clear: both;
+     direction: ltr;
+     padding: 5px 10px 0px;
+     text-align: right;
+}
+
+#outbrain-areamet .ob_amelia {
+     -moz-box-sizing: content-box;
+     background: url("http://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16.png") no-repeat scroll center top transparent;
+     display: inline-block;
+     height: 16px;
+     margin-bottom: -2px;
+     padding: 0px 5px;
+     vertical-align: text-bottom;
+     width: 16px;
+}
+
+#outbrain-areamet .onmetro.sourceTitle{ 
+	display:none;
+}
+
+#outbrain-areamet .ob_what :hover .ob_amelia {
+     background-position: center bottom;
+}
+
+
+.article-full-width .share-tools{display:none;}
+
+.share-tools-top, #date-fullwidth, .aside {display:none;}
+
+
+.article-top.title-on-top {
+	margin-bottom:25px;
+}
+
+.article-body div>p {
+	margin-top:0;
+}
+
+
+.article-box-fact.column, .article-box-fact-inline.column {
+    background: none repeat scroll 0 0 #F1F2F3;
+    padding: 20px;
+    width: auto !important;
+}
+
+
+header {
+	line-height:1.35;
+}
+
+#header-facebook-unam,#header-twitter-unam,#header-google-plus-unam {
+	background:url("/templates/v3/img/global/sprite-share-metro-02-32x30.png") no-repeat scroll 0 0 rgba(0,0,0,0);
+	cursor:pointer;
+	display:inline-block;
+	height:30px;
+	margin-left:4px;
+	overflow:hidden;
+	text-align:left;
+	width:32px;
+}
+
+#header-facebook-unam {
+	background-position:0 0;
+}
+
+#header-twitter-unam {
+	background-position:-34px 0;
+}
+
+#header-mail-unam {
+	vertical-align: top; 
+	width:32px; 
+	height:31px;
+	margin-left:3px
+}
+
+
+#header-google-plus-unam {
+	background-position:-68px 0;
+}
+
+#ad12+#navigation {
+	border-top:none;
+}
+
+#navigation {
+	border-bottom:none;
+}
+
+.right-column {
+	border-left:1px solid #EEF1F5;
+}
+
+.article-top .subtitle,.article-body .subtitle,.article-left-wrapper .subtitle {
+	color:#272727;
+	font-size:17px;
+	line-height:22px;
+}
+
+div#topicmfp {
+	font-weight:bold;
+	height:52px;
+	margin:0 0 25px -12px;
+}
+
+#metro_sharetools {
+    float: left;
+    text-align: center;
+}
+
+
+#metro_sharetools .sharebutton {
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+#metro_sharetools .sharebutton img {
+	height:21px;
+	width:24px;
+}
+
+
+#facebook_like_button_holder {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 32px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 32px;
+}
+
+
+
+#facebook_like_button_holder iframe {
+	left:0;
+	position:absolute;
+	width: 19px !important;
+}
+
+
+#facebook_button {
+    background: url("/templates/v3/img/global/sprite-share-metro32x32.png") no-repeat scroll 0 0 #ffffff; ***
+    cursor: pointer;
+    height: 32px;
+    pointer-events: none;
+    position: absolute;
+    width: 32px; 
+}
+
+
+
+
+#tweeter_button {
+    background: url("/templates/v3/img/global/sprite-share-metro32x32.png") no-repeat scroll -34px 0 #ffffff;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+
+
+#comment_button {
+    background: url("/templates/v3/img/global/sprite-share-metro32x32.png") no-repeat scroll -102px 0 #ffffff;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+
+#ggplus_button {
+    background: url("/templates/v3/img/global/sprite-share-metro32x32.png") no-repeat scroll -170px 0 #ffffff;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+#comment_count a {
+	color:#272727;
+}
+
+.image-component.x-large {
+	position:relative;
+}
+
+.caption-w.full-width {
+	background:none repeat scroll 0 0 rgba(4,4,4,0.61);
+	bottom:0;
+	color:#FFFFFF;
+	padding:10px 0;
+	position:absolute;
+	width:100%;
+	z-index:5;
+}
+
+.article-top .image-component .caption {
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 1em;
+    padding: 0 5px 0 15px;
+    width: 66%;
+}
+
+.article-top .image-component .credit {
+    bottom: 5px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    width: 29%;
+}
+
+#date-fullwidth {
+	border-bottom:medium none;
+	clear:both;
+	color:#989898;
+	font-size:11px;
+}
+
+/*.article-main-area{border-right:none;float:left;padding-left:72px;padding-right:9px;width: 787px;}*/
+
+.share-tools-top {
+    left: 10px;
+    position: absolute;
+    top: 12px;
+    z-index: 0;
+}
+
+
+#facebook_count, #google_count, #tweeter_count, #comment_count {
+    box-shadow: 1px 1px 0 0 #d6d6d6;
+    color: #272727;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 11px;
+    margin-top: 7px;
+    padding: 2px 0;
+    position: relative;
+    min-width: 32px;
+    border-radius:2px;
+}
+
+
+
+.article-left-wrapper {
+	border-right:1px solid #EEF1F5;
+	float:left;
+	padding-right:29px;
+	width:549px;
+}
+
+.article-full-width {
+	width:559px;
+}
+
+.article-body {
+	font-size:1.1em;
+	line-height:22px;
+}
+
+.article-body p {
+	font-size:15px;
+}
+
+.aside.middle-col-line {
+	border-top:medium none;
+	padding-top:0;
+}
+
+.article-full-width .article-1-col-left.padding-0 {
+	border-bottom:1px solid #EEF1F5;
+	border-top:1px solid #EEF1F5;
+	margin-top:30px;
+	padding:18px 0 18px 70px;
+	position:relative;
+	width:592px;
+}
+
+.article-1-col-left.padding-0 {
+	background:none repeat scroll 0 0 #fff;
+	margin-left:-84px;
+	padding-left:60px;
+}
+
+.article-full-width .share-tools .clear {
+	clear:none;
+}
+
+.article-full-width .share-tools {
+	border-left:medium none;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	padding-right:25px;
+	padding-top:0;
+	position:absolute;
+	right:0;
+	text-align:right;
+	width:197px;
+}
+
+.article-full-width .share-tools .extra-tools {
+	padding-bottom:10px;
+	width:auto;
+}
+
+.byline .image {
+	border:2px solid #F47721;
+	border-radius:50em;
+	float:left;
+	margin-right:9px;
+	overflow:hidden;
+	width:65px;
+	height:65px;
+}
+
+.byline .image img {
+    height: 80px;
+    width: 65px;
+}
+
+.byline .text .email {
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	line-height:1.35;
+}
+
+.article-full-width .byline {
+	padding:0;
+	width:100%;
+}
+
+.byline .text .name {
+	color:#272727;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	width: 410px;
+}
+
+.article-full-width .comments,.article-full-width .ligatus {
+	width:600px;
+}
+
+.article-full-width .fact-related-box {
+	border-left:5px solid #F47721;
+	margin:40px 0 40px -40px;
+	padding-left:30px;
+	//width:430px;
+	width:90%;
+	
+}
+
+.article-full-width .related-area {
+	width:100%;
+}
+
+.article-full-width .related-area .push-component.small-low {
+	width:auto;
+}
+
+.article-full-width .related-area .keyline-component .text {
+	background:none repeat scroll 0 0 rgba(0,0,0,0);
+}
+
+.article-full-width .related-area .keyline-component .text h4  a{
+	color:#F47721;
+	font-family:"metro headline";
+	font-size:23px;
+}
+
+
+
+.article-full-width .related-area .keyline-component:before {
+	height:0;
+}
+
+.article-full-width .related-area .keyline-component .text h4  {
+	color:#F47721;
+	font-family:"metro headline";
+	font-size:23px;
+	padding-left:0;
+}
+
+.article-full-width .related-area {
+	background:none repeat scroll 0 0 rgba(0,0,0,0);
+}
+
+.article-full-width .related-area .only-link:before {
+	content:">";
+	float:left;
+	height:27px;
+	padding-right:3px;
+	width:10px;
+}
+
+.article-full-width .related-area .only-link {
+	border-bottom:medium none;
+	float:left;
+	font-size:14px;
+	font-weight:normal;
+	margin-left:0;
+	padding-bottom:0;
+	padding-top:0;
+	text-decoration:underline;
+	width:100%;
+	color:#272727;
+}
+
+.article-full-width .related-area>.push-component.clearfix.small-low.mt-article {
+	display:none;
+}
+
+.article-top .title,.article-body .title,.article-left-wrapper h1.title {
+	font-size:44px;
+}
+
+.takeover-netbook #metro_sharetools {
+	padding:0;
+}
+
+.takeover-netbook .share-tools-top {
+	left:0;
+	position:relative;
+	top:0;
+}
+
+.takeover-netbook #metro_sharetools .sharebutton {
+	clear:none;
+	float:left;
+	height:35px;
+	margin-bottom:0;
+	margin-right:15px;
+	position:relative;
+}
+
+.takeover-netbook #metro_sharetools .sharebutton a,
+.takeover-netbook #metro_sharetools .sharebutton #facebook_count, 
+.takeover-netbook #metro_sharetools .sharebutton #ggplus_button,
+.takeover-netbook #metro_sharetools .sharebutton #google_count, 
+.takeover-netbook #metro_sharetools .sharebutton #tweeter_button,
+.takeover-netbook #metro_sharetools .sharebutton #tweeter_count, 
+.takeover-netbook #metro_sharetools .sharebutton #comment_button, 
+.takeover-netbook #metro_sharetools .sharebutton #comment_count
+ {
+    float:left
+}
+
+.takeover-netbook #metro_sharetools .sharebutton #facebook_count, 
+.takeover-netbook #metro_sharetools .sharebutton #google_count, 
+.takeover-netbook #metro_sharetools .sharebutton #tweeter_count, 
+.takeover-netbook #metro_sharetools .sharebutton #comment_count
+{
+	margin-left:5px
+}
+
+.takeover-netbook #metro_sharetools .sharebutton #comment_count a {
+    width: 32px;
+}
+
+
+.takeover-netbook .article-full-width .comments,.takeover-netbook .article-full-width .ligatus {
+	width:639px;
+}
+
+.takeover-netbook .article-1-col-left.padding-0 {
+	margin-left:-9px;
+}
+
+.takeover-netbook .article-full-width .article-1-col-left.padding-0 {
+	width:590px;
+}
+
+.takeover-netbook .article-full-width .fact-related-box {
+	margin-left:64px;
+}
+
+.takeover-netbook #outbrain-areamet {
+	margin-left:0;
+	width:100%;
+}
+
+.takeover-netbook #outbrain-areamet h4.keyline {
+	margin-bottom:0;
+	padding:5px 10px 10px 0;
+}
+
+.takeover-netbook #outbrain-areamet .sourceTitle {
+	margin-bottom:-20px;
+}
+.takeover-netbook #outbrain-areamet a.obrecmet:not(:last-child) {
+	border-bottom:none;
+}
+
+.takeover-netbook #outbrain-areamet a.obrecmet {
+	margin-right:-5px;
+	padding:15px 9px;
+	width:198px;
+}
+
+.takeover-netbook #outbrain-areamet a.obrecmet.samesrc_false {
+	 border-bottom:none;
+}
+
+.takeover-netbook #outbrain-areamet .sourceTitle {
+	background:none;
+	margin-bottom:0;
+}
+
+.takeover-netbook #outbrain-areamet .onmetro.sourceTitle {
+	padding-top:0;
+}
+
+#outbrain-areamet .ob-blkmet {
+	float:left;
+}
+
+
+#outbrain-areamet .ob-blkmet:last-child {
+  margin-bottom: 15px;
+}
+
+#outbrain-areamet {
+	float:left;
+	margin-left:-7px;
+	position:relative;
+}
+
+#outbrain-areamet .link-title {
+	display:block;
+}
+
+#outbrain-areamet a.obrecmet {
+	background:none repeat scroll 0 0 #F1F2F3;
+	color:#0D0D0D;
+	display:block;
+	float:left;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	overflow:hidden;
+	padding:15px 10px 15px 7px;
+	text-decoration:none;
+	width:199px;
+}
+
+#outbrain-areamet.ob-text-content {
+	margin:0 0 10px;
+}
+
+#outbrain-areamet a.obrecmet:not(:last-child) {
+	border-bottom:1px solid #fff;
+}
+
+#outbrain-areamet a.obrecmet.samesrc_false {
+	background:none repeat scroll 0 0 #FFF;
+	border-bottom:1px solid #E0DDDD;
+	font-size:12px;
+	font-weight:normal;
+}
+
+#outbrain-areamet .ob-text-content {
+	height:70px;
+}
+
+#outbrain-areamet a.obrecmet img {
+	margin-bottom:10px;
+}
+
+#outbrain-areamet h4.keyline {
+	color:#007632;
+	font-family:"Metro Headline";
+	font-size:18px;
+	margin-bottom:0;
+	padding:5px 10px 10px;
+	text-transform:uppercase;
+}
+
+#outbrain-areamet .sourceTitle {
+	background:none repeat scroll 0 0 #F1F2F3;
+	clear:both;
+	color:#9F9F9F;
+	font-family:"Arial Black",arial;
+	font-size:12px;
+	padding:20px 10px 5px;
+	text-transform:uppercase;
+	margin-bottom:-20px;
+}
+
+#outbrain-areamet .info-src {
+	font-transform:uppercase;
+	color:#0065AC;
+}
+
+#outbrain-areamet .onweb.sourceTitle {
+	background: none repeat scroll 0 0 #FFF;
+}
+
+
+
+/* Media Queries for Responsive Design. Theses override the primary ('mobile first') styles.  */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Tablet size @@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width:980px) {
+	
+	
+	
+
+
+	.article-left-wrapper {
+	    width: 100%;
+	}
+
+	#outbrain-areamet .onmetro.sourceTitle{
+		display:block;
+	}
+	
+	#outbrain-areamet {
+			margin-bottom:30px;
+	}
+	
+	#outbrain-areamet a.obrecmet {
+			background:none;
+	}
+	
+	#outbrain-areamet .sourceTitle {
+		background:none;
+		padding-top:0;
+	}
+	
+	#outbrain-areamet a.obrecmet.samesrc_false {
+		border-bottom:none;
+	}
+	
+	#outbrain-areamet .ob-blkmet {
+		width:50%;
+	}
+	
+	#wrapper {
+			overflow:hidden;
+	}
+	
+	.article-full-width {
+		width:420px;
+	}
+	
+	.article-full-width .article-1-col-left.padding-0 {
+			padding:18px 0;
+			width:420px;
+	}
+	
+	.byline .text .name {
+		 font-size:16px;
+		 width: 270px;
+	}
+	
+	.article-full-width .share-tools {
+		right:0;
+		top:3px;
+		font-size:14px;
+		width:197px;
+		padding-right:0;
+	}
+	
+	.article-full-width .fact-related-box {
+		width:386px;
+		margin-left: 0;
+	}
+	
+	.article-1-col-left.padding-0 {
+		margin-left:0;
+	}
+	
+	.article-full-width .comments,.article-full-width .ligatus {
+		 width:420px;
+	}
+	
+	.takeover-netbook .article-full-width .article-1-col-left.padding-0 {
+			width:420px;
+	}
+	
+	.takeover-netbook .article-full-width .fact-related-box {
+		margin-left:0px;
+	}
+	
+	.takeover-netbook .article-full-width .comments,.takeover-netbook .article-full-width .ligatus {
+		width:420px;
+	}
+	
+	.article-left-wrapper {
+		 border-right:none;
+	}
+	
+	#metro_sharetools {
+		padding:0;
+	}
+	
+	.share-tools-top {
+		left:0;
+		position:relative;
+		top:0;
+	}
+	
+	#metro_sharetools .sharebutton {
+		 clear:none;
+		 float:left;
+		 height:35px;
+		 margin-bottom:0;
+		 margin-right:15px;
+		 position: relative;
+	}
+	
+	
+#metro_sharetools .sharebutton a,
+#metro_sharetools .sharebutton #facebook_count, 
+#metro_sharetools .sharebutton #ggplus_button,
+#metro_sharetools .sharebutton #google_count, 
+#metro_sharetools .sharebutton #tweeter_button,
+#metro_sharetools .sharebutton #tweeter_count, 
+#metro_sharetools .sharebutton #comment_button, 
+#metro_sharetools .sharebutton #comment_count
+{
+  float:left
+}
+
+#metro_sharetools .sharebutton #facebook_count, 
+#metro_sharetools .sharebutton #google_count, 
+#metro_sharetools .sharebutton #tweeter_count, 
+#metro_sharetools .sharebutton #comment_count
+{
+margin-left:5px
+}
+
+#metro_sharetools .sharebutton #comment_count a {
+  width: 32px;
+}
+
+	
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Netbook size @@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width:981px) and (max-width:1199px) {
+	
+	#gallery-1 {
+		 margin-left:0;
+		 width:100%;
+		 margin-bottom:25px;
+	}
+	
+	.article-main-area {
+			width:639px;
+			padding-left:0;
+	}
+	
+	.article-left-wrapper {
+			width:639px;
+			padding-right:0;
+			border:none;
+	}
+	
+	.article-full-width {
+			width:639px;
+	}
+	
+	.article-1-col-left.padding-0 {
+			margin-left:-9px;
+	}
+	
+	.article-full-width .article-1-col-left.padding-0 {
+					width:587px;
+	}
+	
+	.article-full-width .comments,.article-full-width .ligatus {
+			width:639px;
+	}
+	
+	.article-full-width .fact-related-box {
+		//margin-left:64px;
+		margin: 40px 0;
+	}
+	
+	#metro_sharetools {
+		padding:0;
+	}
+	
+	.share-tools-top {
+		left:0;
+		position:relative;
+		top:0;
+	}
+	
+	#metro_sharetools .sharebutton {
+		clear:none;
+		float:left;
+		height:35px;
+		margin-bottom:0;
+		margin-right:15px;
+		position:relative;
+	}
+	
+	
+	
+#metro_sharetools .sharebutton a,
+#metro_sharetools .sharebutton #facebook_count, 
+#metro_sharetools .sharebutton #ggplus_button,
+#metro_sharetools .sharebutton #google_count, 
+#metro_sharetools .sharebutton #tweeter_button,
+#metro_sharetools .sharebutton #tweeter_count, 
+#metro_sharetools .sharebutton #comment_button, 
+#metro_sharetools .sharebutton #comment_count
+{
+  float:left
+}
+
+#metro_sharetools .sharebutton #facebook_count, 
+#metro_sharetools .sharebutton #google_count, 
+#metro_sharetools .sharebutton #tweeter_count, 
+#metro_sharetools .sharebutton #comment_count
+{
+margin-left:5px
+}
+
+#metro_sharetools .sharebutton #comment_count a {
+  width: 32px;
+}
+
+	
+	#outbrain-areamet {
+		 margin-left:0;
+		 width:100%;
+	}
+	
+	#outbrain-areamet h4.keyline {
+		 margin-bottom:0;
+		 padding:5px 10px 10px 0;
+	}
+	
+	#outbrain-areamet .sourceTitle {
+		 margin-bottom:-20px;
+		 padding:20px 10px 5px;
+	}
+	
+	#outbrain-areamet a.obrecmet:not(:last-child) {
+		 border-bottom:none;
+	}
+	
+	#outbrain-areamet a.obrecmet {
+		 margin-right:-5px;
+		 padding:15px 9px;
+		 width:198px;
+	}
+	
+	#outbrain-areamet a.obrecmet.samesrc_false {
+		 	 border-bottom:none;
+	}
+	
+	#outbrain-areamet .sourceTitle {
+		 background:none;
+		 margin-bottom:0;
+	}
+	
+	#outbrain-areamet .onmetro.sourceTitle {
+			padding-top: 0;
+	}
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Netbook size and larger @@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width:981px) {
+
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Netbook size and smaller @@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width:1199px) {
+
+
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Full size @@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width:1200px) {
+	
+	
+ 	#mb_container, #ultimedia_wrapper{
+ 		margin-left:-40px !important;
+ 	}
+       
+        /* bug fix videos habillage */ 
+        .takeover-netbook #mb_container, .takeover-netbook #ultimedia_wrapper {
+           margin-left: 0px !important;
+        }
+    
+	.fixedsharetools {
+	  position: fixed ;
+	  top: 0;
+	}
+
+        .takeover-netbook .fixedsharetools {
+	  position: relative;
+	}
+
+	
+
+	#gallery-1 {
+		 margin-left:-71px;
+		 width:117%;
+	}
+	
+	
+	.takeover-netbook #gallery-1 {
+		 margin-left:0px;
+	}
+	
+	
+	.article-main-area {
+		 border-right:none;
+		 float:left;
+		 padding-left:72px;
+		 padding-right:9px;
+		 width:787px;
+	}
+	
+	.takeover-netbook .article-main-area {
+			padding-left:inherit;
+	}
+	
+	.takeover-netbook .article-left-wrapper {
+			padding-right:9px;
+			width:639px;
+	}
+	
+	.takeover-netbook .article-full-width {
+			width: inherit;
+	}
+
+/* http://bugtrack.metronews.fr/issues/38 */
+		.takeover-netbook .article-left-wrapper {
+			width:639px;
+			padding-right:0;
+			border:none;
+	}
+	
+	.takeover-netbook .article-full-width {
+			width:639px;
+	}
+	
+	.takeover-netbook .article-1-col-left.padding-0 {
+			margin-left:-9px;
+	}
+	
+	.takeover-netbook .article-full-width .article-1-col-left.padding-0 {
+					width:587px;
+	}
+	
+	.takeover-netbook .article-full-width .comments, .takeover-netbook .article-full-width .ligatus {
+			width:639px;
+	}
+	
+	.takeover-netbook .article-full-width .fact-related-box {
+		//margin-left:64px;
+		margin: 40px 0;
+	}
+	
+	.takeover-netbook #metro_sharetools {
+		padding:0;
+	}
+	
+	.takeover-netbook .share-tools-top {
+		left:0;
+		position:relative;
+		top:0;
+	}
+	
+	.takeover-netbook #metro_sharetools .sharebutton {
+		clear:none;
+		float:left;
+		height:35px;
+		margin-bottom:0;
+		margin-right:15px;
+		position:relative;
+	}
+	
+	.takeover-netbook #outbrain-areamet {
+		 margin-left:0;
+		 width:100%;
+	}
+	
+	.takeover-netbook #outbrain-areamet h4.keyline {
+		 margin-bottom:0;
+		 padding:5px 10px 10px 0;
+	}
+	
+	.takeover-netbook #outbrain-areamet .sourceTitle {
+		 margin-bottom:-20px;
+		 padding:20px 10px 5px;
+	}
+	
+	.takeover-netbook #outbrain-areamet a.obrecmet:not(:last-child) {
+		 border-bottom:none;
+	}
+	
+	.takeover-netbook #outbrain-areamet a.obrecmet {
+		 margin-right:-5px;
+		 padding:15px 9px;
+		 width:198px;
+	}
+	
+	.takeover-netbook #outbrain-areamet a.obrecmet.samesrc_false {
+		 	 border-bottom:none;
+	}
+	
+	.takeover-netbook #outbrain-areamet .sourceTitle {
+		 background:none;
+		 margin-bottom:0;
+	}
+	
+	.takeover-netbook #outbrain-areamet .onmetro.sourceTitle {
+			padding-top: 0;
+	}
+/* end of http://bugtrack.metronews.fr/issues/38 */
+}
+
+/* *** END FILE custom-css.css *** */
+
+
+
+
+
+/**** Module coupe du monde unami ****/
+
+.world-cup-module {
+  max-width: 420px;
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #fff;
+  background: url(/sport/img/world-cup-module__bg.jpg) no-repeat center 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: 'Metro Headline', serif;
+  position: relative; }
+  @media (min-width: 47.6875em) {
+    .world-cup-module {
+      max-width: 639px; } }
+  @media (min-width: 61.375em) {
+    .world-cup-module {
+      max-width: 559px; } }
+  .world-cup-module * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .world-cup-module *:before, .world-cup-module *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .world-cup-module a {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .world-cup-module a:hover {
+      color: #f47721; }
+
+
+
+.world-cup-module__title {
+  padding-left: 15px;
+  margin-bottom: 30px;
+  color: #f47721;
+  font-size: 24px;
+  text-transform: uppercase; }
+  @media (min-width: 47.6875em) {
+    .world-cup-module__title {
+      padding: 0 0 0 65px;
+      margin-bottom: 40px; } }
+  @media (min-width: 61.375em) {
+    .world-cup-module__title {
+      padding: 0 0 0 35px; } }
+
+.world-cup-module__nav {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 11px;
+  list-style-type: none; }
+  @media (min-width: 47.6875em) {
+    .world-cup-module__nav {
+      margin: 0 0 10px 0;
+      padding: 0 0 0 70px;
+      text-align: left; } }
+  @media (min-width: 61.375em) {
+    .world-cup-module__nav {
+      margin: 0;
+      padding: 0 0 0 40px; } }
+  .world-cup-module__nav li {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    text-align: center; }
+  .world-cup-module__nav a {
+    display: inline-block;
+    min-width: 56px;
+    padding-top: 64px;
+    color: #fff;
+    background: url(/sport/img/world-cup-module__icons-sprite-small.png) no-repeat;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none; }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav a {
+        min-width: 62px;
+        padding-top: 70px;
+        background: url(/sport/img/world-cup-module__icons-sprite.png) no-repeat;
+        font-size: 15px; } }
+  .world-cup-module__nav .world-cup-module__nav__item1 {
+    margin-right: 19px; }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav .world-cup-module__nav__item1 {
+        margin-right: 45px; } }
+    .world-cup-module__nav .world-cup-module__nav__item1 a {
+      background-position: center 0; }
+      .world-cup-module__nav .world-cup-module__nav__item1 a:hover {
+        background-position: center -92px; }
+        @media (min-width: 47.6875em) {
+          .world-cup-module__nav .world-cup-module__nav__item1 a:hover {
+            background-position: center -133px; } }
+  .world-cup-module__nav .world-cup-module__nav__item2 {
+    margin-right: 13px; }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav .world-cup-module__nav__item2 {
+        margin-right: 30px; } }
+    .world-cup-module__nav .world-cup-module__nav__item2 a {
+      background-position: center -183px; }
+      .world-cup-module__nav .world-cup-module__nav__item2 a:hover {
+        background-position: center -275px; }
+        @media (min-width: 47.6875em) {
+          .world-cup-module__nav .world-cup-module__nav__item2 a:hover {
+            background-position: center -398px; } }
+      @media (min-width: 47.6875em) {
+        .world-cup-module__nav .world-cup-module__nav__item2 a {
+          background-position: center -265px; } }
+  .world-cup-module__nav .world-cup-module__nav__item3 {
+    margin-right: 13px; }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav .world-cup-module__nav__item3 {
+        margin-right: 30px; } }
+    .world-cup-module__nav .world-cup-module__nav__item3 a {
+      background-position: center -367px; }
+      .world-cup-module__nav .world-cup-module__nav__item3 a:hover {
+        background-position: center -458px; }
+        @media (min-width: 47.6875em) {
+          .world-cup-module__nav .world-cup-module__nav__item3 a:hover {
+            background-position: center -662px; } }
+      @media (min-width: 47.6875em) {
+        .world-cup-module__nav .world-cup-module__nav__item3 a {
+          background-position: center -530px; } }
+  .world-cup-module__nav .world-cup-module__nav__item4 {
+    margin-right: 13px; }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav .world-cup-module__nav__item4 {
+        margin-right: 20px; } }
+    .world-cup-module__nav .world-cup-module__nav__item4 a {
+      background-position: center -550px; }
+      .world-cup-module__nav .world-cup-module__nav__item4 a:hover {
+        background-position: center -642px; }
+        @media (min-width: 47.6875em) {
+          .world-cup-module__nav .world-cup-module__nav__item4 a:hover {
+            background-position: center -927px; } }
+      @media (min-width: 47.6875em) {
+        .world-cup-module__nav .world-cup-module__nav__item4 a {
+          background-position: center -795px; } }
+  .world-cup-module__nav .world-cup-module__nav__item5 a {
+    background-position: center -733px; }
+    .world-cup-module__nav .world-cup-module__nav__item5 a:hover {
+      background-position: center -825px; }
+      @media (min-width: 47.6875em) {
+        .world-cup-module__nav .world-cup-module__nav__item5 a:hover {
+          background-position: center -1192px; } }
+    @media (min-width: 47.6875em) {
+      .world-cup-module__nav .world-cup-module__nav__item5 a {
+        background-position: center -1060px; } }
+
+.world-cup-module__action {
+  text-align: center; }
+
+.world-cup-module__all-btn {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative; }
+  .world-cup-module__all-btn:after {
+    left: -10px;
+    top: 49%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 5px;
+    margin-top: -5px; }
+  .world-cup-module__all-btn:hover:after {
+    border-left-color: #f47721; }
+
+/* IE */
+.lt-ie9 .world-cup-module {
+  max-width: 559px; }
+.lt-ie9 .world-cup-module__title {
+  padding: 0 0 0 35px; }
+.lt-ie9 .world-cup-module__nav {
+  margin: 0;
+  padding: 0 0 0 40px; }
+  .lt-ie9 .world-cup-module__nav a {
+    display: inline-block;
+    min-width: 62px;
+    padding-top: 70px;
+    color: #fff;
+    background: url(/sport/img/world-cup-module__icons-sprite.png) no-repeat;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item1 {
+    margin-right: 45px; }
+    .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item1 a {
+      background-position: center 0; }
+      .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item1 a:hover {
+        background-position: center -133px; }
+  .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item2 {
+    margin-right: 30px; }
+    .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item2 a {
+      background-position: center -265px; }
+      .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item2 a:hover {
+        background-position: center -398px; }
+  .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item3 {
+    margin-right: 30px; }
+    .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item3 a {
+      background-position: center -530px; }
+      .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item3 a:hover {
+        background-position: center -662px; }
+  .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item4 {
+    margin-right: 20px; }
+    .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item4 a {
+      background-position: center -795px; }
+      .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item4 a:hover {
+        background-position: center -927px; }
+  .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item5 a {
+    background-position: center -1060px; }
+    .lt-ie9 .world-cup-module__nav .world-cup-module__nav__item5 a:hover {
+      background-position: center -1192px; }
+
+/* Module colonne droite */
+.world-cup-module--sidebar {
+  width: 300px; }
+  .world-cup-module--sidebar .world-cup-module__title {
+    padding-left: 25px;
+    margin-bottom: 30px; }
+  .world-cup-module--sidebar .world-cup-module__nav {
+    padding: 0 0 0 0px;
+    margin: 0 0 20px 0;
+    text-align: center; }
+    .world-cup-module--sidebar .world-cup-module__nav li {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-align: center; }
+    .world-cup-module--sidebar .world-cup-module__nav a {
+      display: inline-block;
+      min-width: 62px;
+      padding-top: 70px;
+      color: #fff;
+      background: url(/sport/img/world-cup-module__icons-sprite.png) no-repeat center 0;
+      font-size: 15px; }
+      .world-cup-module--sidebar .world-cup-module__nav a:hover {
+        color: #f47721; }
+    .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item1 {
+      margin-right: 30px; }
+      .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item1 a {
+        background-position: center 0; }
+        .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item1 a:hover {
+          background-position: center -133px; }
+    .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item2 {
+      margin-right: 18px; }
+      .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item2 a {
+        background-position: center -265px; }
+        .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item2 a:hover {
+          background-position: center -398px; }
+    .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item3 {
+      margin-right: 0; }
+      .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item3 a {
+        background-position: center -530px; }
+        .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item3 a:hover {
+          background-position: center -662px; }
+    .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item4 {
+      margin-right: 10px;
+      margin-left: 30px; }
+      .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item4 a {
+        background-position: center -795px; }
+        .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item4 a:hover {
+          background-position: center -927px; }
+    .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item5 a {
+      background-position: center -1060px; }
+      .world-cup-module--sidebar .world-cup-module__nav .world-cup-module__nav__item5 a:hover {
+        background-position: center -1192px; }
+
+.world-cup-module__nav li.world-cup-module__nav__item5 {
+    margin-right: 0;
+}
+/*** End module coupe du monde unami ***/
+
+/** cartouche pied de page **/
+.cartouche {
+position: relative;
+height: 27px;
+text-transform: uppercase;
+}
+
+.cartouche a {
+display: block;
+text-align: right;
+padding: 5px 10px 5px 10px;
+background-color: #F47721;
+position: absolute;
+right: 0;
+color: #FFF;
+font-weight: bold;
+width: auto;
+}
+
+.cartouche a:hover {
+background-color: #FFF;
+text-decoration: none;
+color: #F47721;
+border: 1px solid #F47721;
+}
+
+
+/* Page videos */
+#worldcup-buts,
+#worldcup-best-of,
+#worldcup-emissions,
+#worldcup-exclus-web,
+#worldcup-resume-des-matchs {
+	/*text-align: center;*/
+}
+
+#worldcup-buts .img_loader,
+#worldcup-best-of .img_loader,
+#worldcup-emissions .img_loader,
+#worldcup-exclus-web .img_loader,
+#worldcup-resume-des-matchs .img_loader {
+	margin: auto;
+	display: block;
+}
+
+
+.more-videos {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	height: 40px;
+	margin: auto;
+}
+
+.more-videos a {
+	float: none;
+	cursor: pointer;
+	border-top: 1px dashed #f47721;
+	width: 455px;
+	box-shadow: 0px -15px 27px -8px #f47721;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.worldcup-videos-thumbnails {
+	text-align: left;
+	margin: 5px;
+	margin-bottom: 8px;
+	display: inline-block;
+	height: 183px;
+}
+
+.worldcup-videos-thumbnails .pic {
+	margin-bottom: 2px;
+}
+
+
+.worldcup-videos-thumbnails.x-large {
+	height: 465px;
+}
+
+.worldcup-videos-thumbnails.x-large h4 {
+	line-height: 40px;
+}
+
+.worldcup-videos-thumbnails.medium {
+	height: 295px;
+	margin: 4px 4px 0px;
+}
+.worldcup-videos-thumbnails.medium .pic {
+	margin-bottom: 10px;
+}
+
+.worldcup-videos-thumbnails .pic {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+
+.worldcup-videos-thumbnails.medium .pic img,
+.worldcup-videos-thumbnails.x-large .pic img {
+	max-width: 100%;
+}
+
+.worldcup-videos-thumbnails.small .pic img {
+	max-width: inherit;
+	max-height: 100%;	
+}
+/* Correctifs Habillage */
+
+.takeover-netbook .worldcup-videos-thumbnails.x-large {
+	height: 365px;
+	max-width: 100%;
+}
+
+.takeover-netbook .worldcup-videos-thumbnails.medium {
+	height: 260px;
+	margin: 3px 3px 8px 3px;
+}
+
+.takeover-netbook .worldcup-videos-thumbnails.medium .pic {
+	margin-bottom: 3px;
+}
+
+/* Correctifs Tablette paysage */
+@media only screen and (max-width: 1199px) and (min-width: 981px) {
+	.worldcup-videos-thumbnails.x-large {
+		height: 375px !important;
+	}
+
+	.worldcup-videos-thumbnails.medium .pic img {
+		height: 100%;
+		max-width: inherit;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width:980px) {
+	/* large */
+	.takeover-netbook .worldcup-videos-thumbnails.x-large, .worldcup-videos-thumbnails.x-large {
+		height: 235px;
+		width: 415px;
+		max-width: 100%;
+	}
+
+	.takeover-netbook .worldcup-videos-thumbnails.x-large .tilte, .worldcup-videos-thumbnails.x-large .title {
+		font-size: 28px !important;
+		line-height: 28px !important!;
+		margin-right: 10px;
+		max-width: 100%;
+		max-height: auto;
+	}
+	/* medium */
+	.takeover-netbook .worldcup-videos-thumbnails.medium, .worldcup-videos-thumbnails.medium {
+		height: 160px;
+		margin-bottom: 4px;
+	}
+
+	.worldcup-videos-thumbnails.medium .pic {
+		margin-bottom: 5px;
+	}
+	
+	.worldcup-videos-thumbnails.medium .pic img {
+		display: block;
+		margin-bottom: 4px;
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	}
+
+	.takeover-netbook .worldcup-videos-thumbnails.medium .pic img, .worldcup-videos-thumbnails.medium .pic img {
+		display: block;
+		margin-bottom: 4px;	
+	}
+
+	/* small */
+	.worldcup-videos-thumbnails {
+		margin: 3px;
+	}
+
+	.worldcup-videos-thumbnails.small .pic img {
+		max-height: 100% !important;
+		width: auto;
+	}
+}
+
+
+
