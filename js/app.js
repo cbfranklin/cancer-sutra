@@ -350,7 +350,7 @@ function loadSupport(){
 	})
 
 	$('body').on('click','.store-item-posters',function(){
-		routie('#!/support/posters')
+		window.open('http://stupidcancerstore.org/brands/The-Cancer-Sutra.html','_blank');
 	})
 
 	setTimeout(function(){
